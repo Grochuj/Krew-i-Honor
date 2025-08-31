@@ -99,10 +99,14 @@
  CEP_agraryzm_party_long: "Polskie Stronnictwo Ludowe"
  CEP_agraryzm_party: "PSL"
 
- RPL_nacjonalizm_party_long: "Prawo i Sprawiedliwość - Umiarkowani"
- RPL_nacjonalizm_party: "PiS(u)"
+ RPL_nacjonalizm_party_long: "Prawo i Sprawiedliwość - Narodowcy"
+ RPL_nacjonalizm_party: "PiS(n)"
  RPL_kaczyzm_party_long: "Prawo i Sprawiedliwość - Kaczyści"
  RPL_kaczyzm_party: "PiS(k)"
+ RPL_autorytaryzm_party_long: "Solidarna Polska"
+ RPL_autorytaryzm_party: "SP"
+ RPL_socjalizm_party_long: "Prawo i Sprawiedliwość - Socjaliści"
+ RPL_socjalizm_party: "PiS(s)"
 
  NRP_monarchia_party_long: "Stronnictwo Królewskie"
  NRP_monarchia_party: "SK"

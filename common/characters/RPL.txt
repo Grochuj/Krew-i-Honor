@@ -22,4 +22,26 @@ characters = {
 			ideology = kac
 		}
 	}
+	RPL_mati={
+		name=RPL_mati
+		portraits={
+			civilian = {
+				large = GFX_portrait_RPL_mati
+			}
+		}
+		country_leader = {
+			ideology = soc
+		}
+	}
+	RPL_ziobro={
+		name=RPL_ziobro
+		portraits={
+			civilian = {
+				large = GFX_portrait_RPL_ziobro
+			}
+		}
+		country_leader = {
+			ideology = aut
+		}
+	}
 }
