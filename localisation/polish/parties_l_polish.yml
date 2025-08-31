@@ -71,6 +71,11 @@
  homo_desc: "Rządy homosiów"
  LGBT: "LGBT"
  LGBT_desc: "LGBTQWERTYXYZ"
+ socjalizm: "Socjalizm"
+ socjalizm_noun: "Socjalizm"
+ socjalizm_desc: "Od każdego według możliwości, każdemu według potrzeb."
+ soc: "Socjalizm"
+ soc: "Państwo Opiekuńcze"
 
 ##############################################################
 #partie#
