@@ -31,5 +31,24 @@ ideas = {
 				army_morale_factor = 0.1
 			}
 		}
+		KAM_idea_narodowyplanobrony = {
+			modifier = {
+				production_speed_bunker_factor = 0.1
+				land_bunker_effectiveness_factor = 0.25
+			}
+		}
+		KAM_idea_ekonomicznaizolacja = {
+			modifier = {
+				consumer_goods_factor = 0.35
+				research_speed_factor = -0.1
+				production_speed_buildings_factor = 0.1
+				monthly_population = 0.35
+				local_resources_factor = 0.15
+				civilian_intel_to_others = -20
+				army_intel_to_others = -20
+				navy_intel_to_others = -20
+				airforce_intel_to_others = -20
+			}
+		}
 	}
 }

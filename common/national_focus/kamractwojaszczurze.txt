@@ -1001,6 +1001,29 @@ focus_tree = {
         x = -6
         y = 1
 
+        ai_will_do = {
+            base = 5
+            modifier = {
+                AND = {
+                    has_opinion = {
+                        target = NRP
+                        value > 0
+                    }
+                }
+                set_temp_variable = {
+                    t = opinion@RPL
+                }
+                divide_temp_variable = {
+                    t = 10
+                }
+                round_temp_variable = t
+                add = t
+            }
+            modifier = {
+                factor = 3
+            }
+        }
+
         mutually_exclusive = {
             focus = KAM_focus_kamraci_z_braunem
             focus = KAM_focus_indywidualizm
@@ -1025,6 +1048,23 @@ focus_tree = {
         x = 0
         y = 1
 
+        ai_will_do = {
+            base = 3
+            modifier = {
+                AND = {
+                    has_opinion = {
+                        target = RPL
+                        value < 0
+                    }
+                    has_opinion = {
+                        target = NRP
+                        value < 0
+                    }
+                }
+                factor = 20
+            }
+        }
+
         mutually_exclusive = {
             focus = KAM_focus_za_karolem
             focus = KAM_focus_kamraci_z_braunem
@@ -1038,6 +1078,292 @@ focus_tree = {
             
         }
     }
+    focus = {
+        id = KAM_focus_narod_najwazniejszy
+        icon = GFX_focus_AFG_a_modern_economy
+        cost = 10
+        relative_position_id = KAM_focus_indywidualizm
+        x = 0
+        y = 1
+
+        ai_will_do = {
+            base = 10
+        }
+
+        prerequisite = {
+            focus = KAM_focus_indywidualizm
+        }
+
+        completion_reward = {
+            add_ideas = closed_economy
+        }
+    }
+    focus = {
+        id = KAM_focus_narodowy_plan_obrony
+        icon = GFX_goal_generic_defence
+        cost = 10
+        relative_position_id = KAM_focus_narod_najwazniejszy
+        x = -3
+        y = 1
+
+        ai_will_do = {
+            base = 10
+        }
+
+        prerequisite = {
+            focus = KAM_focus_narod_najwazniejszy
+        }
+
+        completion_reward = {
+            add_ideas = KAM_idea_narodowyplanobrony
+        }
+    }
+    focus = {
+        id = KAM_focus_twierdza_klodzko
+        icon = GFX_goal_generic_fortify_city
+        cost = 7
+        relative_position_id = KAM_focus_narodowy_plan_obrony
+        x = 0
+        y = 1
+
+        ai_will_do = {
+            base = 2
+        }
+
+        prerequisite = {
+            focus = KAM_focus_narodowy_plan_obrony
+        }
+
+        completion_reward = {
+            439 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 520 
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 6210
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 1503
+                }
+            }
+        }
+    }
+    focus = {
+        id = KAM_focus_fortyfikacja_krakowa
+        icon = GFX_goal_generic_fortify_city
+        cost = 7
+        relative_position_id = KAM_focus_twierdza_klodzko
+        x = -2
+        y = 0
+
+        ai_will_do = {
+            base = 2
+        }
+
+        prerequisite = {
+            focus = KAM_focus_narodowy_plan_obrony
+        }
+
+        completion_reward = {
+            438 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 963
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    province = 6250
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    province = 3016
+                }
+            }
+        }
+    }
+    focus = {
+        id = KAM_focus_fortyfikacja_otwocka
+        icon = GFX_goal_generic_fortify_city
+        cost = 7
+        relative_position_id = KAM_focus_twierdza_klodzko
+        x = 2
+        y = 0
+
+        ai_will_do = {
+            base = 2
+        }
+
+        prerequisite = {
+            focus = KAM_focus_narodowy_plan_obrony
+        }
+
+        completion_reward = {
+            437 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 9310
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 3065
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 3
+                    province = 5116
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    province = 9281
+                }
+            }
+        }
+    }
+    focus = {
+        id = KAM_focus_ekonomiczna_izolacja
+        icon = GFX_idea_isolation
+        cost = 10
+        relative_position_id = KAM_focus_narod_najwazniejszy
+        x = 3
+        y = 1
+
+        ai_will_do = {
+            base = 25
+            modifier = {
+                num_of_available_civilian_factories < 15
+                factor = 0.2
+            }
+        }
+
+        prerequisite = {
+            focus = KAM_focus_narod_najwazniejszy
+        }
+
+        completion_reward = {
+            add_ideas = KAM_idea_ekonomicznaizolacja
+        }
+    }
+    focus = {
+        id = KAM_focus_poszukiwanie_terytoriow
+        icon = GFX_idea_isolation
+        cost = 10
+        relative_position_id = KAM_focus_ekonomiczna_izolacja
+        x = 0
+        y = 1
+
+        available = {
+            NOT = {
+                any_owned_state = {
+                    free_building_slots = {
+                        building = arms_factory
+                        size = 1
+                    }
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 50
+        }
+
+        prerequisite = {
+            focus = KAM_focus_ekonomiczna_izolacja
+        }
+
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = KAM_focus_cel_rzp
+        icon = GFX_focus_generic_total_war
+        cost = 10
+        relative_position_id = KAM_focus_poszukiwanie_terytoriow
+        x = -1
+        y = 1
+
+        ai_will_do = {
+            base = 50
+        }
+
+        available = {
+            NOT = {
+                has_completed_focus = KAM_przyjazn_z_piwokrata
+            }
+        }
+
+        prerequisite = {
+            focus = KAM_focus_poszukiwanie_terytoriow
+        }
+
+        completion_reward = {
+            if = {
+                limit = {
+                    owns_state = 290
+                    owns_state = 440
+                }
+                create_wargoal = {
+                    target = RZP
+                    type = annex_everything
+                }
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        owns_state = 290
+                    }
+                    NOT = {
+                        owns_state = 440
+                    }
+                }
+                create_wargoal = {
+                    target = RZP
+                    type = take_state
+                    generator = {
+                        290 440
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = KAM_focus_cel_nrp
+        icon = GFX_focus_generic_total_war
+        cost = 10
+        relative_position_id = KAM_focus_poszukiwanie_terytoriow
+        x = 1
+        y = 1
+
+        ai_will_do = {
+            base = 50
+        }
+
+        prerequisite = {
+            focus = KAM_focus_poszukiwanie_terytoriow
+        }
+
+        completion_reward = {
+            create_wargoal = {
+                target = NRP
+                type = take_state
+                generator = {
+                    441 331 353
+                }
+            }
+        }
+    }
 
 #POLITYCZNE BRAUN#
 
@@ -1048,6 +1374,29 @@ focus_tree = {
         relative_position_id = KAM_focus_sytuacja_zewnetrzna
         x = 6
         y = 1
+
+        ai_will_do = {
+            base = 5
+            modifier = {
+                AND = {
+                    has_opinion = {
+                        target = NRP
+                        value > 0
+                    }
+                }
+                set_temp_variable = {
+                    t = opinion@NRP
+                }
+                divide_temp_variable = {
+                    t = 10
+                }
+                round_temp_variable = t
+                add = t
+            }
+            modifier = {
+                factor = 3
+            }
+        }
 
         mutually_exclusive = {
             focus = KAM_focus_indywidualizm
