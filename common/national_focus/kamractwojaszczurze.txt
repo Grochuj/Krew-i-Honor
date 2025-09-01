@@ -573,6 +573,34 @@ focus_tree = {
             add_ideas = KAM_idea_piwodlakamratow
         }
     }
+    focus = {
+        id = KAM_focus_polaczone_fabryki
+        icon = GFX_focus_wspolpracaarmia
+        cost = 10
+        relative_position_id = KAM_focus_piwo
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = KAM_focus_piwo
+        }
+        prerequisite = {
+            focus = KAM_focus_unia_celna
+        }
+
+        completion_reward = {
+            add_offsite_building = {
+                type = arms_factory
+                level = 3
+            }
+            RZP = {
+                add_offsite_building = {
+                    type = arms_factory
+                    level = 2
+                }
+            }
+        }
+    }
 
 #ŚCIEŻKA WOJNY#
 
