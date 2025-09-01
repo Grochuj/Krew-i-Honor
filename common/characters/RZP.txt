@@ -11,4 +11,15 @@ characters = {
 		}
 		
 	}
+	RZP_kukiz={
+		name = RZP_kukiz
+		portraits = {
+			civilian = {
+				large = GFX_portrait_RZP_kukiz
+			}
+		}
+		country_leader = {
+			ideology = aut
+		}
+	}
 }

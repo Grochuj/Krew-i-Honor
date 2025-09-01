@@ -121,6 +121,14 @@ spriteTypes = {
 spriteTypes = {
 
 	spriteType ={
+		name = "GFX_portrait_RZP_kukiz"
+		textureFile = "gfx/leaders/RZP/kukiz.tga"
+	}
+}
+
+spriteTypes = {
+
+	spriteType ={
 		name = "GFX_portrait_DIP_maciak_leader"
 		textureFile = "gfx/leaders/DIP/maciak_leader.tga"
 	}

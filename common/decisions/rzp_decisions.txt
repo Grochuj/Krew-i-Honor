@@ -24,10 +24,32 @@ wojna_niepodleglosciowa_cat = {
 			RZP = {
 				white_peace = RPL
 			}
+			if = {
+				limit = { 
+					AND = {
+						RZP = {
+							controls_state = 238
+						}
+						RZP = {
+							controls_state = 207
+						}
+					}
+				}
+				238 = {
+					transfer_state_to = RZP
+				}
+				207 = {
+					transfer_state_to = RZP
+				}
+			}
 		}
  
 		complete_effect = {
-            add_stability = -0.5
+			RPL = {
+				annex_country = {
+					target = RZP
+				}
+			}
 		}
 	}
 }
