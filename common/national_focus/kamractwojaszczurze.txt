@@ -554,7 +554,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            
+            add_ideas = KAM_idea_uniacelna
         }
     }
     focus = {
@@ -570,7 +570,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            
+            add_ideas = KAM_idea_piwodlakamratow
         }
     }
 
