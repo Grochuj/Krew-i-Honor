@@ -407,7 +407,9 @@ focus_tree = {
         }
         x = -2
         y = 1
-        
+
+        will_lead_to_war_with = RPL
+
         completion_reward = {
             237 = {
                 create_unit = { division = "name = \"Pierwsza Brygada partzancka\" division_template = \"Oddział Partyzantów\" start_experience_factor = 1" owner = ROOT }
@@ -580,5 +582,16 @@ focus = {
         completion_reward = { 
             
         }
+    }
+    focus = {
+        id = RZP_dyktatkukiza
+        icon = GFX_portrait_PRL_senyszyn
+        cost = 1
+        x = 45
+        y = 1
+        prerequisite = {
+            focus = RZP_wesprzyjmypis
+        }
+        completion_reward = { }
     }
 }
