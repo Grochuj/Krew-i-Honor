@@ -329,7 +329,7 @@ focus_tree = {
     }
     focus = {
         id = KAM_focus_armia_r_4
-        icon = GFX_goal_generic_army_doctrines
+        icon = GFX_idea_generic_war_preparation
         cost = 10
         relative_position_id = KAM_focus_armia_r_2
         x = 2
@@ -834,6 +834,78 @@ focus_tree = {
         y = 0
         completion_reward = {
             add_political_power = 50
+        }
+    }
+    
+#POLITYCZNE PIS#
+
+    focus = {
+        id = KAM_focus_za_karolem
+        icon = GFX_focus_generic_farmland
+        cost = 10
+        relative_position_id = KAM_focus_sytuacja_zewnetrzna
+        x = -6
+        y = 1
+
+        mutually_exclusive = {
+            focus = KAM_focus_kamraci_z_braunem
+            focus = KAM_focus_indywidualizm
+        }
+
+        prerequisite = {
+            focus = KAM_focus_sytuacja_zewnetrzna
+        }
+
+        completion_reward = {
+            
+        }
+    }
+
+#POLITYCZNE INDYWIDUALNE#
+
+    focus = {
+        id = KAM_focus_indywidualizm
+        icon = GFX_focus_generic_farmland
+        cost = 10
+        relative_position_id = KAM_focus_sytuacja_zewnetrzna
+        x = 0
+        y = 1
+
+        mutually_exclusive = {
+            focus = KAM_focus_za_karolem
+            focus = KAM_focus_kamraci_z_braunem
+        }
+
+        prerequisite = {
+            focus = KAM_focus_sytuacja_zewnetrzna
+        }
+
+        completion_reward = {
+            
+        }
+    }
+
+#POLITYCZNE BRAUN#
+
+    focus = {
+        id = KAM_focus_kamraci_z_braunem
+        icon = GFX_focus_generic_farmland
+        cost = 10
+        relative_position_id = KAM_focus_sytuacja_zewnetrzna
+        x = 6
+        y = 1
+
+        mutually_exclusive = {
+            focus = KAM_focus_indywidualizm
+            focus = KAM_focus_za_karolem
+        }
+
+        prerequisite = {
+            focus = KAM_focus_sytuacja_zewnetrzna
+        }
+
+        completion_reward = {
+            
         }
     }
 }
