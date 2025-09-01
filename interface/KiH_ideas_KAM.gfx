@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_idea_KAM_idea_ped_natarcia
+		texturefile = gfx/interface/ideas/natarcie.dds
+	}
+	spriteType = {
+		name = GFX_idea_KAM_idea_przegrana_jakubiak
+		texturefile = gfx/interface/ideas/przegranajakubiak.png
+	}
+	spriteType = {
+		name = GFX_idea_KAM_idea_plany_wojenne
+		texturefile = gfx/interface/ideas/plan.png
+	}
+}
