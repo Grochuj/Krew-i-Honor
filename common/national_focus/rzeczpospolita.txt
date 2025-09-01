@@ -418,7 +418,9 @@ focus_tree = {
                 create_unit = { division = "name = \"Czwarta Brygada partzancka\" division_template = \"Oddział Partyzantów\" start_experience_factor = 1" owner = ROOT }
             }
             end_puppet = RPL
-            RPL = { country_event = rpl_event.1 }
+            RPL = {
+                state_event = rpl_event.1
+            }
         }
     }
     #drzewko po rewolcie lewe
