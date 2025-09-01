@@ -583,6 +583,7 @@ focus = {
             
         }
     }
+    
     focus = {
         id = RZP_dyktatkukiza
         icon = GFX_portrait_PRL_senyszyn
