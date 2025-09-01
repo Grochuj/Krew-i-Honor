@@ -8,8 +8,12 @@ shared_focus = {
 		trigger = {
 			tag = LIB
 		}
-		x = 28
+		x = 15
 		y = 0
+	}
+
+	ai_will_do = {
+		base = 50
 	}
 
 	completion_reward = {
@@ -26,6 +30,10 @@ shared_focus = {
 	relative_position_id = np_removing_focus_1
 	x = 0
 	y = 1
+
+	ai_will_do = {
+		base = 10
+	}
 
 	prerequisite = {
 		focus = np_removing_focus_1
@@ -45,6 +53,14 @@ shared_focus = {
 	relative_position_id = np_removing_focus_2
 	x = -1
 	y = 1
+
+	ai_will_do = {
+		base = 15
+		modifier = {
+			num_of_military_factories > num_of_civilian_factories
+			factor = 2
+		}
+	}
 
 	mutually_exclusive = { focus = np_removing_focus_2_2 }
 
@@ -77,6 +93,14 @@ shared_focus = {
 	x = 1
 	y = 1
 
+	ai_will_do = {
+		base = 15
+		modifier = {
+			num_of_military_factories < num_of_civilian_factories
+			factor = 2
+		}
+	}
+
 	mutually_exclusive = { focus = np_removing_focus_2_1 }
 
 	prerequisite = {
@@ -108,6 +132,10 @@ shared_focus = {
 	x = 0
 	y = 2
 
+	ai_will_do = {
+		base = 25
+	}
+
 	prerequisite = {
 		focus = np_removing_focus_2_1
 		focus = np_removing_focus_2_2
@@ -128,6 +156,10 @@ shared_focus = {
 	x = 0
 	y = 1
 
+	ai_will_do = {
+		base = 20
+	}
+
 	prerequisite = {
 		focus = np_removing_focus_3
 	}
@@ -146,6 +178,10 @@ shared_focus = {
 	relative_position_id = np_removing_focus_4
 	x = 0
 	y = 1
+
+	ai_will_do = {
+		base = 100
+	}
 
 	prerequisite = {
 		focus = np_removing_focus_4

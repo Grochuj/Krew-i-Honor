@@ -1001,6 +1001,29 @@ focus_tree = {
         x = -6
         y = 1
 
+        ai_will_do = {
+            base = 5
+            modifier = {
+                AND = {
+                    has_opinion = {
+                        target = NRP
+                        value > 0
+                    }
+                }
+                set_temp_variable = {
+                    t = opinion@RPL
+                }
+                divide_temp_variable = {
+                    t = 10
+                }
+                round_temp_variable = t
+                add = t
+            }
+            modifier = {
+                factor = 3
+            }
+        }
+
         mutually_exclusive = {
             focus = KAM_focus_kamraci_z_braunem
             focus = KAM_focus_indywidualizm
@@ -1025,6 +1048,23 @@ focus_tree = {
         x = 0
         y = 1
 
+        ai_will_do = {
+            base = 3
+            modifier = {
+                AND = {
+                    has_opinion = {
+                        target = RPL
+                        value < 0
+                    }
+                    has_opinion = {
+                        target = NRP
+                        value < 0
+                    }
+                }
+                factor = 20
+            }
+        }
+
         mutually_exclusive = {
             focus = KAM_focus_za_karolem
             focus = KAM_focus_kamraci_z_braunem
@@ -1048,6 +1088,29 @@ focus_tree = {
         relative_position_id = KAM_focus_sytuacja_zewnetrzna
         x = 6
         y = 1
+
+        ai_will_do = {
+            base = 5
+            modifier = {
+                AND = {
+                    has_opinion = {
+                        target = NRP
+                        value > 0
+                    }
+                }
+                set_temp_variable = {
+                    t = opinion@NRP
+                }
+                divide_temp_variable = {
+                    t = 10
+                }
+                round_temp_variable = t
+                add = t
+            }
+            modifier = {
+                factor = 3
+            }
+        }
 
         mutually_exclusive = {
             focus = KAM_focus_indywidualizm
