@@ -1,0 +1,33 @@
+wojna_niepodleglosciowa_cat = {
+	wojna_niepodleglosc = {
+		icon = generic_civil_support
+		allowed = { 
+			TAG = RZP
+		}
+		activation = {
+			has_completed_focus = RZP_powstannarodzie
+		}
+		available = {
+			RZP = {
+				any_owned_state = {
+					is_controlled_by = RPL
+				}
+			}
+		}
+ 
+		days_mission_timeout = 180
+		is_good = no
+		
+		fire_only_once = yes
+ 
+		timeout_effect = {
+			RZP = {
+				white_peace = RPL
+			}
+		}
+ 
+		complete_effect = {
+            add_stability = -0.5
+		}
+	}
+}

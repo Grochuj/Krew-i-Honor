@@ -1,0 +1,12 @@
+wojna_niepodleglosciowa_cat = {
+	allowed = {
+		tag = RZP
+	}
+	visible = {
+		RZP = {
+			has_completed_focus = RZP_powstannarodzie
+		}
+	}
+	priority = 20
+	visible_when_empty = no
+}
