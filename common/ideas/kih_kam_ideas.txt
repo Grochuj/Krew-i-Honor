@@ -20,5 +20,16 @@ ideas = {
 				planning_speed = 0.1
 			}
 		}
+		KAM_idea_uniacelna = {
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		KAM_idea_piwodlakamratow = {
+			modifier = {
+				army_org_factor = -0.05
+				army_morale_factor = 0.1
+			}
+		}
 	}
 }

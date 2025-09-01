@@ -31,4 +31,8 @@ spriteTypes = {
         name = GFX_focus_gospiw
         texturefile =  gfx/interface/goals/gospiw.dds
     }
+    spriteType = {
+        name = GFX_focus_wspolpracaarmia
+        texturefile =  gfx/interface/goals/armiawspolpraca.dds
+    }
 }

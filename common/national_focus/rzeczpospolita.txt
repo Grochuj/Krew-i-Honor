@@ -192,7 +192,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = RZP_Piwo+
+        id = RZP_Piwoplus
         icon = GFX_goal_generic_national_unity
         cost = 5
         relative_position_id = RZP_browarokocimski
@@ -225,7 +225,7 @@ focus_tree = {
         y = 1
         prerequisite = {
         focus = RZP_obnizkaakcyzy
-        focus = RZP_Piwo+
+        focus = RZP_Piwoplus
        }
         completion_reward = {
             281 = {

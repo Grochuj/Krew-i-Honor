@@ -206,6 +206,10 @@ focus_tree = {
         x = -3
         y = 1
 
+        allow_branch = {
+            tag = KAM
+        }
+
         prerequisite = {
             focus = KAM_przem6
             focus = np_removing_focus_5
@@ -222,7 +226,7 @@ focus_tree = {
         id = KAM_armia_1
         icon = GFX_focus_generic_army_doctrines_2
         cost = 5
-        x = 40
+        x = 30
         y = 0
         completion_reward = {
             add_doctrine_cost_reduction = {
@@ -231,6 +235,35 @@ focus_tree = {
                 category = land_doctrine
             }
             army_experience = 35
+        }
+    }
+    focus = {
+        id = KAM_focus_wspolne_cwiczenia
+        icon = GFX_focus_generic_army_doctrines_2
+        cost = 15
+        relative_position_id = KAM_focus_armia_r_7
+        x = 3
+        y = 1
+
+        allow_branch = {
+            KAM = {
+                has_completed_focus = KAM_przyjazn_z_piwokrata
+            }
+        }
+
+        prerequisite = {
+            focus = KAM_focus_wspolpraca_wojskowa
+        }
+        prerequisite = {
+            focus = KAM_focus_armia_r_7
+        }
+
+        completion_reward = {
+            army_experience = 35
+            add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 15000
+            }
         }
     }
 
@@ -325,7 +358,7 @@ focus_tree = {
     }
     focus = {
         id = KAM_focus_armia_r_4
-        icon = GFX_goal_generic_army_doctrines
+        icon = GFX_idea_generic_war_preparation
         cost = 10
         relative_position_id = KAM_focus_armia_r_2
         x = 2
@@ -410,7 +443,7 @@ focus_tree = {
         id = KAM_focus_delegacja
         icon = GFX_focus_generic_diplomatic_treaty
         cost = 5
-        x = 30
+        x = 40
         y = 0
         completion_reward = {
             country_event = kam_event.1
@@ -441,6 +474,103 @@ focus_tree = {
 
         completion_reward = {
 
+        }
+    }
+    focus = {
+        id = KAM_focus_wspolpraca_wojskowa
+        icon = GFX_focus_wspolpracaarmia
+        cost = 10
+        relative_position_id = KAM_przyjazn_z_piwokrata
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = KAM_przyjazn_z_piwokrata
+        }
+
+        completion_reward = {
+            army_experience = 25
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+    focus = {
+        id = KAM_focus_wspolpraca_gospodarcza
+        icon = GFX_focus_wspolpracaarmia
+        cost = 10
+        relative_position_id = KAM_przyjazn_z_piwokrata
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = KAM_przyjazn_z_piwokrata
+        }
+
+        completion_reward = {
+            add_offsite_building = {
+                type = industrial_complex
+                level = 2
+            }
+            RZP = {
+                add_offsite_building = {
+                    type = industrial_complex
+                    level = 1
+                }
+            }
+        }
+    }
+    focus = {
+        id = KAM_focus_wspolne_koleje
+        icon = GFX_focus_wspolpracaarmia
+        cost = 10
+        relative_position_id = KAM_focus_wspolpraca_gospodarcza
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = KAM_focus_wspolpraca_gospodarcza
+        }
+
+        completion_reward = {
+            build_railway = {
+                path = { 963 9205 1503 9133 4283 5796 1269 }
+                level = 3
+            }
+            build_railway = {
+                path = { 5469 1480 510 3045 2850 1218 5563 6210 1055 }
+                level = 2
+            }
+        }
+    }
+    focus = {
+        id = KAM_focus_unia_celna
+        icon = GFX_focus_wspolpracaarmia
+        cost = 10
+        relative_position_id = KAM_focus_wspolne_koleje
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = KAM_focus_wspolne_koleje
+        }
+
+        completion_reward = {
+            add_ideas = KAM_idea_uniacelna
+        }
+    }
+    focus = {
+        id = KAM_focus_piwo
+        icon = GFX_focus_wspolpracaarmia
+        cost = 10
+        relative_position_id = KAM_focus_wspolne_koleje
+        x = -3
+        y = 1
+
+        prerequisite = {
+            focus = KAM_focus_wspolne_koleje
+        }
+
+        completion_reward = {
+            add_ideas = KAM_idea_piwodlakamratow
         }
     }
 
@@ -830,6 +960,78 @@ focus_tree = {
         y = 0
         completion_reward = {
             add_political_power = 50
+        }
+    }
+    
+#POLITYCZNE PIS#
+
+    focus = {
+        id = KAM_focus_za_karolem
+        icon = GFX_focus_generic_farmland
+        cost = 10
+        relative_position_id = KAM_focus_sytuacja_zewnetrzna
+        x = -6
+        y = 1
+
+        mutually_exclusive = {
+            focus = KAM_focus_kamraci_z_braunem
+            focus = KAM_focus_indywidualizm
+        }
+
+        prerequisite = {
+            focus = KAM_focus_sytuacja_zewnetrzna
+        }
+
+        completion_reward = {
+            
+        }
+    }
+
+#POLITYCZNE INDYWIDUALNE#
+
+    focus = {
+        id = KAM_focus_indywidualizm
+        icon = GFX_focus_generic_farmland
+        cost = 10
+        relative_position_id = KAM_focus_sytuacja_zewnetrzna
+        x = 0
+        y = 1
+
+        mutually_exclusive = {
+            focus = KAM_focus_za_karolem
+            focus = KAM_focus_kamraci_z_braunem
+        }
+
+        prerequisite = {
+            focus = KAM_focus_sytuacja_zewnetrzna
+        }
+
+        completion_reward = {
+            
+        }
+    }
+
+#POLITYCZNE BRAUN#
+
+    focus = {
+        id = KAM_focus_kamraci_z_braunem
+        icon = GFX_focus_generic_farmland
+        cost = 10
+        relative_position_id = KAM_focus_sytuacja_zewnetrzna
+        x = 6
+        y = 1
+
+        mutually_exclusive = {
+            focus = KAM_focus_indywidualizm
+            focus = KAM_focus_za_karolem
+        }
+
+        prerequisite = {
+            focus = KAM_focus_sytuacja_zewnetrzna
+        }
+
+        completion_reward = {
+            
         }
     }
 }

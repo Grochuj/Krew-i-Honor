@@ -7,6 +7,8 @@ set_research_slots = 3
 
 recruit_character = RPL_jarek
 recruit_character = RPL_nawrocki
+recruit_character = RPL_mati
+recruit_character = RPL_ziobro
 
 puppet = RZP
 
@@ -29,8 +31,10 @@ set_politics = {
 }
 
 set_popularities = {
-	nacjonalizm = 89
-	kaczyzm = 11
+	nacjonalizm = 55
+	kaczyzm = 25
+	autorytaryzm = 6.25
+	socjalizm = 13.75
 }
 
 add_ideas = {
