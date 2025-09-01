@@ -1,5 +1,5 @@
 division_template = {
-	name = "Dywizja Piechoty"
+	name = "Pěší Divize"
 	regiments = { 
 		infantry = {
 			x = 0
@@ -22,13 +22,35 @@ division_template = {
 			y = 1
 		}
 	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+	}
 }
 
 units = {
 	division = {
-		name = "1. Dywizja Piechoty"
-		location = 247
-		division_template = "Dywizja Piechoty"
+		name = "1. Pěší Divize"
+		location = 8640
+		division_template = "Pěší Divize"
+		start_experience_factor = 1
+	}
+}
+units = {
+	division = {
+		name = "1. Pěší Divize"
+		location = 7951
+		division_template = "Pěší Divize"
+		start_experience_factor = 1
+	}
+}
+units = {
+	division = {
+		name = "1. Pěší Divize"
+		location = 8267
+		division_template = "Pěší Divize"
 		start_experience_factor = 1
 	}
 }

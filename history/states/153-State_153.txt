@@ -2,14 +2,17 @@ state={
 	id=153
 	name="STATE_153"
 	provinces={
-		1822 4647 5735 5982 6112 6167 6365 7823 7877 7944 
+		1329 1470 1822 3158 4601 4647 6112 6167 6365 7743 7780 7823 7877 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+        manpower=2891
+        state_category = pastoral
 
 	history = {
 		owner = LIB
 		add_core_of = LIB
+		buildings = {
+			infrastructure = 1
+		}
 	}
-}
+} 
