@@ -2,14 +2,24 @@ state={
 	id=310
 	name="STATE_310"
 	provinces={
-		1380 1495 4450 4768 5676 5964 9156 
+		194 1380 1495 2679 3254 4377 4450 4768 5188 5609 5676 5964 9156 9225 9232 9246 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
-        state_category = town
+        manpower=5723
+        state_category = pastoral
 
 	history = {
 		owner = DIP
 		add_core_of = DIP
+		buildings = {
+			infrastructure = 1
+			1380 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { 1380 3}
+	}
+	resources = {
+		rubber = 12
 	}
 }

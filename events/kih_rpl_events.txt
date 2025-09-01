@@ -1,4 +1,4 @@
-add_namespace = rpl_events
+add_namespace = rpl_event
 
 country_event = {
 	id = rpl_event.1
