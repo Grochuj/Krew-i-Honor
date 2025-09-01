@@ -2,11 +2,11 @@ state={
 	id=330
 	name="STATE_330"
 	provinces={
-		194 406 1403 2238 2679 4377 5188 5455 5609 6740 9225 9232 9305 
+		406 1403 2238 2402 4469 4942 5455 5734 6195 6388 6740 9305 9355 9366 
 	}
 	buildings_max_level_factor=1.000
-        manpower=13743
-        state_category = town
+        manpower=743
+        state_category = wasteland
 
 	history = {
 		owner = DIP
@@ -14,6 +14,9 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-
 	}
-}
+	resources = {
+		rubber = 5
+		aluminium = 4
+	}
+} 
