@@ -256,6 +256,7 @@ focus_tree = {
         }
         prerequisite = {
             focus = KAM_focus_armia_r_7
+            focus = KAM_focus_armia_l_7
         }
 
         completion_reward = {
@@ -277,6 +278,17 @@ focus_tree = {
         x = -1
         y = 1
 
+        ai_will_do = {
+            base = 3
+            modifier = {
+                AND = {
+                    has_war = yes
+                    has_manpower < 10000
+                }
+                factor = 7
+            }
+        }
+
         mutually_exclusive = {
             focus = KAM_focus_armia_r_1    
         }
@@ -293,6 +305,121 @@ focus_tree = {
             }
         }
     }
+    focus = {
+        id = KAM_focus_armia_l_2
+        icon = GFX_goal_generic_army_doctrines
+        cost = 5
+        relative_position_id = KAM_focus_armia_l_1
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = KAM_focus_armia_l_1
+        }
+
+        completion_reward = {
+            army_experience = 25
+        }
+    }
+    focus = {
+        id = KAM_focus_armia_l_3
+        icon = GFX_goal_generic_army_doctrines
+        cost = 10
+        relative_position_id = KAM_focus_armia_l_2
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = KAM_focus_armia_l_2
+        }
+
+        completion_reward = {
+            add_doctrine_cost_reduction = {
+                uses = 1
+                cost_reduction = 0.5
+                category = cat_mass_assault
+            }
+        }
+    }
+    focus = {
+        id = KAM_focus_armia_l_4
+        icon = GFX_idea_generic_war_preparation
+        cost = 10
+        relative_position_id = KAM_focus_armia_l_2
+        x = -2
+        y = 1
+
+        prerequisite = {
+            focus = KAM_focus_armia_l_2
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.75
+                uses = 2
+                category = infantry_weapons
+            }
+        }
+    }
+    focus = {
+        id = KAM_focus_armia_l_5
+        icon = GFX_goal_generic_army_doctrines
+        cost = 10
+        relative_position_id = KAM_focus_armia_l_4
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = KAM_focus_armia_l_4
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 2
+                category = support_tech
+            }
+        }
+    }
+    focus = {
+        id = KAM_focus_armia_l_6
+        icon = GFX_goal_generic_army_doctrines
+        cost = 10
+        relative_position_id = KAM_focus_armia_l_3
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = KAM_focus_armia_l_3
+        }
+
+        completion_reward = {
+            add_ideas = KAM_idea_rozszerzonypobor
+        }
+    }
+    focus = {
+        id = KAM_focus_armia_l_7
+        icon = GFX_goal_generic_army_doctrines
+        cost = 10
+        relative_position_id = KAM_focus_armia_l_6
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = KAM_focus_armia_l_6
+        }
+        prerequisite = {
+            focus = KAM_focus_armia_l_5
+        }
+
+        completion_reward = {
+            437 = {
+                add_manpower = 25000
+                create_unit = { division = "name = \"1. Specjalna Kamracka Brygada Kawalerii\" division_template = \"Kamracka Brygada Kawalerii\" start_experience_factor = 1" owner = ROOT }
+                create_unit = { division = "name = \"2. Specjalna Kamracka Brygada Kawalerii\" division_template = \"Kamracka Brygada Kawalerii\" start_experience_factor = 1" owner = ROOT }
+            }
+        }
+    }
 
 #ARMIA - GRAND BATTLEPLAN#
 
@@ -303,6 +430,14 @@ focus_tree = {
         relative_position_id = KAM_armia_1
         x = 1
         y = 1
+
+        ai_will_do = {
+            base = 5
+            modifier = {
+                has_manpower > 50000
+                factor = 2
+            }
+        }
 
         mutually_exclusive = {
             focus = KAM_focus_armia_l_1
