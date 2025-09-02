@@ -35,4 +35,16 @@ spriteTypes = {
         name = GFX_focus_wspolpracaarmia
         texturefile =  gfx/interface/goals/armiawspolpraca.dds
     }
+    spriteType = {
+        name = GFX_focus_factory_handshake
+        texturefile =  gfx/interface/goals/factory_handshake.dds
+    }
+    spriteType = {
+        name = GFX_focus_railway
+        texturefile =  gfx/interface/goals/railway.dds
+    }
+    spriteType = {
+        name = GFX_focus_train
+        texturefile =  gfx/interface/goals/train.dds
+    }
 }

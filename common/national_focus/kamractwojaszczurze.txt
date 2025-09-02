@@ -495,7 +495,7 @@ focus_tree = {
     }
     focus = {
         id = KAM_focus_wspolpraca_gospodarcza
-        icon = GFX_focus_wspolpracaarmia
+        icon = GFX_focus_factory_handshake
         cost = 10
         relative_position_id = KAM_przyjazn_z_piwokrata
         x = 1
@@ -520,7 +520,7 @@ focus_tree = {
     }
     focus = {
         id = KAM_focus_wspolne_koleje
-        icon = GFX_focus_wspolpracaarmia
+        icon = GFX_focus_train
         cost = 10
         relative_position_id = KAM_focus_wspolpraca_gospodarcza
         x = 0
