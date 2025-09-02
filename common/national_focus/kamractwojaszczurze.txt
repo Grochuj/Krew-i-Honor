@@ -1429,6 +1429,8 @@ focus_tree = {
         x = -1
         y = 1
 
+        will_lead_to_war_with = RZP
+
         ai_will_do = {
             base = 50
         }
@@ -1480,6 +1482,8 @@ focus_tree = {
         relative_position_id = KAM_focus_poszukiwanie_terytoriow
         x = 1
         y = 1
+
+        will_lead_to_war_with = NRP
 
         ai_will_do = {
             base = 50
