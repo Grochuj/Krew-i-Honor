@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType ={
+		name = "GFX_portrait_NRP_braun_leader"
+		textureFile = "gfx/leaders/NRP/braun_leader.tga"
+	}
+	spriteType ={
+		name = "GFX_portrait_NRP_braun_general"
+		textureFile = "gfx/generals/NRP/braun_general.tga"
+	}
+	spriteType ={
+		name = "GFX_portrait_NRP_braun_advisor"
+		textureFile = "gfx/advisors/NRP/braun_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_NRP_korwin_advisor"
+		textureFile = "gfx/advisors/NRP/korwin_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_NRP_korwin_general"
+		textureFile = "gfx/generals/NRP/korwin_general.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_NRP_korwin_leader"
+		textureFile = "gfx/leaders/NRP/korwin_leader.tga"
+	}
+}

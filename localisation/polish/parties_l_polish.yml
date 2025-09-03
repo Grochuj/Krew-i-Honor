@@ -113,8 +113,10 @@
  RPL_socjalizm_party_long: "Prawo i Sprawiedliwość - Socjaliści"
  RPL_socjalizm_party: "PiS(s)"
 
- NRP_monarchia_party_long: "Stronnictwo Królewskie"
- NRP_monarchia_party: "SK"
+ NRP_monarchia_party_long: "Konfederacja Korony Polskiej"
+ NRP_monarchia_party: "KKP"
+ NRP_kapitalizm_party_long: "Konfederacja Odnowy Rzeczpospolitej - Wolność i Nadzieja"
+ NRP_kapitalizm_party: "KORWiN"
 
  REZ_centryzm_party_long: "Kanał Zero"
  REZ_centryzm_party: "KZ"

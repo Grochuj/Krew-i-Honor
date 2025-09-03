@@ -1,0 +1,20 @@
+leader_traits = {
+	judeorealista = {
+		random = no
+
+		communism_drift = -0.1
+		communism_acceptance = -50
+		socjalizm_drift = -0.1
+		socjalizm_acceptance = -50
+		homo_drift = -0.1
+		homo_acceptance = -50
+		consumer_goods_factor = -0.10
+	}
+	ekspert_wolnego_rynku = {
+		random = no
+
+		resource_trade_cost_bonus_per_factory = 2
+		consumer_goods_expected_value = -0.025
+		kapitalizm_drift = 0.05
+	}
+}

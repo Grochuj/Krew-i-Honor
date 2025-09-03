@@ -4,10 +4,71 @@ characters = {
 		portraits={
 			civilian = {
 				large = GFX_portrait_NRP_braun_leader
+				small = GFX_portrait_NRP_braun_advisor
+			}
+			army = {
+				large = GFX_portrait_NRP_braun_general
 			}
 		}
 		country_leader = {
 			ideology = absolutyzm
+		}
+		corps_commander = {
+			traits = {
+				brilliant_strategist
+			}
+			skill = 5
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = political_advisor
+			traits = {
+				judeorealista
+			}
+			available = {
+				NOT = {
+					has_government = monarchia
+				}
+			}
+		}
+	}
+	NRP_korwin={
+		name = NRP_korwin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_NRP_korwin_leader
+				small = GFX_portrait_NRP_korwin_advisor
+			}
+			army = {
+				large = GFX_portrait_NRP_korwin_general
+			}
+		}
+		country_leader = {
+			ideology = kap
+		}
+		corps_commander = {
+			traits = {
+				brilliant_strategist
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+		}
+		advisor = {
+			slot = political_advisor
+			traits = {
+				ekspert_wolnego_rynku
+			}
+			available = {
+				NOT = {
+					has_government = kapitalizm
+				}
+			}
 		}
 	}
 }

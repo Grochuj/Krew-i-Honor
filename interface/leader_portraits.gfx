@@ -89,14 +89,6 @@ spriteTypes = {
 spriteTypes = {
 
 	spriteType ={
-		name = "GFX_portrait_NRP_braun_leader"
-		textureFile = "gfx/leaders/NRP/braun_leader.tga"
-	}
-}
-
-spriteTypes = {
-
-	spriteType ={
 		name = "GFX_portrait_REZ_character"
 		textureFile = "gfx/leaders/REZ/Krzysztof_Stanowski.tga"
 	}
