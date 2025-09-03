@@ -28,6 +28,11 @@ characters = {
 			traits = {
 				judeorealista
 			}
+			visible = {
+				NOT = {
+					has_government = monarchia
+				}
+			}
 			available = {
 				NOT = {
 					has_government = monarchia
@@ -64,9 +69,42 @@ characters = {
 			traits = {
 				ekspert_wolnego_rynku
 			}
+			visible = {
+				NOT = {
+					has_government = kapitalizm
+				}
+			}
 			available = {
 				NOT = {
 					has_government = kapitalizm
+				}
+			}
+		}
+	}
+	NRP_michalkiewicz={
+		name = NRP_michalkiewicz
+		portraits = {
+			civilian = {
+				large = GFX_portrait_NRP_michalkiewicz_leader
+				small = GFX_portrait_NRP_michalkiewicz_advisor
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+		}
+		advisor = {
+			slot = political_advisor
+			traits = {
+				felieton
+			}
+			visible = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			available = {
+				NOT = {
+					has_government = democratic
 				}
 			}
 		}

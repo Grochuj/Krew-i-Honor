@@ -117,6 +117,8 @@
  NRP_monarchia_party: "KKP"
  NRP_kapitalizm_party_long: "Konfederacja Odnowy Rzeczpospolitej - Wolność i Nadzieja"
  NRP_kapitalizm_party: "KORWiN"
+ NRP_democratic_party_long: "Unia Polityki Realnej"
+ NRP_democratic_party: "UPR"
 
  REZ_centryzm_party_long: "Kanał Zero"
  REZ_centryzm_party: "KZ"
