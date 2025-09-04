@@ -47,4 +47,12 @@ spriteTypes = {
         name = GFX_focus_train
         texturefile =  gfx/interface/goals/train.dds
     }
+    spriteType = {
+        name = GFX_focus_act_angels
+        texturefile =  gfx/interface/goals/act_angels.dds
+    }
+    spriteType = {
+        name = GFX_focus_crown
+        texturefile =  gfx/interface/goals/crown.dds
+    }
 }

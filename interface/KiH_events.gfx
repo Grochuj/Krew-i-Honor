@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_event_news_koronacja
+		textureFile = gfx/event_pictures/koronacja.dds
+	}
+}

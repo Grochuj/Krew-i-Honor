@@ -1,3 +1,10 @@
 ideas = {
-	
+	country = {
+		NRP_idea_aktkonfederacjigietrzwaldzkiej = {
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+			}
+		}
+	}
 }

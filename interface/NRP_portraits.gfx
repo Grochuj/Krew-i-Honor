@@ -4,6 +4,10 @@ spriteTypes = {
 		textureFile = "gfx/leaders/NRP/braun_leader.tga"
 	}
 	spriteType ={
+		name = "GFX_portrait_NRP_braun_koronowany"
+		textureFile = "gfx/leaders/NRP/braun_koronowany.tga"
+	}
+	spriteType ={
 		name = "GFX_portrait_NRP_braun_general"
 		textureFile = "gfx/generals/NRP/braun_general.tga"
 	}

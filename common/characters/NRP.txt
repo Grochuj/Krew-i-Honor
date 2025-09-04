@@ -25,6 +25,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
+			idea_token = token_braun_advisor
 			traits = {
 				judeorealista
 			}
@@ -69,6 +70,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
+			idea_token = token_korwin_advisor
 			traits = {
 				ekspert_wolnego_rynku
 			}
@@ -100,6 +102,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
+			idea_token = token_michalkiewicz_advisor
 			traits = {
 				felieton
 			}
@@ -127,6 +130,7 @@ characters = {
 		}
 		advisor = {
 			slot = theorist
+			idea_token = token_skalik_theorist
 			cost = 200
 			traits = {
 				wybitny_lotnik
@@ -145,6 +149,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
+			idea_token = token_fritz_advisor
 			cost = 125
 			traits = {
 				silent_workhorse
