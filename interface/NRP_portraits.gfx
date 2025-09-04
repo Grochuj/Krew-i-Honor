@@ -35,4 +35,8 @@ spriteTypes = {
 		name = "GFX_portrait_skalik_advisor"
 		textureFile = "gfx/advisors/NRP/skalik_advisor.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_fritz_advisor"
+		textureFile = "gfx/advisors/NRP/fritz_advisor.dds"
+	}
 }

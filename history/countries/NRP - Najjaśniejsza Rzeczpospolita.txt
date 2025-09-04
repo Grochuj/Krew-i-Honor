@@ -9,6 +9,7 @@ recruit_character = NRP_braun_leader
 recruit_character = NRP_korwin
 recruit_character = NRP_michalkiewicz
 recruit_character = NRP_teoretyk_skalik
+recruit_character = NRP_advisor_fritz
 
 set_technology = {
 	infantry_weapons = 1

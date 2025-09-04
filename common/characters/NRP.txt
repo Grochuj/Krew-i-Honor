@@ -136,4 +136,22 @@ characters = {
 			}
 		}
 	}
+	NRP_advisor_fritz = {
+		name = NRP_advisor_fritz
+		portraits = {
+			civilian = {
+				small = GFX_portrait_fritz_advisor
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			cost = 125
+			traits = {
+				silent_workhorse
+			}
+			ai_will_do = {
+				base = 2
+			}
+		}
+	}
 }
