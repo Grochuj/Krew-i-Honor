@@ -23,4 +23,11 @@ leader_traits = {
 		stability_factor = 0.1
 		political_power_factor = 0.1
 	}
+	wybitny_lotnik = {
+		random = no
+
+		experience_gain_air_factor = 0.1
+		air_doctrine_cost_factor = -0.15
+		air_agility_factor = 0.1
+	}
 }

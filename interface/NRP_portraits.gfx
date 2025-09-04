@@ -31,4 +31,8 @@ spriteTypes = {
 		name = "GFX_portrait_NRP_michalkiewicz_leader"
 		textureFile = "gfx/leaders/NRP/michalkiewicz_leader.tga"
 	}
+	spriteType = {
+		name = "GFX_portrait_skalik_advisor"
+		textureFile = "gfx/advisors/NRP/skalik_advisor.dds"
+	}
 }

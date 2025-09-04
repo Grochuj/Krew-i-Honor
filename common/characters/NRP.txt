@@ -38,6 +38,9 @@ characters = {
 					has_government = monarchia
 				}
 			}
+			ai_will_do = {
+				base = 10
+			}
 		}
 	}
 	NRP_korwin={
@@ -79,6 +82,9 @@ characters = {
 					has_government = kapitalizm
 				}
 			}
+			ai_will_do = {
+				base = 5
+			}
 		}
 	}
 	NRP_michalkiewicz={
@@ -106,6 +112,27 @@ characters = {
 				NOT = {
 					has_government = democratic
 				}
+			}
+			ai_will_do = {
+				base = 10
+			}
+		}
+	}
+	NRP_teoretyk_skalik = {
+		name = NRP_teoretyk_skalik
+		portraits = {
+			civilian = {
+				small = GFX_portrait_skalik_advisor
+			}
+		}
+		advisor = {
+			slot = theorist
+			cost = 200
+			traits = {
+				wybitny_lotnik
+			}
+			ai_will_do = {
+				base = 1
 			}
 		}
 	}
