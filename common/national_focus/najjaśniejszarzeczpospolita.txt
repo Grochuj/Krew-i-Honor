@@ -11,26 +11,11 @@ focus_tree = {
     shared_focus = np_removing_focus_1
 
     focus = {
-        id = NRP_focus_konfederacja_gietrzwaldzka
-        icon = GFX_focus_act_angels
-        cost = 5
-        x = 10
-        y = 0
-
-        completion_reward = {
-            add_ideas = NRP_idea_aktkonfederacjigietrzwaldzkiej
-        }
-
-        ai_will_do = {
-            base = 25
-        }
-    }
-    focus = {
         id = NRP_focus_przygotowania_koronacji
         icon = GFX_focus_crown
         cost = 5
         relative_position_id = NRP_focus_konfederacja_gietrzwaldzka
-        x = 0
+        x = -2
         y = 1
 
         prerequisite = {
@@ -73,6 +58,204 @@ focus_tree = {
 
         ai_will_do = {
             base = 20
+        }
+    }
+
+#############################################################################################################
+#   POLITYKA WEWNĘTRZNA I   #
+#############################################################################################################
+
+    focus = {
+        id = NRP_focus_plan_na_jutro
+        icon = GFX_focus_hol_the_foundations_of_defense
+        cost = 5
+        x = 20
+        y = 0
+
+        completion_reward = {
+            add_political_power = 25
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_konfederacja_gietrzwaldzka
+        icon = GFX_focus_act_angels
+        cost = 5
+        relative_position_id = NRP_focus_plan_na_jutro
+        x = -10
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_plan_na_jutro
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_aktkonfederacjigietrzwaldzkiej
+        }
+
+        ai_will_do = {
+            base = 35
+        }
+    }
+    focus = {
+        id = NRP_focus_definicja_malzenstwa
+        icon = GFX_focus_marriage
+        cost = 10
+        relative_position_id = NRP_focus_konfederacja_gietrzwaldzka
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_konfederacja_gietrzwaldzka 
+        }
+
+        completion_reward = {
+            every_other_country = {
+                limit = {
+                    has_government = homo
+                }
+                add_opinion_modifier = {
+                    target = root
+                    modifier = op_modifier_antypedalstwo
+                }
+                reverse_add_opinion_modifier = {
+                    target = root
+                    modifier = op_modifier_antypedalstwo
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                any_other_country = {
+                    has_government = homo
+                }
+                add = 35
+            }
+        }
+    }
+
+###############################################################
+#   Organizacja i Ustrój    #
+###############################################################
+
+    focus = {
+        id = NRP_focus_organizacja_i_ustroj
+        icon = GFX_focus_NORDIC_com_institution_2
+        cost = 5
+        relative_position_id = NRP_focus_plan_na_jutro
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_plan_na_jutro
+        }
+
+        completion_reward = {
+            add_political_power = 50
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_usprawnienie_sejmu
+        icon = GFX_focus_PER_national_museum
+        cost = 10
+        relative_position_id = NRP_focus_organizacja_i_ustroj
+        x = -6
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_organizacja_i_ustroj
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_sprawnysejm
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_zmniejszenie_poslow
+        icon = GFX_focus_POL_complete_april_constitution
+        cost = 5
+        relative_position_id = NRP_focus_usprawnienie_sejmu
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_usprawnienie_sejmu
+        }
+
+        completion_reward = {
+            add_political_power = 100
+        }
+
+        ai_will_do = {
+            base = 3
+            modifier = {
+                has_political_power < 50
+                factor = 10
+            }
+            modifier = {
+                has_political_power < 100
+                factor = 4
+            }
+        }
+    }
+    focus = {
+        id = NRP_focus_zmiany_w_senacie
+        icon = GFX_focus_PER_national_bank
+        cost = 10
+        relative_position_id = NRP_focus_usprawnienie_sejmu
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_usprawnienie_sejmu
+        }
+
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = NRP_idea_sprawnysejm
+                add_idea = NRP_idea_sprawnyparlament
+            }
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
+    focus = {
+        id = NRP_focus_nowy_parlament
+        icon = GFX_focus_PER_shiraz_university
+        cost = 10
+        relative_position_id = NRP_focus_zmiany_w_senacie
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_zmiany_w_senacie
+        }
+
+        completion_reward = {
+            add_political_power = 50
+            swap_ideas = {
+                remove_idea = NRP_idea_sprawnyparlament
+                add_idea = NRP_idea_nowyparlament
+            }
+        }
+
+        ai_will_do = {
+            base = 25
         }
     }
 }

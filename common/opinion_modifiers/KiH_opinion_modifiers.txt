@@ -1,0 +1,5 @@
+opinion_modifiers = {
+	op_modifier_antypedalstwo = {
+		value = -50
+	}
+}

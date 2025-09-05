@@ -3,4 +3,16 @@ spriteTypes = {
 		name = GFX_idea_NRP_idea_aktkonfederacjigietrzwaldzkiej
 		texturefile = gfx/interface/ideas/konfederacjagiet.dds
 	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_sprawnysejm
+		texturefile = gfx/interface/ideas/sprawnysejm.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_sprawnyparlament
+		texturefile = gfx/interface/ideas/sprawnysejm.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_nowyparlament
+		texturefile = gfx/interface/ideas/sprawnysejm.dds
+	}
 }

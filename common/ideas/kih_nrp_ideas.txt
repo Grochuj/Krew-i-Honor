@@ -7,4 +7,28 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		NRP_idea_sprawnysejm = {
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+	}
+	country = {
+		NRP_idea_sprawnyparlament = {
+			modifier = {
+				political_power_factor = 0.1
+				political_advisor_cost_factor = -0.1
+			}
+		}
+	}
+	country = {
+		NRP_idea_nowyparlament = {
+			modifier = {
+				political_power_factor = 0.1
+				political_advisor_cost_factor = -0.1
+				stability_factor = 0.05
+			}
+		}
+	}
 }

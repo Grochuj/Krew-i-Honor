@@ -55,4 +55,8 @@ spriteTypes = {
         name = GFX_focus_crown
         texturefile =  gfx/interface/goals/crown.dds
     }
+    spriteType = {
+        name = GFX_focus_marriage
+        texturefile =  gfx/interface/goals/marriage.dds
+    }
 }
