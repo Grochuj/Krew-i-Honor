@@ -31,4 +31,34 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		NRP_idea_krolprezydent = {
+			modifier = {
+				stability_factor = 0.1
+				political_power_cost = 0.5
+			}
+		}
+	}
+	country = {
+		NRP_idea_niewielkirzad = {
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_cost = 0.2
+			}
+		}
+	}
+	country = {
+		NRP_idea_radastanu = {
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+	}
+	country = {
+		NRP_idea_pcss = {
+			modifier = {
+				max_planning = 0.2
+			}
+		}
+	}
 }

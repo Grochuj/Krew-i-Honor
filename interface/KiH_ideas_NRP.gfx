@@ -15,4 +15,20 @@ spriteTypes = {
 		name = GFX_idea_NRP_idea_nowyparlament
 		texturefile = gfx/interface/ideas/sprawnysejm.dds
 	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_krolprezydent
+		texturefile = gfx/interface/ideas/krolprezydent.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_niewielkirzad
+		texturefile = gfx/interface/ideas/niewielkirzad.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_radastanu
+		texturefile = gfx/interface/ideas/radastanu.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_pcss
+		texturefile = gfx/interface/ideas/pcss.dds
+	}
 }

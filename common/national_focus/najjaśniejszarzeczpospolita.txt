@@ -69,7 +69,7 @@ focus_tree = {
         id = NRP_focus_plan_na_jutro
         icon = GFX_focus_hol_the_foundations_of_defense
         cost = 5
-        x = 20
+        x = 26
         y = 0
 
         completion_reward = {
@@ -85,7 +85,7 @@ focus_tree = {
         icon = GFX_focus_act_angels
         cost = 5
         relative_position_id = NRP_focus_plan_na_jutro
-        x = -10
+        x = -20
         y = 1
 
         prerequisite = {
@@ -168,7 +168,7 @@ focus_tree = {
         icon = GFX_focus_PER_national_museum
         cost = 10
         relative_position_id = NRP_focus_organizacja_i_ustroj
-        x = -6
+        x = -12
         y = 1
 
         prerequisite = {
@@ -256,6 +256,184 @@ focus_tree = {
 
         ai_will_do = {
             base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_model_prezydencki
+        icon = GFX_focus_LAT_merge_presidential_titles
+        cost = 10
+        relative_position_id = NRP_focus_organizacja_i_ustroj
+        x = -6
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_organizacja_i_ustroj
+        }
+
+        completion_reward = {
+            set_politics = {
+                ruling_party = monarchia
+                elections_allowed = yes
+                election_frequency = 84
+            }
+            add_ideas = NRP_idea_krolprezydent
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_wzmocnienie_wladzy
+        icon = GFX_focus_RAJ_kingmaker
+        cost = 10
+        relative_position_id = NRP_focus_model_prezydencki
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_model_prezydencki
+        }
+
+        completion_reward = {
+            add_political_power = 75
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_ograniczenie_rzadu
+        icon = GFX_focus_BEL_government_resigns
+        cost = 10
+        relative_position_id = NRP_focus_wzmocnienie_wladzy
+        x = -3
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_wzmocnienie_wladzy
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_niewielkirzad
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_rada_stanu
+        icon = GFX_focus_BUL_form_a_regency_council
+        cost = 10
+        relative_position_id = NRP_focus_wzmocnienie_wladzy
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_wzmocnienie_wladzy
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_radastanu
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_pcss
+        icon = GFX_focus_planning
+        cost = 10
+        relative_position_id = NRP_focus_wzmocnienie_wladzy
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_wzmocnienie_wladzy
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_pcss
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_wybor_sedziow
+        icon = GFX_focus_generic_court
+        cost = 5
+        relative_position_id = NRP_focus_wzmocnienie_wladzy
+        x = 3
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_wzmocnienie_wladzy
+        }
+        prerequisite = {
+            focus = NRP_focus_reforma_sadownictwa
+        }
+
+        completion_reward = {
+            add_political_power = 25
+        }
+
+        ai_will_do = {
+            base = 12
+        }
+    }
+    focus = {
+        id = NRP_focus_reforma_sadownictwa
+        icon = GFX_focus_documents
+        cost = 5
+        relative_position_id = NRP_focus_organizacja_i_ustroj
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_organizacja_i_ustroj
+        }
+
+        completion_reward = {
+            add_political_power = 25
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_likwidacja_tk
+        icon = GFX_focus_koniecsadu
+        cost = 15
+        relative_position_id = NRP_focus_reforma_sadownictwa
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_reforma_sadownictwa
+        }
+
+        available = {
+            has_political_power > 100
+        }
+
+        continue_if_invalid = yes
+
+        select_effect = {
+            add_political_power = -100
+        }
+
+        completion_reward = {
+            add_stability = -0.1
+        }
+
+        ai_will_do = {
+            base = 20
         }
     }
 }

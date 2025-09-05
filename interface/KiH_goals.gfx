@@ -59,4 +59,16 @@ spriteTypes = {
         name = GFX_focus_marriage
         texturefile =  gfx/interface/goals/marriage.dds
     }
+    spriteType = {
+        name = GFX_focus_planning
+        texturefile =  gfx/interface/goals/planning.dds
+    }
+    spriteType = {
+        name = GFX_focus_documents
+        texturefile =  gfx/interface/goals/documents.dds
+    }
+    spriteType = {
+        name = GFX_focus_koniecsadu
+        texturefile =  gfx/interface/goals/koniecsadu.dds
+    }
 }
