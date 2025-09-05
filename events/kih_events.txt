@@ -1,4 +1,5 @@
 add_namespace = mod_event
+add_namespace = news_event
 
 country_event = {
 	id = mod_event.1
@@ -22,5 +23,38 @@ country_event = {
 		}
 		name = mod_event.1.a
 		add_manpower = 1
+	}
+}
+news_event = {
+	id = news_event.1
+	title = news_event.1.t
+	desc = news_event.1.d
+	picture = GFX_event_news_koronacja
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		hidden_effect = {
+			sound_effect = NRP_sound_piesn_koronacyjna
+		}
+	}
+
+	option = {
+		ai_chance = {
+			base = 1
+		}
+		name = news_event.1.a
+
+		if = {
+			limit = {
+				tag = NRP
+			}
+			add_trait = {
+				trait = NRP_namiestnik
+				ideology = absolutyzm
+				character = NRP_braun_leader
+			}
+		}
 	}
 }

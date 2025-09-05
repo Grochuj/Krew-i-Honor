@@ -5,11 +5,18 @@ state={
 		58 839 1237 3414 3727 6328 6387 9544 9566 9572 9574 9580 
 	}
 	buildings_max_level_factor=1.000
-        manpower=1
+        manpower=50783
         state_category = town
 
 	history = {
 		owner = NRP
 		add_core_of = NRP
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		victory_points = {
+			9572 25
+		}
 	}
 }

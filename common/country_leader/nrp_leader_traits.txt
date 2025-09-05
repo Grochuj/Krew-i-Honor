@@ -1,0 +1,8 @@
+leader_traits = {
+	NRP_namiestnik = {
+		random = no
+
+		stability_factor = 0.05
+		army_core_defence_factor = 0.15
+	}
+}

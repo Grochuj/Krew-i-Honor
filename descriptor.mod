@@ -4,9 +4,11 @@ tags={
 	"Map"
 	"Utilities"
 }
-picture="blank_map_template_5632x2048.jpg"
+picture="krewihonor.jpg"
 replace_path="map/supplyareas"
 replace_path="map/strategicregions"
+replace_path="map/railways.txt"
+replace_path="map"
 replace_path="gfx/flags"
 replace_path="common/countries"
 replace_path="common/units/names_divisions"

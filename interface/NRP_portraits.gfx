@@ -1,0 +1,46 @@
+spriteTypes = {
+	spriteType ={
+		name = "GFX_portrait_NRP_braun_leader"
+		textureFile = "gfx/leaders/NRP/braun_leader.tga"
+	}
+	spriteType ={
+		name = "GFX_portrait_NRP_braun_koronowany"
+		textureFile = "gfx/leaders/NRP/braun_koronowany.tga"
+	}
+	spriteType ={
+		name = "GFX_portrait_NRP_braun_general"
+		textureFile = "gfx/generals/NRP/braun_general.tga"
+	}
+	spriteType ={
+		name = "GFX_portrait_NRP_braun_advisor"
+		textureFile = "gfx/advisors/NRP/braun_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_NRP_korwin_advisor"
+		textureFile = "gfx/advisors/NRP/korwin_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_NRP_korwin_general"
+		textureFile = "gfx/generals/NRP/korwin_general.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_NRP_korwin_leader"
+		textureFile = "gfx/leaders/NRP/korwin_leader.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_NRP_michalkiewicz_advisor"
+		textureFile = "gfx/advisors/NRP/michalkiewicz_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_NRP_michalkiewicz_leader"
+		textureFile = "gfx/leaders/NRP/michalkiewicz_leader.tga"
+	}
+	spriteType = {
+		name = "GFX_portrait_skalik_advisor"
+		textureFile = "gfx/advisors/NRP/skalik_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_fritz_advisor"
+		textureFile = "gfx/advisors/NRP/fritz_advisor.dds"
+	}
+}

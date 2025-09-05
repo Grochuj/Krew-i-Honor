@@ -1,0 +1,23 @@
+state={
+	id=357
+	name="STATE_357"
+	provinces={
+		496 1240 1279 2083 2107 3080 3712 4459 4922 5029 6114 6504 9449 9472 9500 
+	}
+	buildings_max_level_factor=1.000
+        manpower=33844
+        state_category = rural
+
+	history = {
+		owner = NRP
+		add_core_of = NRP
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			496 5
+		}
+	}
+}

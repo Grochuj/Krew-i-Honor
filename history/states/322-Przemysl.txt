@@ -1,0 +1,23 @@
+state={
+	id=322
+	name="STATE_322"
+	provinces={
+		303 410 872 1529 2521 2972 3036 3166 3348 3398 3735 4023 4932 5782 6489 9081 9086 9124 9144 9182 9230 
+	}
+	buildings_max_level_factor=1.000
+        manpower=56466
+        state_category = city
+
+	history = {
+		owner = NRP
+		add_core_of = NRP
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		victory_points = {
+			4023 20
+		}
+	}
+}

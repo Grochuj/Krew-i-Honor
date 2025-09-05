@@ -4,10 +4,159 @@ characters = {
 		portraits={
 			civilian = {
 				large = GFX_portrait_NRP_braun_leader
+				small = GFX_portrait_NRP_braun_advisor
+			}
+			army = {
+				large = GFX_portrait_NRP_braun_general
 			}
 		}
 		country_leader = {
 			ideology = absolutyzm
+		}
+		corps_commander = {
+			traits = {
+				brilliant_strategist
+			}
+			skill = 5
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = token_braun_advisor
+			traits = {
+				judeorealista
+			}
+			visible = {
+				NOT = {
+					has_government = monarchia
+				}
+			}
+			available = {
+				NOT = {
+					has_government = monarchia
+				}
+			}
+			ai_will_do = {
+				base = 10
+			}
+		}
+	}
+	NRP_korwin={
+		name = NRP_korwin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_NRP_korwin_leader
+				small = GFX_portrait_NRP_korwin_advisor
+			}
+			army = {
+				large = GFX_portrait_NRP_korwin_general
+			}
+		}
+		country_leader = {
+			ideology = kap
+		}
+		corps_commander = {
+			traits = {
+				brilliant_strategist
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = token_korwin_advisor
+			traits = {
+				ekspert_wolnego_rynku
+			}
+			visible = {
+				NOT = {
+					has_government = kapitalizm
+				}
+			}
+			available = {
+				NOT = {
+					has_government = kapitalizm
+				}
+			}
+			ai_will_do = {
+				base = 5
+			}
+		}
+	}
+	NRP_michalkiewicz={
+		name = NRP_michalkiewicz
+		portraits = {
+			civilian = {
+				large = GFX_portrait_NRP_michalkiewicz_leader
+				small = GFX_portrait_NRP_michalkiewicz_advisor
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = token_michalkiewicz_advisor
+			traits = {
+				felieton
+			}
+			visible = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			available = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			ai_will_do = {
+				base = 10
+			}
+		}
+	}
+	NRP_teoretyk_skalik = {
+		name = NRP_teoretyk_skalik
+		portraits = {
+			civilian = {
+				small = GFX_portrait_skalik_advisor
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = token_skalik_theorist
+			cost = 200
+			traits = {
+				wybitny_lotnik
+			}
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	NRP_advisor_fritz = {
+		name = NRP_advisor_fritz
+		portraits = {
+			civilian = {
+				small = GFX_portrait_fritz_advisor
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = token_fritz_advisor
+			cost = 125
+			traits = {
+				silent_workhorse
+			}
+			ai_will_do = {
+				base = 2
+			}
 		}
 	}
 }

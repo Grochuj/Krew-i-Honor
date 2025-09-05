@@ -11,4 +11,8 @@ spriteTypes = {
 		name = GFX_idea_KAM_idea_plany_wojenne
 		texturefile = gfx/interface/ideas/plan.png
 	}
+	spriteType = {
+		name = GFX_idea_KAM_idea_rozszerzonypobor
+		texturefile = gfx/interface/ideas/lotsofsoldiers.dds
+	}
 }

@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_idea_NRP_idea_aktkonfederacjigietrzwaldzkiej
+		texturefile = gfx/interface/ideas/konfederacjagiet.dds
+	}
+}

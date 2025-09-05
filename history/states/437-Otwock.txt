@@ -1,0 +1,28 @@
+state={
+	id=437
+	name="STATE_437"
+	provinces={
+		764 1028 1928 3065 4429 5116 9255 9281 9310 9312 9332 9357 
+	}
+	buildings_max_level_factor=1.000
+        manpower=43895
+        state_category = city
+
+	history = {
+		owner = KAM
+		add_core_of = KAM
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			9310 = {
+				supply_node = 1
+			}
+		}
+		victory_points = {
+			9310 35
+		}
+	}
+	resources = {
+		steel = 4
+	}
+}

@@ -50,5 +50,10 @@ ideas = {
 				airforce_intel_to_others = -20
 			}
 		}
+		KAM_idea_rozszerzonypobor = {
+			modifier = {
+				conscription = 0.01
+			}
+		}
 	}
 }

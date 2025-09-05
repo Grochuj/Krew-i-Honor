@@ -1,0 +1,25 @@
+state={
+	id=433
+	name="STATE_433"
+	provinces={
+		3543 4083 5111 5452 5705 9338 9395 9416 
+	}
+	buildings_max_level_factor=1.000
+        manpower=43594
+        state_category = town
+
+	history = {
+		owner = NRP
+		add_core_of = NRP
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			9395 10
+		}
+	}
+	resources = {
+		steel = 16
+	}
+}

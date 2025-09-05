@@ -9,4 +9,70 @@ focus_tree = {
         }
     }
     shared_focus = np_removing_focus_1
+
+    focus = {
+        id = NRP_focus_konfederacja_gietrzwaldzka
+        icon = GFX_focus_act_angels
+        cost = 5
+        x = 10
+        y = 0
+
+        completion_reward = {
+            add_ideas = NRP_idea_aktkonfederacjigietrzwaldzkiej
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_przygotowania_koronacji
+        icon = GFX_focus_crown
+        cost = 5
+        relative_position_id = NRP_focus_konfederacja_gietrzwaldzka
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_konfederacja_gietrzwaldzka    
+        }
+
+        completion_reward = {
+            add_political_power = 50
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
+    focus = {
+        id = NRP_focus_koronacja
+        icon = GFX_focus_CHL_crown_antoine_as_sovereign_king
+        cost = 10
+        relative_position_id = NRP_focus_przygotowania_koronacji
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_przygotowania_koronacji    
+        }
+
+        completion_reward = {
+            NRP_braun_leader = {
+                set_portraits = {
+                    civilian = {
+                        large = GFX_portrait_NRP_braun_koronowany
+                    }
+                }
+            }
+            news_event = news_event.1
+            hidden_effect = {
+                scoped_sound_effect = NRP_event_koronacja
+            }
+        }
+
+        ai_will_do = {
+            base = 20
+        }
+    }
 }
