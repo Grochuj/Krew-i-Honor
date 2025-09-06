@@ -62,6 +62,221 @@ focus_tree = {
     }
 
 #############################################################################################################
+#   NAUKA   #
+#############################################################################################################
+
+    focus = {
+        id = NRP_focus_decentralizacja_szkolnictwa
+        icon = GFX_focus_dispersion
+        cost = 10
+        x = 7
+        y = 0
+
+        completion_reward = {
+            add_stability = -0.05
+        }
+
+        ai_will_do = {
+            base = 10
+            modifier = {
+                date > 2026.01.01
+                factor = 5
+            }
+        }
+    }
+    focus = {
+        id = NRP_focus_polscy_inzynierowie
+        icon = GFX_focus_generic_university_3
+        cost = 10
+        relative_position_id = NRP_focus_decentralizacja_szkolnictwa
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_decentralizacja_szkolnictwa
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = "Polscy Inżynierowie"
+                bonus = 0.25
+                uses = 3
+                category = industry
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+            modifier = {
+                date > 2026.01.01
+                factor = 5
+            }
+        }
+    }
+    focus = {
+        id = NRP_focus_prywatne_szkolnictwo
+        icon = GFX_focus_sciencemoney
+        cost = 10
+        relative_position_id = NRP_focus_decentralizacja_szkolnictwa
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_decentralizacja_szkolnictwa
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_rozwinieteszkolyprywatne
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_szkolnictwo_wyzsze
+        icon = GFX_focus_generic_university_1
+        cost = 10
+        relative_position_id = NRP_focus_prywatne_szkolnictwo
+        x = 2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_prywatne_szkolnictwo
+        }
+        prerequisite = {
+            focus = NRP_focus_polscy_inzynierowie
+        }
+
+        completion_reward = {
+            add_political_power = 50
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_bon_edukacyjny
+        icon = GFX_focus_research
+        cost = 10
+        relative_position_id = NRP_focus_szkolnictwo_wyzsze
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_szkolnictwo_wyzsze
+        }
+
+        completion_reward = {
+            add_research_slot = 1
+        }
+
+        ai_will_do = {
+            base = 50
+        }
+    }
+    focus = {
+        id = NRP_focus_rzeszowska_szkoła_ekonomii
+        icon = GFX_focus_generic_university_2
+        cost = 20
+        relative_position_id = NRP_focus_szkolnictwo_wyzsze
+        x = 2
+        y = 1
+
+        available = {
+            AND = {
+                num_of_controlled_factories > 65
+                controls_state = 366
+            }
+        }
+
+        prerequisite = {
+            focus = NRP_focus_szkolnictwo_wyzsze
+        }
+
+        completion_reward = {
+            add_research_slot = 1
+            366 = {
+                set_state_category = large_city
+                add_manpower = 100000
+            }
+            add_victory_points = {
+                province = 745
+                value = 10
+            }
+        }
+
+        ai_will_do = {
+            base = 50
+        }
+    }
+    focus = {
+        id = NRP_focus_bon_oswiatowy
+        icon = GFX_focus_generic_treaty
+        cost = 10
+        relative_position_id = NRP_focus_prywatne_szkolnictwo
+        x = -2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_prywatne_szkolnictwo
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_bonoswiatowy
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_nauczanie_domowe
+        icon = GFX_focus_domowenauczanie
+        cost = 10
+        relative_position_id = NRP_focus_prywatne_szkolnictwo
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_prywatne_szkolnictwo
+        }
+
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = NRP_idea_rozwinieteszkolyprywatne
+                add_idea = NRP_idea_naukadomowa
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_wychowanie_patriotyczne
+        icon = GFX_goal_generic_propaganda
+        cost = 10
+        relative_position_id = NRP_focus_nauczanie_domowe
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_nauczanie_domowe
+        }
+
+        completion_reward = {
+            add_war_support = 0.05
+            add_stability = 0.05
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+
+#############################################################################################################
 #   POLITYKA WEWNĘTRZNA I   #
 #############################################################################################################
 

@@ -47,4 +47,16 @@ spriteTypes = {
 		name = GFX_idea_NRP_idea_promocjarodzin
 		texturefile = gfx/interface/ideas/idea_BEL_traditional_family_values.dds
 	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_rozwinieteszkolyprywatne
+		texturefile = gfx/interface/ideas/sciencefundidea.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_bonoswiatowy
+		texturefile = gfx/interface/ideas/paperidea.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_naukadomowa
+		texturefile = gfx/interface/ideas/sciencefundidea.dds
+	}
 }

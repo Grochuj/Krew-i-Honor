@@ -92,4 +92,29 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		NRP_idea_rozwinieteszkolyprywatne = {
+			modifier = {
+				research_speed_factor = 0.1
+				consumer_goods_expected_value = -0.05
+			}
+		}
+	}
+	country = {
+		NRP_idea_bonoswiatowy = {
+			modifier = {
+				research_speed_factor = 0.05
+				consumer_goods_expected_value = 0.03
+			}
+		}
+	}
+	country = {
+		NRP_idea_naukadomowa = {
+			modifier = {
+				research_speed_factor = 0.05
+				consumer_goods_expected_value = -0.05
+				stability_factor = 0.1
+			}
+		}
+	}
 }

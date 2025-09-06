@@ -75,4 +75,16 @@ spriteTypes = {
         name = GFX_focus_people
         texturefile =  gfx/interface/goals/people.dds
     }
+    spriteType = {
+        name = GFX_focus_dispersion
+        texturefile =  gfx/interface/goals/dispersion.dds
+    }
+    spriteType = {
+        name = GFX_focus_sciencemoney
+        texturefile =  gfx/interface/goals/sciencemoney.dds
+    }
+    spriteType = {
+        name = GFX_focus_domowenauczanie
+        texturefile =  gfx/interface/goals/domowenauczanie.dds
+    }
 }
