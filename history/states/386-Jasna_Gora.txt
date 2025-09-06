@@ -19,4 +19,7 @@ state={
 			9572 25
 		}
 	}
+	resources = {
+		tungsten = 2
+	}
 }

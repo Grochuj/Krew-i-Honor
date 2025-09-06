@@ -15,4 +15,7 @@ state = {
 			3939 25
 		}
 	}
+	resources = {
+		steel = 10
+	}
 }

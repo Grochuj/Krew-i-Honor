@@ -87,4 +87,16 @@ spriteTypes = {
         name = GFX_focus_domowenauczanie
         texturefile =  gfx/interface/goals/domowenauczanie.dds
     }
+    spriteType = {
+        name = GFX_focus_largebuilding
+        texturefile =  gfx/interface/goals/largebuilding.dds
+    }
+    spriteType = {
+        name = GFX_focus_mediumbuilding
+        texturefile =  gfx/interface/goals/mediumbuilding.dds
+    }
+    spriteType = {
+        name = GFX_focus_smallbuilding
+        texturefile =  gfx/interface/goals/smallbuilding.dds
+    }
 }
