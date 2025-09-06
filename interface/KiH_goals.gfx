@@ -71,4 +71,8 @@ spriteTypes = {
         name = GFX_focus_koniecsadu
         texturefile =  gfx/interface/goals/koniecsadu.dds
     }
+    spriteType = {
+        name = GFX_focus_people
+        texturefile =  gfx/interface/goals/people.dds
+    }
 }

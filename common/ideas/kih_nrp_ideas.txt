@@ -61,4 +61,35 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		NRP_idea_sadylokalne = {
+			modifier = {
+				stability_factor = 0.025
+				political_power_gain = 0.1
+			}
+		}
+	}
+	country = {
+		NRP_idea_samodzielnegminy = {
+			modifier = {
+				local_resources_factor = 0.05
+				consumer_goods_expected_value = -0.025
+				political_power_cost = 0.1
+			}
+		}
+	}
+	country = {
+		NRP_idea_nowapolitykaspoleczna = {
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+	}
+	country = {
+		NRP_idea_promocjarodzin = {
+			modifier = {
+				monthly_population = 0.15
+			}
+		}
+	}
 }

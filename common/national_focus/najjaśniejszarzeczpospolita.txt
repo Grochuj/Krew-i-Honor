@@ -85,7 +85,7 @@ focus_tree = {
         icon = GFX_focus_act_angels
         cost = 5
         relative_position_id = NRP_focus_plan_na_jutro
-        x = -20
+        x = -12
         y = 1
 
         prerequisite = {
@@ -112,6 +112,17 @@ focus_tree = {
             focus = NRP_focus_konfederacja_gietrzwaldzka 
         }
 
+        available = {
+            any_other_country = {
+                has_government = homo
+            }
+        }
+        available = {
+            NOT = {
+                has_government = homo
+            }
+        }
+
         completion_reward = {
             every_other_country = {
                 limit = {
@@ -126,16 +137,11 @@ focus_tree = {
                     modifier = op_modifier_antypedalstwo
                 }
             }
+            add_political_power = 50
         }
 
         ai_will_do = {
-            base = 0
-            modifier = {
-                any_other_country = {
-                    has_government = homo
-                }
-                add = 35
-            }
+            base = 100
         }
     }
 
@@ -168,7 +174,7 @@ focus_tree = {
         icon = GFX_focus_PER_national_museum
         cost = 10
         relative_position_id = NRP_focus_organizacja_i_ustroj
-        x = -12
+        x = -10
         y = 1
 
         prerequisite = {
@@ -263,7 +269,7 @@ focus_tree = {
         icon = GFX_focus_LAT_merge_presidential_titles
         cost = 10
         relative_position_id = NRP_focus_organizacja_i_ustroj
-        x = -6
+        x = -4
         y = 1
 
         prerequisite = {
@@ -434,6 +440,220 @@ focus_tree = {
 
         ai_will_do = {
             base = 20
+        }
+    }
+    focus = {
+        id = NRP_focus_sady_lokalne
+        icon = GFX_focus_people
+        cost = 10
+        relative_position_id = NRP_focus_likwidacja_tk
+        x = 0
+        y = 2
+
+        prerequisite = {
+            focus = NRP_focus_likwidacja_tk
+        }
+        prerequisite = {
+            focus = NRP_focus_wybor_sedziow
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_sadylokalne
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
+    focus = {
+        id = NRP_focus_skrocenie_oczekiwania
+        icon = GFX_goal_generic_intelligence_exchange
+        cost = 5
+        relative_position_id = NRP_focus_sady_lokalne
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_sady_lokalne
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
+    focus = {
+        id = NRP_focus_laczenie_struktur
+        icon = GFX_goal_generic_consumer_goods
+        cost = 10
+        relative_position_id = NRP_focus_organizacja_i_ustroj
+        x = 5
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_organizacja_i_ustroj
+        }
+
+        completion_reward = {
+            add_political_power = 50
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_elitarne_kadry
+        icon = GFX_focus_peopleup
+        cost = 10
+        relative_position_id = NRP_focus_laczenie_struktur
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_laczenie_struktur
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_konsolidacja_urzedow
+        icon = GFX_focus_NOR_approach_kretsen
+        cost = 10
+        relative_position_id = NRP_focus_laczenie_struktur
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_laczenie_struktur
+        }
+
+        completion_reward = {
+            add_offsite_building = {
+                type = industrial_complex
+                level = 3
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_ograniczenie_kontroli
+        icon = GFX_focus_LAT_suspend_constitution_of_latvia
+        cost = 10
+        relative_position_id = NRP_focus_konsolidacja_urzedow
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_konsolidacja_urzedow
+        }
+
+        completion_reward = {
+            add_offsite_building = {
+                type = industrial_complex
+                level = 2
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_likwidacja_powiatow
+        icon = GFX_focus_generic_devaluation
+        cost = 10
+        relative_position_id = NRP_focus_organizacja_i_ustroj
+        x = 2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_organizacja_i_ustroj
+        }
+
+        completion_reward = {
+            add_political_power = 50
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_samodzielne_gminy
+        icon = GFX_focus_generic_self_management
+        cost = 10
+        relative_position_id = NRP_focus_likwidacja_powiatow
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_likwidacja_powiatow
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_samodzielnegminy
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    
+###############################################################
+#   Nowa Polityka Społeczna    #
+###############################################################
+
+    focus = {
+        id = NRP_focus_nowa_polityka_spoleczna
+        icon = GFX_focus_ETH_adopt_the_lira
+        cost = 10
+        relative_position_id = NRP_focus_plan_na_jutro
+        x = 8
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_plan_na_jutro
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_nowapolitykaspoleczna
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_promocja_rodzin
+        icon = GFX_focus_generic_home_defense
+        cost = 10
+        relative_position_id = NRP_focus_nowa_polityka_spoleczna
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_nowa_polityka_spoleczna
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_promocjarodzin
+        }
+
+        ai_will_do = {
+            base = 10
         }
     }
 }

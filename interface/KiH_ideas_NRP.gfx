@@ -31,4 +31,20 @@ spriteTypes = {
 		name = GFX_idea_NRP_idea_pcss
 		texturefile = gfx/interface/ideas/pcss.dds
 	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_sadylokalne
+		texturefile = gfx/interface/ideas/sadylokalne.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_samodzielnegminy
+		texturefile = gfx/interface/ideas/tradehand.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_nowapolitykaspoleczna
+		texturefile = gfx/interface/ideas/nowapolitykaspoleczna.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_promocjarodzin
+		texturefile = gfx/interface/ideas/idea_BEL_traditional_family_values.dds
+	}
 }
