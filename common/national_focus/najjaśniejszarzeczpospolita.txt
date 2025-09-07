@@ -177,7 +177,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = NRP_focus_rzeszowska_szkoła_ekonomii
+        id = NRP_focus_rzeszowska_szkola_ekonomii
         icon = GFX_focus_generic_university_2
         cost = 20
         relative_position_id = NRP_focus_szkolnictwo_wyzsze
@@ -198,7 +198,6 @@ focus_tree = {
         completion_reward = {
             add_research_slot = 1
             366 = {
-                set_state_category = large_city
                 add_manpower = 100000
             }
             add_victory_points = {
@@ -284,8 +283,8 @@ focus_tree = {
         id = NRP_focus_rozwoj_stolicy
         icon = GFX_focus_largebuilding
         cost = 10
-        x = 44
-        y = 0
+        x = 14
+        y = 6
 
         available = {
             382 = {
@@ -1052,7 +1051,7 @@ focus_tree = {
             398 = {
                 add_resource = {
                     type = oil
-                    amount = 20
+                    amount = 36
                 }
             }
         }
@@ -1167,6 +1166,26 @@ focus_tree = {
     }
 
 #############################################################################################################
+#   GOSPODARKA   #
+#############################################################################################################
+
+    focus = {
+        id = NRP_focus_odrzucenie_ladu
+        icon = GFX_focus_crossedtreaty
+        cost = 5
+        x = 20
+        y = 0
+
+        completion_reward = {
+            add_political_power = 25
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
+
+#############################################################################################################
 #   POLITYKA WEWNĘTRZNA I   #
 #############################################################################################################
 
@@ -1174,7 +1193,7 @@ focus_tree = {
         id = NRP_focus_plan_na_jutro
         icon = GFX_focus_hol_the_foundations_of_defense
         cost = 5
-        x = 26
+        x = 46
         y = 0
 
         completion_reward = {

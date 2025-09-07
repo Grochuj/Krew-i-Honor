@@ -99,4 +99,8 @@ spriteTypes = {
         name = GFX_focus_smallbuilding
         texturefile =  gfx/interface/goals/smallbuilding.dds
     }
+    spriteType = {
+        name = GFX_focus_crossedtreaty
+        texturefile =  gfx/interface/goals/crossedtreaty.dds
+    }
 }
