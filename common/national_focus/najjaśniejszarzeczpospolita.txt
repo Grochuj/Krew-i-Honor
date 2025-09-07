@@ -1172,7 +1172,7 @@ focus_tree = {
     focus = {
         id = NRP_focus_odrzucenie_ladu
         icon = GFX_focus_crossedtreaty
-        cost = 5
+        cost = 10
         x = 20
         y = 0
 
@@ -1182,6 +1182,26 @@ focus_tree = {
 
         ai_will_do = {
             base = 15
+        }
+    }
+    focus = {
+        id = NRP_focus_priorytetyzacja_przedsiebiorstw
+        icon = GFX_focus_smallbuilding
+        cost = 5
+        relative_position_id = NRP_focus_odrzucenie_ladu
+        x = -6
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_odrzucenie_ladu
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_silnemaleprzedsiebiorstwa
+        }
+
+        ai_will_do = {
+            base = 10
         }
     }
 

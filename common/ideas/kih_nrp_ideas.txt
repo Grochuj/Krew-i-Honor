@@ -117,4 +117,12 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		NRP_idea_silnemaleprzedsiebiorstwa = {
+			modifier = {
+				industrial_capacity_factory = 0.075
+				global_building_slots_factor = -0.1
+			}
+		}
+	}
 }

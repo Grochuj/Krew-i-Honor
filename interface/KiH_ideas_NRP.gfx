@@ -59,4 +59,8 @@ spriteTypes = {
 		name = GFX_idea_NRP_idea_naukadomowa
 		texturefile = gfx/interface/ideas/sciencefundidea.dds
 	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_silnemaleprzedsiebiorstwa
+		texturefile = gfx/interface/ideas/maleprzedsiebiarstwa.dds
+	}
 }
