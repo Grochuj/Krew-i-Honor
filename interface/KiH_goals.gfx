@@ -103,4 +103,16 @@ spriteTypes = {
         name = GFX_focus_crossedtreaty
         texturefile =  gfx/interface/goals/crossedtreaty.dds
     }
+    spriteType = {
+        name = GFX_focus_upgradehospital
+        texturefile =  gfx/interface/goals/upgradehospital.dds
+    }
+    spriteType = {
+        name = GFX_focus_upgrade
+        texturefile =  gfx/interface/goals/upgrade.dds
+    }
+    spriteType = {
+        name = GFX_focus_polishconstruction
+        texturefile =  gfx/interface/goals/polishconstruction.dds
+    }
 }

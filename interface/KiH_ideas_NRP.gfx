@@ -63,4 +63,8 @@ spriteTypes = {
 		name = GFX_idea_NRP_idea_silnemaleprzedsiebiorstwa
 		texturefile = gfx/interface/ideas/maleprzedsiebiarstwa.dds
 	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_czesciowoprywatna
+		texturefile = gfx/interface/ideas/paidhospital.dds
+	}
 }

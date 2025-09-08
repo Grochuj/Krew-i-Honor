@@ -125,4 +125,12 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		NRP_idea_czesciowoprywatna = {
+			modifier = {
+				experience_loss_factor = -0.15
+				stability_factor = -0.05
+			}
+		}
+	}
 }
