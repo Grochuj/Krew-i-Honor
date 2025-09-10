@@ -1267,6 +1267,76 @@ focus_tree = {
             base = 10
         }
     }
+    focus = {
+        id = NRP_focus_maksymalizacja_efektywnosci
+        icon = GFX_focus_factoryupgrade
+        cost = 5
+        relative_position_id = NRP_focus_przedsiebiorczosc
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_przedsiebiorczosc
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_maksymalizacjaefektywnosci
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_dobrowolny_zus
+        icon = GFX_focus_moneyunchained
+        cost = 10
+        relative_position_id = NRP_focus_priorytetyzacja_przedsiebiorstw
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_priorytetyzacja_przedsiebiorstw
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_dobrowolnyzus
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_zniesienie_placy
+        icon = GFX_focus_moneyunchained
+        cost = 5
+        relative_position_id = NRP_focus_dobrowolny_zus
+        x = 2
+        y = 1
+
+        available = {
+            has_political_power = 100
+        }
+
+        cancel_if_invalid = no
+
+        select_effect = {
+            add_political_power = -100
+        }
+
+        prerequisite = {
+            focus = NRP_focus_dobrowolny_zus
+        }
+
+        completion_reward = {
+            add_stability = -0.1
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
 
 #############################################################################################################
 #   SŁUŻBA ZDROWIA   #

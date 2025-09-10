@@ -115,4 +115,12 @@ spriteTypes = {
         name = GFX_focus_polishconstruction
         texturefile =  gfx/interface/goals/polishconstruction.dds
     }
+    spriteType = {
+        name = GFX_focus_factoryupgrade
+        texturefile =  gfx/interface/goals/factoryupgrade.dds
+    }
+    spriteType = {
+        name = GFX_focus_moneyunchained
+        texturefile =  gfx/interface/goals/moneyunchained.dds
+    }
 }

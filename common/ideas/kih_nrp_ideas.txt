@@ -133,4 +133,19 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		NRP_idea_maksymalizacjaefektywnosci = {
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+	}
+	country = {
+		NRP_idea_dobrowolnyzus = {
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+	}
 }
