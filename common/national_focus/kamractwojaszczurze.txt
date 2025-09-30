@@ -1117,7 +1117,7 @@ focus_tree = {
 
     focus = {
         id = KAM_focus_sytuacja_zewnetrzna
-        icon = GFX_idea_HUN_treaty_of_triannon
+        icon = GFX_focus_hol_the_foundations_of_defense
         cost = 5
         x = 17
         y = 0

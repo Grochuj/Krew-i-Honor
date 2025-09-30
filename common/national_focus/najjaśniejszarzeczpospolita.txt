@@ -11,26 +11,11 @@ focus_tree = {
     shared_focus = np_removing_focus_1
 
     focus = {
-        id = NRP_focus_konfederacja_gietrzwaldzka
-        icon = GFX_focus_act_angels
-        cost = 5
-        x = 10
-        y = 0
-
-        completion_reward = {
-            add_ideas = NRP_idea_aktkonfederacjigietrzwaldzkiej
-        }
-
-        ai_will_do = {
-            base = 25
-        }
-    }
-    focus = {
         id = NRP_focus_przygotowania_koronacji
         icon = GFX_focus_crown
         cost = 5
         relative_position_id = NRP_focus_konfederacja_gietrzwaldzka
-        x = 0
+        x = -2
         y = 1
 
         prerequisite = {
@@ -73,6 +58,1880 @@ focus_tree = {
 
         ai_will_do = {
             base = 20
+        }
+    }
+
+#############################################################################################################
+#   NAUKA   #
+#############################################################################################################
+
+    focus = {
+        id = NRP_focus_decentralizacja_szkolnictwa
+        icon = GFX_focus_dispersion
+        cost = 10
+        x = 7
+        y = 0
+
+        completion_reward = {
+            add_stability = -0.05
+        }
+
+        ai_will_do = {
+            base = 10
+            modifier = {
+                date > 2026.01.01
+                factor = 5
+            }
+        }
+    }
+    focus = {
+        id = NRP_focus_polscy_inzynierowie
+        icon = GFX_focus_generic_university_3
+        cost = 10
+        relative_position_id = NRP_focus_decentralizacja_szkolnictwa
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_decentralizacja_szkolnictwa
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = "Polscy Inżynierowie"
+                bonus = 0.25
+                uses = 3
+                category = industry
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+            modifier = {
+                date > 2026.01.01
+                factor = 5
+            }
+        }
+    }
+    focus = {
+        id = NRP_focus_prywatne_szkolnictwo
+        icon = GFX_focus_sciencemoney
+        cost = 10
+        relative_position_id = NRP_focus_decentralizacja_szkolnictwa
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_decentralizacja_szkolnictwa
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_rozwinieteszkolyprywatne
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_szkolnictwo_wyzsze
+        icon = GFX_focus_generic_university_1
+        cost = 10
+        relative_position_id = NRP_focus_prywatne_szkolnictwo
+        x = 2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_prywatne_szkolnictwo
+        }
+        prerequisite = {
+            focus = NRP_focus_polscy_inzynierowie
+        }
+
+        completion_reward = {
+            add_political_power = 50
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_bon_edukacyjny
+        icon = GFX_focus_research
+        cost = 10
+        relative_position_id = NRP_focus_szkolnictwo_wyzsze
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_szkolnictwo_wyzsze
+        }
+
+        completion_reward = {
+            add_research_slot = 1
+        }
+
+        ai_will_do = {
+            base = 50
+        }
+    }
+    focus = {
+        id = NRP_focus_rzeszowska_szkola_ekonomii
+        icon = GFX_focus_generic_university_2
+        cost = 20
+        relative_position_id = NRP_focus_szkolnictwo_wyzsze
+        x = 2
+        y = 1
+
+        available = {
+            AND = {
+                num_of_controlled_factories > 65
+                controls_state = 366
+            }
+        }
+
+        prerequisite = {
+            focus = NRP_focus_szkolnictwo_wyzsze
+        }
+
+        completion_reward = {
+            add_research_slot = 1
+            366 = {
+                add_manpower = 100000
+            }
+            add_victory_points = {
+                province = 745
+                value = 10
+            }
+        }
+
+        ai_will_do = {
+            base = 50
+        }
+    }
+    focus = {
+        id = NRP_focus_bon_oswiatowy
+        icon = GFX_focus_generic_treaty
+        cost = 10
+        relative_position_id = NRP_focus_prywatne_szkolnictwo
+        x = -2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_prywatne_szkolnictwo
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_bonoswiatowy
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_nauczanie_domowe
+        icon = GFX_focus_domowenauczanie
+        cost = 10
+        relative_position_id = NRP_focus_prywatne_szkolnictwo
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_prywatne_szkolnictwo
+        }
+
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = NRP_idea_rozwinieteszkolyprywatne
+                add_idea = NRP_idea_naukadomowa
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_wychowanie_patriotyczne
+        icon = GFX_goal_generic_propaganda
+        cost = 10
+        relative_position_id = NRP_focus_nauczanie_domowe
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_nauczanie_domowe
+        }
+
+        completion_reward = {
+            add_war_support = 0.05
+            add_stability = 0.05
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+
+#############################################################################################################
+#   OSADNICTWO   #
+#############################################################################################################
+
+    focus = {
+        id = NRP_focus_rozwoj_stolicy
+        icon = GFX_focus_largebuilding
+        cost = 10
+        x = 14
+        y = 6
+
+        available = {
+            382 = {
+                free_building_slots = {
+                    building = industrial_complex
+                    size < 1
+                }
+            }
+        }
+
+        completion_reward = {
+            382 = {
+                set_state_category = metropolis
+                add_extra_state_shared_building_slots = 3
+                add_manpower = 25000
+            }
+        }
+
+        ai_will_do = {
+            base = 50
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_istniejacych_siedlisk
+        icon = GFX_focus_mediumbuilding
+        relative_position_id = NRP_focus_rozwoj_stolicy
+        cost = 10
+        x = -4
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_stolicy
+        }
+
+        mutually_exclusive = {
+            focus = NRP_focus_rozwoj_nowych_siedlisk
+        }
+
+        completion_reward = {
+
+        }
+
+        ai_will_do = {
+            base = 30
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_nowych_siedlisk
+        icon = GFX_focus_smallbuilding
+        relative_position_id = NRP_focus_rozwoj_stolicy
+        cost = 10
+        x = 4
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_stolicy
+        }
+
+        mutually_exclusive = {
+            focus = NRP_focus_rozwoj_istniejacych_siedlisk
+        }
+
+        completion_reward = {
+
+        }
+
+        ai_will_do = {
+            base = 30
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_czestochowy
+        icon = GFX_focus_mediumbuilding
+        relative_position_id = NRP_focus_rozwoj_istniejacych_siedlisk
+        cost = 5
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_istniejacych_siedlisk
+        }
+
+        completion_reward = {
+            373 = {
+                set_state_category = metropolis
+                add_manpower = 100000
+                add_extra_state_shared_building_slots = 2
+                add_victory_points = {
+                    province = 1645
+                    value = 5
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_jasnej_gory
+        icon = GFX_focus_mediumbuilding
+        relative_position_id = NRP_focus_rozwoj_czestochowy
+        cost = 5
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_czestochowy
+        }
+
+        completion_reward = {
+            386 = {
+                set_state_category = large_town
+                add_manpower = 50000
+                add_extra_state_shared_building_slots = 1
+                add_victory_points = {
+                    province = 9572
+                    value = 5
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_wieliczki
+        icon = GFX_focus_mediumbuilding
+        relative_position_id = NRP_focus_rozwoj_jasnej_gory
+        cost = 5
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_jasnej_gory
+        }
+
+        completion_reward = {
+            434 = {
+                add_manpower = 40000
+                add_resource = {
+                    type = tungsten
+                    amount = 24
+                }
+                add_victory_points = {
+                    province = 6396
+                    value = 5
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_pogranicza
+        icon = GFX_focus_mediumbuilding
+        relative_position_id = NRP_focus_rozwoj_istniejacych_siedlisk
+        cost = 5
+        x = 2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_istniejacych_siedlisk
+        }
+
+        completion_reward = {
+            322 = {
+                add_manpower = 60000
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = bunker
+                    level = 1
+                    province = {
+                        all_provinces = yes
+                        limit_to_border = yes
+                    }
+                }
+                add_victory_points = {
+                    province = 4023
+                    value = 5
+                }
+            }
+            441 = {
+                add_manpower = 10000
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = bunker
+                    level = 1
+                    province = {
+                        all_provinces = yes
+                        limit_to_border = yes
+                    }
+                }
+                add_victory_points = {
+                    province = 945
+                    value = 7
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_polwyspu
+        icon = GFX_focus_mediumbuilding
+        relative_position_id = NRP_focus_rozwoj_pogranicza
+        cost = 5
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_pogranicza
+        }
+
+        completion_reward = {
+            357 = {
+                set_state_category = town
+                add_extra_state_shared_building_slots = 1
+                add_manpower = 40000
+                add_victory_points = {
+                    province = 496
+                    value = 10
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_obozy
+        icon = GFX_focus_mediumbuilding
+        relative_position_id = NRP_focus_rozwoj_pogranicza
+        cost = 5
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_pogranicza
+        }
+
+        completion_reward = {
+            353 = {
+                set_state_category = city
+                add_extra_state_shared_building_slots = 1
+                add_manpower = 100000
+                add_victory_points = {
+                    province = 5949
+                    value = 10
+                }
+            }
+            331 = {
+                add_extra_state_shared_building_slots = 1
+                add_manpower = 25000
+                add_victory_points = {
+                    province = 3591
+                    value = 10
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_krosna
+        icon = GFX_focus_mediumbuilding
+        relative_position_id = NRP_focus_rozwoj_polwyspu
+        cost = 5
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_polwyspu
+        }
+        prerequisite = {
+            focus = NRP_focus_rozwoj_obozy
+        }
+
+        completion_reward = {
+            433 = {
+                set_state_category = city
+                add_extra_state_shared_building_slots = 1
+                add_manpower = 30000
+                add_victory_points = {
+                    province = 9395
+                    value = 5
+                }
+                add_resource = {
+                    type = steel
+                    amount = 16
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_pustkowia_jaszczurzego
+        icon = GFX_focus_smallbuilding
+        relative_position_id = NRP_focus_rozwoj_nowych_siedlisk
+        cost = 5
+        x = -2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_nowych_siedlisk
+        }
+
+        completion_reward = {
+            319 = {
+                set_state_category = town
+                set_state_name = "Jarosław"
+                add_extra_state_shared_building_slots = 1
+                add_manpower = 34966
+                add_victory_points = {
+                    province = 4000
+                    value = 10
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_niziny_piastowej
+        icon = GFX_focus_smallbuilding
+        relative_position_id = NRP_focus_rozwoj_pustkowia_jaszczurzego
+        cost = 5
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_pustkowia_jaszczurzego
+        }
+
+        completion_reward = {
+            446 = {
+                set_state_category = rural
+                add_extra_state_shared_building_slots = 3
+                add_manpower = 15000
+                add_victory_points = {
+                    province = 6273
+                    value = 5
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_krolewskiego_pustkowia
+        icon = GFX_focus_smallbuilding
+        relative_position_id = NRP_focus_rozwoj_pustkowia_jaszczurzego
+        cost = 5
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_pustkowia_jaszczurzego
+        }
+
+        completion_reward = {
+            356 = {
+                set_state_category = town
+                set_state_name = "Nowy Rzeszów"
+                add_extra_state_shared_building_slots = 1
+                add_manpower = 25465
+                add_victory_points = {
+                    province = 5340
+                    value = 10
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_rowniny
+        icon = GFX_focus_smallbuilding
+        relative_position_id = NRP_focus_rozwoj_niziny_piastowej
+        cost = 5
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_niziny_piastowej
+        }
+        prerequisite = {
+            focus = NRP_focus_rozwoj_krolewskiego_pustkowia
+        }
+
+        completion_reward = {
+            356 = {
+                set_state_category = town
+                add_extra_state_shared_building_slots = 1
+                add_manpower = 35000
+                add_victory_points = {
+                    province = 9414
+                    value = 15
+                }
+                add_victory_points = {
+                    province = 2071
+                    value = 3
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_rowniny
+        icon = GFX_focus_smallbuilding
+        relative_position_id = NRP_focus_rozwoj_niziny_piastowej
+        cost = 5
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_niziny_piastowej
+        }
+        prerequisite = {
+            focus = NRP_focus_rozwoj_krolewskiego_pustkowia
+        }
+
+        completion_reward = {
+            356 = {
+                set_state_category = town
+                add_extra_state_shared_building_slots = 1
+                add_manpower = 35000
+                add_victory_points = {
+                    province = 9414
+                    value = 15
+                }
+                add_victory_points = {
+                    province = 2071
+                    value = 3
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_wzgorza
+        icon = GFX_focus_smallbuilding
+        relative_position_id = NRP_focus_rozwoj_nowych_siedlisk
+        cost = 5
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_nowych_siedlisk
+        }
+
+        completion_reward = {
+            390 = {
+                set_state_category = town
+                add_extra_state_shared_building_slots = 1
+                add_manpower = 35000
+                add_victory_points = {
+                    province = 1064
+                    value = 13
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_braunowic
+        icon = GFX_focus_smallbuilding
+        relative_position_id = NRP_focus_rozwoj_wzgorza
+        cost = 5
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_wzgorza
+        }
+
+        completion_reward = {
+            407 = {
+                set_state_category = town
+                add_manpower = 15000
+                add_victory_points = {
+                    province = 1061
+                    value = 6
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_swietego_wybrzeza
+        icon = GFX_focus_smallbuilding
+        relative_position_id = NRP_focus_rozwoj_braunowic
+        cost = 5
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_braunowic
+        }
+
+        completion_reward = {
+            398 = {
+                set_state_category = rural
+                add_extra_state_shared_building_slots = 3
+                add_manpower = 10975
+                add_victory_points = {
+                    province = 88
+                    value = 7
+                }
+                add_building_construction = {
+                    type = dockyard
+                    level = 3
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_mniejszych
+        icon = GFX_focus_largebuilding
+        relative_position_id = NRP_focus_rozwoj_stolicy
+        cost = 20
+        x = 0
+        y = 5
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_wieliczki
+            focus = NRP_focus_rozwoj_rowniny
+        }
+        prerequisite = {
+            focus = NRP_focus_rozwoj_swietego_wybrzeza
+            focus = NRP_focus_rozwoj_krosna
+        }
+
+        completion_reward = {
+            every_owned_state = {
+                limit = {
+                    OR = {
+                        has_state_category = wasteland
+                        has_state_category = enclave
+                        has_state_category = tiny_island
+                        has_state_category = pastoral
+                        has_state_category = small_island
+                        has_state_category = rural
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_manpower = 25000
+            }
+            every_owned_state = {
+                limit = {
+                    OR = {
+                        has_state_category = wasteland
+                        has_state_category = enclave
+                        has_state_category = tiny_island
+                        has_state_category = pastoral
+                    }
+                }
+                increase_state_category = yes
+            }
+            if = {
+                limit = {
+                    has_completed_focus = NRP_focus_rozwoj_istniejacych_siedlisk
+                }
+                319 = {
+                    set_state_category = pastoral
+                    add_victory_points = {
+                        province = 4000
+                        value = 2
+                    }
+                }
+                446 = {
+                    set_state_category = pastoral
+                    add_victory_points = {
+                        province = 6273
+                        value = 2
+                    }
+                }
+                356 = {
+                set_state_category = pastoral
+                    add_victory_points = {
+                        province = 5340
+                        value = 5
+                    }
+                }
+                356 = {
+                    set_state_category = rural
+                    add_victory_points = {
+                        province = 9414
+                        value = 7
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    has_completed_focus = NRP_focus_rozwoj_nowych_siedlisk
+                }
+                every_owned_state = {
+                    limit = {
+                        has_state_category = pastoral
+                        has_state_category = rural
+                        has_state_category = town
+                    }
+                    add_manpower = 15000
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_wiekszych
+        icon = GFX_focus_largebuilding
+        cost = 20
+        relative_position_id = NRP_focus_rozwoj_mniejszych
+        x = -2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_mniejszych
+        }
+
+        completion_reward = {
+            every_owned_state = {
+                limit = {
+                    OR = {
+                        has_state_category = town
+                        has_state_category = large_town
+                        has_state_category = city
+                        has_state_category = large_city
+                        has_state_category = metropolis
+                        has_state_category = megalopolis
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_manpower = 50000
+            }
+            every_owned_state = {
+                limit = {
+                    OR = {
+                        has_state_category = large_town
+                        has_state_category = city
+                        has_state_category = large_city
+                    }
+                }
+                increase_state_category = yes
+            }
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
+    focus = {
+        id = NRP_focus_swiete_miasto
+        icon = GFX_focus_largebuilding
+        cost = 10
+        relative_position_id = NRP_focus_rozwoj_wiekszych
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_wiekszych
+        }
+
+        available = {
+            num_of_controlled_factories > 150
+        }
+
+        completion_reward = {
+            382 = {
+                add_manpower = 150000
+                set_state_category = megalopolis
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_zwiekszenie_wydobycia
+        icon = GFX_focus_generic_steel
+        cost = 10
+        relative_position_id = NRP_focus_rozwoj_mniejszych
+        x = 2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_mniejszych
+        }
+
+        completion_reward = {
+            every_owned_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = steel
+                        amount > 0
+                    }
+                }
+                add_resource = {
+                    type = steel
+                    amount = 8
+                }
+            }
+            mark_focus_tree_layout_dirty = yes
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_swieta_ropa
+        icon = GFX_goal_generic_oil_refinery
+        cost = 10
+        relative_position_id = NRP_focus_zwiekszenie_wydobycia
+        x = 0
+        y = 1
+
+        allow_branch = {
+            has_completed_focus = NRP_focus_rozwoj_swietego_wybrzeza
+        }
+
+        prerequisite = {
+            focus = NRP_focus_zwiekszenie_wydobycia
+        }
+
+        completion_reward = {
+            398 = {
+                add_resource = {
+                    type = oil
+                    amount = 36
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_kazimierskie_stalownie
+        icon = GFX_focus_generic_steel
+        cost = 10
+        relative_position_id = NRP_focus_zwiekszenie_wydobycia
+        x = -2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_zwiekszenie_wydobycia
+        }
+
+        completion_reward = {
+            445 = {
+                add_resource = {
+                    type = steel
+                    amount = 16
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_rudy_zelaza
+        icon = GFX_focus_generic_steel
+        cost = 10
+        relative_position_id = NRP_focus_kazimierskie_stalownie
+        x = 0
+        y = 1
+
+        available = {
+            has_completed_focus = NRP_focus_rozwoj_pogranicza
+        }
+
+        prerequisite = {
+            focus = NRP_focus_kazimierskie_stalownie
+        }
+
+        completion_reward = {
+            322 = {
+                add_resource = {
+                    type = steel
+                    amount = 20
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_wolfram
+        icon = GFX_focus_generic_tungsten
+        cost = 10
+        relative_position_id = NRP_focus_zwiekszenie_wydobycia
+        x = 2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_zwiekszenie_wydobycia
+        }
+
+        completion_reward = {
+            434 = {
+                add_resource = {
+                    type = tungsten
+                    amount = 24
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_wolframowe_gory
+        icon = GFX_focus_generic_tungsten
+        cost = 10
+        relative_position_id = NRP_focus_wolfram
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_wolfram
+        }
+
+        completion_reward = {
+            386 = {
+                add_resource = {
+                    type = tungsten
+                    amount = 16
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+
+#############################################################################################################
+#   GOSPODARKA   #
+#############################################################################################################
+
+    focus = {
+        id = NRP_focus_odrzucenie_ladu
+        icon = GFX_focus_crossedtreaty
+        cost = 10
+        x = 20
+        y = 0
+
+        completion_reward = {
+            add_political_power = 25
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
+    focus = {
+        id = NRP_focus_priorytetyzacja_przedsiebiorstw
+        icon = GFX_focus_smallbuilding
+        cost = 5
+        relative_position_id = NRP_focus_odrzucenie_ladu
+        x = -6
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_odrzucenie_ladu
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_silnemaleprzedsiebiorstwa
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_prywatyzacja
+        icon = GFX_focus_mex_privatisation
+        cost = 5
+        relative_position_id = NRP_focus_priorytetyzacja_przedsiebiorstw
+        x = 6
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_priorytetyzacja_przedsiebiorstw
+        }
+
+        completion_reward = {
+            add_stability = 0.1
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 2
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 2
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_przedsiebiorczosc
+        icon = GFX_focus_polishconstruction
+        cost = 5
+        relative_position_id = NRP_focus_priorytetyzacja_przedsiebiorstw
+        x = 4
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_priorytetyzacja_przedsiebiorstw
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 2
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 2
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 2
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+
+#############################################################################################################
+#   SŁUŻBA ZDROWIA   #
+#############################################################################################################
+
+    focus = {
+        id = NRP_focus_reforma_zdrowia
+        icon = GFX_focus_upgradehospital
+        cost = 10
+        x = 4
+        y = 4
+
+        available = {
+            has_political_power > 50
+        }
+
+        cancel_if_invalid = no
+
+        completion_reward = {
+            add_political_power = -50
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
+    focus = {
+        id = NRP_focus_trojstopniowa_specjalizacja
+        icon = GFX_focus_upgrade
+        relative_position_id = NRP_focus_reforma_zdrowia
+        cost = 5
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_reforma_zdrowia
+        }
+
+        completion_reward = {
+            add_political_power = 50
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
+    focus = {
+        id = NRP_focus_prywatyzacja_zdrowia
+        icon = GFX_focus_mex_privatisation
+        relative_position_id = NRP_focus_trojstopniowa_specjalizacja
+        cost = 15
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_trojstopniowa_specjalizacja
+        }
+
+        completion_reward = {
+            add_stability = -0.1
+            add_offsite_building = {
+                type = industrial_complex
+                level = 10
+            }
+            add_ideas = NRP_idea_czesciowoprywatna
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
+
+#############################################################################################################
+#   POLITYKA WEWNĘTRZNA I   #
+#############################################################################################################
+
+    focus = {
+        id = NRP_focus_plan_na_jutro
+        icon = GFX_focus_hol_the_foundations_of_defense
+        cost = 5
+        x = 46
+        y = 0
+
+        completion_reward = {
+            add_political_power = 25
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_konfederacja_gietrzwaldzka
+        icon = GFX_focus_act_angels
+        cost = 5
+        relative_position_id = NRP_focus_plan_na_jutro
+        x = -12
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_plan_na_jutro
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_aktkonfederacjigietrzwaldzkiej
+        }
+
+        ai_will_do = {
+            base = 35
+        }
+    }
+    focus = {
+        id = NRP_focus_definicja_malzenstwa
+        icon = GFX_focus_marriage
+        cost = 10
+        relative_position_id = NRP_focus_konfederacja_gietrzwaldzka
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_konfederacja_gietrzwaldzka 
+        }
+
+        available = {
+            any_other_country = {
+                has_government = homo
+            }
+        }
+        available = {
+            NOT = {
+                has_government = homo
+            }
+        }
+
+        completion_reward = {
+            every_other_country = {
+                limit = {
+                    has_government = homo
+                }
+                add_opinion_modifier = {
+                    target = root
+                    modifier = op_modifier_antypedalstwo
+                }
+                reverse_add_opinion_modifier = {
+                    target = root
+                    modifier = op_modifier_antypedalstwo
+                }
+            }
+            add_political_power = 50
+        }
+
+        ai_will_do = {
+            base = 100
+        }
+    }
+
+###############################################################
+#   Organizacja i Ustrój    #
+###############################################################
+
+    focus = {
+        id = NRP_focus_organizacja_i_ustroj
+        icon = GFX_focus_NORDIC_com_institution_2
+        cost = 5
+        relative_position_id = NRP_focus_plan_na_jutro
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_plan_na_jutro
+        }
+
+        completion_reward = {
+            add_political_power = 50
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_usprawnienie_sejmu
+        icon = GFX_focus_PER_national_museum
+        cost = 10
+        relative_position_id = NRP_focus_organizacja_i_ustroj
+        x = -10
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_organizacja_i_ustroj
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_sprawnysejm
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_zmniejszenie_poslow
+        icon = GFX_focus_POL_complete_april_constitution
+        cost = 5
+        relative_position_id = NRP_focus_usprawnienie_sejmu
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_usprawnienie_sejmu
+        }
+
+        completion_reward = {
+            add_political_power = 100
+        }
+
+        ai_will_do = {
+            base = 3
+            modifier = {
+                has_political_power < 50
+                factor = 10
+            }
+            modifier = {
+                has_political_power < 100
+                factor = 4
+            }
+        }
+    }
+    focus = {
+        id = NRP_focus_zmiany_w_senacie
+        icon = GFX_focus_PER_national_bank
+        cost = 10
+        relative_position_id = NRP_focus_usprawnienie_sejmu
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_usprawnienie_sejmu
+        }
+
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = NRP_idea_sprawnysejm
+                add_idea = NRP_idea_sprawnyparlament
+            }
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
+    focus = {
+        id = NRP_focus_nowy_parlament
+        icon = GFX_focus_PER_shiraz_university
+        cost = 10
+        relative_position_id = NRP_focus_zmiany_w_senacie
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_zmiany_w_senacie
+        }
+
+        completion_reward = {
+            add_political_power = 50
+            swap_ideas = {
+                remove_idea = NRP_idea_sprawnyparlament
+                add_idea = NRP_idea_nowyparlament
+            }
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_model_prezydencki
+        icon = GFX_focus_LAT_merge_presidential_titles
+        cost = 10
+        relative_position_id = NRP_focus_organizacja_i_ustroj
+        x = -4
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_organizacja_i_ustroj
+        }
+
+        completion_reward = {
+            set_politics = {
+                ruling_party = monarchia
+                elections_allowed = yes
+                election_frequency = 84
+            }
+            add_ideas = NRP_idea_krolprezydent
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_wzmocnienie_wladzy
+        icon = GFX_focus_RAJ_kingmaker
+        cost = 10
+        relative_position_id = NRP_focus_model_prezydencki
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_model_prezydencki
+        }
+
+        completion_reward = {
+            add_political_power = 75
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_ograniczenie_rzadu
+        icon = GFX_focus_BEL_government_resigns
+        cost = 10
+        relative_position_id = NRP_focus_wzmocnienie_wladzy
+        x = -3
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_wzmocnienie_wladzy
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_niewielkirzad
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_rada_stanu
+        icon = GFX_focus_BUL_form_a_regency_council
+        cost = 10
+        relative_position_id = NRP_focus_wzmocnienie_wladzy
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_wzmocnienie_wladzy
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_radastanu
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_pcss
+        icon = GFX_focus_planning
+        cost = 10
+        relative_position_id = NRP_focus_wzmocnienie_wladzy
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_wzmocnienie_wladzy
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_pcss
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_wybor_sedziow
+        icon = GFX_focus_generic_court
+        cost = 5
+        relative_position_id = NRP_focus_wzmocnienie_wladzy
+        x = 3
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_wzmocnienie_wladzy
+        }
+        prerequisite = {
+            focus = NRP_focus_reforma_sadownictwa
+        }
+
+        completion_reward = {
+            add_political_power = 25
+        }
+
+        ai_will_do = {
+            base = 12
+        }
+    }
+    focus = {
+        id = NRP_focus_reforma_sadownictwa
+        icon = GFX_focus_documents
+        cost = 5
+        relative_position_id = NRP_focus_organizacja_i_ustroj
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_organizacja_i_ustroj
+        }
+
+        completion_reward = {
+            add_political_power = 25
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_likwidacja_tk
+        icon = GFX_focus_koniecsadu
+        cost = 15
+        relative_position_id = NRP_focus_reforma_sadownictwa
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_reforma_sadownictwa
+        }
+
+        available = {
+            has_political_power > 100
+        }
+
+        continue_if_invalid = yes
+
+        select_effect = {
+            add_political_power = -100
+        }
+
+        completion_reward = {
+            add_stability = -0.1
+        }
+
+        ai_will_do = {
+            base = 20
+        }
+    }
+    focus = {
+        id = NRP_focus_sady_lokalne
+        icon = GFX_focus_people
+        cost = 10
+        relative_position_id = NRP_focus_likwidacja_tk
+        x = 0
+        y = 2
+
+        prerequisite = {
+            focus = NRP_focus_likwidacja_tk
+        }
+        prerequisite = {
+            focus = NRP_focus_wybor_sedziow
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_sadylokalne
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
+    focus = {
+        id = NRP_focus_skrocenie_oczekiwania
+        icon = GFX_goal_generic_intelligence_exchange
+        cost = 5
+        relative_position_id = NRP_focus_sady_lokalne
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_sady_lokalne
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
+    focus = {
+        id = NRP_focus_laczenie_struktur
+        icon = GFX_goal_generic_consumer_goods
+        cost = 10
+        relative_position_id = NRP_focus_organizacja_i_ustroj
+        x = 5
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_organizacja_i_ustroj
+        }
+
+        completion_reward = {
+            add_political_power = 50
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_elitarne_kadry
+        icon = GFX_focus_peopleup
+        cost = 10
+        relative_position_id = NRP_focus_laczenie_struktur
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_laczenie_struktur
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_konsolidacja_urzedow
+        icon = GFX_focus_NOR_approach_kretsen
+        cost = 10
+        relative_position_id = NRP_focus_laczenie_struktur
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_laczenie_struktur
+        }
+
+        completion_reward = {
+            add_offsite_building = {
+                type = industrial_complex
+                level = 3
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_ograniczenie_kontroli
+        icon = GFX_focus_LAT_suspend_constitution_of_latvia
+        cost = 10
+        relative_position_id = NRP_focus_konsolidacja_urzedow
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_konsolidacja_urzedow
+        }
+
+        completion_reward = {
+            add_offsite_building = {
+                type = industrial_complex
+                level = 2
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_likwidacja_powiatow
+        icon = GFX_focus_generic_devaluation
+        cost = 10
+        relative_position_id = NRP_focus_organizacja_i_ustroj
+        x = 2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_organizacja_i_ustroj
+        }
+
+        completion_reward = {
+            add_political_power = 50
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_samodzielne_gminy
+        icon = GFX_focus_generic_self_management
+        cost = 10
+        relative_position_id = NRP_focus_likwidacja_powiatow
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_likwidacja_powiatow
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_samodzielnegminy
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    
+###############################################################
+#   Nowa Polityka Społeczna    #
+###############################################################
+
+    focus = {
+        id = NRP_focus_nowa_polityka_spoleczna
+        icon = GFX_focus_ETH_adopt_the_lira
+        cost = 10
+        relative_position_id = NRP_focus_plan_na_jutro
+        x = 8
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_plan_na_jutro
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_nowapolitykaspoleczna
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_promocja_rodzin
+        icon = GFX_focus_generic_home_defense
+        cost = 10
+        relative_position_id = NRP_focus_nowa_polityka_spoleczna
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_nowa_polityka_spoleczna
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_promocjarodzin
+        }
+
+        ai_will_do = {
+            base = 10
         }
     }
 }

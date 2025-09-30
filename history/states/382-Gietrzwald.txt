@@ -20,4 +20,8 @@ state={
 			5777 55
 		}
 	}
+	resources = {
+		steel = 3
+		tungsten = 2
+	}
 }

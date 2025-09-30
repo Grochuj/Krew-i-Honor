@@ -3,4 +3,68 @@ spriteTypes = {
 		name = GFX_idea_NRP_idea_aktkonfederacjigietrzwaldzkiej
 		texturefile = gfx/interface/ideas/konfederacjagiet.dds
 	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_sprawnysejm
+		texturefile = gfx/interface/ideas/sprawnysejm.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_sprawnyparlament
+		texturefile = gfx/interface/ideas/sprawnysejm.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_nowyparlament
+		texturefile = gfx/interface/ideas/sprawnysejm.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_krolprezydent
+		texturefile = gfx/interface/ideas/krolprezydent.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_niewielkirzad
+		texturefile = gfx/interface/ideas/niewielkirzad.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_radastanu
+		texturefile = gfx/interface/ideas/radastanu.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_pcss
+		texturefile = gfx/interface/ideas/pcss.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_sadylokalne
+		texturefile = gfx/interface/ideas/sadylokalne.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_samodzielnegminy
+		texturefile = gfx/interface/ideas/tradehand.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_nowapolitykaspoleczna
+		texturefile = gfx/interface/ideas/nowapolitykaspoleczna.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_promocjarodzin
+		texturefile = gfx/interface/ideas/idea_BEL_traditional_family_values.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_rozwinieteszkolyprywatne
+		texturefile = gfx/interface/ideas/sciencefundidea.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_bonoswiatowy
+		texturefile = gfx/interface/ideas/paperidea.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_naukadomowa
+		texturefile = gfx/interface/ideas/sciencefundidea.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_silnemaleprzedsiebiorstwa
+		texturefile = gfx/interface/ideas/maleprzedsiebiarstwa.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_czesciowoprywatna
+		texturefile = gfx/interface/ideas/paidhospital.dds
+	}
 }

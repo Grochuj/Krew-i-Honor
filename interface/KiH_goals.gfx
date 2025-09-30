@@ -55,4 +55,64 @@ spriteTypes = {
         name = GFX_focus_crown
         texturefile =  gfx/interface/goals/crown.dds
     }
+    spriteType = {
+        name = GFX_focus_marriage
+        texturefile =  gfx/interface/goals/marriage.dds
+    }
+    spriteType = {
+        name = GFX_focus_planning
+        texturefile =  gfx/interface/goals/planning.dds
+    }
+    spriteType = {
+        name = GFX_focus_documents
+        texturefile =  gfx/interface/goals/documents.dds
+    }
+    spriteType = {
+        name = GFX_focus_koniecsadu
+        texturefile =  gfx/interface/goals/koniecsadu.dds
+    }
+    spriteType = {
+        name = GFX_focus_people
+        texturefile =  gfx/interface/goals/people.dds
+    }
+    spriteType = {
+        name = GFX_focus_dispersion
+        texturefile =  gfx/interface/goals/dispersion.dds
+    }
+    spriteType = {
+        name = GFX_focus_sciencemoney
+        texturefile =  gfx/interface/goals/sciencemoney.dds
+    }
+    spriteType = {
+        name = GFX_focus_domowenauczanie
+        texturefile =  gfx/interface/goals/domowenauczanie.dds
+    }
+    spriteType = {
+        name = GFX_focus_largebuilding
+        texturefile =  gfx/interface/goals/largebuilding.dds
+    }
+    spriteType = {
+        name = GFX_focus_mediumbuilding
+        texturefile =  gfx/interface/goals/mediumbuilding.dds
+    }
+    spriteType = {
+        name = GFX_focus_smallbuilding
+        texturefile =  gfx/interface/goals/smallbuilding.dds
+    }
+    spriteType = {
+        name = GFX_focus_crossedtreaty
+        texturefile =  gfx/interface/goals/crossedtreaty.dds
+    }
+    spriteType = {
+        name = GFX_focus_upgradehospital
+        texturefile =  gfx/interface/goals/upgradehospital.dds
+    }
+    spriteType = {
+        name = GFX_focus_upgrade
+        texturefile =  gfx/interface/goals/upgrade.dds
+    }
+    spriteType = {
+        name = GFX_focus_polishconstruction
+        texturefile =  gfx/interface/goals/polishconstruction.dds
+    }
 }
