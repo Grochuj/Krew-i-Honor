@@ -67,4 +67,12 @@ spriteTypes = {
 		name = GFX_idea_NRP_idea_czesciowoprywatna
 		texturefile = gfx/interface/ideas/paidhospital.dds
 	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_maksymalizacjaefektywnosci
+		texturefile = gfx/interface/ideas/cogupgrade.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_dobrowolnyzus
+		texturefile = gfx/interface/ideas/unchainedmoneybox.dds
+	}
 }
