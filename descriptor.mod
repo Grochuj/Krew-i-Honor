@@ -4,7 +4,6 @@ tags={
 	"Map"
 	"Utilities"
 }
-picture="krewihonor.jpg"
 replace_path="map/supplyareas"
 replace_path="map/strategicregions"
 replace_path="map/railways.txt"
@@ -29,3 +28,4 @@ replace_path="localisation"
 supported_version="1.16.9"
 path="C:/Users/szymo/Documents/Paradox Interactive/Hearts of Iron IV/mod/Krew i Honor"
 remote_file_id="3466066625"
+picture="krewihonor.jpg"
