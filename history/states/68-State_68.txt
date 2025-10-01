@@ -16,6 +16,17 @@ state={
 			infrastructure = 5
 			arms_factory = 3
 			dockyard = 1
+			air_base = 4
+			5132 = {
+				naval_base = 3
+			}
+			1339 = {
+				supply_node = 1
+			}
 		}
+	}
+	resources = {
+		steel = 73
+		tungsten = 15
 	}
 }
