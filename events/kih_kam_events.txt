@@ -66,3 +66,66 @@ country_event = {
 		name = kam_event.3.a
 	}
 }
+country_event = {
+	id = kam_event.4
+	title = kam_event.4.t
+	desc = kam_event.4.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		ai_chance = {
+			base = 30
+		}
+		name = kam_event.4.a
+		KAM = {
+			transfer_state = 439
+			transfer_state = 438
+			add_stability = -0.1
+		}
+	}
+	option = {
+		ai_chance = {
+			base = 20
+		}
+		name = kam_event.4.b
+		KAM = {
+			diplomatic_relation = {
+    		country = RZP
+   		 	relation = puppet
+   		 	active = yes
+			}
+			add_stability = -0.05
+		}
+	}
+	option = {
+		ai_chance = {
+			base = 50
+		}
+		name = kam_event.4.c
+		KAM = {
+			add_war_support = 0.1
+		}
+	}
+}
+country_event = {
+	id = kam_event.5
+	title = kam_event.5.t
+	desc = kam_event.5.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		ai_chance = {
+			base = 25
+		}
+		name = kam_event.3.a
+		KAM = {
+			add_war_support = 0.05
+		}
+	}
+}
