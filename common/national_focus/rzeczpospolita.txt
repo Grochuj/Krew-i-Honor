@@ -263,7 +263,7 @@ focus_tree = {
         id = RZP_sarmatanatronie
         cost = 5
         icon = GFX_focus_POL_nationalist_education
-        x = 19
+        x = 26
         y = 0
         
         completion_reward = {
@@ -291,7 +291,7 @@ focus_tree = {
         icon = GFX_focus_POL_belarus_army
         cost = 1
         relative_position_id = RZP_zwrotkuprzyszlosci
-        x = -4
+        x = -11
         y = 1
         available = {
             always = no
@@ -547,20 +547,96 @@ focus = {
     }
 }
 #drzewko po rewolcie prawe
+
 focus = {
-    id = RZP_wezmyconasze
-    icon = GFX_focus_LIT_claim_livonia
-    cost = 5
+    id = RZP_wzmocnijmyrepublike
+    icon = GFX_focus_SOV_restore_cossack_units
     relative_position_id = RZP_powstannarodzie
     prerequisite = {
         focus = RZP_powstannarodzie
     }
     available = {
             is_free_or_subject_of_root = yes
+            has_war = no
         }
-    x = 1
+    cost = 5
+    x = 3
     y = 1
-    completion_reward = { }
+    completion_reward = {
+        add_ideas = RZP_idea_iredenta
+     }
+}
+focus = {
+    id = RZP_wezmyconasze
+    icon = GFX_focus_LIT_claim_livonia
+    relative_position_id = RZP_wzmocnijmyrepublike
+    prerequisite = {
+        focus = RZP_wzmocnijmyrepublike
+
+    }
+    available = {
+            RZP = {
+                num_of_factories > 29
+            }
+        }
+    cost = 5
+    x = 0
+    y = 1
+    completion_reward = { 
+        add_state_claim = 353
+        add_state_claim = 331
+        add_state_claim = 441
+        add_state_claim = 439
+        add_state_claim = 438
+        add_state_claim = 280
+        add_state_claim = 261
+        add_state_claim = 267
+        add_state_claim = 229
+    }
+}
+focus = {
+    id = RZP_kondemnacjakłamstwa
+    icon = GFX_focus_ITA_corpo_volontari_della_liberta
+    relative_position_id = RZP_wezmyconasze
+    prerequisite = {
+        focus = RZP_wezmyconasze
+    }
+    cost = 10
+    x = 3
+    y = 1
+    completion_reward = { 
+
+    }
+}
+focus = {
+    id = RZP_wawelwsarmackichrekach
+    icon = GFX_focus_spa_save_the_alcazar
+    relative_position_id = RZP_wezmyconasze
+    prerequisite = {
+        focus = RZP_wezmyconasze
+    }
+    cost = 10
+    x = 0
+    y = 1
+    completion_reward = { 
+        KAM = {
+                state_event = kam_event.4
+            }
+    }
+}
+focus = {
+    id = RZP_ziemiepolodniowe
+    icon = GFX_focus_SWE_hygienic_housing
+    relative_position_id = RZP_wezmyconasze
+    prerequisite = {
+        focus = RZP_wezmyconasze
+    }
+    cost = 10
+    x = -3
+    y = 1
+    completion_reward = { 
+
+    }
 }
 #podchujaszczyzm====================================================================================================================
     focus = {
