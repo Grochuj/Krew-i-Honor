@@ -1337,6 +1337,27 @@ focus_tree = {
             base = 10
         }
     }
+    focus = {
+        id = NRP_focus_obnizenie_opodatkowania
+        icon = GFX_focus_RAJ_institutional_money_laundering
+        cost = 5
+        relative_position_id = NRP_focus_dobrowolny_zus
+        x = -2
+        y = 1
+        
+        prerequisite = {
+            focus = NRP_focus_dobrowolny_zus
+        }
+
+        completion_reward = {
+            add_stability = 0.1
+            add_ideas = NRP_idea_niskiepodatki
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
 
 #############################################################################################################
 #   SŁUŻBA ZDROWIA   #
