@@ -16,6 +16,13 @@ state={
 			dockyard = 1
 			industrial_complex = 1
 			infrastructure = 3
+			air_base = 2
+			6171 = {
+				naval_base = 4
+			}
+			666 = {
+				supply_node = 1
+			}
 		}
 	}
 }

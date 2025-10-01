@@ -13,7 +13,10 @@ state={
 		add_core_of = PAJ
 		buildings = {
 			infrastructure = 2
+			3994 = {
+				naval_base = 1
+			}
 		}
-		victory_points = { 3994 3}
+		victory_points = { 3994 1}
 	}
 }

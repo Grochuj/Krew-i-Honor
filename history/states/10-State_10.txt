@@ -2,7 +2,7 @@ state={
 	id=10
 	name="STATE_10"
 	provinces={
-		316 2667 3405 6400 6831 
+		316 451 578 1122 2667 3405 6400 6831 
 	}
 	buildings_max_level_factor=1.000
         manpower=31832
@@ -15,6 +15,12 @@ state={
 		buildings = {
 			infrastructure = 2
 			dockyard = 1
+			3505 = {
+				naval_base = 3
+			}
 		}
+	}
+	resources = {
+		oil = 23
 	}
 }

@@ -18,6 +18,16 @@ state={
 			arms_factory = 1
 			industrial_complex = 1
 			dockyard = 2
+			3088 = {
+				naval_base = 2
+			}
+			4510 = {
+				supply_node = 1
+			}
 		}
+	}
+	resources = {
+		steel = 8
+		aluminium = 14
 	}
 }

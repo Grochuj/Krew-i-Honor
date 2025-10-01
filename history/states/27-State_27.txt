@@ -2,7 +2,7 @@ state={
 	id=27
 	name="STATE_27"
 	provinces={
-		179 190 341 1324 2914 3313 4323 6794 6871 6885 
+		179 190 341 1324 2914 3313 4323 6794 6885 
 	}
 	buildings_max_level_factor=1.000
         manpower=784395
@@ -15,6 +15,17 @@ state={
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 3
+			air_base = 3
+			179 = {
+				supply_node = 1
+			}
+			6885 = {
+				naval_base = 4
+			}
 		}
+	}
+	resources = {
+		steel = 22
+		tungsten = 4
 	}
 }

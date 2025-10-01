@@ -16,6 +16,13 @@ state={
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 4
+			6316 = {
+				supply_node = 1
+			}
 		}
+	}
+	resources = {
+		chromium = 32
+		steel = 5
 	}
 }

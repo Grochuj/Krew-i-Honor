@@ -1,56 +1,33 @@
 ideas = {
 	country = {
-		PAJ_Narodowy_socjalizm = {
-			modifier = {
-				political_power_factor = 0.12
-				consumer_goods_factor = -0.10
-				narodowysocjalizm_drift = 0.1
+		PAJ_osaczonywilk ={
+
+			picture = FIN_lone_wolf
+
+			available = {
+				is_subject = no
+				is_in_faction = no
+				NOT = { has_government = democratic }
+				NOT = { has_government = communism }
 			}
-		}
-		PAJ_Narodowy_socjalizm1 = {
-			modifier = {
-				political_power_factor = 0.12
-				consumer_goods_factor = -0.10
-				narodowysocjalizm_drift = 0.1
-				justify_war_goal_time = -0.35
+			
+			on_add = {
+				set_rule = {
+					can_create_factions = no
+					can_join_factions = no
+					can_send_volunteers = yes
+				}
 			}
-		}
-		PAJ_Narodowy_socjalizm2 = {
 			modifier = {
-				consumer_goods_factor = -0.20
-				political_power_factor = 0.12
-				narodowysocjalizm_drift = 0.1
-				justify_war_goal_time = -0.35
-				production_speed_arms_factory_factor = 0.10
-			}
-		}
-		PAJ_Narodowy_socjalizm3 = {
-			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_factor = 0.12
-				narodowysocjalizm_drift = 0.1
-				justify_war_goal_time = -0.40
-				global_building_slots_factor = 0.15
-				production_speed_industrial_complex_factor = 0.10
-			}
-		}
-		PAJ_dazenie_do_autarkii = {
-			modifier = {
-				state_resources_factor = 0.15
-				min_export = -0.1
+				conscription_factor = 0.1
+				trade_laws_cost_factor = 0.2
+				trade_opinion_factor = -0.1
 			}
 		}
 		PAJ_slady_odyna = {
 			modifier = {
 				supply_consumption_factor = -0.15
 				winter_attrition = -0.2
-			}
-		}
-		PAJ_Poganska_wiara = {
-			modifier = {
-				required_garrison_factor = 0.25
-				army_fuel_consumption_factor = 0.2
-				weekly_manpower = 300
 			}
 		}
 	}

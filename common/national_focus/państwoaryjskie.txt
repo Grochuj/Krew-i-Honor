@@ -12,8 +12,9 @@ focus_tree = {
 
     focus = {
         id = PAJ_Zrobic_jeden_krok_do_przodu
+        icon = GFX_focus_POL_support_global_falangism
         cost = 5
-        x = 10
+        x = 20
         y = 0
         completion_reward = {
             add_political_power = 50
@@ -21,9 +22,9 @@ focus_tree = {
     }
     focus = {
         id = PAJ_Niech_powroci_stare_prawo
-        icon = GFX_focus_generic_army_doctrines_2
+        icon = GFX_focus_ger_reichskommisariats
         relative_position_id = PAJ_Zrobic_jeden_krok_do_przodu
-        x = -3
+        x = -10
         y = 1
         available = {
             always = no
@@ -37,98 +38,30 @@ focus_tree = {
         }
         cost = 5
         completion_reward = {
-            add_ideas = PAJ_Narodowy_socjalizm
+            add_political_power = 50
+            add_war_support = 0.05
         }
     }
-        focus = {
-        id = PAJ_rozkwit_ideii
-        icon = GFX_focus_generic_army_doctrines_2
-        relative_position_id = PAJ_Niech_powroci_stare_prawo
-        x = 0
-        y = 1
-        available = {
-            always = no}
+    focus = {
+        id = PAJ_Narodowysocjalizm
+        icon = GFX_portrait_PRL_senyszyn
+        cost = 5
         prerequisite = {
             focus = PAJ_Niech_powroci_stare_prawo
         }
-        cost = 5
-        completion_reward = {
-            swap_ideas = {
-                remove_idea = PAJ_Narodowy_socjalizm
-                add_idea = PAJ_Narodowy_socjalizm1
-            }
-        }
-    }
-    focus = {
-        id = PAJ_przyklad_niemiecki
-        icon = GFX_focus_generic_army_doctrines_2
-        relative_position_id = PAJ_rozkwit_ideii
-        x = -1
-        y = 1
-        available = {
-            always = no}
-        prerequisite = {
-            focus = PAJ_rozkwit_ideii
-        }
-        mutually_exclusive = {
-            focus = PAJ_wlasny_nurt
-        }
-        cost = 5
-        completion_reward = {
-            swap_ideas = {
-                remove_idea = PAJ_Narodowy_socjalizm1
-                add_idea = PAJ_Narodowy_socjalizm2
-            }
-        }
-    }
-    focus = {
-        id = PAJ_dazenie_do_autarki
-        icon = GFX_focus_generic_army_doctrines_2
-        relative_position_id = PAJ_przyklad_niemiecki
-        x = 0
-        y = 1
-        prerequisite = {
-            focus = PAJ_przyklad_niemiecki
-        }
-        cost = 5
-        completion_reward = {
-            add_ideas =  PAJ_dazenie_do_autarkii
-        }
-    }
-    focus = {
-        id = PAJ_przygotowaniadoekspansii
-        icon = GFX_focus_generic_army_doctrines_2
-        relative_position_id = PAJ_dazenie_do_autarki
-        x = -1
-        y = 1
-        prerequisite = {
-            focus = PAJ_dazenie_do_autarki
-        }
-        cost = 5
-        completion_reward = {
-            add_political_power = 50
-        }
-    }
-    focus = {
-        id = PAJ_wlasny_nurt
-        icon = GFX_focus_generic_army_doctrines_2
-        relative_position_id = PAJ_rozkwit_ideii
+        relative_position_id = PAJ_Niech_powroci_stare_prawo
         x = 1
         y = 1
-        prerequisite = {
-            focus = PAJ_rozkwit_ideii
-        }
-        mutually_exclusive = {
-            focus = PAJ_przyklad_niemiecki
-        }
-        cost = 5
         completion_reward = {
-            swap_ideas = {
-                remove_idea = PAJ_Narodowy_socjalizm1
-                add_idea = PAJ_Narodowy_socjalizm3
+            add_dynamic_modifier = {
+                modifier = PAJ_ns
             }
+            add_to_variable = {
+                milspid = 0.1
+            } 
         }
     }
+    #dddddddddddddd
     focus = {
         id = PAJ_Zew_polnocy
         icon = GFX_focus_generic_army_doctrines_2
@@ -162,7 +95,7 @@ focus_tree = {
         }
         cost = 5
         completion_reward = {
-            add_ideas = PAJ_Poganska_wiara
+            
         }
     }
 }

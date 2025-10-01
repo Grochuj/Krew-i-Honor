@@ -16,7 +16,13 @@ state={
 			infrastructure = 4
 			dockyard = 2
 			arms_factory = 2
+			2462 = {
+				naval_base = 4
+			}
 		}
 	}
+	resources = {
+		oil = 31
+		aluminium = 2
+	}
 }
-=

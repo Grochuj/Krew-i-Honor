@@ -14,8 +14,16 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
+			7207 = {
+				naval_base = 5
+				supply_node = 1
+			}
 		}
-		victory_points = { 4471 5}
-		victory_points = { 7207 5}
+		victory_points = { 4471 3}
+		victory_points = { 7207 8}
+	}
+	resources = {
+		aluminium = 13
+		oil = 4	
 	}
 }
