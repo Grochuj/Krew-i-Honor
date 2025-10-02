@@ -263,7 +263,7 @@ focus_tree = {
         id = RZP_sarmatanatronie
         cost = 5
         icon = GFX_focus_POL_nationalist_education
-        x = 26
+        x = 30
         y = 0
         
         completion_reward = {
@@ -579,7 +579,7 @@ focus = {
                 num_of_factories > 29
             }
         }
-    cost = 5
+    cost = 10
     x = 0
     y = 1
     completion_reward = { 
@@ -603,17 +603,43 @@ focus = {
     }
     cost = 10
     x = 3
-    y = 1
+    y = 2
     completion_reward = { 
-
+        NRP = {
+            state_event = nrp_event.1
+        }
     }
 }
 focus = {
-    id = RZP_wawelwsarmackichrekach
+    id = RZP_krakowskaambicja
     icon = GFX_focus_spa_save_the_alcazar
     relative_position_id = RZP_wezmyconasze
     prerequisite = {
         focus = RZP_wezmyconasze
+    }
+    cost = 5
+    x = 0
+    y = 1
+    completion_reward = { 
+        440 = {
+                add_building_construction = {
+                    type = supply_node
+                    level = 1
+                    province = 1269
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                }
+            }
+    }
+}
+focus = {
+    id = RZP_wawelwsarmackichrekach
+    icon = GFX_focus_generic_urban_training
+    relative_position_id = RZP_krakowskaambicja
+    prerequisite = {
+        focus = RZP_krakowskaambicja
     }
     cost = 10
     x = 0
@@ -625,17 +651,71 @@ focus = {
     }
 }
 focus = {
-    id = RZP_ziemiepolodniowe
-    icon = GFX_focus_SWE_hygienic_housing
+    id = RZP_relacjezkonfa
+    icon = GFX_goal_generic_improve_relations
     relative_position_id = RZP_wezmyconasze
     prerequisite = {
         focus = RZP_wezmyconasze
     }
-    cost = 10
+    cost = 5
     x = -3
     y = 1
     completion_reward = { 
+        KON = {
+             add_opinion_modifier = {
+                target = SWE modifier = huge_increase
+                } 
+            }
+            add_political_power = 50
+    }
+}
+focus = {
+    id = RZP_ziemiepolodniowe
+    icon = GFX_focus_SWE_hygienic_housing
+    relative_position_id = RZP_relacjezkonfa
+    prerequisite = {
+        focus = RZP_relacjezkonfa
+    }
+    cost = 10
+    x = 0
+    y = 1
+    completion_reward = { 
 
+    }
+}
+
+focus = {
+    id = RZP_senopotedze
+    icon = GFX_focus_SWI_establish_pro_helvetia
+    relative_position_id = RZP_wawelwsarmackichrekach
+    prerequisite = {
+        focus = RZP_wawelwsarmackichrekach
+        focus = RZP_ziemiepolodniowe
+        focus = RZP_kondemnacjakłamstwa
+    }
+    cost = 10
+    x = 0
+    y = 1
+    completion_reward = { 
+       add_political_power = 100
+       add_popularity = {
+        ideology = nacjonalizm
+        popularity = 0.1
+       }
+    }
+}
+focus = {
+    id = RZP_naszarepublika
+    icon = GFX_focus_SWI_dissolve_the_federal_council
+    relative_position_id = RZP_senopotedze
+    prerequisite = {
+        focus = RZP_senopotedze
+    }
+    cost = 15
+    x = 0
+    y = 1
+    completion_reward = { 
+       add_ideas = RZP_wielkarzp
     }
 }
 #podchujaszczyzm====================================================================================================================

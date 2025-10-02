@@ -1,0 +1,32 @@
+add_namespace = nrp_event
+
+country_event = {
+	id = nrp_event.1
+	title = nrp_event.1.t
+	desc = nrp_event.1.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		ai_chance = {
+			base = 30
+		}
+		name = nrp_event.1.a
+		NRP = {
+			transfer_state = 441
+			transfer_state = 331
+			transfer_state = 353
+		}
+	}
+	option = {
+		ai_chance = {
+			base = 10
+		}
+		name = nrp_event.1.b
+		NRP = {
+			add_stability =  = 0.1
+		}
+	}
+}

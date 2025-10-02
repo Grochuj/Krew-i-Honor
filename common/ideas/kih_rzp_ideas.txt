@@ -30,6 +30,14 @@ ideas = {
 				planning_speed = 0.15
 			}
 		}
+		RZP_wielkarzp = {
+			modifier = {
+				non_core_manpower = 0.1
+				required_garrison_factor = -0.1
+				stability_factor = 0.10
+			}
+		}
+		
 	}
 	
 }
