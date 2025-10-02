@@ -49,22 +49,62 @@ focus_tree = {
         }
     }
     focus = {
-        id = RZP_dotacjenarzecznauki
-        cost = 7
-        icon = GFX_focus_generic_university_3
+        id = RZP_dywersyfikacja1
+        icon = GFX_focus_generic_modernize_industry
         relative_position_id = RZP_gospodarkapiwna
+        prerequisite = {
+            focus = RZP_gospodarkapiwna
+        }
+        cost = 10
         x = 0
         y = 1
-        prerequisite = {
-        focus =  RZP_gospodarkapiwna 
+        completion_reward = { 
+            swap_ideas = {
+			remove_idea = RZP_idea_znacjonalizowanebrowary
+			add_idea = RZP_idea_znacjonalizowanebrowary1
+		}
         }
-        completion_reward = {
-            add_research_slot = 1
-            add_tech_bonus = {
-                bonus = 1
-                uses = 1
-                category = electronics
-            }
+    }
+    focus = {
+        id = RZP_dywersyfikacja2
+        icon = GFX_focus_CHL_enlarge_the_textile_industries
+        relative_position_id = RZP_dywersyfikacja1
+        prerequisite = {
+            focus = RZP_dywersyfikacja1
+        }
+        prerequisite = {
+            focus = RZP_browarokocimski
+            focus = RZP_browarzywiecki
+        }
+        cost = 10
+        x = 0
+        y = 1
+        completion_reward = { 
+            swap_ideas = {
+			remove_idea = RZP_idea_znacjonalizowanebrowary1
+			add_idea = RZP_idea_znacjonalizowanebrowary2
+		}
+        }
+    }
+    focus = {
+        id = RZP_dywersyfikacja3
+        icon = GFX_focus_GER_wirtschaftswunder
+        relative_position_id = RZP_dywersyfikacja2
+        prerequisite = {
+            focus = RZP_dywersyfikacja2
+        }
+        prerequisite = {
+            focus = RZP_Piwoplus
+            focus = RZP_obnizkaakcyzy
+        }
+        cost = 10
+        x = 1
+        y = 1
+        completion_reward = { 
+            swap_ideas = {
+			remove_idea = RZP_idea_znacjonalizowanebrowary2
+			add_idea = RZP_idea_znacjonalizowanebrowary3
+		}
         }
     }
     focus = {
@@ -72,7 +112,7 @@ focus_tree = {
         cost = 7
         icon = GFX_focus_generic_university_3
         relative_position_id = RZP_gospodarkapiwna
-        x = 0
+        x = 4
         y = 1
         prerequisite = {
         focus =  RZP_gospodarkapiwna 
@@ -103,6 +143,11 @@ focus_tree = {
         }
         completion_reward = {
             add_research_slot = 1
+             add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = electronics
+            }
         }
     }
     focus = {
@@ -111,7 +156,7 @@ focus_tree = {
         icon = GFX_focus_generic_university_2
         relative_position_id = RZP_dotacjenarzecznauki
         x = 0
-        y = 2
+        y = 1
         prerequisite = {
         focus =  RZP_dotacjenarzecznauki 
         }
@@ -128,7 +173,7 @@ focus_tree = {
         icon = GFX_goal_generic_construct_civ_factory
         relative_position_id = RZP_gospodarkapiwna
         x = -2
-        y = 2
+        y = 1
         prerequisite = {
         focus =  RZP_gospodarkapiwna 
         }
@@ -136,7 +181,7 @@ focus_tree = {
             290 = {
                 add_building_construction = {
                 type = industrial_complex
-                level = 2
+                level = 1
             }
             add_extra_state_shared_building_slots = 2
             }
@@ -176,7 +221,7 @@ focus_tree = {
         icon = GFX_goal_generic_construct_civ_factory
         relative_position_id = RZP_gospodarkapiwna
         x = 2
-        y = 2
+        y = 1
         prerequisite = {
         focus = RZP_gospodarkapiwna
        }
@@ -184,7 +229,7 @@ focus_tree = {
             250 = {
                 add_building_construction = {
                 type = industrial_complex
-                level = 2
+                level = 1
             }
             add_extra_state_shared_building_slots = 2
             }
@@ -221,7 +266,7 @@ focus_tree = {
         cost = 7
         icon = GFX_goal_generic_construct_mil_factory
         relative_position_id = RZP_obnizkaakcyzy
-        x = 2
+        x = 1
         y = 1
         prerequisite = {
         focus = RZP_obnizkaakcyzy
@@ -263,7 +308,7 @@ focus_tree = {
         id = RZP_sarmatanatronie
         cost = 5
         icon = GFX_focus_POL_nationalist_education
-        x = 30
+        x = 27
         y = 0
         
         completion_reward = {
@@ -425,10 +470,9 @@ focus_tree = {
             }
         }
     }
-    #drzewko po rewolcie lewe
     focus = {
-        id = RZP_reformywolnychrepublikan
-        icon = GFX_focus_generic_the_giant_wakes
+        id = RZP_konsolidacjapobuncie
+        icon = GFX_focus_generic_industrialists
         cost = 9
         relative_position_id = RZP_powstannarodzie
         prerequisite = {
@@ -439,6 +483,25 @@ focus_tree = {
         }
         available = {
             has_war = no
+        }
+        x = 0
+        y = 1
+        completion_reward = {
+            add_ideas = RZP_smakwolnosci
+        }
+        
+    }
+    #drzewko po rewolcie lewe
+    focus = {
+        id = RZP_reformywolnychrepublikan
+        icon = GFX_focus_generic_the_giant_wakes
+        cost = 9
+        relative_position_id = RZP_konsolidacjapobuncie
+        prerequisite = {
+            focus = RZP_konsolidacjapobuncie
+        }
+        available = {
+            is_free_or_subject_of_root = yes
         }
         x = -3
         y = 1
@@ -551,13 +614,12 @@ focus = {
 focus = {
     id = RZP_wzmocnijmyrepublike
     icon = GFX_focus_SOV_restore_cossack_units
-    relative_position_id = RZP_powstannarodzie
+    relative_position_id = RZP_konsolidacjapobuncie
     prerequisite = {
-        focus = RZP_powstannarodzie
+        focus = RZP_konsolidacjapobuncie
     }
     available = {
             is_free_or_subject_of_root = yes
-            has_war = no
         }
     cost = 5
     x = 3
@@ -595,12 +657,13 @@ focus = {
     }
 }
 focus = {
-    id = RZP_kondemnacjakłamstwa
+    id = RZP_kondemnacjaklamstwa
     icon = GFX_focus_ITA_corpo_volontari_della_liberta
     relative_position_id = RZP_wezmyconasze
     prerequisite = {
         focus = RZP_wezmyconasze
     }
+    will_lead_to_war_with = NRP
     cost = 10
     x = 3
     y = 2
@@ -641,6 +704,7 @@ focus = {
     prerequisite = {
         focus = RZP_krakowskaambicja
     }
+    will_lead_to_war_with = KAM
     cost = 10
     x = 0
     y = 1
@@ -676,6 +740,7 @@ focus = {
     prerequisite = {
         focus = RZP_relacjezkonfa
     }
+    will_lead_to_war_with = KON
     cost = 10
     x = 0
     y = 1
@@ -691,7 +756,7 @@ focus = {
     prerequisite = {
         focus = RZP_wawelwsarmackichrekach
         focus = RZP_ziemiepolodniowe
-        focus = RZP_kondemnacjakłamstwa
+        focus = RZP_kondemnacjaklamstwa
     }
     cost = 10
     x = 0
@@ -738,17 +803,5 @@ focus = {
         completion_reward = { 
             
         }
-    }
-    
-    focus = {
-        id = RZP_dyktatkukiza
-        icon = GFX_portrait_PRL_senyszyn
-        cost = 1
-        x = 45
-        y = 1
-        prerequisite = {
-            focus = RZP_wesprzyjmypis
-        }
-        completion_reward = { }
     }
 }

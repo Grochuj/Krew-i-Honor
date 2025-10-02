@@ -1,13 +1,52 @@
 ideas = {
 	country = {
+		#browar
 		RZP_idea_znacjonalizowanebrowary = {
+			modifier = {
+				consumer_goods_factor = 0.2
+				stability_factor = 0.1
+				army_org_factor = -0.05
+				economy_cost_factor = 1
+				industrial_capacity_factory = 0.1
+				line_change_production_efficiency_factor = -0.3
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		RZP_idea_znacjonalizowanebrowary1 = {
+			modifier = {
+				consumer_goods_factor = 0.15
+				stability_factor = 0.1
+				army_org_factor = -0.05
+				economy_cost_factor = 0.75
+				industrial_capacity_factory = 0.05
+				line_change_production_efficiency_factor = -0.2
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		RZP_idea_znacjonalizowanebrowary2 = {
+			modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = 0.1
+				army_org_factor = -0.05
+				economy_cost_factor = 0.5
+				industrial_capacity_factory = 0.05
+				line_change_production_efficiency_factor = -0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		RZP_idea_znacjonalizowanebrowary3 = {
 			modifier = {
 				consumer_goods_factor = 0.05
 				stability_factor = 0.1
-				army_org_factor = -0.03
-				ground_attack_factor = 0.05
+				army_org_factor = -0.05
+				economy_cost_factor = 0.2
+				industrial_capacity_factory = 0.05
+				line_change_production_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = 0.15
 			}
 		}
+
+		#======================================
 		RZP_idea_wiernysojusznik = {
 			modifier = {
 				consumer_goods_factor = 0.15
@@ -37,7 +76,11 @@ ideas = {
 				stability_factor = 0.10
 			}
 		}
-		
+		RZP_smakwolnosci = {
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
 	}
 	
 }

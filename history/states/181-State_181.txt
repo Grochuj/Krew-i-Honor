@@ -6,10 +6,16 @@ state={
 	}
 	buildings_max_level_factor=1.000
         manpower=1
-        state_category = town
+        state_category = pastoral
 
 	history = {
 		owner = KON
 		add_core_of = KON
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	resources = {
+		rubber = 13
 	}
 }

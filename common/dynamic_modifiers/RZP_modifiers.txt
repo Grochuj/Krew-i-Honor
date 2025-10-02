@@ -25,7 +25,7 @@ RZP_pdr = {
 	production_speed_arms_factory_factor = pdraff
 }
 RZP_wr = {
-	icon = GFX_idea_
+	icon = GFX_modifier_RZP_wr
 	enable = {
 		always = yes
 	}
