@@ -148,4 +148,12 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		NRP_idea_niskiepodatki = {
+			modifier = {
+				consumer_goods_expected_value = 0.075
+				industrial_capacity_factory = 0.025
+			}
+		}
+	}
 }
