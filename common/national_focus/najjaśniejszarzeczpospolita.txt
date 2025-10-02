@@ -1358,6 +1358,74 @@ focus_tree = {
             base = 10
         }
     }
+    focus = {
+        id = NRP_focus_likwidacja_cit
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_dobrowolny_zus
+        x = 0
+        y = 2
+        
+        prerequisite = {
+            focus = NRP_focus_obnizenie_opodatkowania
+        }
+        prerequisite = {
+            focus = NRP_focus_zniesienie_placy
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+            
+            add_popularity = {
+                ideology = root
+                popularity = 0.05
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_ujednolicenie_vat
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_likwidacja_cit
+        x = -1
+        y = 1
+        
+        prerequisite = {
+            focus = NRP_focus_likwidacja_cit
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_likwidacja_pomniejszych
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_likwidacja_cit
+        x = 1
+        y = 1
+        
+        prerequisite = {
+            focus = NRP_focus_likwidacja_cit
+        }
+
+        completion_reward = {
+            add_stability = 0.03
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
 
 #############################################################################################################
 #   SŁUŻBA ZDROWIA   #
