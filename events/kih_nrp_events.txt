@@ -26,7 +26,7 @@ country_event = {
 		}
 		name = nrp_event.1.b
 		NRP = {
-			add_stability =  = 0.1
+			add_stability = 0.1
 		}
 	}
 }
