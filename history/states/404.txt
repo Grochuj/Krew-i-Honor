@@ -1,0 +1,37 @@
+
+state={
+	id=404
+	name="STATE_404"
+	manpower = 76485
+	
+	state_category = metropolis
+	resources={
+		aluminium=1
+		chromium=0
+		oil=1
+		rubber=0
+		steel=2
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 7449 23}
+		victory_points = { 7474 7}
+		
+		owner = EGU
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 2
+			industrial_complex = 2
+			
+			
+		}
+		add_core_of = EGU
+	}
+
+	provinces={
+		7442 7443 7444 7445 7446 7447 7448 7449 7450 7451 7452 7453 7454 7455 7456 7457 7458 7459 7460 7461 7462 7463 7464 7465 7466 7467 7468 7469 7470 7471 7472 7473 7474 
+	}
+	local_supplies=0.0 
+}

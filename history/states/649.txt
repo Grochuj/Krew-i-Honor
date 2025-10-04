@@ -1,0 +1,39 @@
+
+state={
+	id=649
+	name="STATE_649"
+	manpower = 16107
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 11521 3}
+		
+		owner = FIU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			11520 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = FIU
+	}
+
+	provinces={
+		11513 11514 11515 11516 11517 11518 11519 11520 11521 11522 
+	}
+	local_supplies=0.0 
+}

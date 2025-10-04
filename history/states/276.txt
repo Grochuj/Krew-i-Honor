@@ -1,0 +1,38 @@
+
+state={
+	id=276
+	name="STATE_276"
+	manpower = 70874
+	
+	state_category = large_city
+	resources={
+		aluminium=1
+		chromium=4
+		oil=1
+		rubber=0
+		steel=3
+		tungsten=3
+	}
+
+	history={
+		victory_points = { 4954 11}
+		victory_points = { 4962 11}
+		victory_points = { 4971 3}
+		
+		owner = DUS
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 2
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = DUS
+	}
+
+	provinces={
+		4949 4950 4951 4952 4953 4954 4955 4956 4957 4958 4959 4960 4961 4962 4963 4964 4965 4966 4967 4968 4969 4970 4971 4972 4973 4974 4975 4976 4977 4978 4979 4980 4981 4982 4983 4984 
+	}
+	local_supplies=0.0 
+}

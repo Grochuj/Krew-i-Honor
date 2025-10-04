@@ -1,0 +1,41 @@
+
+state={
+	id=409
+	name="STATE_409"
+	manpower = 91718
+	
+	state_category = large_city
+	resources={
+		aluminium=3
+		chromium=1
+		oil=4
+		rubber=16
+		steel=8
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 7516 12}
+		victory_points = { 7527 5}
+		victory_points = { 7551 12}
+		
+		owner = TEI
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 2
+			dockyard = 1
+			7528 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = TEI
+	}
+
+	provinces={
+		7504 7505 7506 7507 7508 7509 7510 7511 7512 7513 7514 7515 7516 7517 7518 7519 7520 7521 7522 7523 7524 7525 7526 7527 7528 7529 7530 7531 7532 7533 7534 7535 7536 7537 7538 7539 7540 7541 7542 7543 7544 7545 7546 7547 7548 7549 7550 7551 7552 7553 7554 7555 7556 7557 7558 7559 7560 7561 7562 
+	}
+	local_supplies=0.0 
+}

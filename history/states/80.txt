@@ -1,0 +1,39 @@
+
+state={
+	id=80
+	name="STATE_80"
+	manpower = 40935
+	
+	state_category = town
+	resources={
+		aluminium=4
+		chromium=0
+		oil=3
+		rubber=0
+		steel=5
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 1525 12}
+		
+		owner = MOZ
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			1510 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = MOZ
+	}
+
+	provinces={
+		1501 1502 1503 1504 1505 1506 1507 1508 1509 1510 1511 1512 1513 1514 1515 1516 1517 1518 1519 1520 1521 1522 1523 1524 1525 1526 1527 1528 1529 1530 1531 
+	}
+	local_supplies=0.0 
+}

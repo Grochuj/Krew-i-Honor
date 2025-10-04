@@ -1,0 +1,41 @@
+
+state={
+	id=104
+	name="STATE_104"
+	manpower = 23793
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=1
+		oil=1
+		rubber=0
+		steel=3
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 1975 2}
+		victory_points = { 1976 2}
+		victory_points = { 1983 2}
+		
+		owner = MOZ
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 1
+			1980 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = MOZ
+	}
+
+	provinces={
+		1975 1976 1977 1978 1979 1980 1981 1982 1983 1984 1985 
+	}
+	local_supplies=0.0 
+}

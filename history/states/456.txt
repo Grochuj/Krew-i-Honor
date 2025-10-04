@@ -1,0 +1,40 @@
+
+state={
+	id=456
+	name="STATE_456"
+	manpower = 45082
+	
+	state_category = city
+	resources={
+		aluminium=0
+		chromium=1
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 8423 9}
+		victory_points = { 8426 9}
+		
+		owner = RAD
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 1
+			
+			8427 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = RAD
+	}
+
+	provinces={
+		8414 8415 8416 8417 8418 8419 8420 8421 8422 8423 8424 8425 8426 8427 8428 8429 8430 8431 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,37 @@
+
+state={
+	id=445
+	name="STATE_445"
+	manpower = 6660
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 8202 1}
+		victory_points = { 8203 1}
+		
+		owner = RAD
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = RAD
+	}
+
+	provinces={
+		8202 8203 
+	}
+	local_supplies=0.0 
+}

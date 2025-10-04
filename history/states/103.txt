@@ -1,0 +1,36 @@
+
+state={
+	id=103
+	name="STATE_103"
+	manpower = 40649
+	
+	state_category = large_town
+	resources={
+		aluminium=1
+		chromium=0
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 1966 14}
+		
+		owner = AME
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = AME
+	}
+
+	provinces={
+		1958 1959 1960 1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 1971 1972 1973 1974 
+	}
+	local_supplies=0.0 
+}

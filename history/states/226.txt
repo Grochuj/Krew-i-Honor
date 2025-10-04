@@ -1,0 +1,41 @@
+
+state={
+	id=226
+	name="STATE_226"
+	manpower = 44251
+	
+	state_category = city
+	resources={
+		aluminium=0
+		chromium=0
+		oil=2
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 3945 3}
+		victory_points = { 3949 5}
+		victory_points = { 3954 8}
+		
+		owner = VIS
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			dockyard = 1
+			3949 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = VIS
+	}
+
+	provinces={
+		3940 3941 3942 3943 3944 3945 3946 3947 3948 3949 3950 3951 3952 3953 3954 3955 3956 3957 
+	}
+	local_supplies=0.0 
+}

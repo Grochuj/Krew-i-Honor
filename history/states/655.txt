@@ -1,0 +1,39 @@
+
+state={
+	id=655
+	name="STATE_655"
+	manpower = 39890
+	
+	state_category = large_town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 11565 13}
+		
+		owner = CEL
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			11568 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = CEL
+	}
+
+	provinces={
+		11555 11556 11557 11558 11559 11560 11561 11562 11563 11564 11565 11566 11567 11568 11569 11570 11571 11572 
+	}
+	local_supplies=0.0 
+}

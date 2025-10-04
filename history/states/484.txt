@@ -1,0 +1,36 @@
+
+state={
+	id=484
+	name="STATE_484"
+	manpower = 44196
+	
+	state_category = large_city
+	resources={
+		aluminium=1
+		chromium=0
+		oil=1
+		rubber=1
+		steel=1
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 8874 19}
+		
+		owner = PHA
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 3
+			
+			
+		}
+		add_core_of = PHA
+	}
+
+	provinces={
+		8874 8875 8876 8877 8878 8879 8880 8881 8882 8883 8884 8885 8886 8887 8888 8889 8890 
+	}
+	local_supplies=0.0 
+}

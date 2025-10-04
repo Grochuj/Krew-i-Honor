@@ -1,0 +1,39 @@
+
+state={
+	id=138
+	name="STATE_138"
+	manpower = 37147
+	
+	state_category = large_town
+	resources={
+		aluminium=1
+		chromium=1
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 2551 12}
+		
+		owner = KHU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			2562 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = KHU
+	}
+
+	provinces={
+		2551 2552 2553 2554 2555 2556 2557 2558 2559 2560 2561 2562 2563 2564 2565 2566 
+	}
+	local_supplies=0.0 
+}

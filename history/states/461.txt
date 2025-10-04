@@ -1,0 +1,41 @@
+
+state={
+	id=461
+	name="STATE_461"
+	manpower = 32184
+	
+	state_category = large_town
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 8505 1}
+		victory_points = { 8506 9}
+		victory_points = { 8514 1}
+		
+		owner = FRU
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 2
+			
+			8516 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = FRU
+	}
+
+	provinces={
+		8505 8506 8507 8508 8509 8510 8511 8512 8513 8514 8515 8516 8517 
+	}
+	local_supplies=0.0 
+}

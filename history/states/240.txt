@@ -1,0 +1,37 @@
+
+state={
+	id=240
+	name="STATE_240"
+	manpower = 23554
+	
+	state_category = rural
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 4148 6}
+		victory_points = { 4157 1}
+		
+		owner = MOZ
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = MOZ
+	}
+
+	provinces={
+		4148 4149 4150 4151 4152 4153 4154 4155 4156 4157 4158 4159 4160 
+	}
+	local_supplies=0.0 
+}

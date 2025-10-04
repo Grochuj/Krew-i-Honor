@@ -1,0 +1,40 @@
+
+state={
+	id=5
+	name="STATE_5"
+	manpower = 94310
+	
+	state_category = large_city
+	resources={
+		aluminium=4
+		chromium=4
+		oil=3
+		rubber=0
+		steel=8
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 76 13}
+		victory_points = { 90 17}
+		
+		owner = MAO
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 2
+			dockyard = 1
+			60 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = MAO
+	}
+
+	provinces={
+		51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 
+	}
+	local_supplies=0.0 
+}

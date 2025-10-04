@@ -1,0 +1,38 @@
+
+state={
+	id=556
+	name="STATE_556"
+	manpower = 13770
+	
+	state_category = pastoral
+	resources={
+		aluminium=0
+		chromium=0
+		oil=1
+		rubber=10
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		
+		owner = TEI
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			10017 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = TEI
+	}
+
+	provinces={
+		10013 10014 10015 10016 10017 10018 10019 10020 10021 10022 10023 10024 10025 
+	}
+	local_supplies=0.0 
+}

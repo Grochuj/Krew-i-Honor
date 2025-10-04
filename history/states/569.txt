@@ -1,0 +1,38 @@
+
+state={
+	id=569
+	name="STATE_569"
+	manpower = 33526
+	
+	state_category = large_town
+	resources={
+		aluminium=2
+		chromium=1
+		oil=1
+		rubber=3
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 10142 10}
+		victory_points = { 10150 1}
+		victory_points = { 10151 1}
+		
+		owner = PHA
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = PHA
+	}
+
+	provinces={
+		10139 10140 10141 10142 10143 10144 10145 10146 10147 10148 10149 10150 10151 10152 10153 10154 10155 
+	}
+	local_supplies=0.0 
+}

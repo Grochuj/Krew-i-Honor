@@ -1,0 +1,37 @@
+
+state={
+	id=482
+	name="STATE_482"
+	manpower = 27989
+	
+	state_category = large_town
+	resources={
+		aluminium=1
+		chromium=0
+		oil=3
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 8853 5}
+		victory_points = { 8855 6}
+		
+		owner = CNU
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = CNU
+	}
+
+	provinces={
+		8852 8853 8854 8855 8856 8857 8858 8859 8860 8861 8862 
+	}
+	local_supplies=0.0 
+}

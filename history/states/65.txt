@@ -1,0 +1,36 @@
+
+state={
+	id=65
+	name="STATE_65"
+	manpower = 20259
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=1
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 1189 7}
+		
+		owner = VIS
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = VIS
+	}
+
+	provinces={
+		1182 1183 1184 1185 1186 1187 1188 1189 
+	}
+	local_supplies=0.0 
+}

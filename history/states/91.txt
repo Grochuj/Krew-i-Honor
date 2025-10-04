@@ -1,0 +1,38 @@
+
+state={
+	id=91
+	name="STATE_91"
+	manpower = 43602
+	
+	state_category = city
+	resources={
+		aluminium=0
+		chromium=0
+		oil=2
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 1774 7}
+		victory_points = { 1777 2}
+		victory_points = { 1780 7}
+		
+		owner = AME
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = AME
+	}
+
+	provinces={
+		1774 1775 1776 1777 1778 1779 1780 1781 1782 1783 1784 1785 1786 1787 1788 1789 1790 
+	}
+	local_supplies=0.0 
+}

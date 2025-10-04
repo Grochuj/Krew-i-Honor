@@ -1,0 +1,35 @@
+
+state={
+	id=284
+	name="STATE_284"
+	manpower = 7258
+	
+	state_category = small_island
+	resources={
+		aluminium=1
+		chromium=1
+		oil=1
+		rubber=4
+		steel=3
+		tungsten=2
+	}
+
+	history={
+		
+		owner = DUS
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = DUS
+	}
+
+	provinces={
+		5099 5100 5101 5102 5103 5104 5105 5106 5107 5108 5109 5110 5111 5112 5113 5114 5115 5116 5117 5118 5119 5120 5121 
+	}
+	local_supplies=0.0 
+}

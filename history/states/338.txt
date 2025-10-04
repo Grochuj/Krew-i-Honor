@@ -1,0 +1,38 @@
+
+state={
+	id=338
+	name="STATE_338"
+	manpower = 76842
+	
+	state_category = metropolis
+	resources={
+		aluminium=2
+		chromium=0
+		oil=1
+		rubber=0
+		steel=3
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 6258 10}
+		victory_points = { 6267 19}
+		victory_points = { 6273 1}
+		
+		owner = EGU
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 3
+			
+			
+		}
+		add_core_of = EGU
+	}
+
+	provinces={
+		6245 6246 6247 6248 6249 6250 6251 6252 6253 6254 6255 6256 6257 6258 6259 6260 6261 6262 6263 6264 6265 6266 6267 6268 6269 6270 6271 6272 6273 6274 6275 6276 6277 
+	}
+	local_supplies=0.0 
+}

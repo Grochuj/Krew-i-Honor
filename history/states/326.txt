@@ -1,0 +1,37 @@
+
+state={
+	id=326
+	name="STATE_326"
+	manpower = 15491
+	
+	state_category = rural
+	resources={
+		aluminium=1
+		chromium=1
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 6041 2}
+		victory_points = { 6043 2}
+		
+		owner = TEI
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = TEI
+	}
+
+	provinces={
+		6039 6040 6041 6042 6043 6044 6045 6046 
+	}
+	local_supplies=0.0 
+}

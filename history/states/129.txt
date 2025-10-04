@@ -1,0 +1,40 @@
+
+state={
+	id=129
+	name="STATE_129"
+	manpower = 42023
+	
+	state_category = large_town
+	resources={
+		aluminium=1
+		chromium=0
+		oil=1
+		rubber=0
+		steel=3
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 2424 6}
+		victory_points = { 2432 7}
+		
+		owner = MOZ
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			2424 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = MOZ
+	}
+
+	provinces={
+		2415 2416 2417 2418 2419 2420 2421 2422 2423 2424 2425 2426 2427 2428 2429 2430 2431 2432 2433 2434 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,41 @@
+
+state={
+	id=395
+	name="STATE_395"
+	manpower = 25022
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=2
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 7298 3}
+		victory_points = { 7299 3}
+		victory_points = { 7301 3}
+		
+		owner = CQN
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			7301 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = CQN
+	}
+
+	provinces={
+		7296 7297 7298 7299 7300 7301 7302 7303 7304 7305 
+	}
+	local_supplies=0.0 
+}

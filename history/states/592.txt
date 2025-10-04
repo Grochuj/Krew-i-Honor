@@ -1,0 +1,37 @@
+
+state={
+	id=592
+	name="STATE_592"
+	manpower = 20949
+	
+	state_category = large_town
+	resources={
+		aluminium=0
+		chromium=2
+		oil=0
+		rubber=2
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 10495 3}
+		victory_points = { 10498 6}
+		
+		owner = RAD
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = RAD
+	}
+
+	provinces={
+		10495 10496 10497 10498 10499 10500 10501 
+	}
+	local_supplies=0.0 
+}

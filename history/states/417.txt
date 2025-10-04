@@ -1,0 +1,38 @@
+
+state={
+	id=417
+	name="STATE_417"
+	manpower = 47667
+	
+	state_category = large_city
+	resources={
+		aluminium=1
+		chromium=1
+		oil=1
+		rubber=6
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 7700 1}
+		victory_points = { 7703 18}
+		victory_points = { 7713 3}
+		
+		owner = PHA
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 2
+			
+			
+		}
+		add_core_of = PHA
+	}
+
+	provinces={
+		7700 7701 7702 7703 7704 7705 7706 7707 7708 7709 7710 7711 7712 7713 7714 7715 7716 
+	}
+	local_supplies=0.0 
+}

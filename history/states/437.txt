@@ -1,0 +1,39 @@
+
+state={
+	id=437
+	name="STATE_437"
+	manpower = 19458
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=2
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 8054 7}
+		
+		owner = FRU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 1
+			8054 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = FRU
+	}
+
+	provinces={
+		8053 8054 8055 8056 8057 8058 8059 
+	}
+	local_supplies=0.0 
+}

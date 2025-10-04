@@ -1,0 +1,38 @@
+
+state={
+	id=186
+	name="STATE_186"
+	manpower = 48385
+	
+	state_category = city
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=7
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 3306 6}
+		victory_points = { 3309 6}
+		victory_points = { 3321 6}
+		
+		owner = MOZ
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = MOZ
+	}
+
+	provinces={
+		3303 3304 3305 3306 3307 3308 3309 3310 3311 3312 3313 3314 3315 3316 3317 3318 3319 3320 3321 3322 3323 
+	}
+	local_supplies=0.0 
+}

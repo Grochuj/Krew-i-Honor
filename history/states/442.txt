@@ -1,0 +1,38 @@
+
+state={
+	id=442
+	name="STATE_442"
+	manpower = 38462
+	
+	state_category = city
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=3
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 8151 1}
+		victory_points = { 8152 3}
+		victory_points = { 8161 14}
+		
+		owner = PHA
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = PHA
+	}
+
+	provinces={
+		8151 8152 8153 8154 8155 8156 8157 8158 8159 8160 8161 8162 8163 8164 8165 
+	}
+	local_supplies=0.0 
+}

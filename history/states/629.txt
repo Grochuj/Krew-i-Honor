@@ -1,0 +1,40 @@
+
+state={
+	id=629
+	name="STATE_629"
+	manpower = 33598
+	
+	state_category = town
+	resources={
+		aluminium=1
+		chromium=1
+		oil=4
+		rubber=0
+		steel=4
+		tungsten=3
+	}
+
+	history={
+		victory_points = { 11140 4}
+		victory_points = { 11145 4}
+		
+		owner = FIU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			11147 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = FIU
+	}
+
+	provinces={
+		11137 11138 11139 11140 11141 11142 11143 11144 11145 11146 11147 11148 11149 11150 11151 11152 11153 11154 11155 11156 11157 11158 11159 11160 11161 
+	}
+	local_supplies=0.0 
+}

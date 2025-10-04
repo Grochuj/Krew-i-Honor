@@ -1,0 +1,41 @@
+
+state={
+	id=323
+	name="STATE_323"
+	manpower = 34434
+	
+	state_category = town
+	resources={
+		aluminium=1
+		chromium=5
+		oil=1
+		rubber=0
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 5997 4}
+		victory_points = { 5998 2}
+		victory_points = { 6009 4}
+		
+		owner = DUS
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			6008 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = DUS
+	}
+
+	provinces={
+		5990 5991 5992 5993 5994 5995 5996 5997 5998 5999 6000 6001 6002 6003 6004 6005 6006 6007 6008 6009 
+	}
+	local_supplies=0.0 
+}

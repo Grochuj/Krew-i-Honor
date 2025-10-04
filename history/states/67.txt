@@ -1,0 +1,41 @@
+
+state={
+	id=67
+	name="STATE_67"
+	manpower = 18065
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=2
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 1219 2}
+		victory_points = { 1220 2}
+		victory_points = { 1223 2}
+		
+		owner = KHU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			1218 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = KHU
+	}
+
+	provinces={
+		1218 1219 1220 1221 1222 1223 1224 
+	}
+	local_supplies=0.0 
+}

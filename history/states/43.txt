@@ -1,0 +1,38 @@
+
+state={
+	id=43
+	name="STATE_43"
+	manpower = 4490
+	
+	state_category = small_island
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=2
+	}
+
+	history={
+		
+		owner = MAO
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			767 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = MAO
+	}
+
+	provinces={
+		762 763 764 765 766 767 768 769 
+	}
+	local_supplies=0.0 
+}

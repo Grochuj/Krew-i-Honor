@@ -1,0 +1,39 @@
+
+state={
+	id=450
+	name="STATE_450"
+	manpower = 57028
+	
+	state_category = large_city
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=8
+		steel=3
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 8282 4}
+		victory_points = { 8293 6}
+		victory_points = { 8299 5}
+		victory_points = { 8300 9}
+		
+		owner = PHA
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 2
+			
+			
+		}
+		add_core_of = PHA
+	}
+
+	provinces={
+		8280 8281 8282 8283 8284 8285 8286 8287 8288 8289 8290 8291 8292 8293 8294 8295 8296 8297 8298 8299 8300 8301 8302 8303 
+	}
+	local_supplies=0.0 
+}

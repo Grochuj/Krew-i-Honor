@@ -1,0 +1,37 @@
+
+state={
+	id=507
+	name="STATE_507"
+	manpower = 19677
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 9298 5}
+		victory_points = { 9300 1}
+		
+		owner = PHA
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = PHA
+	}
+
+	provinces={
+		9298 9299 9300 9301 9302 9303 9304 9305 9306 9307 9308 
+	}
+	local_supplies=0.0 
+}

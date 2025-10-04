@@ -1,0 +1,37 @@
+
+state={
+	id=322
+	name="STATE_322"
+	manpower = 11237
+	
+	state_category = pastoral
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 5982 1}
+		victory_points = { 5987 1}
+		
+		owner = DUS
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = DUS
+	}
+
+	provinces={
+		5982 5983 5984 5985 5986 5987 5988 5989 
+	}
+	local_supplies=0.0 
+}

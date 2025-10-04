@@ -1,0 +1,42 @@
+
+state={
+	id=602
+	name="STATE_602"
+	manpower = 82460
+	
+	state_category = megalopolis
+	resources={
+		aluminium=3
+		chromium=0
+		oil=3
+		rubber=0
+		steel=4
+		tungsten=3
+	}
+
+	history={
+		victory_points = { 10642 2}
+		victory_points = { 10644 3}
+		victory_points = { 10651 16}
+		victory_points = { 10661 16}
+		
+		owner = FIU
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 1
+			industrial_complex = 3
+			dockyard = 1
+			10651 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = FIU
+	}
+
+	provinces={
+		10632 10633 10634 10635 10636 10637 10638 10639 10640 10641 10642 10643 10644 10645 10646 10647 10648 10649 10650 10651 10652 10653 10654 10655 10656 10657 10658 10659 10660 10661 10662 10663 10664 10665 10666 10667 10668 10669 10670 
+	}
+	local_supplies=0.0 
+}

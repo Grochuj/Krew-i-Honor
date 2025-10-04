@@ -1,0 +1,35 @@
+
+state={
+	id=4
+	name="STATE_4"
+	manpower = 10825
+	
+	state_category = pastoral
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=0
+	}
+
+	history={
+		
+		owner = MAO
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = MAO
+	}
+
+	provinces={
+		42 43 44 45 46 47 48 49 50 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,38 @@
+
+state={
+	id=541
+	name="STATE_541"
+	manpower = 5795
+	
+	state_category = small_island
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=1
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		
+		owner = TEI
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			9813 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = TEI
+	}
+
+	provinces={
+		9813 9814 9815 9816 9817 9818 
+	}
+	local_supplies=0.0 
+}

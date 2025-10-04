@@ -1,0 +1,37 @@
+
+state={
+	id=373
+	name="STATE_373"
+	manpower = 46614
+	
+	state_category = large_town
+	resources={
+		aluminium=1
+		chromium=2
+		oil=2
+		rubber=0
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 6873 3}
+		victory_points = { 6890 13}
+		
+		owner = EGU
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 2
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = EGU
+	}
+
+	provinces={
+		6869 6870 6871 6872 6873 6874 6875 6876 6877 6878 6879 6880 6881 6882 6883 6884 6885 6886 6887 6888 6889 6890 
+	}
+	local_supplies=0.0 
+}

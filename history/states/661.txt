@@ -1,0 +1,39 @@
+
+state={
+	id=661
+	name="STATE_661"
+	manpower = 8544
+	
+	state_category = pastoral
+	resources={
+		aluminium=1
+		chromium=1
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 11616 1}
+		
+		owner = FIU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			11618 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = FIU
+	}
+
+	provinces={
+		11614 11615 11616 11617 11618 11619 11620 
+	}
+	local_supplies=0.0 
+}

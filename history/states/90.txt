@@ -1,0 +1,38 @@
+
+state={
+	id=90
+	name="STATE_90"
+	manpower = 91032
+	
+	state_category = metropolis
+	resources={
+		aluminium=2
+		chromium=0
+		oil=2
+		rubber=0
+		steel=3
+		tungsten=3
+	}
+
+	history={
+		victory_points = { 1736 11}
+		victory_points = { 1746 11}
+		victory_points = { 1764 11}
+		
+		owner = VIS
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 2
+			industrial_complex = 2
+			
+			
+		}
+		add_core_of = VIS
+	}
+
+	provinces={
+		1732 1733 1734 1735 1736 1737 1738 1739 1740 1741 1742 1743 1744 1745 1746 1747 1748 1749 1750 1751 1752 1753 1754 1755 1756 1757 1758 1759 1760 1761 1762 1763 1764 1765 1766 1767 1768 1769 1770 1771 1772 1773 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,37 @@
+
+state={
+	id=420
+	name="STATE_420"
+	manpower = 43705
+	
+	state_category = city
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=2
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 7746 4}
+		victory_points = { 7752 14}
+		
+		owner = PHA
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = PHA
+	}
+
+	provinces={
+		7746 7747 7748 7749 7750 7751 7752 7753 7754 7755 7756 7757 7758 7759 7760 7761 7762 
+	}
+	local_supplies=0.0 
+}

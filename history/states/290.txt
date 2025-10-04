@@ -1,0 +1,38 @@
+
+state={
+	id=290
+	name="STATE_290"
+	manpower = 48389
+	
+	state_category = town
+	resources={
+		aluminium=3
+		chromium=0
+		oil=2
+		rubber=21
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 5224 1}
+		victory_points = { 5231 2}
+		victory_points = { 5250 10}
+		
+		owner = CQN
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = CQN
+	}
+
+	provinces={
+		5219 5220 5221 5222 5223 5224 5225 5226 5227 5228 5229 5230 5231 5232 5233 5234 5235 5236 5237 5238 5239 5240 5241 5242 5243 5244 5245 5246 5247 5248 5249 5250 
+	}
+	local_supplies=0.0 
+}

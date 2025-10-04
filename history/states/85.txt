@@ -1,0 +1,40 @@
+
+state={
+	id=85
+	name="STATE_85"
+	manpower = 112382
+	
+	state_category = megalopolis
+	resources={
+		aluminium=1
+		chromium=11
+		oil=2
+		rubber=0
+		steel=5
+		tungsten=3
+	}
+
+	history={
+		victory_points = { 1633 40}
+		victory_points = { 1642 1}
+		
+		owner = MOZ
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 1
+			industrial_complex = 4
+			
+			1648 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = MOZ
+	}
+
+	provinces={
+		1631 1632 1633 1634 1635 1636 1637 1638 1639 1640 1641 1642 1643 1644 1645 1646 1647 1648 1649 1650 1651 1652 1653 1654 1655 1656 1657 1658 1659 1660 1661 1662 1663 1664 1665 1666 1667 1668 1669 1670 1671 1672 1673 1674 1675 1676 1677 1678 1679 1680 1681 1682 
+	}
+	local_supplies=0.0 
+}

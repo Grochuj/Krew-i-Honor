@@ -1,0 +1,36 @@
+
+state={
+	id=551
+	name="STATE_551"
+	manpower = 22004
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 9928 7}
+		
+		owner = FIU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = FIU
+	}
+
+	provinces={
+		9928 9929 9930 9931 9932 9933 9934 9935 9936 9937 
+	}
+	local_supplies=0.0 
+}

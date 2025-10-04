@@ -1,0 +1,37 @@
+
+state={
+	id=372
+	name="STATE_372"
+	manpower = 30228
+	
+	state_category = rural
+	resources={
+		aluminium=1
+		chromium=0
+		oil=1
+		rubber=4
+		steel=3
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 6850 2}
+		victory_points = { 6852 5}
+		
+		owner = TEI
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = TEI
+	}
+
+	provinces={
+		6849 6850 6851 6852 6853 6854 6855 6856 6857 6858 6859 6860 6861 6862 6863 6864 6865 6866 6867 6868 
+	}
+	local_supplies=0.0 
+}

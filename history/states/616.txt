@@ -1,0 +1,38 @@
+
+state={
+	id=616
+	name="STATE_616"
+	manpower = 3405
+	
+	state_category = small_island
+	resources={
+		aluminium=0
+		chromium=3
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		
+		owner = FIU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			10974 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = FIU
+	}
+
+	provinces={
+		10972 10973 10974 10975 10976 
+	}
+	local_supplies=0.0 
+}

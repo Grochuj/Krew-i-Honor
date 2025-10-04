@@ -1,0 +1,37 @@
+
+state={
+	id=105
+	name="STATE_105"
+	manpower = 12833
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 1987 1}
+		victory_points = { 1990 1}
+		
+		owner = AME
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = AME
+	}
+
+	provinces={
+		1986 1987 1988 1989 1990 
+	}
+	local_supplies=0.0 
+}

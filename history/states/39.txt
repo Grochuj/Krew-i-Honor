@@ -1,0 +1,37 @@
+
+state={
+	id=39
+	name="STATE_39"
+	manpower = 23059
+	
+	state_category = rural
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 712 5}
+		victory_points = { 720 2}
+		
+		owner = MAO
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = MAO
+	}
+
+	provinces={
+		711 712 713 714 715 716 717 718 719 720 721 722 723 724 
+	}
+	local_supplies=0.0 
+}

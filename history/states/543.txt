@@ -1,0 +1,41 @@
+
+state={
+	id=543
+	name="STATE_543"
+	manpower = 26446
+	
+	state_category = large_town
+	resources={
+		aluminium=2
+		chromium=0
+		oil=0
+		rubber=1
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 9836 7}
+		victory_points = { 9837 3}
+		victory_points = { 9842 2}
+		
+		owner = MAO
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			dockyard = 1
+			9843 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = MAO
+	}
+
+	provinces={
+		9836 9837 9838 9839 9840 9841 9842 9843 9844 
+	}
+	local_supplies=0.0 
+}

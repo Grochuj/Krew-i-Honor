@@ -1,0 +1,38 @@
+
+state={
+	id=579
+	name="STATE_579"
+	manpower = 25361
+	
+	state_category = town
+	resources={
+		aluminium=1
+		chromium=7
+		oil=4
+		rubber=0
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 10318 5}
+		victory_points = { 10323 1}
+		victory_points = { 10327 2}
+		
+		owner = PHA
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = PHA
+	}
+
+	provinces={
+		10312 10313 10314 10315 10316 10317 10318 10319 10320 10321 10322 10323 10324 10325 10326 10327 10328 10329 
+	}
+	local_supplies=0.0 
+}

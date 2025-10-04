@@ -1,0 +1,41 @@
+
+state={
+	id=27
+	name="STATE_27"
+	manpower = 26403
+	
+	state_category = pastoral
+	resources={
+		aluminium=2
+		chromium=0
+		oil=0
+		rubber=0
+		steel=5
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 518 2}
+		victory_points = { 524 2}
+		victory_points = { 532 2}
+		
+		owner = MAO
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			533 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = MAO
+	}
+
+	provinces={
+		514 515 516 517 518 519 520 521 522 523 524 525 526 527 528 529 530 531 532 533 534 535 536 537 538 
+	}
+	local_supplies=0.0 
+}

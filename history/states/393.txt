@@ -1,0 +1,42 @@
+
+state={
+	id=393
+	name="STATE_393"
+	manpower = 84969
+	
+	state_category = large_city
+	resources={
+		aluminium=2
+		chromium=2
+		oil=4
+		rubber=0
+		steel=9
+		tungsten=4
+	}
+
+	history={
+		victory_points = { 7225 1}
+		victory_points = { 7235 2}
+		victory_points = { 7242 24}
+		victory_points = { 7251 1}
+		
+		owner = DUS
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 2
+			industrial_complex = 0
+			dockyard = 1
+			7251 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = DUS
+	}
+
+	provinces={
+		7221 7222 7223 7224 7225 7226 7227 7228 7229 7230 7231 7232 7233 7234 7235 7236 7237 7238 7239 7240 7241 7242 7243 7244 7245 7246 7247 7248 7249 7250 7251 7252 7253 7254 7255 7256 7257 7258 7259 7260 7261 7262 7263 7264 7265 7266 7267 7268 7269 7270 7271 7272 7273 
+	}
+	local_supplies=0.0 
+}

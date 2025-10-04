@@ -1,0 +1,41 @@
+
+state={
+	id=50
+	name="STATE_50"
+	manpower = 40929
+	
+	state_category = large_town
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=3
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 886 6}
+		victory_points = { 887 6}
+		victory_points = { 894 3}
+		
+		owner = MAO
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			dockyard = 1
+			896 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = MAO
+	}
+
+	provinces={
+		883 884 885 886 887 888 889 890 891 892 893 894 895 896 897 898 
+	}
+	local_supplies=0.0 
+}

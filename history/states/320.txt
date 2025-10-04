@@ -1,0 +1,37 @@
+
+state={
+	id=320
+	name="STATE_320"
+	manpower = 79317
+	
+	state_category = metropolis
+	resources={
+		aluminium=1
+		chromium=0
+		oil=1
+		rubber=0
+		steel=2
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 5918 15}
+		victory_points = { 5947 18}
+		
+		owner = TEI
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 3
+			
+			
+		}
+		add_core_of = TEI
+	}
+
+	provinces={
+		5918 5919 5920 5921 5922 5923 5924 5925 5926 5927 5928 5929 5930 5931 5932 5933 5934 5935 5936 5937 5938 5939 5940 5941 5942 5943 5944 5945 5946 5947 5948 5949 5950 
+	}
+	local_supplies=0.0 
+}

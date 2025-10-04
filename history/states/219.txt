@@ -1,0 +1,40 @@
+
+state={
+	id=219
+	name="STATE_219"
+	manpower = 19019
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 3830 2}
+		victory_points = { 3833 2}
+		
+		owner = CEL
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			3835 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = CEL
+	}
+
+	provinces={
+		3827 3828 3829 3830 3831 3832 3833 3834 3835 3836 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,37 @@
+
+state={
+	id=544
+	name="STATE_544"
+	manpower = 29748
+	
+	state_category = large_town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=1
+		rubber=6
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 9845 5}
+		victory_points = { 9850 5}
+		
+		owner = TEI
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = TEI
+	}
+
+	provinces={
+		9845 9846 9847 9848 9849 9850 9851 9852 9853 9854 9855 9856 
+	}
+	local_supplies=0.0 
+}

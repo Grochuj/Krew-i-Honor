@@ -1,0 +1,36 @@
+
+state={
+	id=154
+	name="STATE_154"
+	manpower = 30428
+	
+	state_category = large_town
+	resources={
+		aluminium=1
+		chromium=1
+		oil=0
+		rubber=1
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 2806 11}
+		
+		owner = AME
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = AME
+	}
+
+	provinces={
+		2802 2803 2804 2805 2806 2807 2808 2809 2810 2811 2812 2813 
+	}
+	local_supplies=0.0 
+}

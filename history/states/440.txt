@@ -1,0 +1,40 @@
+
+state={
+	id=440
+	name="STATE_440"
+	manpower = 10183
+	
+	state_category = pastoral
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=3
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 8118 1}
+		victory_points = { 8119 1}
+		
+		owner = CNU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 1
+			8119 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = CNU
+	}
+
+	provinces={
+		8109 8110 8111 8112 8113 8114 8115 8116 8117 8118 8119 8120 8121 8122 8123 8124 8125 8126 8127 8128 
+	}
+	local_supplies=0.0 
+}

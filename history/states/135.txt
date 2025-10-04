@@ -1,0 +1,36 @@
+
+state={
+	id=135
+	name="STATE_135"
+	manpower = 50158
+	
+	state_category = large_city
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=4
+		steel=2
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 2518 21}
+		
+		owner = MOZ
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 2
+			
+			
+		}
+		add_core_of = MOZ
+	}
+
+	provinces={
+		2516 2517 2518 2519 2520 2521 2522 2523 2524 2525 2526 2527 2528 2529 2530 2531 2532 2533 2534 
+	}
+	local_supplies=0.0 
+}

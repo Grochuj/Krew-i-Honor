@@ -1,0 +1,39 @@
+
+state={
+	id=99
+	name="STATE_99"
+	manpower = 67602
+	
+	state_category = metropolis
+	resources={
+		aluminium=1
+		chromium=1
+		oil=1
+		rubber=9
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 1901 6}
+		victory_points = { 1902 1}
+		victory_points = { 1906 15}
+		victory_points = { 1908 7}
+		
+		owner = MOZ
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 3
+			
+			
+		}
+		add_core_of = MOZ
+	}
+
+	provinces={
+		1884 1885 1886 1887 1888 1889 1890 1891 1892 1893 1894 1895 1896 1897 1898 1899 1900 1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 
+	}
+	local_supplies=0.0 
+}

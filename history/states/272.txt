@@ -1,0 +1,37 @@
+
+state={
+	id=272
+	name="STATE_272"
+	manpower = 14542
+	
+	state_category = pastoral
+	resources={
+		aluminium=1
+		chromium=2
+		oil=2
+		rubber=1
+		steel=2
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 4907 2}
+		victory_points = { 4909 1}
+		
+		owner = TEI
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = TEI
+	}
+
+	provinces={
+		4904 4905 4906 4907 4908 4909 4910 4911 
+	}
+	local_supplies=0.0 
+}

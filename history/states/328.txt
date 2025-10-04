@@ -1,0 +1,39 @@
+
+state={
+	id=328
+	name="STATE_328"
+	manpower = 22256
+	
+	state_category = rural
+	resources={
+		aluminium=2
+		chromium=0
+		oil=1
+		rubber=0
+		steel=2
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 6057 3}
+		victory_points = { 6059 1}
+		victory_points = { 6060 1}
+		victory_points = { 6062 2}
+		
+		owner = EGU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = EGU
+	}
+
+	provinces={
+		6057 6058 6059 6060 6061 6062 6063 6064 6065 6066 6067 6068 6069 6070 6071 6072 
+	}
+	local_supplies=0.0 
+}

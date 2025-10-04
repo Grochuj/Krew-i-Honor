@@ -1,0 +1,39 @@
+
+state={
+	id=381
+	name="STATE_381"
+	manpower = 38944
+	
+	state_category = city
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 7015 17}
+		
+		owner = CQN
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 2
+			
+			7023 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = CQN
+	}
+
+	provinces={
+		7015 7016 7017 7018 7019 7020 7021 7022 7023 7024 7025 7026 7027 7028 
+	}
+	local_supplies=0.0 
+}

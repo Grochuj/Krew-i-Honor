@@ -1,0 +1,39 @@
+
+state={
+	id=728
+	name="STATE_728"
+	manpower = 131
+	
+	state_category = small_island
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 11731 1}
+		
+		owner = CEL
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			11731 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = CEL
+	}
+
+	provinces={
+		11731 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,37 @@
+
+state={
+	id=87
+	name="STATE_87"
+	manpower = 62232
+	
+	state_category = large_city
+	resources={
+		aluminium=1
+		chromium=0
+		oil=2
+		rubber=13
+		steel=3
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 1702 15}
+		victory_points = { 1704 8}
+		
+		owner = KHU
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 2
+			
+			
+		}
+		add_core_of = KHU
+	}
+
+	provinces={
+		1691 1692 1693 1694 1695 1696 1697 1698 1699 1700 1701 1702 1703 1704 1705 1706 1707 1708 1709 1710 1711 1712 1713 1714 1715 1716 1717 1718 
+	}
+	local_supplies=0.0 
+}

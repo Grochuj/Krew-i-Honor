@@ -1,0 +1,36 @@
+
+state={
+	id=554
+	name="STATE_554"
+	manpower = 26275
+	
+	state_category = large_town
+	resources={
+		aluminium=1
+		chromium=1
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 9973 10}
+		
+		owner = FIU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = FIU
+	}
+
+	provinces={
+		9965 9966 9967 9968 9969 9970 9971 9972 9973 9974 9975 
+	}
+	local_supplies=0.0 
+}

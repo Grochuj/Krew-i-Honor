@@ -1,0 +1,38 @@
+
+state={
+	id=460
+	name="STATE_460"
+	manpower = 56798
+	
+	state_category = city
+	resources={
+		aluminium=3
+		chromium=4
+		oil=1
+		rubber=15
+		steel=5
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 8477 10}
+		victory_points = { 8487 1}
+		victory_points = { 8499 9}
+		
+		owner = FIU
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = FIU
+	}
+
+	provinces={
+		8475 8476 8477 8478 8479 8480 8481 8482 8483 8484 8485 8486 8487 8488 8489 8490 8491 8492 8493 8494 8495 8496 8497 8498 8499 8500 8501 8502 8503 8504 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,36 @@
+
+state={
+	id=560
+	name="STATE_560"
+	manpower = 19317
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=2
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 10049 6}
+		
+		owner = MAO
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = MAO
+	}
+
+	provinces={
+		10048 10049 10050 10051 10052 10053 10054 10055 10056 
+	}
+	local_supplies=0.0 
+}

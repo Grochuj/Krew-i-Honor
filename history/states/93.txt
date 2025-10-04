@@ -1,0 +1,37 @@
+
+state={
+	id=93
+	name="STATE_93"
+	manpower = 36104
+	
+	state_category = large_town
+	resources={
+		aluminium=2
+		chromium=0
+		oil=0
+		rubber=1
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 1798 2}
+		victory_points = { 1804 11}
+		
+		owner = KHU
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = KHU
+	}
+
+	provinces={
+		1798 1799 1800 1801 1802 1803 1804 1805 1806 1807 1808 1809 1810 1811 
+	}
+	local_supplies=0.0 
+}

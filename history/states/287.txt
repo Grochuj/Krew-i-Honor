@@ -1,0 +1,38 @@
+
+state={
+	id=287
+	name="STATE_287"
+	manpower = 15921
+	
+	state_category = pastoral
+	resources={
+		aluminium=1
+		chromium=5
+		oil=1
+		rubber=3
+		steel=3
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 5162 1}
+		victory_points = { 5169 1}
+		victory_points = { 5172 1}
+		
+		owner = DUS
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = DUS
+	}
+
+	provinces={
+		5162 5163 5164 5165 5166 5167 5168 5169 5170 5171 5172 5173 5174 5175 5176 5177 5178 5179 5180 
+	}
+	local_supplies=0.0 
+}

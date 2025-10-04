@@ -1,0 +1,36 @@
+
+state={
+	id=608
+	name="STATE_608"
+	manpower = 16160
+	
+	state_category = pastoral
+	resources={
+		aluminium=2
+		chromium=2
+		oil=0
+		rubber=0
+		steel=4
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 10814 3}
+		
+		owner = FIU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = FIU
+	}
+
+	provinces={
+		10807 10808 10809 10810 10811 10812 10813 10814 10815 10816 10817 10818 10819 10820 10821 10822 10823 10824 10825 10826 10827 10828 10829 10830 10831 10832 10833 
+	}
+	local_supplies=0.0 
+}

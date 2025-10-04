@@ -1,0 +1,42 @@
+
+state={
+	id=330
+	name="STATE_330"
+	manpower = 38858
+	
+	state_category = city
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=3
+		steel=0
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 6088 4}
+		victory_points = { 6089 4}
+		victory_points = { 6091 1}
+		victory_points = { 6092 5}
+		
+		owner = CQN
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 2
+			
+			6088 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = CQN
+	}
+
+	provinces={
+		6088 6089 6090 6091 6092 6093 6094 6095 6096 6097 6098 6099 6100 6101 
+	}
+	local_supplies=0.0 
+}

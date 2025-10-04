@@ -1,0 +1,39 @@
+
+state={
+	id=736
+	name="STATE_736"
+	manpower = 81
+	
+	state_category = small_island
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 11739 1}
+		
+		owner = AME
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			11739 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = AME
+	}
+
+	provinces={
+		11739 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,37 @@
+
+state={
+	id=493
+	name="STATE_493"
+	manpower = 11491
+	
+	state_category = pastoral
+	resources={
+		aluminium=2
+		chromium=2
+		oil=4
+		rubber=0
+		steel=4
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 9075 1}
+		victory_points = { 9077 1}
+		
+		owner = CNU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = CNU
+	}
+
+	provinces={
+		9057 9058 9059 9060 9061 9062 9063 9064 9065 9066 9067 9068 9069 9070 9071 9072 9073 9074 9075 9076 9077 9078 9079 9080 9081 9082 
+	}
+	local_supplies=0.0 
+}

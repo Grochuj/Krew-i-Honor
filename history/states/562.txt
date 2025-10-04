@@ -1,0 +1,36 @@
+
+state={
+	id=562
+	name="STATE_562"
+	manpower = 19515
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 10071 8}
+		
+		owner = FRU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = FRU
+	}
+
+	provinces={
+		10065 10066 10067 10068 10069 10070 10071 
+	}
+	local_supplies=0.0 
+}

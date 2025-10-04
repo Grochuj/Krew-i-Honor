@@ -1,0 +1,42 @@
+
+state={
+	id=470
+	name="STATE_470"
+	manpower = 81737
+	
+	state_category = megalopolis
+	resources={
+		aluminium=1
+		chromium=0
+		oil=1
+		rubber=1
+		steel=4
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 8672 1}
+		victory_points = { 8679 19}
+		victory_points = { 8689 1}
+		victory_points = { 8693 17}
+		
+		owner = FRU
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 0
+			industrial_complex = 3
+			dockyard = 2
+			8689 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = FRU
+	}
+
+	provinces={
+		8670 8671 8672 8673 8674 8675 8676 8677 8678 8679 8680 8681 8682 8683 8684 8685 8686 8687 8688 8689 8690 8691 8692 8693 8694 8695 8696 8697 8698 8699 8700 8701 
+	}
+	local_supplies=0.0 
+}

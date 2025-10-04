@@ -1,0 +1,39 @@
+
+state={
+	id=496
+	name="STATE_496"
+	manpower = 73949
+	
+	state_category = large_city
+	resources={
+		aluminium=2
+		chromium=1
+		oil=2
+		rubber=0
+		steel=4
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 9120 2}
+		victory_points = { 9121 5}
+		victory_points = { 9122 9}
+		victory_points = { 9139 12}
+		
+		owner = FRU
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 2
+			
+			
+		}
+		add_core_of = FRU
+	}
+
+	provinces={
+		9107 9108 9109 9110 9111 9112 9113 9114 9115 9116 9117 9118 9119 9120 9121 9122 9123 9124 9125 9126 9127 9128 9129 9130 9131 9132 9133 9134 9135 9136 9137 9138 9139 9140 9141 9142 
+	}
+	local_supplies=0.0 
+}

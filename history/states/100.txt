@@ -1,0 +1,37 @@
+
+state={
+	id=100
+	name="STATE_100"
+	manpower = 53748
+	
+	state_category = large_city
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=2
+		steel=3
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 1919 11}
+		victory_points = { 1921 11}
+		
+		owner = MOZ
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 3
+			
+			
+		}
+		add_core_of = MOZ
+	}
+
+	provinces={
+		1911 1912 1913 1914 1915 1916 1917 1918 1919 1920 1921 1922 1923 1924 1925 1926 1927 1928 1929 1930 1931 
+	}
+	local_supplies=0.0 
+}

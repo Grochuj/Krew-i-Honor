@@ -1,0 +1,39 @@
+
+state={
+	id=76
+	name="STATE_76"
+	manpower = 95249
+	
+	state_category = megalopolis
+	resources={
+		aluminium=0
+		chromium=6
+		oil=2
+		rubber=9
+		steel=4
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 1400 5}
+		victory_points = { 1409 3}
+		victory_points = { 1431 1}
+		victory_points = { 1434 30}
+		
+		owner = AME
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 2
+			industrial_complex = 3
+			
+			
+		}
+		add_core_of = AME
+	}
+
+	provinces={
+		1398 1399 1400 1401 1402 1403 1404 1405 1406 1407 1408 1409 1410 1411 1412 1413 1414 1415 1416 1417 1418 1419 1420 1421 1422 1423 1424 1425 1426 1427 1428 1429 1430 1431 1432 1433 1434 1435 1436 
+	}
+	local_supplies=0.0 
+}

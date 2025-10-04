@@ -1,0 +1,39 @@
+
+state={
+	id=654
+	name="STATE_654"
+	manpower = 15200
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 11549 4}
+		
+		owner = CEL
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			11552 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = CEL
+	}
+
+	provinces={
+		11549 11550 11551 11552 11553 11554 
+	}
+	local_supplies=0.0 
+}

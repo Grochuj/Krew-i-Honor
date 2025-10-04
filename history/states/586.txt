@@ -1,0 +1,37 @@
+
+state={
+	id=586
+	name="STATE_586"
+	manpower = 21333
+	
+	state_category = large_town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=1
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 10418 7}
+		victory_points = { 10424 1}
+		
+		owner = FRU
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = FRU
+	}
+
+	provinces={
+		10418 10419 10420 10421 10422 10423 10424 10425 
+	}
+	local_supplies=0.0 
+}

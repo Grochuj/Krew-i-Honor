@@ -1,0 +1,37 @@
+
+state={
+	id=416
+	name="STATE_416"
+	manpower = 45160
+	
+	state_category = city
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 7685 10}
+		victory_points = { 7694 10}
+		
+		owner = MAO
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 2
+			
+			
+		}
+		add_core_of = MAO
+	}
+
+	provinces={
+		7681 7682 7683 7684 7685 7686 7687 7688 7689 7690 7691 7692 7693 7694 7695 7696 7697 7698 7699 
+	}
+	local_supplies=0.0 
+}

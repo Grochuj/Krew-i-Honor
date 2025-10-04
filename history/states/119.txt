@@ -1,0 +1,37 @@
+
+state={
+	id=119
+	name="STATE_119"
+	manpower = 31380
+	
+	state_category = large_town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=5
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 2245 9}
+		victory_points = { 2246 1}
+		
+		owner = KHU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = KHU
+	}
+
+	provinces={
+		2244 2245 2246 2247 2248 2249 2250 2251 2252 2253 2254 2255 
+	}
+	local_supplies=0.0 
+}

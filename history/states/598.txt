@@ -1,0 +1,36 @@
+
+state={
+	id=598
+	name="STATE_598"
+	manpower = 9550
+	
+	state_category = rural
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 10584 3}
+		
+		owner = RAD
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = RAD
+	}
+
+	provinces={
+		10584 10585 10586 10587 
+	}
+	local_supplies=0.0 
+}

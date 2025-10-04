@@ -1,0 +1,41 @@
+
+state={
+	id=438
+	name="STATE_438"
+	manpower = 65345
+	
+	state_category = metropolis
+	resources={
+		aluminium=1
+		chromium=0
+		oil=2
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 8063 3}
+		victory_points = { 8064 17}
+		victory_points = { 8081 10}
+		
+		owner = RAD
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 0
+			industrial_complex = 2
+			dockyard = 2
+			8067 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = RAD
+	}
+
+	provinces={
+		8060 8061 8062 8063 8064 8065 8066 8067 8068 8069 8070 8071 8072 8073 8074 8075 8076 8077 8078 8079 8080 8081 8082 8083 8084 8085 
+	}
+	local_supplies=0.0 
+}

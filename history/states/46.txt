@@ -1,0 +1,38 @@
+
+state={
+	id=46
+	name="STATE_46"
+	manpower = 28152
+	
+	state_category = rural
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 805 3}
+		victory_points = { 807 3}
+		victory_points = { 812 1}
+		
+		owner = MAO
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = MAO
+	}
+
+	provinces={
+		805 806 807 808 809 810 811 812 813 814 815 816 817 818 819 820 821 822 
+	}
+	local_supplies=0.0 
+}

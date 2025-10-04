@@ -1,0 +1,36 @@
+
+state={
+	id=193
+	name="STATE_193"
+	manpower = 28297
+	
+	state_category = town
+	resources={
+		aluminium=2
+		chromium=1
+		oil=1
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 3404 9}
+		
+		owner = AME
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = AME
+	}
+
+	provinces={
+		3394 3395 3396 3397 3398 3399 3400 3401 3402 3403 3404 3405 3406 
+	}
+	local_supplies=0.0 
+}

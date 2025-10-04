@@ -1,0 +1,38 @@
+
+state={
+	id=218
+	name="STATE_218"
+	manpower = 12431
+	
+	state_category = pastoral
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=1
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 3822 1}
+		victory_points = { 3824 1}
+		victory_points = { 3825 1}
+		
+		owner = KHU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = KHU
+	}
+
+	provinces={
+		3821 3822 3823 3824 3825 3826 
+	}
+	local_supplies=0.0 
+}

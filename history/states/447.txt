@@ -1,0 +1,41 @@
+
+state={
+	id=447
+	name="STATE_447"
+	manpower = 55284
+	
+	state_category = large_city
+	resources={
+		aluminium=1
+		chromium=3
+		oil=2
+		rubber=0
+		steel=3
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 8226 1}
+		victory_points = { 8228 2}
+		victory_points = { 8232 19}
+		
+		owner = RAD
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 3
+			
+			8232 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = RAD
+	}
+
+	provinces={
+		8216 8217 8218 8219 8220 8221 8222 8223 8224 8225 8226 8227 8228 8229 8230 8231 8232 8233 8234 8235 8236 8237 8238 8239 8240 8241 
+	}
+	local_supplies=0.0 
+}

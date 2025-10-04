@@ -1,0 +1,39 @@
+
+state={
+	id=333
+	name="STATE_333"
+	manpower = 93591
+	
+	state_category = megalopolis
+	resources={
+		aluminium=1
+		chromium=1
+		oil=2
+		rubber=0
+		steel=5
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 6126 1}
+		victory_points = { 6129 11}
+		victory_points = { 6144 1}
+		victory_points = { 6150 25}
+		
+		owner = EGU
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 2
+			industrial_complex = 3
+			
+			
+		}
+		add_core_of = EGU
+	}
+
+	provinces={
+		6124 6125 6126 6127 6128 6129 6130 6131 6132 6133 6134 6135 6136 6137 6138 6139 6140 6141 6142 6143 6144 6145 6146 6147 6148 6149 6150 6151 6152 6153 6154 6155 6156 6157 6158 6159 6160 6161 6162 6163 
+	}
+	local_supplies=0.0 
+}

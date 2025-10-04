@@ -1,0 +1,38 @@
+
+state={
+	id=265
+	name="STATE_265"
+	manpower = 28863
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=2
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 4752 5}
+		victory_points = { 4753 1}
+		victory_points = { 4756 3}
+		
+		owner = EGU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = EGU
+	}
+
+	provinces={
+		4744 4745 4746 4747 4748 4749 4750 4751 4752 4753 4754 4755 4756 
+	}
+	local_supplies=0.0 
+}

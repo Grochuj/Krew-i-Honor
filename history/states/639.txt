@@ -1,0 +1,41 @@
+
+state={
+	id=639
+	name="STATE_639"
+	manpower = 19686
+	
+	state_category = rural
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 11380 2}
+		victory_points = { 11381 2}
+		victory_points = { 11382 1}
+		
+		owner = VIS
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 1
+			11380 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = VIS
+	}
+
+	provinces={
+		11376 11377 11378 11379 11380 11381 11382 11383 
+	}
+	local_supplies=0.0 
+}

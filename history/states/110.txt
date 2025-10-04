@@ -1,0 +1,38 @@
+
+state={
+	id=110
+	name="STATE_110"
+	manpower = 32758
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=3
+		oil=0
+		rubber=2
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 2045 4}
+		victory_points = { 2047 2}
+		victory_points = { 2050 4}
+		
+		owner = KHU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = KHU
+	}
+
+	provinces={
+		2045 2046 2047 2048 2049 2050 2051 2052 2053 2054 2055 2056 2057 2058 2059 2060 2061 
+	}
+	local_supplies=0.0 
+}

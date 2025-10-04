@@ -1,0 +1,39 @@
+
+state={
+	id=684
+	name="STATE_684"
+	manpower = 997
+	
+	state_category = small_island
+	resources={
+		aluminium=0
+		chromium=3
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 11687 1}
+		
+		owner = FRU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			11687 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = FRU
+	}
+
+	provinces={
+		11687 
+	}
+	local_supplies=0.0 
+}

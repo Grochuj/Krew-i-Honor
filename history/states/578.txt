@@ -1,0 +1,40 @@
+
+state={
+	id=578
+	name="STATE_578"
+	manpower = 29656
+	
+	state_category = city
+	resources={
+		aluminium=1
+		chromium=1
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 10303 1}
+		victory_points = { 10306 13}
+		
+		owner = TEI
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			dockyard = 1
+			10302 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = TEI
+	}
+
+	provinces={
+		10301 10302 10303 10304 10305 10306 10307 10308 10309 10310 10311 
+	}
+	local_supplies=0.0 
+}

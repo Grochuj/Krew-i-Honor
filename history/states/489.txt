@@ -1,0 +1,41 @@
+
+state={
+	id=489
+	name="STATE_489"
+	manpower = 39788
+	
+	state_category = large_city
+	resources={
+		aluminium=1
+		chromium=1
+		oil=1
+		rubber=1
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 8987 1}
+		victory_points = { 8989 1}
+		victory_points = { 8992 17}
+		
+		owner = TEI
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 3
+			8993 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = TEI
+	}
+
+	provinces={
+		8986 8987 8988 8989 8990 8991 8992 8993 8994 8995 8996 8997 8998 8999 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,37 @@
+
+state={
+	id=94
+	name="STATE_94"
+	manpower = 20528
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=1
+		rubber=0
+		steel=3
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 1814 2}
+		victory_points = { 1819 2}
+		
+		owner = VIS
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = VIS
+	}
+
+	provinces={
+		1812 1813 1814 1815 1816 1817 1818 1819 1820 1821 1822 1823 1824 
+	}
+	local_supplies=0.0 
+}

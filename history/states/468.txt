@@ -1,0 +1,37 @@
+
+state={
+	id=468
+	name="STATE_468"
+	manpower = 78357
+	
+	state_category = megalopolis
+	resources={
+		aluminium=1
+		chromium=1
+		oil=0
+		rubber=15
+		steel=4
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 8631 1}
+		victory_points = { 8637 34}
+		
+		owner = FIU
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 0
+			industrial_complex = 5
+			
+			
+		}
+		add_core_of = FIU
+	}
+
+	provinces={
+		8631 8632 8633 8634 8635 8636 8637 8638 8639 8640 8641 8642 8643 8644 8645 8646 8647 8648 8649 8650 8651 8652 8653 8654 8655 8656 8657 8658 8659 8660 8661 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,41 @@
+
+state={
+	id=313
+	name="STATE_313"
+	manpower = 85158
+	
+	state_category = megalopolis
+	resources={
+		aluminium=1
+		chromium=1
+		oil=2
+		rubber=1
+		steel=4
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 5736 15}
+		victory_points = { 5739 8}
+		victory_points = { 5740 12}
+		
+		owner = DUS
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			5753 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = DUS
+	}
+
+	provinces={
+		5730 5731 5732 5733 5734 5735 5736 5737 5738 5739 5740 5741 5742 5743 5744 5745 5746 5747 5748 5749 5750 5751 5752 5753 5754 5755 5756 5757 5758 5759 5760 5761 5762 5763 5764 
+	}
+	local_supplies=0.0 
+}

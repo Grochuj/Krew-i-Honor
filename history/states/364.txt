@@ -1,0 +1,40 @@
+
+state={
+	id=364
+	name="STATE_364"
+	manpower = 16487
+	
+	state_category = rural
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 6722 1}
+		victory_points = { 6724 4}
+		
+		owner = DUS
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			6724 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = DUS
+	}
+
+	provinces={
+		6721 6722 6723 6724 6725 6726 
+	}
+	local_supplies=0.0 
+}

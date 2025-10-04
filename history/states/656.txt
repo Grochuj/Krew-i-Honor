@@ -1,0 +1,39 @@
+
+state={
+	id=656
+	name="STATE_656"
+	manpower = 6181
+	
+	state_category = pastoral
+	resources={
+		aluminium=1
+		chromium=1
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 11573 1}
+		
+		owner = CEL
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			11573 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = CEL
+	}
+
+	provinces={
+		11573 11574 
+	}
+	local_supplies=0.0 
+}

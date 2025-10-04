@@ -1,0 +1,41 @@
+
+state={
+	id=513
+	name="STATE_513"
+	manpower = 67078
+	
+	state_category = metropolis
+	resources={
+		aluminium=2
+		chromium=0
+		oil=2
+		rubber=0
+		steel=3
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 9372 9}
+		victory_points = { 9373 14}
+		victory_points = { 9375 5}
+		
+		owner = MOZ
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			dockyard = 3
+			9382 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = MOZ
+	}
+
+	provinces={
+		9369 9370 9371 9372 9373 9374 9375 9376 9377 9378 9379 9380 9381 9382 9383 9384 9385 9386 9387 9388 9389 9390 9391 9392 9393 9394 9395 9396 
+	}
+	local_supplies=0.0 
+}

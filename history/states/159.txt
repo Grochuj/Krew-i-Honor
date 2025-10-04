@@ -1,0 +1,36 @@
+
+state={
+	id=159
+	name="STATE_159"
+	manpower = 22736
+	
+	state_category = town
+	resources={
+		aluminium=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 2883 8}
+		
+		owner = KHU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = KHU
+	}
+
+	provinces={
+		2877 2878 2879 2880 2881 2882 2883 2884 2885 
+	}
+	local_supplies=0.0 
+}

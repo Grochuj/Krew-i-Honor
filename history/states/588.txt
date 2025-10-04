@@ -1,0 +1,40 @@
+
+state={
+	id=588
+	name="STATE_588"
+	manpower = 21561
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 10455 4}
+		victory_points = { 10458 4}
+		
+		owner = CNU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 1
+			10454 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = CNU
+	}
+
+	provinces={
+		10453 10454 10455 10456 10457 10458 10459 10460 
+	}
+	local_supplies=0.0 
+}

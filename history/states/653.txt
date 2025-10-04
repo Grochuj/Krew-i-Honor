@@ -1,0 +1,41 @@
+
+state={
+	id=653
+	name="STATE_653"
+	manpower = 23957
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=1
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 11540 3}
+		victory_points = { 11542 3}
+		victory_points = { 11543 1}
+		
+		owner = CEL
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			11542 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = CEL
+	}
+
+	provinces={
+		11539 11540 11541 11542 11543 11544 11545 11546 11547 11548 
+	}
+	local_supplies=0.0 
+}

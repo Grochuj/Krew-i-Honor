@@ -1,0 +1,38 @@
+
+state={
+	id=400
+	name="STATE_400"
+	manpower = 11547
+	
+	state_category = rural
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 7386 1}
+		victory_points = { 7388 1}
+		victory_points = { 7390 1}
+		
+		owner = TEI
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			
+		}
+		add_core_of = TEI
+	}
+
+	provinces={
+		7386 7387 7388 7389 7390 
+	}
+	local_supplies=0.0 
+}

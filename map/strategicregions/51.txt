@@ -1,0 +1,167 @@
+strategic_region={
+	id=51
+	name="STRATEGICREGION_51"
+	provinces={
+		11467 11468 11469 11470 11471 11472 11473 11474 11475 11476 11477 11478 11479 11480 11481 11482 11483 11484 11485 11486 11487 11488 11489 11490 11491 11492 11493 11494 11495 11496 11497 11498 11499 11500 11501 11610 11611 11612 11613 11614 11615 11616 11617 11618 11619 11620 11634 11635 11636 11637 11638 11639 11640 11690 11696 11703 11707 11709 11714 11722 11728 11736 11749 12199 12204 12209 11754 11755 11756 11757 11758 11759 11760 11761 11762 11763 11764 11765 11766 11767 11768 11769 11770 11771 11772 11773 11774 11775 11776 11777 11778 11779 11780 11781 11782 11783 11784 11785 11786 11787 11788 11789 11790 11791 11792 11793 11794 12027 12028 12029 12030 12031 
+	}
+	
+	weather={
+		period={
+			between={ 0.0 30.0 }
+			temperature={ -1.00 10.00 }
+			no_phenomenon=0.866326
+			rain_light=0.092019
+			rain_heavy=0.033890
+			snow=0.007765
+			blizzard=0.000000
+			arctic_water=0.000
+			mud=0.015980
+			sandstorm=0.000000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.1 27.1 }
+			temperature={ -2.00 9.000 }
+			no_phenomenon=0.863173
+			rain_light=0.093595
+			rain_heavy=0.032314
+			snow=0.010918
+			blizzard=0.000000
+			arctic_water=0.000
+			mud=0.015822
+			sandstorm=0.000000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.2 30.2 }
+			temperature={ -3.00 8.000 }
+			no_phenomenon=0.860020
+			rain_light=0.095172
+			rain_heavy=0.030737
+			snow=0.014071
+			blizzard=0.000000
+			arctic_water=0.000
+			mud=0.015665
+			sandstorm=0.000000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.3 29.3 }
+			temperature={ -4.00 7.000 }
+			no_phenomenon=0.856867
+			rain_light=0.096748
+			rain_heavy=0.029161
+			snow=0.017224
+			blizzard=0.000000
+			arctic_water=0.000
+			mud=0.015507
+			sandstorm=0.000000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.4 30.4 }
+			temperature={ -5.00 6.000 }
+			no_phenomenon=0.853714
+			rain_light=0.098325
+			rain_heavy=0.027584
+			snow=0.020377
+			blizzard=0.000000
+			arctic_water=0.000
+			mud=0.015349
+			sandstorm=0.000000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.5 29.5 }
+			temperature={ -6.00 5.000 }
+			no_phenomenon=0.850561
+			rain_light=0.099901
+			rain_heavy=0.026008
+			snow=0.023530
+			blizzard=0.000000
+			arctic_water=0.000
+			mud=0.015192
+			sandstorm=0.000000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.6 30.6 }
+			temperature={ -6.00 4.000 }
+			no_phenomenon=0.845908
+			rain_light=0.101478
+			rain_heavy=0.024431
+			snow=0.026683
+			blizzard=0.001501
+			arctic_water=0.000
+			mud=0.015034
+			sandstorm=0.000000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.7 30.7 }
+			temperature={ -6.00 5.000 }
+			no_phenomenon=0.850561
+			rain_light=0.099901
+			rain_heavy=0.026008
+			snow=0.023530
+			blizzard=0.000000
+			arctic_water=0.000
+			mud=0.015192
+			sandstorm=0.000000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.8 29.8 }
+			temperature={ -5.00 6.000 }
+			no_phenomenon=0.853714
+			rain_light=0.098325
+			rain_heavy=0.027584
+			snow=0.020377
+			blizzard=0.000000
+			arctic_water=0.000
+			mud=0.015349
+			sandstorm=0.000000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.9 30.9 }
+			temperature={ -4.00 7.000 }
+			no_phenomenon=0.856867
+			rain_light=0.096748
+			rain_heavy=0.029161
+			snow=0.017224
+			blizzard=0.000000
+			arctic_water=0.000
+			mud=0.015507
+			sandstorm=0.000000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.10 29.10 }
+			temperature={ -3.00 8.000 }
+			no_phenomenon=0.860020
+			rain_light=0.095172
+			rain_heavy=0.030737
+			snow=0.014071
+			blizzard=0.000000
+			arctic_water=0.000
+			mud=0.015665
+			sandstorm=0.000000
+			min_snow_level=0.000
+		}
+		period={
+			between={ 0.11 30.11 }
+			temperature={ -2.00 9.000 }
+			no_phenomenon=0.863173
+			rain_light=0.093595
+			rain_heavy=0.032314
+			snow=0.010918
+			blizzard=0.000000
+			arctic_water=0.000
+			mud=0.015822
+			sandstorm=0.000000
+			min_snow_level=0.000
+		}
+		
+	}
+}

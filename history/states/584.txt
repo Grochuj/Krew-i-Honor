@@ -1,0 +1,38 @@
+
+state={
+	id=584
+	name="STATE_584"
+	manpower = 68862
+	
+	state_category = metropolis
+	resources={
+		aluminium=1
+		chromium=8
+		oil=3
+		rubber=0
+		steel=4
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 10371 22}
+		victory_points = { 10385 3}
+		victory_points = { 10399 4}
+		
+		owner = FRU
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 3
+			
+			
+		}
+		add_core_of = FRU
+	}
+
+	provinces={
+		10370 10371 10372 10373 10374 10375 10376 10377 10378 10379 10380 10381 10382 10383 10384 10385 10386 10387 10388 10389 10390 10391 10392 10393 10394 10395 10396 10397 10398 10399 10400 
+	}
+	local_supplies=0.0 
+}

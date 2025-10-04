@@ -1,0 +1,39 @@
+
+state={
+	id=107
+	name="STATE_107"
+	manpower = 17889
+	
+	state_category = rural
+	resources={
+		aluminium=1
+		chromium=0
+		oil=1
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 2012 6}
+		
+		owner = MAO
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			2018 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = MAO
+	}
+
+	provinces={
+		2012 2013 2014 2015 2016 2017 2018 
+	}
+	local_supplies=0.0 
+}

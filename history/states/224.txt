@@ -1,0 +1,41 @@
+
+state={
+	id=224
+	name="STATE_224"
+	manpower = 79243
+	
+	state_category = metropolis
+	resources={
+		aluminium=2
+		chromium=1
+		oil=1
+		rubber=0
+		steel=3
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 3896 28}
+		victory_points = { 3900 1}
+		victory_points = { 3906 2}
+		
+		owner = AME
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1
+			3890 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = AME
+	}
+
+	provinces={
+		3889 3890 3891 3892 3893 3894 3895 3896 3897 3898 3899 3900 3901 3902 3903 3904 3905 3906 3907 3908 3909 3910 3911 3912 3913 3914 3915 3916 3917 3918 3919 3920 3921 3922 3923 
+	}
+	local_supplies=0.0 
+}

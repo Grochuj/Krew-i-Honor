@@ -1,0 +1,39 @@
+
+state={
+	id=228
+	name="STATE_228"
+	manpower = 88815
+	
+	state_category = megalopolis
+	resources={
+		aluminium=2
+		chromium=0
+		oil=0
+		rubber=11
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 3970 5}
+		victory_points = { 3973 2}
+		victory_points = { 3984 30}
+		victory_points = { 3987 1}
+		
+		owner = MOZ
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 0
+			industrial_complex = 5
+			
+			
+		}
+		add_core_of = MOZ
+	}
+
+	provinces={
+		3969 3970 3971 3972 3973 3974 3975 3976 3977 3978 3979 3980 3981 3982 3983 3984 3985 3986 3987 3988 3989 3990 3991 3992 3993 3994 3995 3996 3997 3998 3999 4000 4001 4002 4003 
+	}
+	local_supplies=0.0 
+}

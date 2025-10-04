@@ -1,0 +1,41 @@
+
+state={
+	id=403
+	name="STATE_403"
+	manpower = 37684
+	
+	state_category = large_town
+	resources={
+		aluminium=1
+		chromium=0
+		oil=1
+		rubber=13
+		steel=2
+		tungsten=1
+	}
+
+	history={
+		victory_points = { 7426 1}
+		victory_points = { 7429 6}
+		victory_points = { 7431 6}
+		
+		owner = CQN
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 1
+			industrial_complex = 0
+			
+			7440 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = CQN
+	}
+
+	provinces={
+		7424 7425 7426 7427 7428 7429 7430 7431 7432 7433 7434 7435 7436 7437 7438 7439 7440 7441 
+	}
+	local_supplies=0.0 
+}

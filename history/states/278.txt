@@ -1,0 +1,36 @@
+
+state={
+	id=278
+	name="STATE_278"
+	manpower = 20426
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=1
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 5005 7}
+		
+		owner = EGU
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			
+		}
+		add_core_of = EGU
+	}
+
+	provinces={
+		5001 5002 5003 5004 5005 5006 5007 5008 5009 
+	}
+	local_supplies=0.0 
+}
