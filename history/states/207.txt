@@ -8,17 +8,17 @@ state={
 	resources={
 		aluminium=0
 		chromium=0
-		oil=2
-		rubber=2
-		steel=1
-		tungsten=1
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
 	}
 
 	history={
 		victory_points = { 3631 1}
 		victory_points = { 3641 17}
 		
-		owner = KHU
+		owner = KAM
 		buildings = {
 			infrastructure = 2
 			
@@ -27,7 +27,7 @@ state={
 			
 			
 		}
-		add_core_of = KHU
+		add_core_of = KAM
 	}
 
 	provinces={

@@ -6,18 +6,18 @@ state={
 	
 	state_category = large_town
 	resources={
-		aluminium=2
-		chromium=3
-		oil=2
+		aluminium=0
+		chromium=0
+		oil=0
 		rubber=0
-		steel=5
-		tungsten=3
+		steel=0
+		tungsten=0
 	}
 
 	history={
 		victory_points = { 1247 19}
 		
-		owner = KHU
+		owner = KAM
 		buildings = {
 			infrastructure = 1
 			
@@ -29,7 +29,7 @@ state={
 			}
 			
 		}
-		add_core_of = KHU
+		add_core_of = KAM
 	}
 
 	provinces={
