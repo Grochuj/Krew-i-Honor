@@ -8,16 +8,16 @@ state={
 	resources={
 		aluminium=0
 		chromium=0
-		oil=1
-		rubber=1
-		steel=1
+		oil=0
+		rubber=0
+		steel=0
 		tungsten=0
 	}
 
 	history={
 		victory_points = { 10590 7}
 		
-		owner = TEI
+		owner = CEP
 		buildings = {
 			infrastructure = 1
 			
@@ -26,7 +26,7 @@ state={
 			
 			
 		}
-		add_core_of = TEI
+		add_core_of = CEP
 	}
 
 	provinces={

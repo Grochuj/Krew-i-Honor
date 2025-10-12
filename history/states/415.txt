@@ -10,8 +10,8 @@ state={
 		chromium=0
 		oil=0
 		rubber=0
-		steel=2
-		tungsten=1
+		steel=0
+		tungsten=0
 	}
 
 	history={
