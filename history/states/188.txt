@@ -6,11 +6,11 @@ state={
 	
 	state_category = town
 	resources={
-		aluminium=1
+		aluminium=0
 		chromium=0
 		oil=0
-		rubber=3
-		steel=1
+		rubber=0
+		steel=0
 		tungsten=0
 	}
 
@@ -19,7 +19,7 @@ state={
 		victory_points = { 3349 3}
 		victory_points = { 3350 3}
 		
-		owner = MOZ
+		owner = RZP
 		buildings = {
 			infrastructure = 1
 			
@@ -28,7 +28,7 @@ state={
 			
 			
 		}
-		add_core_of = MOZ
+		add_core_of = RZP
 	}
 
 	provinces={
