@@ -7,16 +7,16 @@ state={
 	state_category = small_island
 	resources={
 		aluminium=0
-		chromium=3
+		chromium=0
 		oil=0
 		rubber=0
-		steel=1
+		steel=0
 		tungsten=0
 	}
 
 	history={
 		
-		owner = FIU
+		owner = SZP
 		buildings = {
 			infrastructure = 1
 			
@@ -28,7 +28,7 @@ state={
 			}
 			
 		}
-		add_core_of = FIU
+		add_core_of = SZP
 	}
 
 	provinces={

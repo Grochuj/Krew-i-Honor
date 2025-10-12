@@ -10,15 +10,15 @@ state={
 		chromium=0
 		oil=0
 		rubber=0
-		steel=5
-		tungsten=1
+		steel=0
+		tungsten=0
 	}
 
 	history={
 		victory_points = { 11118 1}
 		victory_points = { 11121 3}
 		
-		owner = FIU
+		owner = LIB
 		buildings = {
 			infrastructure = 1
 			
@@ -30,7 +30,7 @@ state={
 			}
 			
 		}
-		add_core_of = FIU
+		add_core_of = LIB
 	}
 
 	provinces={

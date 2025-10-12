@@ -7,17 +7,17 @@ state={
 	state_category = rural
 	resources={
 		aluminium=0
-		chromium=2
+		chromium=0
 		oil=0
 		rubber=0
-		steel=2
+		steel=0
 		tungsten=0
 	}
 
 	history={
 		victory_points = { 11110 5}
 		
-		owner = FIU
+		owner = SZP
 		buildings = {
 			infrastructure = 1
 			
@@ -29,7 +29,7 @@ state={
 			}
 			
 		}
-		add_core_of = FIU
+		add_core_of = SZP
 	}
 
 	provinces={

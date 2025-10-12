@@ -6,11 +6,11 @@ state={
 	
 	state_category = city
 	resources={
-		aluminium=3
-		chromium=6
-		oil=1
+		aluminium=0
+		chromium=0
+		oil=0
 		rubber=0
-		steel=4
+		steel=0
 		tungsten=0
 	}
 
@@ -19,7 +19,7 @@ state={
 		victory_points = { 10766 5}
 		victory_points = { 10770 1}
 		
-		owner = FIU
+		owner = SZP
 		buildings = {
 			infrastructure = 2
 			
@@ -31,7 +31,7 @@ state={
 			}
 			
 		}
-		add_core_of = FIU
+		add_core_of = SZP
 	}
 
 	provinces={

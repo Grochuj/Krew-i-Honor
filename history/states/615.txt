@@ -8,15 +8,15 @@ state={
 	resources={
 		aluminium=0
 		chromium=0
-		oil=1
+		oil=0
 		rubber=0
-		steel=2
+		steel=0
 		tungsten=1
 	}
 
 	history={
 		
-		owner = FIU
+		owner = SZP
 		buildings = {
 			infrastructure = 1
 			
@@ -25,7 +25,7 @@ state={
 			
 			
 		}
-		add_core_of = FIU
+		add_core_of = SZP
 	}
 
 	provinces={

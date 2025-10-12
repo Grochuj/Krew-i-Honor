@@ -17,7 +17,7 @@ state={
 	history={
 		victory_points = { 11705 1}
 		
-		owner = FIU
+		owner = SZP
 		buildings = {
 			infrastructure = 1
 			
@@ -29,7 +29,7 @@ state={
 			}
 			
 		}
-		add_core_of = FIU
+		add_core_of = SZP
 	}
 
 	provinces={
