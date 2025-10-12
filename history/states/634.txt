@@ -6,11 +6,11 @@ state={
 	
 	state_category = town
 	resources={
-		aluminium=1
+		aluminium=0
 		chromium=0
-		oil=1
+		oil=0
 		rubber=0
-		steel=2
+		steel=0
 		tungsten=0
 	}
 
@@ -18,7 +18,7 @@ state={
 		victory_points = { 11317 7}
 		victory_points = { 11320 1}
 		
-		owner = VIS
+		owner = PRL
 		buildings = {
 			infrastructure = 1
 			
@@ -30,7 +30,7 @@ state={
 			}
 			
 		}
-		add_core_of = VIS
+		add_core_of = PRL
 	}
 
 	provinces={
