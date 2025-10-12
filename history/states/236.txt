@@ -7,18 +7,18 @@ state={
 	state_category = town
 	resources={
 		aluminium=0
-		chromium=1
+		chromium=0
 		oil=0
 		rubber=0
-		steel=1
-		tungsten=1
+		steel=0
+		tungsten=0
 	}
 
 	history={
 		victory_points = { 4080 1}
 		victory_points = { 4082 8}
 		
-		owner = VIS
+		owner = DIP
 		buildings = {
 			infrastructure = 1
 			
@@ -30,7 +30,7 @@ state={
 			}
 			
 		}
-		add_core_of = VIS
+		add_core_of = DIP
 	}
 
 	provinces={

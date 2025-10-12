@@ -11,13 +11,13 @@ state={
 		oil=0
 		rubber=0
 		steel=0
-		tungsten=1
+		tungsten=0
 	}
 
 	history={
 		victory_points = { 3007 2}
 		
-		owner = VIS
+		owner = DIP
 		buildings = {
 			infrastructure = 1
 			
@@ -26,7 +26,7 @@ state={
 			
 			
 		}
-		add_core_of = VIS
+		add_core_of = DIP
 	}
 
 	provinces={
