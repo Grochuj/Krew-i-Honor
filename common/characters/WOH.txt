@@ -1,0 +1,13 @@
+characters = {
+	WOH_woch_leader={
+		name=WOH_woch_leader
+		portraits={
+			civilian = {
+				large = GFX_portrait_WOH_woch_leader
+			}
+		}
+		country_leader = {
+			ideology = fed
+		}
+	}
+}

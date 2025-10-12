@@ -14,6 +14,7 @@ RZP = "countries/Rzecz Pospolita.txt"
 DIP = "countries/Federacja Dobrobytu i Pokoju.txt"
 FLS = "countries/Federacja Ludowo-Socjalistyczna.txt"
 PRL = "countries/Polska Rzeczpospolita Ludowa.txt"
+WOH = "countries/Republika Bezpartyjna.txt"
 
 dynamic_tags = yes
 
