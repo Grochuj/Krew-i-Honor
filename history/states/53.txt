@@ -6,12 +6,12 @@ state={
 	
 	state_category = large_town
 	resources={
-		aluminium=1
+		aluminium=0
 		chromium=0
-		oil=2
+		oil=0
 		rubber=0
-		steel=3
-		tungsten=1
+		steel=0
+		tungsten=0
 	}
 
 	history={
@@ -19,7 +19,7 @@ state={
 		victory_points = { 944 11}
 		victory_points = { 946 1}
 		
-		owner = FIU
+		owner = REZ
 		buildings = {
 			infrastructure = 2
 			
@@ -28,7 +28,7 @@ state={
 			
 			
 		}
-		add_core_of = FIU
+		add_core_of = REZ
 	}
 
 	provinces={

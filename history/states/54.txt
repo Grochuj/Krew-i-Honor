@@ -6,11 +6,11 @@ state={
 	
 	state_category = metropolis
 	resources={
-		aluminium=2
-		chromium=1
-		oil=1
+		aluminium=0
+		chromium=0
+		oil=0
 		rubber=0
-		steel=2
+		steel=0
 		tungsten=0
 	}
 
@@ -20,7 +20,7 @@ state={
 		victory_points = { 960 9}
 		victory_points = { 965 4}
 		
-		owner = FIU
+		owner = REZ
 		buildings = {
 			infrastructure = 2
 			
@@ -32,7 +32,7 @@ state={
 			}
 			
 		}
-		add_core_of = FIU
+		add_core_of = REZ
 	}
 
 	provinces={
