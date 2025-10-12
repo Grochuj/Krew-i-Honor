@@ -6,12 +6,12 @@ state={
 	
 	state_category = large_city
 	resources={
-		aluminium=1
-		chromium=1
-		oil=1
-		rubber=1
-		steel=1
-		tungsten=1
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
 	}
 
 	history={
@@ -19,7 +19,7 @@ state={
 		victory_points = { 8989 1}
 		victory_points = { 8992 17}
 		
-		owner = TEI
+		owner = CEP
 		buildings = {
 			infrastructure = 2
 			
@@ -31,7 +31,7 @@ state={
 			}
 			
 		}
-		add_core_of = TEI
+		add_core_of = CEP
 	}
 
 	provinces={
