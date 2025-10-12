@@ -9,7 +9,7 @@ state={
 		aluminium=0
 		chromium=0
 		oil=0
-		rubber=2
+		rubber=0
 		steel=0
 		tungsten=0
 	}
@@ -17,7 +17,7 @@ state={
 	history={
 		victory_points = { 11670 4}
 		
-		owner = CEL
+		owner = CEP
 		buildings = {
 			infrastructure = 1
 			
@@ -29,7 +29,7 @@ state={
 			}
 			
 		}
-		add_core_of = CEL
+		add_core_of = CEP
 	}
 
 	provinces={

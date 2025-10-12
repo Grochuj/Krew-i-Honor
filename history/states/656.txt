@@ -6,8 +6,8 @@ state={
 	
 	state_category = pastoral
 	resources={
-		aluminium=1
-		chromium=1
+		aluminium=0
+		chromium=0
 		oil=0
 		rubber=0
 		steel=0
@@ -17,7 +17,7 @@ state={
 	history={
 		victory_points = { 11573 1}
 		
-		owner = CEL
+		owner = CEP
 		buildings = {
 			infrastructure = 1
 			
@@ -29,7 +29,7 @@ state={
 			}
 			
 		}
-		add_core_of = CEL
+		add_core_of = CEP
 	}
 
 	provinces={
