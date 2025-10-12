@@ -5,19 +5,10 @@ state={
 	manpower = 50660
 	
 	state_category = city
-	resources={
-		aluminium=2
-		chromium=0
-		oil=1
-		rubber=0
-		steel=2
-		tungsten=1
-	}
-
+	
 	history={
-		victory_points = { 5076 17}
 		
-		owner = DUS
+		owner = PAJ
 		buildings = {
 			infrastructure = 2
 			
@@ -26,7 +17,7 @@ state={
 			
 			
 		}
-		add_core_of = DUS
+		add_core_of = PAJ
 	}
 
 	provinces={

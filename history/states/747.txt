@@ -5,19 +5,9 @@ state={
 	manpower = 66
 	
 	state_category = small_island
-	resources={
-		aluminium=0
-		chromium=0
-		oil=0
-		rubber=0
-		steel=0
-		tungsten=0
-	}
 
 	history={
-		victory_points = { 11750 1}
-		
-		owner = FIU
+		owner = PAJ
 		buildings = {
 			infrastructure = 1
 			
@@ -29,7 +19,7 @@ state={
 			}
 			
 		}
-		add_core_of = FIU
+		add_core_of = PAJ
 	}
 
 	provinces={

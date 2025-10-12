@@ -5,21 +5,10 @@ state={
 	manpower = 15921
 	
 	state_category = pastoral
-	resources={
-		aluminium=1
-		chromium=5
-		oil=1
-		rubber=3
-		steel=3
-		tungsten=2
-	}
-
+	
 	history={
-		victory_points = { 5162 1}
-		victory_points = { 5169 1}
-		victory_points = { 5172 1}
-		
-		owner = DUS
+
+		owner = PAJ
 		buildings = {
 			infrastructure = 1
 			
@@ -28,7 +17,7 @@ state={
 			
 			
 		}
-		add_core_of = DUS
+		add_core_of = PAJ
 	}
 
 	provinces={

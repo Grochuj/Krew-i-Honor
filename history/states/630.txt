@@ -5,14 +5,6 @@ state={
 	manpower = 76483
 	
 	state_category = megalopolis
-	resources={
-		aluminium=1
-		chromium=0
-		oil=0
-		rubber=0
-		steel=5
-		tungsten=2
-	}
 
 	history={
 		victory_points = { 11171 15}
@@ -20,7 +12,7 @@ state={
 		victory_points = { 11197 1}
 		victory_points = { 11199 2}
 		
-		owner = FIU
+		owner = IPL
 		buildings = {
 			infrastructure = 3
 			
@@ -32,7 +24,7 @@ state={
 			}
 			
 		}
-		add_core_of = FIU
+		add_core_of = IPL
 	}
 
 	provinces={

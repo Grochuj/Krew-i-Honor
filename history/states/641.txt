@@ -5,18 +5,10 @@ state={
 	manpower = 3909
 	
 	state_category = small_island
-	resources={
-		aluminium=0
-		chromium=0
-		oil=0
-		rubber=0
-		steel=1
-		tungsten=1
-	}
-
+	
 	history={
 		
-		owner = DUS
+		owner = PAJ
 		buildings = {
 			infrastructure = 1
 			
@@ -28,7 +20,7 @@ state={
 			}
 			
 		}
-		add_core_of = DUS
+		add_core_of = PAJ
 	}
 
 	provinces={

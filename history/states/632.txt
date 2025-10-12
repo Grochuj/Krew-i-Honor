@@ -5,21 +5,9 @@ state={
 	manpower = 66462
 	
 	state_category = city
-	resources={
-		aluminium=4
-		chromium=6
-		oil=7
-		rubber=0
-		steel=10
-		tungsten=5
-	}
 
 	history={
-		victory_points = { 11240 7}
-		victory_points = { 11242 7}
-		victory_points = { 11264 7}
-		
-		owner = FIU
+		owner = IPL
 		buildings = {
 			infrastructure = 1
 			
@@ -31,7 +19,7 @@ state={
 			}
 			
 		}
-		add_core_of = FIU
+		add_core_of = IPL
 	}
 
 	provinces={

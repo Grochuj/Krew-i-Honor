@@ -5,21 +5,10 @@ state={
 	manpower = 85158
 	
 	state_category = megalopolis
-	resources={
-		aluminium=1
-		chromium=1
-		oil=2
-		rubber=1
-		steel=4
-		tungsten=1
-	}
 
 	history={
-		victory_points = { 5736 15}
-		victory_points = { 5739 8}
-		victory_points = { 5740 12}
-		
-		owner = DUS
+
+		owner = PAJ
 		buildings = {
 			infrastructure = 3
 			
@@ -31,7 +20,7 @@ state={
 			}
 			
 		}
-		add_core_of = DUS
+		add_core_of = PAJ
 	}
 
 	provinces={
