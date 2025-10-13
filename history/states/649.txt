@@ -8,16 +8,16 @@ state={
 	resources={
 		aluminium=0
 		chromium=0
-		oil=1
+		oil=0
 		rubber=0
-		steel=1
+		steel=0
 		tungsten=0
 	}
 
 	history={
 		victory_points = { 11521 3}
 		
-		owner = FIU
+		owner = PAJ
 		buildings = {
 			infrastructure = 1
 			
@@ -29,7 +29,7 @@ state={
 			}
 			
 		}
-		add_core_of = FIU
+		add_core_of = PAJ
 	}
 
 	provinces={

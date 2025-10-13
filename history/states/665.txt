@@ -9,7 +9,7 @@ state={
 	history={
 		victory_points = { 11645 1}
 		
-		owner = CEP
+		owner = WOH
 		buildings = {
 			infrastructure = 1
 			
@@ -21,7 +21,7 @@ state={
 			}
 			
 		}
-		add_core_of = CEP
+		add_core_of = WOH
 	}
 
 	provinces={
