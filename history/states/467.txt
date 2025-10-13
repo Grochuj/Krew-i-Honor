@@ -6,12 +6,12 @@ state={
 	
 	state_category = town
 	resources={
-		aluminium=3
+		aluminium=0
 		chromium=0
-		oil=5
+		oil=0
 		rubber=0
-		steel=2
-		tungsten=3
+		steel=0
+		tungsten=0
 	}
 
 	history={
@@ -19,7 +19,7 @@ state={
 		victory_points = { 8622 3}
 		victory_points = { 8625 2}
 		
-		owner = FIU
+		owner = UPO
 		buildings = {
 			infrastructure = 1
 			
@@ -31,7 +31,7 @@ state={
 			}
 			
 		}
-		add_core_of = FIU
+		add_core_of = UPO
 	}
 
 	provinces={

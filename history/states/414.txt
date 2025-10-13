@@ -6,18 +6,18 @@ state={
 	
 	state_category = city
 	resources={
-		aluminium=1
+		aluminium=0
 		chromium=0
-		oil=1
-		rubber=14
-		steel=1
-		tungsten=1
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
 	}
 
 	history={
 		victory_points = { 7645 15}
 		
-		owner = TEI
+		owner = UPO
 		buildings = {
 			infrastructure = 2
 			
@@ -29,7 +29,7 @@ state={
 			}
 			
 		}
-		add_core_of = TEI
+		add_core_of = UPO
 	}
 
 	provinces={

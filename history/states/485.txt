@@ -6,12 +6,12 @@ state={
 	
 	state_category = metropolis
 	resources={
-		aluminium=4
-		chromium=4
-		oil=2
-		rubber=13
-		steel=6
-		tungsten=2
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
 	}
 
 	history={
@@ -20,7 +20,7 @@ state={
 		victory_points = { 8924 1}
 		victory_points = { 8934 2}
 		
-		owner = FIU
+		owner = UPO
 		buildings = {
 			infrastructure = 2
 			
@@ -32,7 +32,7 @@ state={
 			}
 			
 		}
-		add_core_of = FIU
+		add_core_of = UPO
 	}
 
 	provinces={
