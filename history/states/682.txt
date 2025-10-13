@@ -17,7 +17,7 @@ state={
 	history={
 		victory_points = { 11685 1}
 		
-		owner = PLO
+		owner = DIP
 		buildings = {
 			infrastructure = 1
 			
@@ -29,7 +29,7 @@ state={
 			}
 			
 		}
-		add_core_of = PLO
+		add_core_of = DIP
 	}
 
 	provinces={

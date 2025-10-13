@@ -8,10 +8,10 @@ state={
 	resources={
 		aluminium=0
 		chromium=0
-		oil=1
+		oil=0
 		rubber=0
-		steel=1
-		tungsten=1
+		steel=0
+		tungsten=0
 	}
 
 	history={
@@ -19,7 +19,7 @@ state={
 		victory_points = { 3935 6}
 		victory_points = { 3937 2}
 		
-		owner = KHU
+		owner = NRP
 		buildings = {
 			infrastructure = 2
 			
@@ -28,7 +28,7 @@ state={
 			
 			
 		}
-		add_core_of = KHU
+		add_core_of = NRP
 	}
 
 	provinces={

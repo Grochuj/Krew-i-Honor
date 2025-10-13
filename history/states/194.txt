@@ -7,11 +7,11 @@ state={
 	state_category = large_town
 	resources={
 		aluminium=0
-		chromium=3
+		chromium=0
 		oil=0
-		rubber=4
-		steel=2
-		tungsten=1
+		rubber=0
+		steel=0
+		tungsten=0
 	}
 
 	history={
@@ -19,7 +19,7 @@ state={
 		victory_points = { 3417 5}
 		victory_points = { 3418 3}
 		
-		owner = KHU
+		owner = NRP
 		buildings = {
 			infrastructure = 1
 			
@@ -28,7 +28,7 @@ state={
 			
 			
 		}
-		add_core_of = KHU
+		add_core_of = NRP
 	}
 
 	provinces={

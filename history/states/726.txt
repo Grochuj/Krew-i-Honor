@@ -17,7 +17,7 @@ state={
 	history={
 		victory_points = { 11729 1}
 		
-		owner = KHU
+		owner = NRP
 		buildings = {
 			infrastructure = 1
 			
@@ -29,7 +29,7 @@ state={
 			}
 			
 		}
-		add_core_of = KHU
+		add_core_of = NRP
 	}
 
 	provinces={
