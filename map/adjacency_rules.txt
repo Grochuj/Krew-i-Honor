@@ -1,0 +1,38 @@
+adjacency_rule =
+{
+	name = "KANAL_CENTRALNY"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 9577 9905 9907 9892 9899 9894 9841 9836 }
+
+	icon = 9892
+	offset = { 0 0 0 }
+}
