@@ -9,9 +9,9 @@ state={
 		aluminium=0
 		chromium=0
 		oil=0
-		rubber=7
-		steel=2
-		tungsten=1
+		rubber=0
+		steel=0
+		tungsten=0
 	}
 
 	history={
@@ -19,7 +19,7 @@ state={
 		victory_points = { 3309 6}
 		victory_points = { 3321 6}
 		
-		owner = MOZ
+		owner = KON
 		buildings = {
 			infrastructure = 2
 			
@@ -28,7 +28,7 @@ state={
 			
 			
 		}
-		add_core_of = MOZ
+		add_core_of = KON
 	}
 
 	provinces={

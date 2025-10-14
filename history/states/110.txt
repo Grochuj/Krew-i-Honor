@@ -7,11 +7,11 @@ state={
 	state_category = town
 	resources={
 		aluminium=0
-		chromium=3
+		chromium=0	
 		oil=0
-		rubber=2
-		steel=2
-		tungsten=1
+		rubber=0
+		steel=0
+		tungsten=0
 	}
 
 	history={
@@ -19,7 +19,7 @@ state={
 		victory_points = { 2047 2}
 		victory_points = { 2050 4}
 		
-		owner = KHU
+		owner = KON
 		buildings = {
 			infrastructure = 1
 			
@@ -28,7 +28,7 @@ state={
 			
 			
 		}
-		add_core_of = KHU
+		add_core_of = KON
 	}
 
 	provinces={

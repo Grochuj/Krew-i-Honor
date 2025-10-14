@@ -6,11 +6,11 @@ state={
 	
 	state_category = town
 	resources={
-		aluminium=1
-		chromium=3
-		oil=1
+		aluminium=0
+		chromium=0
+		oil=0
 		rubber=0
-		steel=2
+		steel=0
 		tungsten=0
 	}
 
@@ -18,7 +18,7 @@ state={
 		victory_points = { 6026 7}
 		victory_points = { 6032 1}
 		
-		owner = DUS
+		owner = SOD
 		buildings = {
 			infrastructure = 1
 			
@@ -27,7 +27,7 @@ state={
 			
 			
 		}
-		add_core_of = DUS
+		add_core_of = SOD
 	}
 
 	provinces={
