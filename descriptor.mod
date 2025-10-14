@@ -1,5 +1,6 @@
 name="Krew i Honor"
-version="v0.4"
+picture="krewihonor.jpg"
+version="v0.5"
 tags={
 	"Map"
 	"Utilities"
@@ -28,4 +29,3 @@ replace_path="localisation"
 supported_version="1.16.9"
 path="C:/Users/szymo/Documents/Paradox Interactive/Hearts of Iron IV/mod/Krew i Honor"
 remote_file_id="3466066625"
-picture="krewihonor.jpg"
