@@ -10,7 +10,7 @@ state={
 		chromium=0
 		oil=0
 		rubber=0
-		steel=1
+		steel=0
 		tungsten=0
 	}
 
@@ -19,7 +19,7 @@ state={
 		victory_points = { 7388 1}
 		victory_points = { 7390 1}
 		
-		owner = TEI
+		owner = UPO
 		buildings = {
 			infrastructure = 1
 			
@@ -28,7 +28,7 @@ state={
 			
 			
 		}
-		add_core_of = TEI
+		add_core_of = UPO
 	}
 
 	provinces={

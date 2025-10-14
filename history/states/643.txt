@@ -15,19 +15,18 @@ state={
 	}
 
 	history={
-		victory_points = { 11423 13}
-		victory_points = { 11437 10}
-		victory_points = { 11438 26}
+		victory_points = { 11437 30}
+		victory_points = { 11438 8}
 		
 		owner = WOH
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			
 			arms_factory = 2
 			industrial_complex = 3
 			dockyard = 3
-			11426 = {
-				naval_base = 1
+			11437 = {
+				naval_base = 5
 			}
 			
 		}

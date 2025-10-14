@@ -6,7 +6,7 @@ state={
 	
 	state_category = town
 	resources={
-		aluminium=1
+		aluminium=0
 		chromium=0
 		oil=0
 		rubber=0
@@ -18,7 +18,7 @@ state={
 		victory_points = { 4409 3}
 		victory_points = { 4412 3}
 		
-		owner = EGU
+		owner = UPO
 		buildings = {
 			infrastructure = 1
 			
@@ -27,7 +27,7 @@ state={
 			
 			
 		}
-		add_core_of = EGU
+		add_core_of = UPO
 	}
 
 	provinces={

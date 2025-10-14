@@ -6,12 +6,12 @@ state={
 	
 	state_category = metropolis
 	resources={
-		aluminium=3
-		chromium=5
-		oil=3
+		aluminium=0
+		chromium=0
+		oil=0
 		rubber=0
-		steel=6
-		tungsten=1
+		steel=0
+		tungsten=0
 	}
 
 	history={
@@ -19,7 +19,7 @@ state={
 		victory_points = { 7111 1}
 		victory_points = { 7157 24}
 		
-		owner = EGU
+		owner = UPO
 		buildings = {
 			infrastructure = 2
 			
@@ -28,7 +28,7 @@ state={
 			
 			
 		}
-		add_core_of = EGU
+		add_core_of = UPO
 	}
 
 	provinces={
