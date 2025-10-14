@@ -8,18 +8,16 @@ state={
 	resources={
 		aluminium=0
 		chromium=0
-		oil=2
+		oil=0
 		rubber=0
-		steel=1
-		tungsten=1
+		steel=0
+		tungsten=0
 	}
 
 	history={
-		victory_points = { 7298 3}
-		victory_points = { 7299 3}
-		victory_points = { 7301 3}
+
 		
-		owner = CQN
+		owner = UPO
 		buildings = {
 			infrastructure = 1
 			
@@ -31,7 +29,7 @@ state={
 			}
 			
 		}
-		add_core_of = CQN
+		add_core_of = UPO
 	}
 
 	provinces={

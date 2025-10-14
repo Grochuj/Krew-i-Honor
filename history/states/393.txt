@@ -6,12 +6,12 @@ state={
 	
 	state_category = large_city
 	resources={
-		aluminium=2
-		chromium=2
-		oil=4
+		aluminium=0
+		chromium=0
+		oil=0
 		rubber=0
-		steel=9
-		tungsten=4
+		steel=0
+		tungsten=0
 	}
 
 	history={
@@ -20,7 +20,7 @@ state={
 		victory_points = { 7242 24}
 		victory_points = { 7251 1}
 		
-		owner = DUS
+		owner = UPO
 		buildings = {
 			infrastructure = 2
 			
@@ -32,7 +32,7 @@ state={
 			}
 			
 		}
-		add_core_of = DUS
+		add_core_of = UPO
 	}
 
 	provinces={
