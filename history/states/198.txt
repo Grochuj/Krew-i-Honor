@@ -6,12 +6,12 @@ state={
 	
 	state_category = city
 	resources={
-		aluminium=3
-		chromium=6
-		oil=6
+		aluminium=0
+		chromium=0
+		oil=0
 		rubber=0
-		steel=7
-		tungsten=4
+		steel=0
+		tungsten=0
 	}
 
 	history={
@@ -19,7 +19,7 @@ state={
 		victory_points = { 3474 9}
 		victory_points = { 3493 9}
 		
-		owner = AME
+		owner = KON
 		buildings = {
 			infrastructure = 2
 			
@@ -31,7 +31,7 @@ state={
 			}
 			
 		}
-		add_core_of = AME
+		add_core_of = KON
 	}
 
 	provinces={

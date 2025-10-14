@@ -6,19 +6,19 @@ state={
 	
 	state_category = rural
 	resources={
-		aluminium=1
+		aluminium=0
 		chromium=0
 		oil=0
 		rubber=0
 		steel=0
-		tungsten=1
+		tungsten=0
 	}
 
 	history={
 		victory_points = { 6722 1}
 		victory_points = { 6724 4}
 		
-		owner = DUS
+		owner = SOD
 		buildings = {
 			infrastructure = 1
 			
@@ -30,7 +30,7 @@ state={
 			}
 			
 		}
-		add_core_of = DUS
+		add_core_of = SOD
 	}
 
 	provinces={
