@@ -6,11 +6,11 @@ state={
 	
 	state_category = rural
 	resources={
-		aluminium=1
-		chromium=1
-		oil=1
+		aluminium=0
+		chromium=0
+		oil=0
 		rubber=0
-		steel=2
+		steel=0
 		tungsten=0
 	}
 
@@ -18,7 +18,7 @@ state={
 		victory_points = { 5689 4}
 		victory_points = { 5692 4}
 		
-		owner = CQN
+		owner = UPO
 		buildings = {
 			infrastructure = 1
 			
@@ -27,7 +27,7 @@ state={
 			
 			
 		}
-		add_core_of = CQN
+		add_core_of = UPO
 	}
 
 	provinces={

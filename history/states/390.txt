@@ -16,7 +16,7 @@ state={
 
 	history={
 		
-		owner = EGU
+		owner = UPO
 		buildings = {
 			infrastructure = 1
 			
@@ -25,7 +25,7 @@ state={
 			
 			
 		}
-		add_core_of = EGU
+		add_core_of = UPO
 	}
 
 	provinces={

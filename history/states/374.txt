@@ -6,11 +6,11 @@ state={
 	
 	state_category = metropolis
 	resources={
-		aluminium=2
-		chromium=2
-		oil=2
+		aluminium=0
+		chromium=0
+		oil=0
 		rubber=0
-		steel=4
+		steel=0
 		tungsten=0
 	}
 
@@ -18,7 +18,7 @@ state={
 		victory_points = { 6913 16}
 		victory_points = { 6920 16}
 		
-		owner = TEI
+		owner = UPO
 		buildings = {
 			infrastructure = 2
 			
@@ -27,7 +27,7 @@ state={
 			
 			
 		}
-		add_core_of = TEI
+		add_core_of = UPO
 	}
 
 	provinces={
