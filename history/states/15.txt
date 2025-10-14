@@ -6,17 +6,17 @@ state={
 	
 	state_category = small_island
 	resources={
-		aluminium=1
-		chromium=3
-		oil=2
+		aluminium=0
+		chromium=0
+		oil=0
 		rubber=0
-		steel=4
-		tungsten=3
+		steel=0
+		tungsten=0
 	}
 
 	history={
 		
-		owner = MAO
+		owner = FLS
 		buildings = {
 			infrastructure = 1
 			
@@ -25,7 +25,7 @@ state={
 			
 			
 		}
-		add_core_of = MAO
+		add_core_of = FLS
 	}
 
 	provinces={

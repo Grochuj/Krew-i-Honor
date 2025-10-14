@@ -6,10 +6,10 @@ state={
 	
 	state_category = rural
 	resources={
-		aluminium=1
+		aluminium=0
 		chromium=0
-		oil=1
-		rubber=3
+		oil=0
+		rubber=0
 		steel=0
 		tungsten=0
 	}
@@ -19,7 +19,7 @@ state={
 		victory_points = { 337 1}
 		victory_points = { 340 1}
 		
-		owner = MAO
+		owner = FLS
 		buildings = {
 			infrastructure = 1
 			
@@ -31,7 +31,7 @@ state={
 			}
 			
 		}
-		add_core_of = MAO
+		add_core_of = FLS
 	}
 
 	provinces={

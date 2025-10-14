@@ -7,18 +7,18 @@ state={
 	state_category = large_town
 	resources={
 		aluminium=0
-		chromium=4
-		oil=1
-		rubber=3
-		steel=2
-		tungsten=2
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
 	}
 
 	history={
 		victory_points = { 823 6}
 		victory_points = { 830 6}
 		
-		owner = MAO
+		owner = FLS
 		buildings = {
 			infrastructure = 1
 			
@@ -30,7 +30,7 @@ state={
 			}
 			
 		}
-		add_core_of = MAO
+		add_core_of = FLS
 	}
 
 	provinces={
