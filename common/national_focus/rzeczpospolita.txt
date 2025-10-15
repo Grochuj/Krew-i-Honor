@@ -308,7 +308,7 @@ focus_tree = {
         id = RZP_sarmatanatronie
         cost = 5
         icon = GFX_focus_POL_nationalist_education
-        x = 27
+        x = 20
         y = 0
         
         completion_reward = {
@@ -336,7 +336,7 @@ focus_tree = {
         icon = GFX_focus_POL_belarus_army
         cost = 1
         relative_position_id = RZP_zwrotkuprzyszlosci
-        x = -11
+        x = -4
         y = 1
         available = {
             always = no
@@ -500,10 +500,7 @@ focus_tree = {
         prerequisite = {
             focus = RZP_konsolidacjapobuncie
         }
-        available = {
-            is_free_or_subject_of_root = yes
-        }
-        x = -3
+        x = 5
         y = 1
         completion_reward = { 
             add_dynamic_modifier = {
@@ -622,7 +619,7 @@ focus = {
             is_free_or_subject_of_root = yes
         }
     cost = 5
-    x = 3
+    x = -2
     y = 1
     completion_reward = {
         add_ideas = RZP_idea_iredenta
@@ -789,7 +786,7 @@ focus = {
         icon = GFX_focus_generic_welfare
         cost = 1
         relative_position_id = RZP_zwrotkuprzyszlosci
-        x = 4
+        x = 7
         y = 1
         available = {
             always = no
@@ -799,6 +796,79 @@ focus = {
         }
         prerequisite = {
             focus = RZP_zwrotkuprzyszlosci
+        }
+        completion_reward = { 
+            
+        }
+    }
+    #Jakubiak=======================================================================
+    focus = {
+        id = RZP_rzadyjakubiaka
+        icon = GFX_focus_spr_torchbearers_of_tomorrow
+        cost = 10
+        relative_position_id = RZP_wesprzyjmypis
+        x = -3
+        y = 1
+        mutually_exclusive = {
+            focus = RZP_zmianakierunku
+        }
+        prerequisite = {
+            focus = RZP_wesprzyjmypis
+        }
+        completion_reward = { 
+            
+        }
+    }
+    #Kukiz==========================================================================
+    focus = {
+        id = RZP_zmianakierunku
+        icon = GFX_focus_generic_the_giant_wakes
+        cost = 10
+        relative_position_id = RZP_wesprzyjmypis
+        x = 5
+        y = 1
+        mutually_exclusive = {
+            focus = RZP_rzadyjakubiaka
+        }
+        prerequisite = {
+            focus = RZP_wesprzyjmypis
+        }
+        completion_reward = { 
+            add_timed_idea = {
+                idea = RZP_kukizpoparcie
+                days = 180
+            }
+        }
+    }
+    focus = {
+        id = RZP_preelekcje
+        icon = GFX_focus_generic_election
+        cost = 5
+        relative_position_id = RZP_zmianakierunku
+        x = 1
+        y = 1
+      
+        prerequisite = {
+            focus = RZP_zmianakierunku
+        }
+        completion_reward = { 
+          add_political_power = 50
+          add_popularity = {
+            ideology = federalizm
+            popularity = 0.05
+          }
+        }
+    }
+    focus = {
+        id = RZP_ekipakukiza
+        icon = GFX_focus_ARG_march_to_la_casa_rosada
+        cost = 5
+        relative_position_id = RZP_zmianakierunku
+        x = -1
+        y = 1
+      
+        prerequisite = {
+            focus = RZP_zmianakierunku
         }
         completion_reward = { 
             

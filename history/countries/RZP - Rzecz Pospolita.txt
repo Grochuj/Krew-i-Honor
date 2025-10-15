@@ -1,8 +1,8 @@
-capital = 327
+capital = 104
 
 oob = "RZP_2025"
 
-set_convoys = 10
+set_convoys = 50
 set_research_slots = 2
 
 recruit_character = RZP_jakubiak
@@ -27,9 +27,11 @@ set_politics = {
 }
 
 set_popularities = {
-	nacjonalizm = 65
-	kaczyzm = 20
-	autorytaryzm = 15
+	nacjonalizm = 50
+	kaczyzm = 14
+	socjalizm = 11
+	federalizm = 25
+	kapitalizm = 10
 }
 
 add_ideas = {
