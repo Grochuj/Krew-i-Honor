@@ -6,12 +6,12 @@ state={
 	
 	state_category = megalopolis
 	resources={
-		aluminium=1
+		aluminium=0
 		chromium=0
-		oil=1
-		rubber=1
-		steel=4
-		tungsten=1
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
 	}
 
 	history={
@@ -20,7 +20,7 @@ state={
 		victory_points = { 8689 1}
 		victory_points = { 8693 17}
 		
-		owner = FRU
+		owner = RPL
 		buildings = {
 			infrastructure = 3
 			
@@ -32,7 +32,7 @@ state={
 			}
 			
 		}
-		add_core_of = FRU
+		add_core_of = RPL
 	}
 
 	provinces={

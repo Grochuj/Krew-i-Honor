@@ -8,9 +8,9 @@ state={
 	resources={
 		aluminium=0
 		chromium=0
-		oil=1
+		oil=0
 		rubber=0
-		steel=1
+		steel=0
 		tungsten=0
 	}
 
@@ -18,7 +18,7 @@ state={
 		victory_points = { 7767 8}
 		victory_points = { 7769 1}
 		
-		owner = FRU
+		owner = RPL
 		buildings = {
 			infrastructure = 2
 			
@@ -27,7 +27,7 @@ state={
 			
 			
 		}
-		add_core_of = FRU
+		add_core_of = RPL
 	}
 
 	provinces={

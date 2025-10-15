@@ -6,12 +6,12 @@ state={
 	
 	state_category = metropolis
 	resources={
-		aluminium=1
+		aluminium=0
 		chromium=0
-		oil=2
+		oil=0
 		rubber=0
-		steel=1
-		tungsten=1
+		steel=0
+		tungsten=0
 	}
 
 	history={
@@ -19,7 +19,7 @@ state={
 		victory_points = { 8064 17}
 		victory_points = { 8081 10}
 		
-		owner = RAD
+		owner = RPL
 		buildings = {
 			infrastructure = 3
 			
@@ -31,7 +31,7 @@ state={
 			}
 			
 		}
-		add_core_of = RAD
+		add_core_of = RPL
 	}
 
 	provinces={
