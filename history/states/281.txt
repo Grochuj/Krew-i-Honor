@@ -8,7 +8,7 @@ state={
 
 	history={
 
-		owner = PAJ
+		owner = SOD
 		buildings = {
 			infrastructure = 2
 			
@@ -20,7 +20,7 @@ state={
 			}
 			
 		}
-		add_core_of = PAJ
+		add_core_of = SOD
 	}
 
 	provinces={
