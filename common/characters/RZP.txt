@@ -19,7 +19,25 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = aut
+			ideology = fed
+		}
+	}
+	RZP_bakun={
+		name = RZP_bakun
+		portraits = {
+			civilian = {
+				
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = RZP_bakun_advisor
+			traits = {
+				dzialacz_stowarzyszenia_kupieckiego
+			}
+			available = {
+				has_completed_focus = RZP_ekipakukiza
+			}
 		}
 	}
 }
