@@ -18,7 +18,7 @@ state={
 		victory_points = { 6722 1}
 		victory_points = { 6724 4}
 		
-		owner = SOD
+		owner = UPO
 		buildings = {
 			infrastructure = 1
 			
@@ -30,7 +30,7 @@ state={
 			}
 			
 		}
-		add_core_of = SOD
+		add_core_of = UPO
 	}
 
 	provinces={
