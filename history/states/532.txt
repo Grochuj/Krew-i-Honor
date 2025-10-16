@@ -19,7 +19,7 @@ state={
 		victory_points = { 9659 2}
 		victory_points = { 9660 1}
 		
-		owner = CNU
+		owner = RPL
 		buildings = {
 			infrastructure = 1
 			
@@ -31,7 +31,7 @@ state={
 			}
 			
 		}
-		add_core_of = CNU
+		add_core_of = RPL
 	}
 
 	provinces={

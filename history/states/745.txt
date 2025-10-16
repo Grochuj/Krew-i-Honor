@@ -17,7 +17,7 @@ state={
 	history={
 		victory_points = { 11748 1}
 		
-		owner = VIS
+		owner = KON
 		buildings = {
 			infrastructure = 1
 			
@@ -29,7 +29,7 @@ state={
 			}
 			
 		}
-		add_core_of = VIS
+		add_core_of = KON
 	}
 
 	provinces={

@@ -7,18 +7,18 @@ state={
 	state_category = city
 	resources={
 		aluminium=0
-		chromium=2
-		oil=2
-		rubber=1
-		steel=2
-		tungsten=1
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
 	}
 
 	history={
 		victory_points = { 9214 3}
 		victory_points = { 9226 14}
 		
-		owner = RAD
+		owner = RPL
 		buildings = {
 			infrastructure = 2
 			
@@ -30,7 +30,7 @@ state={
 			}
 			
 		}
-		add_core_of = RAD
+		add_core_of = RPL
 	}
 
 	provinces={
