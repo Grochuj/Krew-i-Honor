@@ -38,5 +38,18 @@ RZP_wr = {
 	local_factories = wrlf
 	resistance_growth = wrrg
 	max_surrender_limit_offset = wrmsl
-	monthly_population
+}
+RZP_pis = {
+	icon = GFX_idea_SOV_fourth_five_year_plan
+	enable = {
+		always = yes
+	}
+
+	local_resources_factor = lrf
+	consumer_goods_factor = cgf
+	production_factory_efficiency_gain_factor = pdegf
+	production_factory_max_efficiency_factor = pfmef
+	monthly_population = mp
+	weekly_manpower = wm
+	research_speed_factor = rsf
 }

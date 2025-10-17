@@ -2,32 +2,35 @@
 state={
 	id=128
 	name="STATE_128"
-	manpower = 20473
+	manpower = 130473
 	
-	state_category = rural
+	state_category = city
 	resources={
 		aluminium=0
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
-		tungsten=0
+		steel=13
+		tungsten=15
 	}
 
 	history={
-		victory_points = { 2400 1}
-		victory_points = { 2410 3}
-		victory_points = { 2413 1}
+		victory_points = { 2400 25}
+		victory_points = { 2410 8}
+		
 		
 		owner = RZP
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			
 			arms_factory = 1
-			industrial_complex = 0
+			industrial_complex = 1
 			
 			2414 = {
 				naval_base = 1
+			}
+			2400 = {
+				naval_base = 4
 			}
 			
 		}

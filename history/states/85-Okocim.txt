@@ -4,9 +4,9 @@ state={
 	name="STATE_85"
 	manpower = 112382
 	
-	state_category = megalopolis
+	state_category = city
 	resources={
-		aluminium=0
+		aluminium=11
 		chromium=0
 		oil=0
 		rubber=0
@@ -15,18 +15,19 @@ state={
 	}
 
 	history={
-		victory_points = { 1633 40}
-		victory_points = { 1642 1}
-		
+		victory_points = { 1633 20 }
+		victory_points = { 1642 5 }
+		victory_points = { 1648 5 }
+
 		owner = RZP
 		buildings = {
 			infrastructure = 3
 			
 			arms_factory = 1
-			industrial_complex = 4
+			industrial_complex = 2
 			
 			1648 = {
-				naval_base = 1
+				naval_base = 3
 			}
 			
 		}

@@ -308,7 +308,7 @@ focus_tree = {
         id = RZP_sarmatanatronie
         cost = 5
         icon = GFX_focus_POL_nationalist_education
-        x = 20
+        x = 23
         y = 0
         
         completion_reward = {
@@ -336,7 +336,7 @@ focus_tree = {
         icon = GFX_focus_POL_belarus_army
         cost = 1
         relative_position_id = RZP_zwrotkuprzyszlosci
-        x = -4
+        x = -7
         y = 1
         available = {
             always = no
@@ -499,6 +499,7 @@ focus_tree = {
         relative_position_id = RZP_konsolidacjapobuncie
         prerequisite = {
             focus = RZP_konsolidacjapobuncie
+            focus = RZP_rzadyjakubiaka
         }
         x = 5
         y = 1
@@ -563,10 +564,10 @@ focus = {
             add_ideas = free_trade
             add_to_variable = {
                 wrpsbf = 0.1
-        }
-        add_to_variable = {
-            wrlf = 0.15
-        }
+            }
+            add_to_variable = {
+               wrlf = 0.15
+            }
     }
 }
 focus = {
@@ -583,7 +584,7 @@ focus = {
         completion_reward = { 
             add_to_variable = {
                 wrlr = 0.2
-        }
+            }
     }
 }
 focus = {
@@ -801,13 +802,154 @@ focus = {
             
         }
     }
+    focus = {
+        id = RZP_satelitapis
+        icon = GFX_focus_generic_polish_deal
+        cost = 10
+        relative_position_id = RZP_rzadyjakubiaka
+        x = 5
+        y = 1
+       
+        prerequisite = {
+            focus = RZP_rzadyjakubiaka
+            focus = RZP_zmianakierunku
+        }
+        completion_reward = { 
+            add_dynamic_modifier = {
+                modifier = RZP_pis
+            }
+            add_to_variable = {
+                lrf = 0.1
+            }
+        }
+    }
+    focus = {
+        id = RZP_dotacjemieszkalne
+        icon = GFX_focus_generic_low_cost_housing
+        cost = 5
+        relative_position_id = RZP_satelitapis
+        x = -1
+        y = 1
+       
+        prerequisite = {
+            focus = RZP_satelitapis
+        }
+        completion_reward = { 
+            add_to_variable = {
+                cgf = -0.05
+            }
+            random_owned_state = {
+               add_building_construction = {
+                type = infrastructure
+                level = 2
+               }
+            }
+        }
+    }
+    focus = {
+        id = RZP_rozwojprzemyslu
+        icon = GFX_focus_generic_modernize_industry
+        cost = 5
+        relative_position_id = RZP_satelitapis
+        x = 1
+        y = 1
+       
+        prerequisite = {
+            focus = RZP_satelitapis
+        }
+        completion_reward = { 
+            add_to_variable = {
+                pdegf = 0.05
+            }
+            add_to_variable = {
+                pfmef = 0.05
+            }
+            random_owned_state = {
+               add_building_construction = {
+                type = arms_factory
+                level = 1
+               }
+            }
+        }
+    }
+    focus = {
+        id = RZP_500plus
+        icon = GFX_focus_generic_population_growth
+        cost = 5
+        relative_position_id = RZP_dotacjemieszkalne
+        x = -1
+        y = 1
+       
+        prerequisite = {
+            focus = RZP_dotacjemieszkalne
+        }
+        completion_reward = { 
+            add_to_variable = {
+                wm = 200
+            }
+            add_to_variable = {
+                mp = 0.05
+            }
+            random_owned_state = {
+               add_building_construction = {
+                type = industrial_complex
+                level = 1
+               }
+            }
+        }
+    }
+    focus = {
+        id = RZP_zwiekrzeniewydobycia
+        icon = GFX_focus_generic_public_works
+        cost = 5
+        relative_position_id = RZP_dotacjemieszkalne
+        x = 1
+        y = 1
+       
+        prerequisite = {
+            focus = RZP_dotacjemieszkalne
+        }
+        prerequisite = {
+            focus = RZP_rozwojprzemyslu
+        }
+        completion_reward = { 
+            add_to_variable = {
+                lrf = 0.1
+            }
+           add_tech_bonus = {
+                bonus = 0.5
+                uses = 2
+                category = excavation_tech
+            }
+        }
+    }
+    focus = {
+        id = RZP_dotacjenaszkolnictwo
+        icon = GFX_focus_research2
+        cost = 5
+        relative_position_id = RZP_dotacjemieszkalne
+        x = 3
+        y = 1
+       
+        prerequisite = {
+            focus = RZP_dotacjemieszkalne
+        }
+        prerequisite = {
+            focus = RZP_rozwojprzemyslu
+        }
+        completion_reward = { 
+            add_to_variable = {
+                rsf = 0.075
+            }
+        }
+    }
     #Jakubiak=======================================================================
     focus = {
         id = RZP_rzadyjakubiaka
         icon = GFX_focus_spr_torchbearers_of_tomorrow
         cost = 10
         relative_position_id = RZP_wesprzyjmypis
-        x = -3
+        x = -5
         y = 1
         mutually_exclusive = {
             focus = RZP_zmianakierunku
@@ -816,7 +958,11 @@ focus = {
             focus = RZP_wesprzyjmypis
         }
         completion_reward = { 
-            
+            add_political_power = 75
+            add_popularity = {
+                ideology = nacjonalizm
+                popularity = 0.05
+            }
         }
     }
     #Kukiz==========================================================================

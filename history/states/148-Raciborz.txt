@@ -1,0 +1,41 @@
+
+state={
+	id=148
+	name="STATE_148"
+	manpower = 36518
+	
+	state_category = rural
+	resources={
+		aluminium=2
+		chromium=0
+		oil=0
+		rubber=0
+		steel=7
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 2733 2}
+		victory_points = { 2731 5}
+		
+		owner = RZP
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+			dockyard = 1
+			
+			2731 = {
+				naval_base = 3
+			}
+			
+		}
+		add_core_of = RZP
+	}
+
+	provinces={
+		1506 1503 1509 1512 1520 1526 1530 1531 2727 2728 2729 2730 2731 2732 2733 2734 2735 
+	}
+	local_supplies=0.0 
+}

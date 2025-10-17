@@ -1,10 +1,10 @@
 
 state={
-	id=148
-	name="STATE_148"
-	manpower = 16518
+	id=734
+	name="STATE_734"
+	manpower = 476
 	
-	state_category = rural
+	state_category = small_island
 	resources={
 		aluminium=0
 		chromium=0
@@ -15,18 +15,16 @@ state={
 	}
 
 	history={
-		victory_points = { 2733 2}
-		victory_points = { 2735 1}
 		
 		owner = RZP
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
-			industrial_complex = 1
+			industrial_complex = 0
 			
-			2727 = {
-				naval_base = 1
+			11737 = {
+				naval_base = 2
 			}
 			
 		}
@@ -34,7 +32,7 @@ state={
 	}
 
 	provinces={
-		2727 2728 2729 2730 2731 2732 2733 2734 2735 
+		11737 
 	}
 	local_supplies=0.0 
 }
