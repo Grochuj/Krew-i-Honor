@@ -287,7 +287,7 @@ focus_tree = {
         y = 6
 
         available = {
-            382 = {
+            96 = {
                 free_building_slots = {
                     building = industrial_complex
                     size < 1
@@ -296,7 +296,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            382 = {
+            96 = {
                 set_state_category = metropolis
                 add_extra_state_shared_building_slots = 3
                 add_manpower = 25000
@@ -368,12 +368,12 @@ focus_tree = {
         }
 
         completion_reward = {
-            373 = {
+            126 = {
                 set_state_category = metropolis
                 add_manpower = 100000
                 add_extra_state_shared_building_slots = 2
                 add_victory_points = {
-                    province = 1645
+                    province = 2374
                     value = 5
                 }
             }
@@ -396,13 +396,16 @@ focus_tree = {
         }
 
         completion_reward = {
-            386 = {
-                set_state_category = large_town
+            126 = {
                 add_manpower = 50000
                 add_extra_state_shared_building_slots = 1
                 add_victory_points = {
-                    province = 9572
+                    province = 2379
                     value = 5
+                }
+                add_resource = {
+                    type = steel
+                    amount = 2
                 }
             }
         }
@@ -424,14 +427,14 @@ focus_tree = {
         }
 
         completion_reward = {
-            434 = {
+            133 = {
                 add_manpower = 40000
                 add_resource = {
                     type = tungsten
                     amount = 24
                 }
                 add_victory_points = {
-                    province = 6396
+                    province = 2484
                     value = 5
                 }
             }
@@ -454,7 +457,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            322 = {
+            178 = {
                 add_manpower = 60000
                 add_extra_state_shared_building_slots = 2
                 add_building_construction = {
@@ -466,11 +469,11 @@ focus_tree = {
                     }
                 }
                 add_victory_points = {
-                    province = 4023
+                    province = 3145
                     value = 5
                 }
             }
-            441 = {
+            230 = {
                 add_manpower = 10000
                 add_extra_state_shared_building_slots = 1
                 add_building_construction = {
@@ -482,8 +485,56 @@ focus_tree = {
                     }
                 }
                 add_victory_points = {
-                    province = 945
+                    province = 4016
                     value = 7
+                }
+            }
+            171 = {
+                add_manpower = 10000
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = bunker
+                    level = 1
+                    province = {
+                        all_provinces = yes
+                        limit_to_border = yes
+                    }
+                }
+                add_victory_points = {
+                    province = 3041
+                    value = 3
+                }
+            }
+            87 = {
+                add_manpower = 10000
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = bunker
+                    level = 1
+                    province = {
+                        all_provinces = yes
+                        limit_to_border = yes
+                    }
+                }
+                add_victory_points = {
+                    province = 1702
+                    value = 5
+                }
+            }
+            173 = {
+                add_manpower = 10000
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = bunker
+                    level = 1
+                    province = {
+                        all_provinces = yes
+                        limit_to_border = yes
+                    }
+                }
+                add_victory_points = {
+                    province = 3075
+                    value = 5
                 }
             }
         }

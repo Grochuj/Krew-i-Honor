@@ -1,4 +1,4 @@
-capital = 382
+capital = 96
 
 oob = "NRP_2025"
 
