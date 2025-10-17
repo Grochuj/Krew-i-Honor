@@ -12,4 +12,10 @@ leader_traits={
 		kaczyzm_drift = 0.02
 		kaczyzm_acceptance = 50
 	}
+	REZ_arcykaplanka_propagandy={
+		random = no
+
+		propaganda_mission_factor = 2
+		research_speed_factor = -0.05
+	}
 }

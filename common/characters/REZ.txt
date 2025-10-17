@@ -24,4 +24,17 @@ characters = {
 			}
 		}
 	}
+	REZ_Schnepf={
+		portraits = {
+			civilian = {
+				large = GFX_portrait_REZ_schnepf
+			}
+		}
+		country_leader = {
+			ideology = demowal
+			traits = {
+				REZ_arcykaplanka_propagandy
+			}
+		}
+	}
 }
