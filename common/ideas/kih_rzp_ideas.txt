@@ -73,10 +73,36 @@ ideas = {
 				stability_factor = 0.1
 			}
 		}
+		#kukiz=====================================================================================
 		RZP_kukizpoparcie = {
 			modifier = {
 				autorytaryzm_drift = 0.1
 				stability_factor = 0.05
+			}
+		}
+		RZP_nizszyprogreferendaly = {
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				stability_factor = 0.05
+			}
+		}
+		RZP_likwidacjasenatu = {
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		RZP_obronna4 = {
+			modifier = {
+				defence = 0.1
+				industrial_capacity_factory = 0.1
+				war_support_factor = 0.05
+			}
+		}
+		RZP_rolnictwo = {
+			modifier = {
+				monthly_population = 0.15
+				local_resources_factor = 0.1
 			}
 		}
 	}

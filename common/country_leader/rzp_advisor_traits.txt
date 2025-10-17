@@ -4,4 +4,5 @@ leader_traits = {
 		consumer_goods_factor = -0.05
 		resource_trade_cost_bonus_per_factory = 1
 	}
+	
 }

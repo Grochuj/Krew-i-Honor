@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_RZP_balczun_advisor"
+		textureFile = "gfx/advisors/RZP/balczun_advisor.dds"
+	}
+}
