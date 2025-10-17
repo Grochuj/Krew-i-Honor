@@ -10,4 +10,31 @@ characters = {
 			ideology = cent
 		}
 	}
+	REZ_Jacek_Kurski={
+		portraits = {
+			civilian = {
+				large = GFX_portrait_REZ_kurski
+			}
+		}
+		country_leader = {
+			ideology = kac
+			traits = {
+				REZ_mistrz_propagandy
+				REZ_kaczysta
+			}
+		}
+	}
+	REZ_Schnepf={
+		portraits = {
+			civilian = {
+				large = GFX_portrait_REZ_schnepf
+			}
+		}
+		country_leader = {
+			ideology = demowal
+			traits = {
+				REZ_arcykaplanka_propagandy
+			}
+		}
+	}
 }

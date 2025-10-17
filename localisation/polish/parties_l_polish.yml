@@ -122,6 +122,10 @@
 
  REZ_centryzm_party_long: "Kanał Zero"
  REZ_centryzm_party: "KZ"
+ REZ_kaczyzm_party_long: "Telewizja Polska"
+ REZ_kaczyzm_party: "TVP"
+ REZ_demokracjawalczaca_party_long: "Telewizja Polska S.A. w Likwidacji"
+ REZ_demokracjawalczaca_party: "TVP S.A."
 
  KON_kapitalizm_party_long: "Nowa Nadzieja"
  KON_kapitalizm_party: "NN"

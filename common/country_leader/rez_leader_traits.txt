@@ -1,0 +1,21 @@
+leader_traits={
+	REZ_mistrz_propagandy={
+		random = no
+
+		propaganda_mission_factor = 1
+		boost_ideology_mission_factor = 0.5
+		boost_resistance_factor = 0.25
+	}
+	REZ_kaczysta={
+		random = yes
+
+		kaczyzm_drift = 0.02
+		kaczyzm_acceptance = 50
+	}
+	REZ_arcykaplanka_propagandy={
+		random = no
+
+		propaganda_mission_factor = 2
+		research_speed_factor = -0.05
+	}
+}
