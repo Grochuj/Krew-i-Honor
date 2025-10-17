@@ -2,7 +2,7 @@
 state={
 	id=173
 	name="STATE_173"
-	manpower = 8169
+	manpower = 2291
 	
 	state_category = rural
 	resources={
@@ -19,7 +19,7 @@ state={
 		
 		owner = NRP
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			
 			arms_factory = 1
 			industrial_complex = 0

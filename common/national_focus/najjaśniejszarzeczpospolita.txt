@@ -556,12 +556,12 @@ focus_tree = {
         }
 
         completion_reward = {
-            357 = {
+            199 = {
                 set_state_category = town
                 add_extra_state_shared_building_slots = 1
                 add_manpower = 40000
                 add_victory_points = {
-                    province = 496
+                    province = 3499
                     value = 10
                 }
             }
@@ -584,20 +584,20 @@ focus_tree = {
         }
 
         completion_reward = {
-            353 = {
+            79 = {
                 set_state_category = city
                 add_extra_state_shared_building_slots = 1
                 add_manpower = 100000
                 add_victory_points = {
-                    province = 5949
+                    province = 1496
                     value = 10
                 }
             }
-            331 = {
+            173 = {
                 add_extra_state_shared_building_slots = 1
                 add_manpower = 25000
                 add_victory_points = {
-                    province = 3591
+                    province = 3075
                     value = 10
                 }
             }
@@ -623,12 +623,12 @@ focus_tree = {
         }
 
         completion_reward = {
-            433 = {
+            213 = {
                 set_state_category = city
                 add_extra_state_shared_building_slots = 1
                 add_manpower = 30000
                 add_victory_points = {
-                    province = 9395
+                    province = 3734
                     value = 5
                 }
                 add_resource = {
