@@ -852,11 +852,7 @@ focus = {
             focus = RZP_zmianakierunku
         }
         completion_reward = { 
-          add_political_power = 50
-          add_popularity = {
-            ideology = federalizm
-            popularity = 0.05
-          }
+          add_political_power = 100
         }
     }
     focus = {
@@ -869,6 +865,118 @@ focus = {
       
         prerequisite = {
             focus = RZP_zmianakierunku
+        }
+        completion_reward = { 
+            add_popularity = {
+                ideology = federalizm
+                popularity = 0.05
+            }
+        }
+    }
+    focus = {
+        id = RZP_rzadkukiza
+        icon = GFX_focus_AUS_lawmaking_leniency
+        cost = 10
+        relative_position_id = RZP_preelekcje
+        x = -1
+        y = 1
+      
+        prerequisite = {
+            focus = RZP_preelekcje
+        }
+        prerequisite = {
+            focus = RZP_ekipakukiza
+        }
+    
+        available = {
+            ROOT = {
+                federalizm > 0.4
+            }
+        }
+        completion_reward = { 
+            set_politics = {
+                ruling_party = federalizm
+                elections_allowed = yes
+                last_election = "2025.6.10"
+                election_frequency = 60
+            }
+        }
+    }
+    #program=======================================================================================
+    focus = {
+        id = RZP_referenda
+        icon = GFX_focus_NOR_restore_public_trust_in_the_storting
+        cost = 5
+        relative_position_id = RZP_rzadkukiza
+        x = 2
+        y = 1
+      
+        prerequisite = {
+            focus = RZP_rzadkukiza
+        }
+        completion_reward = { 
+            add_ideas = RZP_nizszyprogreferendaly
+        }
+    }
+    focus = {
+        id = RZP_likwidacja_senatu
+        icon = GFX_focus_renounce_the_treaty_of_trianon
+        cost = 5
+        relative_position_id = RZP_rzadkukiza
+        x = 4
+        y = 1
+      
+        prerequisite = {
+            focus = RZP_rzadkukiza
+        }
+        completion_reward = { 
+            add_timed_idea = {
+                idea = RZP_likwidacjasenatu
+                years = 1
+            }
+        }
+    }
+    focus = {
+        id = RZP_obronnaczworka
+        icon = GFX_focus_CONGO_copper_cartridges
+        cost = 8
+        relative_position_id = RZP_rzadkukiza
+        x = 6
+        y = 1
+      
+        prerequisite = {
+            focus = RZP_rzadkukiza
+        }
+        completion_reward = { 
+            add_ideas = RZP_obronna4    
+        }
+    }
+    focus = {
+        id = RZP_programrolny
+        icon = GFX_focus_generic_farmland
+        cost = 10
+        relative_position_id = RZP_rzadkukiza
+        x = 8
+        y = 1
+      
+        prerequisite = {
+            focus = RZP_rzadkukiza
+        }
+        completion_reward = { 
+            add_ideas = RZP_rolnictwo
+        }
+    }
+    #ekspansja==================================================
+    focus = {
+        id = RZP_taktycznewydatki
+        icon = GFX_focus_generic_national_security
+        cost = 5
+        relative_position_id = RZP_rzadkukiza
+        x = 0
+        y = 2
+      
+        prerequisite = {
+            focus = RZP_rzadkukiza
         }
         completion_reward = { 
             

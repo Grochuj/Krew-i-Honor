@@ -26,7 +26,7 @@ characters = {
 		name = RZP_bakun
 		portraits = {
 			civilian = {
-				
+				small = GFX_portrait_RZP_balczun_advisor
 			}
 		}
 		advisor = {
@@ -34,6 +34,43 @@ characters = {
 			idea_token = RZP_bakun_advisor
 			traits = {
 				dzialacz_stowarzyszenia_kupieckiego
+			}
+			available = {
+				has_completed_focus = RZP_ekipakukiza
+			}
+			cost = 100
+		}
+	}
+	RZP_NorbiK={
+		name = RZP_NorbiK
+		portraits = {
+			civilian = {
+				small = GFX_portrait_RZP_balczun_advisor
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = RZP_NorbiK_advisor
+			traits = {
+				economist
+			}
+			available = {
+				has_completed_focus = RZP_ekipakukiza
+			}
+		}
+	}
+	RZP_jozwiak={
+		name = RZP_jozwiak
+		portraits = {
+			civilian = {
+				small = GFX_portrait_RZP_balczun_advisor
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = RZP_jozwiak_advisor
+			traits = {
+				technocrat
 			}
 			available = {
 				has_completed_focus = RZP_ekipakukiza

@@ -7,6 +7,7 @@ set_research_slots = 2
 
 recruit_character = RZP_jakubiak
 recruit_character = RZP_kukiz
+recruit_character = RZP_bakun
 
 set_technology = {
 	infantry_weapons = 1
@@ -29,9 +30,8 @@ set_politics = {
 set_popularities = {
 	nacjonalizm = 50
 	kaczyzm = 14
-	socjalizm = 11
 	federalizm = 25
-	kapitalizm = 10
+	kapitalizm = 11
 }
 
 add_ideas = {
