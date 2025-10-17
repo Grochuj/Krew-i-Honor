@@ -10,4 +10,18 @@ characters = {
 			ideology = cent
 		}
 	}
+	REZ_Jacek_Kurski={
+		portraits = {
+			civilian = {
+				large = GFX_portrait_REZ_kurski
+			}
+		}
+		country_leader = {
+			ideology = kac
+			traits = {
+				REZ_mistrz_propagandy
+				REZ_kaczysta
+			}
+		}
+	}
 }
