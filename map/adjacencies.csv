@@ -23,4 +23,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 11748;1586;sea;11844;-1;-1;-1;-1;;KONwyspa1
 11752;11454;sea;12113;-1;-1;-1;-1;;WOHwyspa1
 11743;11694;sea;11908;-1;-1;-1;-1;;KAMwyspa1
+1218;11652;sea;11876;-1;-1;-1;-1;;NRPwyspa1
+11712;11652;sea;11876;-1;-1;-1;-1;;NRPwyspa2
+11712;3734;sea;11876;-1;-1;-1;-1;;NRPwyspa3
+11724;11741;sea;11884;-1;-1;-1;-1;;NRPwyspa4
+3503;11741;sea;11884;-1;-1;-1;-1;;NRPwyspa5
 -1;-1;-1;-1;-1;-1;-1;-1;-1;-1
