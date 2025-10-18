@@ -1,10 +1,10 @@
 
 state={
-	id=240
-	name="STATE_240"
-	manpower = 23554
+	id=188
+	name="STATE_188"
+	manpower = 4633
 	
-	state_category = rural
+	state_category = pastoral
 	resources={
 		aluminium=0
 		chromium=0
@@ -15,15 +15,13 @@ state={
 	}
 
 	history={
-		victory_points = { 4148 6}
-		victory_points = { 4157 1}
 		
 		owner = RZP
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
-			industrial_complex = 1
+			industrial_complex = 0
 			
 			
 		}
@@ -31,7 +29,7 @@ state={
 	}
 
 	provinces={
-		4148 4149 4150 4151 4152 4153 4154 4155 4156 4157 4158 4159 4160 
+		3341 3342 3343 3344 3345 3346 3347 3348 3349 3350 
 	}
 	local_supplies=0.0 
 }

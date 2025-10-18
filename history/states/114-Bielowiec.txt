@@ -2,22 +2,21 @@
 state={
 	id=114
 	name="STATE_114"
-	manpower = 65784
+	manpower = 55784
 	
-	state_category = city
+	state_category = large_town
 	resources={
 		aluminium=0
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
+		steel=3
 		tungsten=0
 	}
 
 	history={
-		victory_points = { 2138 2}
-		victory_points = { 2146 9}
-		victory_points = { 2156 9}
+		victory_points = { 2166 15}
+		victory_points = { 2155 5}
 		
 		owner = RZP
 		buildings = {

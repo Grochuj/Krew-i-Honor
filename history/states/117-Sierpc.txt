@@ -4,9 +4,9 @@ state={
 	name="STATE_117"
 	manpower = 70880
 	
-	state_category = large_city
+	state_category = town
 	resources={
-		aluminium=0
+		aluminium=12
 		chromium=0
 		oil=0
 		rubber=0
@@ -15,16 +15,16 @@ state={
 	}
 
 	history={
-		victory_points = { 2208 8}
-		victory_points = { 2230 8}
-		victory_points = { 2233 8}
+		victory_points = { 2208 3}
+		victory_points = { 2201 8}
+		victory_points = { 2233 3}
 		
 		owner = RZP
 		buildings = {
 			infrastructure = 2
 			
-			arms_factory = 1
-			industrial_complex = 2
+			arms_factory = 0
+			industrial_complex = 1
 			
 			
 		}

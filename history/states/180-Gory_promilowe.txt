@@ -10,19 +10,16 @@ state={
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
-		tungsten=0
+		steel=14
+		tungsten=3
 	}
 
 	history={
-		victory_points = { 3187 2}
-		victory_points = { 3190 2}
 		
 		owner = RZP
 		buildings = {
 			infrastructure = 1
-			
-			arms_factory = 1
+			arms_factory = 
 			industrial_complex = 0
 			
 			
@@ -31,7 +28,7 @@ state={
 	}
 
 	provinces={
-		3169 3170 3171 3172 3173 3174 3175 3176 3177 3178 3179 3180 3181 3182 3183 3184 3185 3186 3187 3188 3189 3190 3191 3192 3193 3194 3195 3196 3197 
+		3169 3171 3172 3175 3178 3179 3182 3185 3187 3189 3192 3193 3195
 	}
 	local_supplies=0.0 
 }
