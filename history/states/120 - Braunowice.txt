@@ -1,10 +1,10 @@
 
 state={
-	id=174
-	name="STATE_174"
-	manpower = 25511
+	id=120
+	name="STATE_120"
+	manpower = 7871
 	
-	state_category = town
+	state_category = rural
 	resources={
 		aluminium=0
 		chromium=0
@@ -15,23 +15,25 @@ state={
 	}
 
 	history={
-		victory_points = { 3082 4}
-		victory_points = { 3087 4}
+		victory_points = { 2265 4}
 		
 		owner = NRP
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
-			industrial_complex = 1
+			industrial_complex = 0
 			
+			2260 = {
+				naval_base = 1
+			}
 			
 		}
 		add_core_of = NRP
 	}
 
 	provinces={
-		3079 3080 3081 3082 3083 3084 3085 3086 3087 3088 3089 3090 
+		2256 2257 2258 2259 2260 2261 2262 2263 2264 2265 2266 
 	}
 	local_supplies=0.0 
 }

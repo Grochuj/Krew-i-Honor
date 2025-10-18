@@ -684,12 +684,12 @@ focus_tree = {
         }
 
         completion_reward = {
-            446 = {
+            142 = {
                 set_state_category = rural
                 add_extra_state_shared_building_slots = 3
                 add_manpower = 15000
                 add_victory_points = {
-                    province = 6273
+                    province = 2630
                     value = 5
                 }
             }
@@ -712,14 +712,18 @@ focus_tree = {
         }
 
         completion_reward = {
-            356 = {
+            78 = {
                 set_state_category = town
                 set_state_name = "Nowy Rzeszów"
                 add_extra_state_shared_building_slots = 1
                 add_manpower = 25465
                 add_victory_points = {
-                    province = 5340
+                    province = 1472
                     value = 10
+                }
+                add_victory_points = {
+                    province = 1469
+                    value = 3
                 }
             }
         }
@@ -779,16 +783,16 @@ focus_tree = {
         }
 
         completion_reward = {
-            356 = {
+            233 = {
                 set_state_category = town
                 add_extra_state_shared_building_slots = 1
                 add_manpower = 35000
                 add_victory_points = {
-                    province = 9414
+                    province = 4043
                     value = 15
                 }
                 add_victory_points = {
-                    province = 2071
+                    province = 4044
                     value = 3
                 }
             }
@@ -811,12 +815,12 @@ focus_tree = {
         }
 
         completion_reward = {
-            390 = {
+            174 = {
                 set_state_category = town
                 add_extra_state_shared_building_slots = 1
                 add_manpower = 35000
                 add_victory_points = {
-                    province = 1064
+                    province = 3087
                     value = 13
                 }
             }
@@ -839,11 +843,11 @@ focus_tree = {
         }
 
         completion_reward = {
-            407 = {
+            120 = {
                 set_state_category = town
                 add_manpower = 15000
                 add_victory_points = {
-                    province = 1061
+                    province = 2265
                     value = 6
                 }
             }
@@ -866,12 +870,12 @@ focus_tree = {
         }
 
         completion_reward = {
-            398 = {
+            115 = {
                 set_state_category = rural
                 add_extra_state_shared_building_slots = 3
                 add_manpower = 10975
                 add_victory_points = {
-                    province = 88
+                    province = 2170
                     value = 7
                 }
                 add_building_construction = {
@@ -915,7 +919,7 @@ focus_tree = {
                     }
                 }
                 add_extra_state_shared_building_slots = 1
-                add_manpower = 25000
+                add_manpower = 15000
             }
             every_owned_state = {
                 limit = {
@@ -932,31 +936,31 @@ focus_tree = {
                 limit = {
                     has_completed_focus = NRP_focus_rozwoj_istniejacych_siedlisk
                 }
-                319 = {
+                82 = {
                     set_state_category = pastoral
                     add_victory_points = {
-                        province = 4000
+                        province = 1556
                         value = 2
                     }
                 }
-                446 = {
+                142 = {
                     set_state_category = pastoral
                     add_victory_points = {
-                        province = 6273
+                        province = 2630
                         value = 2
                     }
                 }
-                356 = {
+                78 = {
                 set_state_category = pastoral
                     add_victory_points = {
-                        province = 5340
+                        province = 1472
                         value = 5
                     }
                 }
-                356 = {
+                341 = {
                     set_state_category = rural
                     add_victory_points = {
-                        province = 9414
+                        province = 4043
                         value = 7
                     }
                 }
@@ -971,7 +975,7 @@ focus_tree = {
                         has_state_category = rural
                         has_state_category = town
                     }
-                    add_manpower = 15000
+                    add_manpower = 10000
                 }
             }
         }
@@ -1005,7 +1009,7 @@ focus_tree = {
                     }
                 }
                 add_extra_state_shared_building_slots = 2
-                add_manpower = 50000
+                add_manpower = 35000
             }
             every_owned_state = {
                 limit = {
@@ -1040,7 +1044,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            382 = {
+            96 = {
                 add_manpower = 150000
                 set_state_category = megalopolis
             }
@@ -1099,7 +1103,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            398 = {
+            115 = {
                 add_resource = {
                     type = oil
                     amount = 36
@@ -1124,7 +1128,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            445 = {
+            241 = {
                 add_resource = {
                     type = steel
                     amount = 16
@@ -1153,7 +1157,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            322 = {
+            178 = {
                 add_resource = {
                     type = steel
                     amount = 20
@@ -1178,7 +1182,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            434 = {
+            199 = {
                 add_resource = {
                     type = tungsten
                     amount = 24
@@ -1203,7 +1207,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            386 = {
+            126 = {
                 add_resource = {
                     type = tungsten
                     amount = 16
