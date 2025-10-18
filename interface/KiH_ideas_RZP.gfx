@@ -23,4 +23,20 @@ spriteTypes = {
 		name = GFX_modifier_RZP_wolrep
 		texturefile = gfx/interface/ideas/wolrep.dds 
 	}
+	spriteType = {
+		name = GFX_idea_RZP_alkocholizm_w_wojsku
+		texturefile = gfx/interface/ideas/idea_SWE_vin_och_sprit_ab.dds
+	}
+	spriteType = {
+		name = GFX_idea_RZP_alkocholizm_w_wojsku1
+		texturefile = gfx/interface/ideas/idea_SWE_vin_och_sprit_ab.dds
+	}
+	spriteType = {
+		name = GFX_idea_RZP_alkocholizm_w_wojsku2
+		texturefile = gfx/interface/ideas/idea_SWE_vin_och_sprit_ab.dds
+	}
+	spriteType = {
+		name = GFX_idea_RZP_kluczykiipiwo
+		texturefile = gfx/interface/ideas/kluczyki.dds
+	}
 }

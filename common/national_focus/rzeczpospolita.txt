@@ -178,7 +178,7 @@ focus_tree = {
         focus =  RZP_gospodarkapiwna 
         }
         completion_reward = {
-            290 = {
+            143 = {
                 add_building_construction = {
                 type = industrial_complex
                 level = 1
@@ -226,7 +226,7 @@ focus_tree = {
         focus = RZP_gospodarkapiwna
        }
         completion_reward = {
-            250 = {
+            85 = {
                 add_building_construction = {
                 type = industrial_complex
                 level = 1
@@ -273,12 +273,16 @@ focus_tree = {
         focus = RZP_Piwoplus
        }
         completion_reward = {
-            281 = {
+            132 = {
                 add_building_construction = {
                 type = arms_factory
-                level = 2
-            }
-            add_extra_state_shared_building_slots = 2
+                level = 1
+                }
+                add_building_construction = {
+                type = infrastructure
+                level = 1
+                }
+            add_extra_state_shared_building_slots = 1
             }
             
         }
@@ -398,14 +402,14 @@ focus_tree = {
         x = 1
         y = 1
         completion_reward = {
-            303 = {
+            117 = {
                 add_building_construction = {
                 type = arms_factory
                 level = 1
             }
             add_extra_state_shared_building_slots = 1
             }
-            305 = {
+            147 = {
                 add_building_construction = {
                 type = arms_factory
                 level = 1
@@ -643,15 +647,9 @@ focus = {
     x = 0
     y = 1
     completion_reward = { 
-        add_state_claim = 353
-        add_state_claim = 331
-        add_state_claim = 441
-        add_state_claim = 439
-        add_state_claim = 438
-        add_state_claim = 280
-        add_state_claim = 261
-        add_state_claim = 267
-        add_state_claim = 229
+        add_state_claim = 173
+        add_state_claim = 79
+        add_state_claim = 230
     }
 }
 focus = {
@@ -1135,7 +1133,7 @@ focus = {
         id = RZP_militarneprzygotowania
         icon = GFX_focus_generic_tank_production
         cost = 10
-        x = 48
+        x = 40
         y = 0
        
         completion_reward = { 
@@ -1188,7 +1186,7 @@ focus = {
         }
     }
     focus = {
-        id = RZP_fabrykibroni
+        id = RZP_reformawojska
         icon = GFX_focus_GER_demonstration_of_military_achievements
         cost = 10
         relative_position_id = RZP_militarneprzygotowania
@@ -1206,6 +1204,141 @@ focus = {
             remove_idea = RZP_alkocholizm_w_wojsku
             add_idea = RZP_alkocholizm_w_wojsku1
            }
+        }
+    }
+    focus = {
+        id = RZP_kluczyki_i_piwo
+        icon = GFX_focus_PER_embrace_opulence
+        cost = 5
+        relative_position_id = RZP_militarneprzygotowania
+        x = 3
+        y = 1
+      
+        prerequisite = {
+            focus = RZP_militarneprzygotowania
+        }
+        completion_reward = { 
+           add_ideas = RZP_kluczykiipiwo
+           add_tech_bonus = {
+            category = cat_mechanized_equipment
+            uses = 1
+            bonus = 1
+           }
+        }
+    }
+    focus = {
+        id = RZP_badanianadartyleria
+        icon = GFX_goal_generic_army_artillery2
+        cost = 5
+        relative_position_id = RZP_kluczyki_i_piwo
+        x = 0
+        y = 1
+      
+        prerequisite = {
+            focus = RZP_kluczyki_i_piwo
+        }
+        completion_reward = { 
+           add_tech_bonus = {
+            category = artillery
+            uses = 2
+            bonus = 0.5
+           }
+        }
+    }
+     focus = {
+        id = RZP_musztra
+        icon = GFX_focus_SOV_penal_battalions
+        cost = 5
+        relative_position_id = RZP_reformawojska
+        x = 1
+        y = 1
+      
+        prerequisite = {
+            focus = RZP_badanianadartyleria
+        }
+        prerequisite = {
+            focus = RZP_reformawojska
+        }
+        completion_reward = { 
+          swap_ideas = {
+            remove_idea = RZP_alkocholizm_w_wojsku1
+            add_idea = RZP_alkocholizm_w_wojsku2
+          }
+        }
+    }
+    focus = {
+        id = RZP_rozgrzewka
+        icon = GFX_focus_SMB_special_forces_option_1
+        cost = 5
+        relative_position_id = RZP_militarneprzygotowania
+        x = -3
+        y = 1
+      
+        prerequisite = {
+            focus = RZP_militarneprzygotowania
+        }
+
+        completion_reward = { 
+          add_ideas = RZP_gorzala
+        }
+    }
+    focus = {
+        id = RZP_animusz
+        icon = GFX_focus_ARG_capitalize_the_beef_industry
+        cost = 5
+        relative_position_id = RZP_rozgrzewka
+        x = 0
+        y = 1
+      
+        prerequisite = {
+            focus = RZP_rozgrzewka
+        }
+
+        completion_reward = { 
+          add_ideas = RZP_animek
+        }
+    }
+    focus = {
+        id = RZP_innowacjewdoktrynie
+        icon = GFX_focus_PER_construct_air_defenses
+        cost = 5
+        relative_position_id = RZP_reformawojska
+        x = -1
+        y = 1
+      
+        prerequisite = {
+            focus = RZP_animusz
+        }
+        prerequisite = {
+            focus = RZP_reformawojska
+        }
+
+        completion_reward = { 
+          add_tech_bonus = {
+            category = land_doctrine
+            uses = 2
+            bonus = 0.5
+          }
+        }
+    }
+    focus = {
+        id = RZP_chwala_rzeczpospolitej
+        icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+        cost = 5
+        relative_position_id = RZP_musztra
+        x = -1
+        y = 1
+      
+        prerequisite = {
+            focus = RZP_musztra
+        }
+        prerequisite = {
+            focus = RZP_innowacjewdoktrynie
+        }
+
+        completion_reward = { 
+          remove_ideas = RZP_alkocholizm_w_wojsku2
+          add_war_support = 0.05
         }
     }
 }

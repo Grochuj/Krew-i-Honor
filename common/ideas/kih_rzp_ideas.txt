@@ -135,5 +135,23 @@ ideas = {
 			}
 		}
 		#===================================================================
+		RZP_kluczykiipiwo ={
+			modifier = {
+				army_speed_factor = 0.1
+				army_org_factor = -0.05
+			}
+		}
+		RZP_gorzala = {
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 0.2
+				dig_in_speed = 2
+			}
+		}
+		RZP_animek = {
+			modifier = {
+				equipment_capture_factor = 0.2
+				army_attack_factor = 0.05
+			}
+		}
 	}
 }
