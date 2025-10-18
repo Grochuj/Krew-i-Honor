@@ -655,13 +655,13 @@ focus_tree = {
         }
 
         completion_reward = {
-            319 = {
+            82 = {
                 set_state_category = town
                 set_state_name = "Jarosław"
                 add_extra_state_shared_building_slots = 1
                 add_manpower = 34966
                 add_victory_points = {
-                    province = 4000
+                    province = 1556
                     value = 10
                 }
             }
