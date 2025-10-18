@@ -1044,7 +1044,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            382 = {
+            96 = {
                 add_manpower = 150000
                 set_state_category = megalopolis
             }
@@ -1103,7 +1103,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            398 = {
+            115 = {
                 add_resource = {
                     type = oil
                     amount = 36
@@ -1128,7 +1128,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            445 = {
+            241 = {
                 add_resource = {
                     type = steel
                     amount = 16
@@ -1157,7 +1157,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            322 = {
+            178 = {
                 add_resource = {
                     type = steel
                     amount = 20
@@ -1182,7 +1182,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            434 = {
+            199 = {
                 add_resource = {
                     type = tungsten
                     amount = 24
@@ -1207,7 +1207,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            386 = {
+            126 = {
                 add_resource = {
                     type = tungsten
                     amount = 16

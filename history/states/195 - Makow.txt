@@ -1,0 +1,39 @@
+
+state={
+	id=195
+	name="STATE_195"
+	manpower = 5983
+	
+	state_category = pastoral
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=2
+	}
+
+	history={
+		victory_points = { 3423 10 }
+		
+		owner = NRP
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 0
+			industrial_complex = 1
+			
+			3422 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = NRP
+	}
+
+	provinces={
+		3419 3420 3421 3422 3423 3424 
+	}
+	local_supplies=0.0 
+}
