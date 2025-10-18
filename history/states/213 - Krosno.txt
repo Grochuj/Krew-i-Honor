@@ -15,7 +15,7 @@ state={
 	}
 
 	history={
-		victory_points = { 3743 10}
+		victory_points = { 3743 10 }
 		
 		owner = NRP
 		buildings = {
