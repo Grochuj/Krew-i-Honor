@@ -1,10 +1,10 @@
 
 state={
-	id=73
-	name="STATE_73"
-	manpower = 36023
+	id=132
+	name="STATE_132"
+	manpower = 22861
 	
-	state_category = large_town
+	state_category = rural
 	resources={
 		aluminium=0
 		chromium=0
@@ -15,14 +15,13 @@ state={
 	}
 
 	history={
-		victory_points = { 1338 7}
-		victory_points = { 1343 7}
+		victory_points = { 2471 5}
 		
 		owner = RZP
 		buildings = {
 			infrastructure = 2
 			
-			arms_factory = 2
+			arms_factory = 0
 			industrial_complex = 0
 			
 			
@@ -31,7 +30,7 @@ state={
 	}
 
 	provinces={
-		1338 1339 1340 1341 1342 1343 1344 1345 1346 1347 1348 1349 1350 1351 
+		2469 2470 2471 2472 2473 2474 2475 2476 
 	}
 	local_supplies=0.0 
 }

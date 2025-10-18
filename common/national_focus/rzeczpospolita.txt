@@ -22,8 +22,8 @@ focus_tree = {
                 add_building_construction = {
                 type = industrial_complex
                 level = 1
-            }
-            add_extra_state_shared_building_slots = 1
+                }
+                add_extra_state_shared_building_slots = 1
             }
             add_tech_bonus = {
                 bonus = 1
@@ -869,6 +869,7 @@ focus = {
                 type = arms_factory
                 level = 1
                }
+               add_extra_state_shared_building_slots = 1
             }
         }
     }
@@ -895,6 +896,7 @@ focus = {
                 type = industrial_complex
                 level = 1
                }
+               add_extra_state_shared_building_slots = 1
             }
         }
     }
