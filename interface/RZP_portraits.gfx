@@ -3,4 +3,17 @@ spriteTypes = {
 		name = "GFX_portrait_RZP_balczun_advisor"
 		textureFile = "gfx/advisors/RZP/balczun_advisor.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_RZP_Jozwiak_advisor"
+		textureFile = "gfx/advisors/RZP/Jozwiak_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_RZP_NorbiK_advisor"
+		textureFile = "gfx/advisors/RZP/Norbik_advisor.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_RZP_najman_advisor"
+		textureFile = "gfx/advisors/RZP/najman_advisor.dds"
+	}
 }

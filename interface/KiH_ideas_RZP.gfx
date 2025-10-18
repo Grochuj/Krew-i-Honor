@@ -20,7 +20,7 @@ spriteTypes = {
 		texturefile = gfx/interface/ideas/piwo.dds
 	}
 	spriteType = {
-		name = GFX_modifier_RZP_wr
+		name = GFX_modifier_RZP_wolrep
 		texturefile = gfx/interface/ideas/wolrep.dds 
 	}
 }

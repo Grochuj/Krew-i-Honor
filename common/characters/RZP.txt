@@ -45,7 +45,7 @@ characters = {
 		name = RZP_NorbiK
 		portraits = {
 			civilian = {
-				small = GFX_portrait_RZP_balczun_advisor
+				small = GFX_portrait_RZP_NorbiK_advisor
 			}
 		}
 		advisor = {
@@ -63,7 +63,7 @@ characters = {
 		name = RZP_jozwiak
 		portraits = {
 			civilian = {
-				small = GFX_portrait_RZP_balczun_advisor
+				small = GFX_portrait_RZP_Jozwiak_advisor
 			}
 		}
 		advisor = {
@@ -74,6 +74,21 @@ characters = {
 			}
 			available = {
 				has_completed_focus = RZP_ekipakukiza
+			}
+		}
+	}
+	RZP_najman={
+		name = RZP_najman
+		portraits = {
+			civilian = {
+				small = GFX_portrait_RZP_najman_advisor
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = RZP_najman_advisor
+			traits = {
+				popular_figurehead
 			}
 		}
 	}

@@ -10,7 +10,7 @@ state={
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
+		steel=7
 		tungsten=0
 	}
 
@@ -33,7 +33,7 @@ state={
 	}
 
 	provinces={
-		11455 11456 
+		11424 11439 11447 11455 11456 
 	}
 	local_supplies=0.0 
 }

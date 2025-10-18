@@ -1130,4 +1130,82 @@ focus = {
             
         }
     }
+    #drzewko ekspansji militarnej==============================================
+    focus = {
+        id = RZP_militarneprzygotowania
+        icon = GFX_focus_generic_tank_production
+        cost = 10
+        x = 48
+        y = 0
+       
+        completion_reward = { 
+            add_war_support = 0.05
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.75
+                uses = 1
+            }
+        }
+    }
+    focus = {
+        id = RZP_rozwojbroni
+        icon = GFX_focus_AFG_scavenging
+        cost = 5
+        relative_position_id = RZP_militarneprzygotowania
+        x = -1
+        y = 1
+      
+        prerequisite = {
+            focus = RZP_militarneprzygotowania
+        }
+        completion_reward = { 
+            add_tech_bonus = {
+                bonus = 1
+                uses = 2
+                cost_reduction = 0.5
+                category = infantry_weapons
+            }
+        }
+    }
+    focus = {
+        id = RZP_fabrykibroni
+        icon = GFX_focus_generic_mass_production
+        cost = 10
+        relative_position_id = RZP_militarneprzygotowania
+        x = 1
+        y = 1
+      
+        prerequisite = {
+            focus = RZP_militarneprzygotowania
+        }
+        completion_reward = { 
+           random_owned_state = {
+               add_building_construction = {
+                type = arms_factory
+                level = 2
+               }
+               add_extra_state_shared_building_slots = 2
+            }
+        }
+    }
+    focus = {
+        id = RZP_fabrykibroni
+        icon = GFX_focus_GER_demonstration_of_military_achievements
+        cost = 10
+        relative_position_id = RZP_militarneprzygotowania
+        x = 0
+        y = 2
+      
+        prerequisite = {
+            focus = RZP_fabrykibroni
+        }
+        prerequisite = {
+            focus = RZP_rozwojbroni
+        }
+        completion_reward = { 
+           swap_ideas = {
+            remove_idea = RZP_alkocholizm_w_wojsku
+            add_idea = RZP_alkocholizm_w_wojsku1
+           }
+        }
+    }
 }

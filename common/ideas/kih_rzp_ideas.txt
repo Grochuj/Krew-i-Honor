@@ -105,6 +105,35 @@ ideas = {
 				local_resources_factor = 0.1
 			}
 		}
+		#===================================================================
+		RZP_alkocholizm_w_wojsku = {
+			picture = GFX_focus_SWE_hygienic_housing
+			modifier = {
+				army_morale_factor = -0.1
+				army_org_factor = -0.1
+				army_org_regain = -0.2
+				recruitable_population_factor = -0.15
+				justify_war_goal_time = 0.5
+			}
+		}
+		RZP_alkocholizm_w_wojsku1 = {
+			modifier = {
+				army_morale_factor = -0.05
+				army_org_factor = -0.1
+				army_org_regain = -0.15
+				recruitable_population_factor = -0.1
+				justify_war_goal_time = 0.5
+			}
+		}
+		RZP_alkocholizm_w_wojsku2 = {
+			modifier = {
+				army_morale_factor = -0.05
+				army_org_factor = -0.05
+				army_org_regain = -0.1
+				recruitable_population_factor = -0.05
+				justify_war_goal_time = 0.2
+			}
+		}
+		#===================================================================
 	}
-	
 }
