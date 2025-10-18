@@ -2,28 +2,26 @@
 state={
 	id=142
 	name="STATE_142"
-	manpower = 37146
+	manpower = 15
 	
-	state_category = large_town
+	state_category = wasteland
 	resources={
 		aluminium=0
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
+		steel=6
 		tungsten=0
 	}
 
 	history={
-		victory_points = { 2630 7}
-		victory_points = { 2636 7}
 		
 		owner = NRP
 		buildings = {
 			infrastructure = 2
 			
 			arms_factory = 0
-			industrial_complex = 1
+			industrial_complex = 0
 			
 			2628 = {
 				naval_base = 1

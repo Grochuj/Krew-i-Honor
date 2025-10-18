@@ -2,9 +2,9 @@
 state={
 	id=120
 	name="STATE_120"
-	manpower = 25728
+	manpower = 7871
 	
-	state_category = town
+	state_category = rural
 	resources={
 		aluminium=0
 		chromium=0
@@ -15,7 +15,6 @@ state={
 	}
 
 	history={
-		victory_points = { 2256 5}
 		victory_points = { 2265 4}
 		
 		owner = NRP
@@ -23,7 +22,7 @@ state={
 			infrastructure = 1
 			
 			arms_factory = 0
-			industrial_complex = 1
+			industrial_complex = 0
 			
 			2260 = {
 				naval_base = 1
