@@ -2,16 +2,16 @@
 state={
 	id=96
 	name="STATE_96"
-	manpower = 26423
+	manpower = 571000
 	
-	state_category = metropolis
+	state_category = large_city
 	resources={
 		aluminium=0
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
-		tungsten=0
+		steel=4
+		tungsten=1
 	}
 
 	history={
@@ -23,8 +23,8 @@ state={
 			
 			arms_factory = 2
 			industrial_complex = 3
-			
-			
+			air_base = 3
+			anti_air_building = 2
 		}
 		add_core_of = NRP
 	}

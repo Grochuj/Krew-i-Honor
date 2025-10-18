@@ -2,7 +2,7 @@
 state={
 	id=133
 	name="STATE_133"
-	manpower = 25700
+	manpower = 28173
 	
 	state_category = town
 	resources={
@@ -10,21 +10,19 @@ state={
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
-		tungsten=0
+		steel=8
+		tungsten=20
 	}
 
 	history={
-		victory_points = { 2480 3}
-		victory_points = { 2483 3}
-		victory_points = { 2484 2}
+		victory_points = { 2484 16}
 		
 		owner = NRP
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			
-			arms_factory = 1
-			industrial_complex = 0
+			arms_factory = 0
+			industrial_complex = 3
 			
 			
 		}
