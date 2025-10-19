@@ -1112,6 +1112,68 @@ focus = {
             add_ideas = RZP_rolnictwo
         }
     }
+    focus = {
+        id = RZP_decentralizajcjaedukacji
+        icon = GFX_focus_NORDIC_dem_research
+        cost = 10
+        relative_position_id = RZP_rzadkukiza
+        x = 3
+        y = 2
+      
+        prerequisite = {
+            focus = RZP_rzadkukiza
+        }
+        completion_reward = { 
+            add_ideas = RZP_nauka
+            add_tech_bonus = {
+                category = electronics
+                bonus = 1
+                uses = 1
+            }
+        }
+    }
+    focus = {
+        id = RZP_konieczakcyza
+        icon = GFX_focus_generic_currency_reforms
+        cost = 5
+        relative_position_id = RZP_rzadkukiza
+        x = 5
+        y = 2
+      
+        prerequisite = {
+            focus = RZP_rzadkukiza
+        }
+        completion_reward = { 
+            add_stability = 0.1
+
+        }
+    }
+    focus = {
+        id = RZP_niezaleeznosc_energetyczna
+        icon = GFX_focus_generic_electrification
+        cost = 15
+        relative_position_id = RZP_rzadkukiza
+        x = 7
+        y = 2
+      
+        prerequisite = {
+            focus = RZP_rzadkukiza
+        }
+        completion_reward = { 
+            104 = {
+                add_building_construction = {
+                    type = dam
+                    level = 1
+                }
+            }
+            128 = {
+                add_building_construction = {
+                    type = dam
+                    level = 1
+                }
+            }
+        }
+    }
     #ekspansja==================================================
     focus = {
         id = RZP_taktycznewydatki

@@ -16,4 +16,8 @@ spriteTypes = {
 		name = "GFX_portrait_RZP_najman_advisor"
 		textureFile = "gfx/advisors/RZP/najman_advisor.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_RZP_zuk_advisor"
+		textureFile = "gfx/advisors/RZP/zuk_advisor.dds"
+	}
 }

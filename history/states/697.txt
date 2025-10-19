@@ -15,8 +15,7 @@ state={
 	}
 
 	history={
-		victory_points = { 11700 1}
-		
+	
 		owner = WOH
 		buildings = {
 			infrastructure = 1

@@ -39,4 +39,32 @@ spriteTypes = {
 		name = GFX_idea_RZP_kluczykiipiwo
 		texturefile = gfx/interface/ideas/kluczyki.dds
 	}
+	spriteType = {
+		name = GFX_idea_RZP_rolnictwo
+		texturefile = gfx/interface/ideas/idea_LIT_invested_in_farms.dds
+	}
+	spriteType = {
+		name = GFX_idea_RZP_animek
+		texturefile = gfx/interface/ideas/idea_generic_supply_lines.dds
+	}
+	spriteType = {
+		name = GFX_idea_RZP_obronna4
+		texturefile = gfx/interface/ideas/idea_mex_politicised_army.dds
+	}
+	spriteType = {
+		name = GFX_idea_RZP_likwidacjasenatu
+		texturefile = gfx/interface/ideas/sprawnysejm.dds
+	}
+	spriteType = {
+		name = GFX_idea_RZP_nizszyprogreferendaly
+		texturefile = gfx/interface/ideas/idea_BRA_dasp.dds
+	}
+	spriteType = {
+		name = GFX_idea_RZP_kukizpoparcie
+		texturefile = gfx/interface/ideas/spr_disbanded_army.dds
+	}
+	spriteType = {
+		name = GFX_idea_RZP_nauka
+		texturefile = gfx/interface/ideas/idea_jap_supremacy_of_technology.dds
+	}
 }

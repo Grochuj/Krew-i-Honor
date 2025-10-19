@@ -105,9 +105,13 @@ ideas = {
 				local_resources_factor = 0.1
 			}
 		}
+		RZP_nauka = {
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
 		#===================================================================
 		RZP_alkocholizm_w_wojsku = {
-			picture = GFX_focus_SWE_hygienic_housing
 			modifier = {
 				army_morale_factor = -0.1
 				army_org_factor = -0.1

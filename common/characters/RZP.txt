@@ -92,4 +92,22 @@ characters = {
 			}
 		}
 	}
+	RZP_zuk = {
+		name = RZP_zuk
+		portraits = {
+			civilian = {
+				small = GFX_portrait_RZP_zuk_advisor
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = RZP_zuk_advisor
+			traits = {
+				GER_price_commissioner
+			}
+			available = {
+				has_completed_focus = RZP_ekipakukiza
+			}
+		}
+	}
 }

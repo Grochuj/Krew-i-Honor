@@ -2,7 +2,7 @@
 state={
 	id=749
 	name="STATE_749"
-	manpower = 63
+	manpower = 693
 	
 	state_category = small_island
 	resources={
@@ -15,7 +15,6 @@ state={
 	}
 
 	history={
-		victory_points = { 11752 1}
 		
 		owner = WOH
 		buildings = {
