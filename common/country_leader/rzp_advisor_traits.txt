@@ -4,5 +4,9 @@ leader_traits = {
 		consumer_goods_factor = -0.05
 		resource_trade_cost_bonus_per_factory = 1
 	}
-	
+	sekretarz_redakcji = {
+		random = no
+		political_power_gain = 0.1
+		federalizm_drift = 0.1
+	}
 }

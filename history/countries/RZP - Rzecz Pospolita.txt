@@ -7,6 +7,7 @@ set_research_slots = 2
 
 recruit_character = RZP_jakubiak
 recruit_character = RZP_kukiz
+recruit_character = RZP_skutecki
 recruit_character = RZP_bakun
 recruit_character = RZP_NorbiK
 recruit_character = RZP_jozwiak
@@ -42,4 +43,6 @@ add_ideas = {
 	generalna_ideja
 	RZP_idea_znacjonalizowanebrowary
 	RZP_alkocholizm_w_wojsku
+	
 }
+add_dynamic_modifier = { modifier = RZP_stan_marynarki_i_lotnictwa }

@@ -20,4 +20,8 @@ spriteTypes = {
 		name = "GFX_portrait_RZP_zuk_advisor"
 		textureFile = "gfx/advisors/RZP/zuk_advisor.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_RZP_skutecki_advisor"
+		textureFile = "gfx/advisors/RZP/skutecki_advisor.dds"
+	}
 }

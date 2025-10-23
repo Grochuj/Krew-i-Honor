@@ -1190,7 +1190,7 @@ focus = {
             
         }
     }
-    #drzewko ekspansji militarnej==============================================
+    #militaria==============================================
     focus = {
         id = RZP_militarneprzygotowania
         icon = GFX_focus_generic_tank_production
@@ -1401,6 +1401,45 @@ focus = {
         completion_reward = { 
           remove_ideas = RZP_alkocholizm_w_wojsku2
           add_war_support = 0.05
+        }
+    }
+    #Flota_i lotnictwo=======================================================================================
+  focus = {
+        id = RZP_cwiczenia_lotnicze
+        icon = GFX_focus_NORDIC_com_airforce
+        cost = 10
+        x = 48
+        y = 0
+       
+        completion_reward = { 
+            add_to_variable = {
+                atxpgf = 0.1
+            }
+            add_to_variable = {
+                aaf = 0.1
+            }
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.75
+                uses = 1
+                category = air_doctrine
+            }
+            air_experience = 35
+        }
+    }
+    focus = {
+        id = RZP_rozbudowa_lotnisk
+        icon = GFX_focus_generic_public_works
+        cost = 5
+        relative_position_id = RZP_cwiczenia_lotnicze
+        x = 0
+        y = 1
+      
+        prerequisite = {
+            focus = RZP_cwiczenia_lotnicze
+        }
+
+        completion_reward = { 
+         
         }
     }
 }

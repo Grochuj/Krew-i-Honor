@@ -110,4 +110,19 @@ characters = {
 			}
 		}
 	}
+	RZP_skutecki = {
+		name = RZP_skutecki
+		portraits = {
+			civilian = {
+				small = GFX_portrait_RZP_skutecki_advisor
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = RZP_skutecki_advisor
+			traits = {
+				sekretarz_redakcji
+			}
+		}
+	}
 }
