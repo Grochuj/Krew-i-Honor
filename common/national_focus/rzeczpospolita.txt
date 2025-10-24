@@ -1408,7 +1408,7 @@ focus = {
         id = RZP_cwiczenia_lotnicze
         icon = GFX_focus_NORDIC_com_airforce
         cost = 10
-        x = 48
+        x = 45
         y = 0
        
         completion_reward = { 
@@ -1416,7 +1416,7 @@ focus = {
                 atxpgf = 0.1
             }
             add_to_variable = {
-                aaf = 0.1
+                aaf = -0.15
             }
             add_doctrine_cost_reduction = {
                 cost_reduction = 0.75
@@ -1463,7 +1463,7 @@ focus = {
         id = RZP_rozbudowa_stoczni
         icon = GFX_focus_POL_develop_polish_shipbuilding
         cost = 10
-        x = 52
+        x = 49
         y = 0
        
         completion_reward = { 
@@ -1494,6 +1494,9 @@ focus = {
             add_to_variable = {
                 nrc = 0.15
             }
+            add_to_variable = {
+                nac = -0.15
+            }
             navy_experience = 30
         }
     }
@@ -1507,7 +1510,7 @@ focus = {
         prerequisite = {
             focus = RZP_rozbudowa_lotnisk
         }
-        x = 50
+        x = 47
         y = 2
        
         completion_reward = { 
@@ -1575,6 +1578,61 @@ focus = {
             add_to_variable = {
                 nc = 0.1
             }
+        }
+    }
+    focus = {
+        id = RZP_rozwoj_samolotow
+        icon = GFX_goal_generic_air_fighter
+        cost = 5
+        relative_position_id = RZP_reforma_lotnictwa
+        prerequisite = {
+            focus = RZP_reforma_lotnictwa
+        }
+        x = 0
+        y = 1
+       
+        completion_reward = { 
+           add_tech_bonus = {
+            category = air_equipment
+            bonus = 2
+            uses = 1
+           }
+           add_tech_bonus = {
+            category = air_doctrine
+            bonus = 0.25
+            uses = 1
+           }
+        }
+    }
+    focus = {
+        id = RZP_placzenie_marynarki_z_lotnictwem
+        icon = GFX_focus_GER_graf_zeppelin
+        cost = 5
+        relative_position_id = RZP_rozwoj_samolotow
+        prerequisite = {
+            focus = RZP_rozwoj_samolotow
+        }
+        prerequisite = {
+            focus = RZP_openbar_po_wygranej_bitwie
+        }
+        x = 2
+        y = 1
+       
+        completion_reward = { 
+           add_to_variable = {
+            nac = -0.2
+           }
+           add_to_variable = {
+            aaf = -0.075
+           }
+           add_to_variable = {
+            adf = 0.1
+           }
+           add_to_variable = {
+            appf = 0.1
+           }
+           air_experience = 50
+           navy_experience = 50
         }
     }
 }

@@ -8,6 +8,10 @@ characters = {
 		}
 		country_leader = {
 			ideology = aut
+			traits = {
+				man_of_the_nation
+				pacyfista
+			}
 		}
 	}
 }

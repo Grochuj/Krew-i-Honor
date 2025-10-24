@@ -1,0 +1,9 @@
+leader_traits = {
+	pacyfista = {
+		random = no
+
+		stability_factor = 0.1
+		war_support = -0.2
+		justify_war_goal_time = 2
+	}
+}

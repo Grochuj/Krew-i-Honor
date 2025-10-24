@@ -46,3 +46,12 @@ add_ideas = {
 	
 }
 add_dynamic_modifier = { modifier = RZP_stan_marynarki_i_lotnictwa }
+
+set_variable = { aaf = 0.3 }
+set_variable = { adf = -0.2 }
+set_variable = { appf = -0.25 }
+set_variable = { atxgf = -0.2 }
+set_variable = { nac = 0.3 }
+set_variable = { nc = -0.15 }
+set_variable = { nmf = -0.1 }
+set_variable = { nrc = 0.2 }
