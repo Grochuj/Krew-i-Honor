@@ -1429,7 +1429,7 @@ focus = {
     focus = {
         id = RZP_rozbudowa_lotnisk
         icon = GFX_focus_generic_public_works
-        cost = 5
+        cost = 10
         relative_position_id = RZP_cwiczenia_lotnicze
         x = 0
         y = 1
@@ -1439,7 +1439,142 @@ focus = {
         }
 
         completion_reward = { 
-         
+         85 = {
+               add_building_construction = {
+                type = air_base
+                level = 2
+               }
+            }
+         128 = {
+               add_building_construction = {
+                type = air_base
+                level = 2
+               }
+            }
+          114 = {
+               add_building_construction = {
+                type = air_base
+                level = 2
+               }
+            }
+        }
+    }
+    focus = {
+        id = RZP_rozbudowa_stoczni
+        icon = GFX_focus_POL_develop_polish_shipbuilding
+        cost = 10
+        x = 52
+        y = 0
+       
+        completion_reward = { 
+            223 = {
+               add_building_construction = {
+                type = dockyard
+                level = 2
+               }
+               add_extra_state_shared_building_slots = 2
+            }
+        }
+    }
+    focus = {
+        id = RZP_wzmozenie_treningu_morskiego
+        icon = GFX_focus_SWE_coastal_support
+        cost = 10
+        relative_position_id = RZP_rozbudowa_stoczni
+        prerequisite = {
+            focus = RZP_rozbudowa_stoczni
+        }
+        x = 0
+        y = 1
+       
+        completion_reward = { 
+            add_to_variable = {
+                nc = 0.1
+            }
+            add_to_variable = {
+                nrc = 0.15
+            }
+            navy_experience = 30
+        }
+    }
+    focus = {
+        id = RZP_ropa_z_chmielu_skurwielu
+        icon = GFX_focus_PER_increase_oil_sales
+        cost = 10
+        prerequisite = {
+            focus = RZP_wzmozenie_treningu_morskiego
+        }
+        prerequisite = {
+            focus = RZP_rozbudowa_lotnisk
+        }
+        x = 50
+        y = 2
+       
+        completion_reward = { 
+           add_ideas = RZP_paliwo_z_chmielu
+        }
+    }
+    focus = {
+        id = RZP_badania_ds_morskich
+        icon = GFX_focus_SWE_italian_destroyers
+        cost = 5
+        relative_position_id = RZP_wzmozenie_treningu_morskiego
+        prerequisite = {
+            focus = RZP_wzmozenie_treningu_morskiego
+        }
+        x = 0
+        y = 1
+       
+        completion_reward = { 
+            add_tech_bonus = {
+                uses = 2
+                bonus = 1
+                category = naval_equipment
+            }
+        }
+    }
+    focus = {
+        id = RZP_reforma_lotnictwa
+        icon = GFX_focus_SOV_women_in_aviation
+        cost = 5
+        relative_position_id = RZP_rozbudowa_lotnisk
+        prerequisite = {
+            focus = RZP_rozbudowa_lotnisk
+        }
+        x = 0
+        y = 1
+       
+        completion_reward = { 
+            set_rule = {
+                can_generate_female_aces = yes
+            }
+            add_to_variable = {
+                atxpgf = 0.1
+            }
+            air_experience = 15
+        }
+    }
+    focus = {
+        id = RZP_openbar_po_wygranej_bitwie
+        icon = GFX_focus_generic_cruiser2
+        cost = 5
+        relative_position_id = RZP_badania_ds_morskich
+        prerequisite = {
+            focus = RZP_badania_ds_morskich
+        }
+        x = 0
+        y = 1
+       
+        completion_reward = { 
+            add_to_variable = {
+                nmf = 0.1
+            }
+            add_to_variable = {
+                nrc = -0.35
+            }
+            add_to_variable = {
+                nc = 0.1
+            }
         }
     }
 }

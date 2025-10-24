@@ -148,3 +148,10 @@ spriteTypes = {
 		textureFile = "gfx/leaders/WOH/Woch.tga"
 	}
 }
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_JEW_shalom"
+		textureFile = "gfx/leaders/JEW/Shalom.tga"
+	}
+}

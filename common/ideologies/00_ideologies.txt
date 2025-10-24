@@ -873,4 +873,47 @@ ideologies = {
 		ai_give_core_state_control_threshold = 10
 	}
 
+	judaizm = {
+
+		types = {
+	
+			judaszyzm = {
+	
+			}
+		}
+	
+		dynamic_faction_names = {
+			"FACTION_NAME_DISCOPOLO_1"
+		}
+	
+		color = { 255 255 255 }
+	
+		war_impact_on_world_tension = 0.1
+		faction_impact_on_world_tension = 0.3
+	
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+	
+		can_collaborate = yes
+	
+		modifiers = {
+			justify_war_goal_when_in_major_war_time = -0.5
+			civilian_intel_to_others = 5.0
+			army_intel_to_others = 1.0
+			navy_intel_to_others = 8.0
+			airforce_intel_to_others = 5.0
+			embargo_cost_factor = 1
+			lend_lease_tension = 0.25
+			stability_factor = 5
+			consumer_goods_factor = 0.025
+		}
+	
+		ai_communist = yes
+		ai_ideology_wanted_units_factor = 1.2
+			
+		ai_give_core_state_control_threshold = 10
+	}
 }
