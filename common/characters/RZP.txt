@@ -5,21 +5,79 @@ characters = {
 			civilian = {
 				large = GFX_portrait_RZP_jakubiak
 			}
+			army = {
+				large = GFX_portrait_RZP_jakubiak_general_l
+			}
 		}
 		country_leader = {
 			ideology = nac
 		}
-		
+		field_marshal = {
+			traits = {
+				cavalry_leader
+				cavalry_expert
+				brave
+				ranger
+				cavalry_officer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 2
+		}
 	}
+	RZP_maciejewski={
+		name = RZP_maciejewski
+		portraits={
+			civilian = {
+				small = GFX_portrait_RZP_maciejewski_advisor
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = RZP_maciejewski_advisor
+			traits = {
+				industry_reformer
+			}
+		}
+	}
+	RZP_liroy={
+		name = RZP_liroy
+		portraits={
+			civilian = {
+				small = GFX_portrait_RZP_liroy_advisor
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = RZP_liroy_advisor
+			traits = {
+				BRA_political_fox
+			}
+		}
+	}
+	#Kukiz Team=========================================================================================
 	RZP_kukiz={
 		name = RZP_kukiz
 		portraits = {
 			civilian = {
 				large = GFX_portrait_RZP_kukiz
+				small = GFX_portrait_RZP_kukiz_advisor
 			}
 		}
 		country_leader = {
 			ideology = fed
+			traits = {
+				tenacious_negotiator
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = RZP_kukiz_advisor
+			traits = {
+				byly_muzyk
+			}
 		}
 	}
 	RZP_bakun={

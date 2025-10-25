@@ -7,6 +7,8 @@ set_research_slots = 2
 
 recruit_character = RZP_jakubiak
 recruit_character = RZP_kukiz
+recruit_character = RZP_maciejewski
+recruit_character = RZP_liroy
 recruit_character = RZP_skutecki
 recruit_character = RZP_bakun
 recruit_character = RZP_NorbiK
@@ -21,7 +23,6 @@ set_technology = {
 	tech_trucks = 1
 	tech_support = 1
 	tech_engineers = 1
-	tech_recon = 1
 	basic_train = 1
 }
 
@@ -29,7 +30,7 @@ set_politics = {
 	ruling_party = nacjonalizm
 	last_election = "2025.05.16"
 	election_frequency = 120
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_popularities = {
@@ -43,7 +44,6 @@ add_ideas = {
 	generalna_ideja
 	RZP_idea_znacjonalizowanebrowary
 	RZP_alkocholizm_w_wojsku
-	
 }
 add_dynamic_modifier = { modifier = RZP_stan_marynarki_i_lotnictwa }
 

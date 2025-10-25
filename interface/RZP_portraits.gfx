@@ -24,4 +24,20 @@ spriteTypes = {
 		name = "GFX_portrait_RZP_skutecki_advisor"
 		textureFile = "gfx/advisors/RZP/skutecki_advisor.dds"
 	}
+	spriteType = {
+		name = GFX_portrait_RZP_jakubiak_general_l
+		textureFile = gfx/generals/RZP/jakubiak_l.png
+	}
+	spriteType = {
+		name = "GFX_portrait_RZP_liroy_advisor"
+		textureFile = "gfx/advisors/RZP/liroy_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_RZP_maciejewski_advisor"
+		textureFile = "gfx/advisors/RZP/maciejewski_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_RZP_kukiz_advisor"
+		textureFile = "gfx/advisors/RZP/kukiz_advisor.dds"
+	}
 }

@@ -1,5 +1,6 @@
 division_template = {
 	name = "Dywizja Piechoty"
+	division_names_group = RZP_INF_01
 	regiments = { 
 		infantry = {
 			x = 0
@@ -28,6 +29,7 @@ division_template = {
 
 division_template = {
 	name = "Oddział Partyzantów"
+	division_names_group = RZP_INF_02
 	regiments = { 
 		infantry = {
 			x = 0
@@ -46,6 +48,7 @@ division_template = {
 
 division_template = {
 	name = "Chmielna Dywizja"
+	division_names_group = RZP_CAV_01
 	regiments = {
 		cavalry = {
 			x = 0
@@ -75,7 +78,7 @@ division_template = {
 units = {
 	division = {
 		name = "Pieszy Oddział Piechoty"
-		location = 1184
+		location = 1633
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 1
 	}
@@ -84,7 +87,7 @@ units = {
 units = {
 	division = {
 		name = "Drugi Oddział Piechoty"
-		location = 5473
+		location = 2400
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 1
 	}
@@ -92,7 +95,7 @@ units = {
 units = {
 	division = {
 		name = "1.Husaria Okocimska"
-		location = 5729
+		location = 3563
 		division_template = "Chmielna Dywizja"
 		start_experience_factor = 1
 	}
