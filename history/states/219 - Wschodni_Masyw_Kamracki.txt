@@ -1,39 +1,32 @@
 
 state={
-	id=691
-	name="STATE_691"
-	manpower = 1155
+	id=219
+	name="STATE_219"
+	manpower = 9
 	
-	state_category = small_island
+	state_category = wasteland
 	resources={
-		aluminium=0
+		aluminium=2
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
+		steel=6
 		tungsten=0
 	}
 
 	history={
-		victory_points = { 11694 1}
-		
 		owner = KAM
 		buildings = {
-			infrastructure = 1
+			infrastructure = 0
 			
 			arms_factory = 0
 			industrial_complex = 0
-			
-			11694 = {
-				naval_base = 1
-			}
-			
 		}
 		add_core_of = KAM
 	}
 
 	provinces={
-		11694 
+		3827 3828 3829 3830 3831 3832 3833 3834 3835 3836 
 	}
 	local_supplies=0.0 
 }

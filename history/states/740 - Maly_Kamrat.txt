@@ -1,0 +1,37 @@
+
+state={
+	id=740
+	name="STATE_740"
+	manpower = 59
+	
+	state_category = small_island
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		owner = KAM
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 0
+			
+			11743 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = KAM
+	}
+
+	provinces={
+		11743 
+	}
+	local_supplies=0.0 
+}

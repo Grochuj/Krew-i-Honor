@@ -1,0 +1,32 @@
+
+state={
+	id=167
+	name="STATE_167"
+	manpower = 15
+	
+	state_category = wasteland
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		owner = KAM
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+		}
+		add_core_of = KAM
+	}
+
+	provinces={
+		2991 2992 2993 2994 2995 2996 2997 2998 2999 
+	}
+	local_supplies=0.0 
+}

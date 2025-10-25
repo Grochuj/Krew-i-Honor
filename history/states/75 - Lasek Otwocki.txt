@@ -2,29 +2,27 @@
 state={
 	id=75
 	name="STATE_75"
-	manpower = 64674
+	manpower = 674
 	
-	state_category = city
+	state_category = pastoral
 	resources={
 		aluminium=0
 		chromium=0
 		oil=0
-		rubber=0
+		rubber=4
 		steel=0
 		tungsten=0
 	}
 
 	history={
-		victory_points = { 1385 8}
-		victory_points = { 1387 8}
-		victory_points = { 1396 8}
-		
+		victory_points = { 1397 4 }
+
 		owner = KAM
 		buildings = {
 			infrastructure = 2
 			
 			arms_factory = 0
-			industrial_complex = 2
+			industrial_complex = 1
 			
 			1392 = {
 				naval_base = 1

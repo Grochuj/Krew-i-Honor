@@ -1,22 +1,21 @@
 
 state={
-	id=167
-	name="STATE_167"
-	manpower = 23013
+	id=227
+	name="STATE_227"
+	manpower = 140
 	
-	state_category = town
+	state_category = pastoral
 	resources={
-		aluminium=0
+		aluminium=2
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
+		steel=2
 		tungsten=0
 	}
 
 	history={
-		victory_points = { 2993 2}
-		victory_points = { 2996 5}
+		victory_points = { 3963 8}
 		
 		owner = KAM
 		buildings = {
@@ -24,14 +23,17 @@ state={
 			
 			arms_factory = 0
 			industrial_complex = 1
-			
+			dockyard = 0
+			3960 = {
+				naval_base = 1
+			}
 			
 		}
 		add_core_of = KAM
 	}
 
 	provinces={
-		2991 2992 2993 2994 2995 2996 2997 2998 2999 
+		3958 3959 3960 3961 3962 3963 3964 3965 3966 3967 3968 
 	}
 	local_supplies=0.0 
 }

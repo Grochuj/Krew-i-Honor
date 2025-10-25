@@ -1,12 +1,12 @@
 
 state={
-	id=67
-	name="STATE_67"
-	manpower = 18065
+	id=192
+	name="STATE_192"
+	manpower = 89
 	
-	state_category = rural
+	state_category = pastoral
 	resources={
-		aluminium=0
+		aluminium=2
 		chromium=0
 		oil=0
 		rubber=0
@@ -15,18 +15,14 @@ state={
 	}
 
 	history={
-		victory_points = { 1219 2}
-		victory_points = { 1220 2}
-		victory_points = { 1223 2}
-		
 		owner = KAM
 		buildings = {
 			infrastructure = 1
 			
 			arms_factory = 0
-			industrial_complex = 1
+			industrial_complex = 0
 			
-			1218 = {
+			3393 = {
 				naval_base = 1
 			}
 			
@@ -35,7 +31,7 @@ state={
 	}
 
 	provinces={
-		1218 1219 1220 1221 1222 1223 1224 
+		3390 3391 3392 3393 
 	}
 	local_supplies=0.0 
 }
