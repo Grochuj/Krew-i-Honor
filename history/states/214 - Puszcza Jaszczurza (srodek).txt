@@ -2,30 +2,25 @@
 state={
 	id=214
 	name="STATE_214"
-	manpower = 74556
+	manpower = 3
 	
-	state_category = metropolis
+	state_category = wasteland
 	resources={
 		aluminium=0
 		chromium=0
 		oil=0
-		rubber=0
+		rubber=3
 		steel=0
 		tungsten=0
 	}
 
 	history={
-		victory_points = { 3755 1}
-		victory_points = { 3765 29}
-		
 		owner = KAM
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			
 			arms_factory = 0
-			industrial_complex = 4
-			
-			
+			industrial_complex = 0
 		}
 		add_core_of = KAM
 	}

@@ -19,25 +19,25 @@ focus_tree = {
         x = 7
         y = 0
         completion_reward = {
-            438 = {
+            112 = {
                 add_building_construction = {
                     type = infrastructure
                     level = 2
                 }
             }
-            437 = {
+            68 = {
                 add_building_construction = {
                     type = infrastructure
                     level = 2
                 }
             }
-            439 = {
+            70 = {
                 add_building_construction = {
                     type = infrastructure
                     level = 1
                 }
             }
-            328 = {
+            205 = {
                 add_building_construction = {
                     type = infrastructure
                     level = 1
@@ -120,7 +120,7 @@ focus_tree = {
             add_resource = {
                 type = aluminium
                 amount = 16
-                state = 436
+                state = 165
             }
         }
     }
@@ -133,7 +133,7 @@ focus_tree = {
         y = 1
 
         available = {
-            436 = {
+            165 = {
                 industrial_complex > 0
                 infrastructure > 2
             }
@@ -144,7 +144,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            436 = {
+            165 = {
                 set_state_category = town
                 add_manpower = 25000
             }
@@ -930,12 +930,22 @@ focus_tree = {
         available = {
             AND = {
                 OR = {
-                    290 = {
+                    203 = {
                         controller = {
                             tag = KAM
                         }
                     }
-                    440 = {
+                    132 = {
+                        controller = {
+                            tag = KAM
+                        }
+                    }
+                    180 = {
+                        controller = {
+                            tag = KAM
+                        }
+                    }
+                    128 = {
                         controller = {
                             tag = KAM
                         }
@@ -1016,9 +1026,17 @@ focus_tree = {
                 tag = RZP
                 message = KAM_wygrana_z_jakubiakiem
             }
-            white_peace = RPL
-            transfer_state = 290
-            transfer_state = 440
+            if = {
+                limit = {
+                    has_war_with = RPL
+                }
+                white_peace = RPL
+            }
+            transfer_state = 132
+            transfer_state = 203
+            transfer_state = 180
+            transfer_state = 242
+            transfer_state = 240
             remove_dynamic_modifier = {
                 modifier = KAM_przyg_mod
             }
@@ -1034,10 +1052,19 @@ focus_tree = {
 
         available = {
             AND = {
-                290 = {
+                132 = {
                     is_owned_and_controlled_by = KAM
                 }
-                440 = {
+                203 = {
+                    is_owned_and_controlled_by = KAM
+                }
+                180 = {
+                    is_owned_and_controlled_by = KAM
+                }
+                242 = {
+                    is_owned_and_controlled_by = KAM
+                }
+                240 = {
                     is_owned_and_controlled_by = KAM
                 }
             }
@@ -1081,10 +1108,19 @@ focus_tree = {
 
         available = {
             AND = {
-                290 = {
+                132 = {
                     is_owned_and_controlled_by = KAM
                 }
-                440 = {
+                203 = {
+                    is_owned_and_controlled_by = KAM
+                }
+                180 = {
+                    is_owned_and_controlled_by = KAM
+                }
+                242 = {
+                    is_owned_and_controlled_by = KAM
+                }
+                240 = {
                     is_owned_and_controlled_by = KAM
                 }
             }
@@ -1095,20 +1131,25 @@ focus_tree = {
         }
 
         completion_reward = {
-            290 = {
+            132 = {
                 add_core_of = KAM
-                set_state_name = "Obwód Żywiecki"
+                set_state_name = "Obwód Namysłowski"
                 add_manpower = 20000
             }
-            440 = {
+            240 = {
                 add_core_of = KAM
                 set_state_name = "Obwód Grunwaldzki"
                 set_state_category = large_town
                 add_manpower = 35000
             }
             set_province_name = {
-                id = 1269
+                id = 4158
                 name = KAM_Grodno
+            }
+            203 = {
+                add_core_of = KAM
+                set_state_name = "Obwód Opolski"
+                add_manpower = 30000
             }
         }
     }

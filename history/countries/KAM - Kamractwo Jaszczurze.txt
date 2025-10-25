@@ -1,4 +1,4 @@
-capital = 437
+capital = 112
 
 oob = "KAM_2025"
 

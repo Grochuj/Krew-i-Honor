@@ -2,9 +2,9 @@
 state={
 	id=68
 	name="STATE_68"
-	manpower = 61808
+	manpower = 804237
 	
-	state_category = large_town
+	state_category = metropolis
 	resources={
 		aluminium=0
 		chromium=0
@@ -15,13 +15,13 @@ state={
 	}
 
 	history={
-		victory_points = { 1247 19}
+		victory_points = { 1247 23}
 		
 		owner = KAM
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			
-			arms_factory = 0
+			arms_factory = 3
 			industrial_complex = 1
 			
 			1239 = {

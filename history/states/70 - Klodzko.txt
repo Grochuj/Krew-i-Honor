@@ -2,9 +2,9 @@
 state={
 	id=70
 	name="STATE_70"
-	manpower = 54690
+	manpower = 25113
 	
-	state_category = city
+	state_category = town
 	resources={
 		aluminium=0
 		chromium=0
@@ -15,17 +15,35 @@ state={
 	}
 
 	history={
-		victory_points = { 1273 10}
-		victory_points = { 1285 10}
+		victory_points = { 1290 10}
+		victory_points = { 1278 1}
 		
 		owner = KAM
 		buildings = {
 			infrastructure = 2
 			
-			arms_factory = 0
-			industrial_complex = 2
-			
-			
+			arms_factory = 1
+			industrial_complex = 0
+			anti_air_building = 2
+
+			1274 = {
+				bunker = 2
+			}
+			1288 = {
+				bunker = 1
+			}
+			1279 = {
+				bunker = 1
+			}
+			1270 = {
+				bunker = 1
+			}
+			1278 = {
+				bunker = 3
+			}
+			1272 = {
+				bunker = 1
+			}
 		}
 		add_core_of = KAM
 	}
