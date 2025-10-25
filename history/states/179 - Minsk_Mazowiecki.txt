@@ -2,30 +2,27 @@
 state={
 	id=179
 	name="STATE_179"
-	manpower = 20314
+	manpower = 39837
 	
 	state_category = town
 	resources={
-		aluminium=0
+		aluminium=3
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
+		steel=1
 		tungsten=0
 	}
 
 	history={
-		victory_points = { 3160 3}
-		victory_points = { 3164 3}
+		victory_points = { 3166 18}
 		
 		owner = KAM
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			
 			arms_factory = 0
-			industrial_complex = 1
-			
-			
+			industrial_complex = 2
 		}
 		add_core_of = KAM
 	}
