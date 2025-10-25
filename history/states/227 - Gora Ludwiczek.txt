@@ -1,0 +1,39 @@
+
+state={
+	id=227
+	name="STATE_227"
+	manpower = 140
+	
+	state_category = pastoral
+	resources={
+		aluminium=2
+		chromium=0
+		oil=0
+		rubber=0
+		steel=2
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 3963 8}
+		
+		owner = KAM
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 1
+			dockyard = 0
+			3960 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = KAM
+	}
+
+	provinces={
+		3958 3959 3960 3961 3962 3963 3964 3965 3966 3967 3968 
+	}
+	local_supplies=0.0 
+}
