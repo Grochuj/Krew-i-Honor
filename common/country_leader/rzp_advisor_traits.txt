@@ -9,4 +9,9 @@ leader_traits = {
 		political_power_gain = 0.1
 		federalizm_drift = 0.1
 	}
+	byly_muzyk ={
+		random = no
+		stability_factor = 0.05
+		compliance_growth = 0.1
+	}
 }
