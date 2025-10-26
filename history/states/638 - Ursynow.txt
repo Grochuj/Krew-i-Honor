@@ -1,0 +1,38 @@
+
+state={
+	id=638
+	name="STATE_638"
+	manpower = 146416
+	
+	state_category = large_town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 11374 20}
+		victory_points = { 11313 1}
+		
+		owner = PRL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			
+			11374 = {
+				naval_base = 2
+			}
+			
+		}
+		add_core_of = PRL
+	}
+
+	provinces={
+		11293 11297 11298 11303 11305 11306 11307 11311 11313 11370 11371 11372 11373 11374 11375 11292 
+	}
+	local_supplies=0.0 
+}

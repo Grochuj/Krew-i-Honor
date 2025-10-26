@@ -1,10 +1,10 @@
 
 state={
-	id=683
-	name="STATE_683"
-	manpower = 3023
+	id=714
+	name="STATE_714"
+	manpower = 298
 	
-	state_category = pastoral
+	state_category = small_island
 	resources={
 		aluminium=0
 		chromium=0
@@ -15,7 +15,6 @@ state={
 	}
 
 	history={
-		victory_points = { 11686 1}
 		
 		owner = PRL
 		buildings = {
@@ -24,7 +23,7 @@ state={
 			arms_factory = 0
 			industrial_complex = 0
 			
-			11686 = {
+			11717 = {
 				naval_base = 1
 			}
 			
@@ -33,7 +32,7 @@ state={
 	}
 
 	provinces={
-		11686 
+		11717 
 	}
 	local_supplies=0.0 
 }
