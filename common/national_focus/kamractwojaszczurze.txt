@@ -219,6 +219,51 @@ focus_tree = {
             add_research_slot = 1
         }
     }
+    focus = {
+        id = KAM_przem7
+        icon = GFX_focus_generic_rubber
+        cost = 10
+        relative_position_id = KAM_przem4
+        x = 2
+        y = 1
+
+        prerequisite = {
+            focus = KAM_przem4   
+        }
+
+        completion_reward = {
+            add_resource = {
+                type = rubber
+                amount = 12
+                state = 214
+            }
+            add_resource = {
+                type = rubber
+                amount = 8
+                state = 167
+            }
+        }
+    }
+    focus = {
+        id = KAM_przem8
+        icon = GFX_focus_generic_rubber_plantations
+        cost = 5
+        relative_position_id = KAM_przem7
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = KAM_przem7  
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 2
+                category = cat_synth_rubber
+            }
+        }
+    }
 
 #DRZEWKO ARMII#
 
@@ -413,7 +458,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            437 = {
+            112 = {
                 add_manpower = 25000
                 create_unit = { division = "name = \"1. Specjalna Kamracka Brygada Kawalerii\" division_template = \"Kamracka Brygada Kawalerii\" start_experience_factor = 1" owner = ROOT }
                 create_unit = { division = "name = \"2. Specjalna Kamracka Brygada Kawalerii\" division_template = \"Kamracka Brygada Kawalerii\" start_experience_factor = 1" owner = ROOT }
@@ -563,7 +608,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            437 = {
+            112 = {
                 add_manpower = 25000
                 create_unit = { division = "name = \"1. Specjalna Kamracka Brygada Kawalerii\" division_template = \"Kamracka Brygada Kawalerii\" start_experience_factor = 1" owner = ROOT }
                 create_unit = { division = "name = \"2. Specjalna Kamracka Brygada Kawalerii\" division_template = \"Kamracka Brygada Kawalerii\" start_experience_factor = 1" owner = ROOT }
