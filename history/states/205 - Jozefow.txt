@@ -1,0 +1,34 @@
+
+state={
+	id=205
+	name="STATE_205"
+	manpower = 21217
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 3614 7}
+		
+		owner = KAM
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 1
+		}
+		add_core_of = KAM
+	}
+
+	provinces={
+		3606 3607 3608 3609 3610 3611 3612 3613 3614 3615 3616 3617 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,38 @@
+
+state={
+	id=708
+	name="STATE_708"
+	manpower = 23
+	
+	state_category = small_island
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		owner = SZP
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 0
+			
+			11711 = {
+				naval_base = 1
+			}
+			
+		}
+		add_core_of = SZP
+	}
+
+	provinces={
+		11711 
+	}
+	local_supplies=0.0 
+}

@@ -59,14 +59,14 @@ focus_tree = {
 
         completion_reward = {
             build_railway = {
-                path = { 963 6250 3503 5294 4747 9172 9125 1921 9043 9001 967 3941 }
+                path = { 2109 3607 3611 3606 2922 4180 3637 3632 3639 3755 3775 3758 3772 3773 3768 1170 1181 1173 2557 3370 3369 3363 }
                 level = 3
             }
-            293 = {
+            214 = {
                 add_building_construction = {
                     type = supply_node
                     level = 1
-                    province = 3941
+                    province = 3755
                 }
             }
         }
@@ -667,11 +667,11 @@ focus_tree = {
 
         completion_reward = {
             build_railway = {
-                path = { 963 9205 1503 9133 4283 5796 1269 }
+                path = { 1290 1274 3558 3568 3563 }
                 level = 3
             }
             build_railway = {
-                path = { 5469 1480 510 3045 2850 1218 5563 6210 1055 }
+                path = { 3614 1282 1268 1272 3571 3574 }
                 level = 2
             }
         }
@@ -1076,24 +1076,42 @@ focus_tree = {
         }
 
         completion_reward = {
-            290 = {
+            203 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                }
+            }
+            240 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                }
+            }
+            180 = {
                 add_building_construction = {
                     type = infrastructure
                     level = 2
                 }
             }
-            440 = {
+            132 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                }
+            }
+            242 = {
                 add_building_construction = {
                     type = infrastructure
                     level = 2
                 }
             }
             build_railway = {
-                path = { 963 9205 1503 9133 4283 5796 1269 }
+                path = { 1290 1274 3558 3568 3563 }
                 level = 3
             }
             build_railway = {
-                path = { 5469 1480 510 3045 2850 1218 5563 6210 1055 }
+                path = { 3614 1282 1268 1272 3571 3574 }
                 level = 2
             }
         }
@@ -1311,21 +1329,41 @@ focus_tree = {
         }
 
         completion_reward = {
-            439 = {
+            70 = {
                 add_building_construction = {
                     type = bunker
                     level = 3
-                    province = 520 
+                    province = 1290
                 }
                 add_building_construction = {
                     type = bunker
-                    level = 3
-                    province = 6210
+                    level = 5
+                    province = 1278
                 }
                 add_building_construction = {
                     type = bunker
-                    level = 3
-                    province = 1503
+                    level = 2
+                    province = 1279
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    province = 1274
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    province = 1288
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    province = 1270
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    province = 1272
                 }
             }
         }
@@ -1347,21 +1385,36 @@ focus_tree = {
         }
 
         completion_reward = {
-            438 = {
+            68 = {
                 add_building_construction = {
                     type = bunker
                     level = 3
-                    province = 963
+                    province = 1247
                 }
                 add_building_construction = {
                     type = bunker
                     level = 2
-                    province = 6250
+                    province = 1235
                 }
                 add_building_construction = {
                     type = bunker
                     level = 2
-                    province = 3016
+                    province = 1251
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    province = 1256
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    province = 1240
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 1
+                    province = 1239
                 }
             }
         }
@@ -1383,26 +1436,26 @@ focus_tree = {
         }
 
         completion_reward = {
-            437 = {
+            112 = {
                 add_building_construction = {
                     type = bunker
-                    level = 3
-                    province = 9310
+                    level = 4
+                    province = 2109
                 }
                 add_building_construction = {
                     type = bunker
                     level = 3
-                    province = 3065
+                    province = 2094
                 }
                 add_building_construction = {
                     type = bunker
                     level = 3
-                    province = 5116
+                    province = 2081
                 }
                 add_building_construction = {
                     type = bunker
                     level = 2
-                    province = 9281
+                    province = 2098
                 }
             }
         }
@@ -1486,11 +1539,20 @@ focus_tree = {
             focus = KAM_focus_poszukiwanie_terytoriow
         }
 
+        bypass = {
+            RZP = {
+                exists = no
+            }
+        }
+
         completion_reward = {
             if = {
                 limit = {
-                    owns_state = 290
-                    owns_state = 440
+                    owns_state = 132
+                    owns_state = 203
+                    owns_state = 180
+                    owns_state = 242
+                    owns_state = 240
                 }
                 create_wargoal = {
                     target = RZP
@@ -1500,17 +1562,26 @@ focus_tree = {
             if = {
                 limit = {
                     NOT = {
-                        owns_state = 290
+                        owns_state = 132
                     }
                     NOT = {
-                        owns_state = 440
+                        owns_state = 203
+                    }
+                    NOT = {
+                        owns_state = 180
+                    }
+                    NOT = {
+                        owns_state = 242
+                    }
+                    NOT = {
+                        owns_state = 240
                     }
                 }
                 create_wargoal = {
                     target = RZP
                     type = take_state
                     generator = {
-                        290 440
+                        132 203 180 242 240
                     }
                 }
             }
@@ -1534,12 +1605,20 @@ focus_tree = {
             focus = KAM_focus_poszukiwanie_terytoriow
         }
 
+        bypass = {
+            ROOT = {
+                owns_state = 79
+                owns_state = 173
+                owns_state = 230
+            }
+        }
+
         completion_reward = {
             create_wargoal = {
                 target = NRP
                 type = take_state
                 generator = {
-                    441 331 353
+                    79 173 230
                 }
             }
         }
