@@ -2,7 +2,7 @@
 state={
 	id=543
 	name="STATE_543"
-	manpower = 26446
+	manpower = 96446
 	
 	state_category = large_town
 	resources={
@@ -15,19 +15,16 @@ state={
 	}
 
 	history={
-		victory_points = { 9836 7}
-		victory_points = { 9837 3}
-		victory_points = { 9842 2}
-		
+		victory_points = { 9836 10}
 		owner = CEP
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			
-			arms_factory = 0
-			industrial_complex = 1
-			dockyard = 1
-			9843 = {
-				naval_base = 1
+			arms_factory = 1
+			industrial_complex = 0
+			dockyard = 2
+			9836 = {
+				naval_base = 4
 			}
 			
 		}
@@ -35,7 +32,7 @@ state={
 	}
 
 	provinces={
-		9836 9837 9838 9839 9840 9841 9842 9843 9844 
+		9836 9838 9839 9840 9841 9843
 	}
 	local_supplies=0.0 
 }
