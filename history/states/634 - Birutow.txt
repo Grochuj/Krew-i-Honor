@@ -1,10 +1,10 @@
 
 state={
-	id=635
-	name="STATE_635"
-	manpower = 23484
+	id=634
+	name="STATE_634"
+	manpower = 22237
 	
-	state_category = town
+	state_category = rural
 	resources={
 		aluminium=0
 		chromium=0
@@ -15,23 +15,25 @@ state={
 	}
 
 	history={
-		victory_points = { 11323 5}
-		victory_points = { 11328 1}
+		victory_points = { 11317 5}
 		
 		owner = PRL
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			
 			arms_factory = 0
 			industrial_complex = 1
 			
+			11317 = {
+				naval_base = 2
+			}
 			
 		}
 		add_core_of = PRL
 	}
 
 	provinces={
-		11323 11324 11325 11326 11327 11328 11329 11330 11331 11332 11333 
+		11314 11315 11316 11317 11318 11319 11320 11321 11322 11291 11295 11301
 	}
 	local_supplies=0.0 
 }

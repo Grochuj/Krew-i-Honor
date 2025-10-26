@@ -1,0 +1,44 @@
+
+state={
+	id=636
+	name="STATE_636"
+	manpower = 21057
+	
+	state_category = town
+	resources={
+		aluminium=0
+		chromium=0
+		oil=7
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 11338 5}
+		victory_points = { 11342 3}
+		victory_points = { 11334 3}
+		
+		owner = PRL
+		buildings = {
+			infrastructure = 2
+			
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 1
+			11342 = {
+				naval_base = 1
+			}
+			11338 = {
+				naval_base = 3
+			}
+			
+		}
+		add_core_of = PRL
+	}
+
+	provinces={
+		11334 11335 11336 11337 11338 11339 11340 11341 11342 
+	}
+	local_supplies=0.0 
+}

@@ -1,0 +1,40 @@
+
+state={
+	id=637
+	name="STATE_637"
+	manpower = 163742
+	
+	state_category = city
+	resources={
+		aluminium=0
+		chromium=0
+		oil=6
+		rubber=0
+		steel=2
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 11363 30 }
+		victory_points = { 11357 3 }
+
+		owner = PRL
+		buildings = {
+			infrastructure = 3
+			air_base = 3
+			arms_factory = 1
+			industrial_complex = 0
+			synthetic_refinery = 1
+			dockyard = 1
+			11363 = {
+				naval_base = 8
+			}
+		}
+		add_core_of = PRL
+	}
+
+	provinces={
+		11324 11343 11344 11345 11346 11347 11348 11349 11350 11351 11353 11355 11357 11358 11359 11360 11363 11364 11365 11366 11367 11368 
+	}
+	local_supplies=0.0 
+}

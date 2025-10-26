@@ -10,4 +10,19 @@ characters = {
 			ideology = stalinism
 		}
 	}
+	PRL_leszek_miller={
+		name = PRL_leszek_miller
+		portraits = {
+			civilian = {
+				small = GFX_portrait_PRL_leszek_miller
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PRL_leszek_miller_advisor
+			traits = {
+				prime_minister_aydemir
+			}
+		}
+	}
 }

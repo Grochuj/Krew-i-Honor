@@ -1,22 +1,21 @@
 
 state={
-	id=714
-	name="STATE_714"
-	manpower = 198
+	id=633
+	name="STATE_633"
+	manpower = 5250
 	
-	state_category = small_island
+	state_category = city
 	resources={
-		aluminium=0
+		aluminium=7
 		chromium=0
 		oil=0
-		rubber=0
+		rubber=4
 		steel=0
 		tungsten=0
 	}
 
 	history={
-		victory_points = { 11717 1}
-		
+
 		owner = PRL
 		buildings = {
 			infrastructure = 1
@@ -24,16 +23,12 @@ state={
 			arms_factory = 0
 			industrial_complex = 0
 			
-			11717 = {
-				naval_base = 1
-			}
-			
 		}
 		add_core_of = PRL
 	}
 
 	provinces={
-		11717 
+		11294 11296 11299 11300 11302 11304 11308 11309 11310 11312
 	}
 	local_supplies=0.0 
 }
