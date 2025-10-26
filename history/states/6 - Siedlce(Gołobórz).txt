@@ -4,7 +4,7 @@ state={
 	name="STATE_6"
 	manpower = 79153
 	
-	state_category = large_city
+	state_category = town
 	resources={
 		aluminium=0
 		chromium=0
@@ -15,15 +15,14 @@ state={
 	}
 
 	history={
-		victory_points = { 108 12}
-		victory_points = { 124 3}
-		victory_points = { 133 12}
-		
+		victory_points = { 121 3}
+		victory_points = { 102 10}
+
 		owner = CEP
 		buildings = {
 			infrastructure = 2
 			
-			arms_factory = 2
+			arms_factory = 1
 			industrial_complex = 0
 			dockyard = 1
 			121 = {
@@ -35,7 +34,7 @@ state={
 	}
 
 	provinces={
-		99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 
+		99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 9837 9842 
 	}
 	local_supplies=0.0 
 }
