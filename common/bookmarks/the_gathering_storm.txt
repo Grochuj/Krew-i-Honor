@@ -147,11 +147,14 @@ bookmarks = {
 			history = "RZP_BOOKMARK_DESC"
 			ideology = discopolo
 			ideas = {
-				generalna_ideja
+				RZP_wielkarzp
 				RZP_idea_znacjonalizowanebrowary
+				RZP_alkocholizm_w_wojsku
 			}
 			focuses = {
-			
+				RZP_suwerennarp
+				RZP_zmianakierunku
+				RZP_satelitapis
 			}
 		}
 		"REZ"={
