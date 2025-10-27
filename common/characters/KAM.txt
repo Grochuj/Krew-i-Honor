@@ -33,6 +33,7 @@ characters = {
 				logistics_wizard
 				organizer
 				cavalry_officer
+				media_personality
 			}
 			skill = 6
 			attack_skill = 5
@@ -62,6 +63,7 @@ characters = {
 			traits = {
 				infantry_expert
 				trait_cautious
+				media_personality
 			}
 			skill = 4
 			attack_skill = 3
@@ -112,6 +114,31 @@ characters = {
 				KAM = {
 					has_government = autorytaryzm
 				}
+			}
+		}
+	}
+	KAM_sadecki={
+		name = KAM_sadecki
+		portraits = {
+			army = {
+				small = GFX_portrait_KAM_sadecki_general_s
+				large = GFX_portrait_KAM_sadecki_general_l
+			}
+			civilian = {
+				small = GFX_portrait_KAM_sadecki_advisor
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = political_advisor
+			traits = {
+				prince_of_terror
 			}
 		}
 	}

@@ -4,8 +4,30 @@ KAM_SUB_1 = {
 	type = ship
 	ship_types = { ship_hull_submarine submarine } # Sets what types of units can use this name list, replace mountaineers with whatever type of unit you are using
 	prefix = "FK " # This will be placed before the ship name, can be left empty if you don't want a prefix
-	fallback_name = "%d Okręt Podwodny" # This will be used if you run out of numbered divisions. Always use either %d for decimal numbers or %s for Roman numerals but you can change the rest
+	fallback_name = "%s Okręt Podwodny" # This will be used if you run out of numbered divisions. Always use either %d for decimal numbers or %s for Roman numerals but you can change the rest
 	unique = {
-		"Wojciech Olszański" "Aleksander Jabłonowski"
+		"Wojciech Olszański" "Aleksander Jabłonowski" "Marcin Osadowski"
+	}
+}
+KAM_SHB_1 = {
+	name = "Flagowce" # The name you want for your name list, can either be a string or in quotes.
+	for_countries = { KAM } # Sets what countries can use this name list, change NEP to your countries tag
+	type = ship
+	ship_types = { ship_hull_super_heavy_1 modern_battleship }
+	prefix = "OFK " # This will be placed before the ship name, can be left empty if you don't want a prefix
+	fallback_name = "%d. Superciężki Okręt" # This will be used if you run out of numbered divisions. Always use either %d for decimal numbers or %s for Roman numerals but you can change the rest
+	unique = {
+		"Jaszczur" "Ludwiczek" 
+	}
+}
+KAM_DES_1 = {
+	name = "Miasta" # The name you want for your name list, can either be a string or in quotes.
+	for_countries = { KAM } # Sets what countries can use this name list, change NEP to your countries tag
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+	prefix = "OFK " # This will be placed before the ship name, can be left empty if you don't want a prefix
+	fallback_name = "%d. Superciężki Okręt" # This will be used if you run out of numbered divisions. Always use either %d for decimal numbers or %s for Roman numerals but you can change the rest
+	unique = {
+		"Otwock" "Lądek-Zdrój" "Kłodzko" "Kraków" "Mińsk Mazowiecki"
 	}
 }

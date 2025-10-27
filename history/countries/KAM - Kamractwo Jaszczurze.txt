@@ -2,7 +2,7 @@ capital = 112
 
 oob = "KAM_2025"
 
-set_convoys = 0
+set_convoys = 5
 set_research_slots = 2
 
 set_stability = 0.5
@@ -11,6 +11,7 @@ set_war_support = 0.5
 recruit_character = KAM_jaszczur_leader
 recruit_character = KAM_osadowski
 recruit_character = KAM_poreba
+recruit_character = KAM_sadecki
 
 set_technology = {
 	infantry_weapons = 1
@@ -43,7 +44,7 @@ set_technology = {
 }
 
 create_equipment_variant = {
-	name = "KZL-25"
+	name = "KZL-23"
 	type = small_plane_airframe_0
 	modules = {
 		fixed_main_weapon_slot = light_mg_4x
@@ -53,7 +54,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "KZL-25/B"
+	name = "KZL-23/B"
 	type = small_plane_cas_airframe_0
 	modules = {
 		fixed_main_weapon_slot = bomb_locks
@@ -105,7 +106,7 @@ add_equipment_production = {
 	equipment = {
 		type = small_plane_airframe_0
 		creator = "KAM"
-		version_name = "KZL-25"
+		version_name = "KZL-23"
 	}
 	requested_factories = 2
 	progress = 0.75
@@ -115,7 +116,7 @@ add_equipment_production = {
 	equipment = {
 		type = small_plane_cas_airframe_0
 		creator = "KAM"
-		version_name = "KZL-25/B"
+		version_name = "KZL-23/B"
 	}
 	requested_factories = 1
 	progress = 0.5
