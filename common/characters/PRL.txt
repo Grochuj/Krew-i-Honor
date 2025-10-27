@@ -10,18 +10,83 @@ characters = {
 			ideology = stalinism
 		}
 	}
-	PRL_leszek_miller={
+	PRL_leszek_miller = {
 		name = PRL_leszek_miller
 		portraits = {
 			civilian = {
-				small = GFX_portrait_PRL_leszek_miller
+				small = GFX_portrait_PRL_miller_advisor
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = PRL_leszek_miller_advisor
+			idea_token = PRL_leszek_miller
 			traits = {
 				prime_minister_aydemir
+			}
+		}
+	}
+	PRL_jaruzelski = {
+		name = PRL_jaruzelski
+		portraits = {
+			civilian = {
+				small = GFX_portrait_PRL_jaruzelski_advisor
+			}
+			army = {
+				large = GFX_portrait_PRL_jaruzelski_gen
+			}
+		}
+		general = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			plan_skill = 1
+			logistics_skill = 2
+			trait = general_brygady
+		}
+		advisor = {
+			slot = army_chief
+			traits = {
+				army_chief_offensive_2
+			}
+		}
+	}
+	PRL_kiszczak = {
+		name = PRL_kiszczak
+		portraits = {
+			civilian = {
+				small = GFX_portrait_PRL_kiszczak_advisor
+			}
+			army = {
+				large = GFX_portrait_PRL_kiszczak_gen
+			}
+		}
+		general = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			plan_skill = 3
+			logistics_skill = 2
+			trait = general_brygady
+		}
+		advisor = {
+			slot = political_advisor
+			traits = {
+				army_infantry_2
+			}
+		}
+	}
+	PRL_urban = {
+		name = PRL_urban
+		portraits = {
+			civilian = {
+				small = GFX_portrait_PRL_urban_advisor
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PRL_urban
+			traits = {
+				socialist_writer
 			}
 		}
 	}

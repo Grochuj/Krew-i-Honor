@@ -9,4 +9,88 @@ focus_tree = {
         }
     }
     shared_focus = np_removing_focus_1
+
+    focus = {
+        id = PRL_nasze_miejsce_na_swiecie
+        icon = GFX_focus_GER_legacy_of_the_spartacus_league
+        cost = 5
+        x = 10
+        y = 0
+        completion_reward = { 
+            add_political_power = 50
+            add_popularity = {
+                ideology = communism
+                popularity = 0.05
+            }
+        }
+    }
+    focus = {
+        id = PRL_dwa_kroki_w_przod
+        icon = GFX_focus_generic_communist
+        relative_position_id = PRL_nasze_miejsce_na_swiecie
+        prerequisite = {
+            focus = PRL_nasze_miejsce_na_swiecie
+        }
+        cost = 5
+        x = -1
+        y = 1
+        completion_reward = { 
+           add_opinion_modifier = {
+            target = FLS
+            modifier = medium_increase
+           }
+           add_opinion_modifier = {
+            target = DIP
+            modifier = medium_increase
+           }
+        }
+    }
+    focus = {
+        id = PRL_matka
+        icon = GFX_focus_senysz
+        relative_position_id = PRL_nasze_miejsce_na_swiecie
+        prerequisite = {
+            focus = PRL_nasze_miejsce_na_swiecie
+        }
+        cost = 5
+        x = 1
+        y = 1
+        completion_reward = { 
+            add_country_leader_trait = PRL_matula
+        }
+    }
+    focus = {
+        id = PRL_ateizm
+        icon = GFX_focus_BRA_state_atheism
+        relative_position_id = PRL_matka
+        prerequisite = {
+            focus = PRL_matka
+        }
+        prerequisite = {
+            focus = PRL_dwa_kroki_w_przod
+        }
+        cost = 10
+        x = -1
+        y = 1
+        completion_reward = { 
+            add_ideas = PRL_ateizmus
+        }
+    }
+    focus = {
+        id = PRL_tajemnica_kopy_cwila
+        icon = GFX_focus_kopa_cwila
+        relative_position_id = PRL_ateizm
+        prerequisite = {
+            focus = PRL_ateizm
+        }
+        cost = 10
+        x = 0
+        y = 1
+        available = {
+            has_tech = excavation1
+        }
+        completion_reward = { 
+            
+        }
+    }
 }

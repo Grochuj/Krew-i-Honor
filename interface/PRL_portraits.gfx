@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_PRL_miller_advisor"
+		textureFile = "gfx/advisors/PRL/miller_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRL_kiszczak_advisor"
+		textureFile = "gfx/advisors/PRL/kiszczak_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRL_jaruzelski_advisor"
+		textureFile = "gfx/advisors/PRL/jaruzelski_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRL_urban_advisor"
+		textureFile = "gfx/advisors/PRL/urban_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRL_jaruzelski_gen"
+		textureFile = "gfx/generals/PRL/jaruzelski_gen.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRL_kiszczak_gen"
+		textureFile = "gfx/generals/PRL/kiszczak_gen.dds"
+	}
+}
