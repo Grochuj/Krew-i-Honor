@@ -7,4 +7,16 @@ spriteTypes = {
 		name = GFX_idea_PRL_ateizmus
 		texturefile = gfx/interface/ideas/idea_ARG_state_atheism.dds
 	}
+	spriteType = {
+		name = GFX_idea_PRL_piecioletka
+		texturefile = gfx/interface/ideas/idea_SOV_fourth_five_year_plan.dds
+	}
+	spriteType = {
+		name = GFX_idea_PRL_zawodowe
+		texturefile = gfx/interface/ideas/idea_ARG_economic_reactivation.dds
+	}
+	spriteType = {
+		name = GFX_idea_PRL_mieszkanka
+		texturefile = gfx/interface/ideas/idea_SWE_folkhemmet.dds
+	}
 }

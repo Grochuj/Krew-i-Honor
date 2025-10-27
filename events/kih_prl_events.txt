@@ -1,0 +1,30 @@
+add_namespace = prl_event
+
+country_event = {
+	id = prl_event.1
+	title = paj_event.1.t
+	desc = prl_event.1.d
+	picture = GFX_report_event_generic_read_write
+
+	trigger = {
+		tag = PRL
+		has_completed_focus = PRL_tajemnica_kopy_cwila
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		ai_chance = {
+			base = 1
+		}
+		name = paj_event.1.a
+
+		recruit_character = {
+			country
+		}
+	}
+}
