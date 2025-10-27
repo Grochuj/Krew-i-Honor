@@ -4,7 +4,7 @@ KAM_SUB_1 = {
 	type = ship
 	ship_types = { ship_hull_submarine submarine } # Sets what types of units can use this name list, replace mountaineers with whatever type of unit you are using
 	prefix = "FK " # This will be placed before the ship name, can be left empty if you don't want a prefix
-	fallback_name = "%d Okręt Podwodny" # This will be used if you run out of numbered divisions. Always use either %d for decimal numbers or %s for Roman numerals but you can change the rest
+	fallback_name = "%s Okręt Podwodny" # This will be used if you run out of numbered divisions. Always use either %d for decimal numbers or %s for Roman numerals but you can change the rest
 	unique = {
 		"Wojciech Olszański" "Aleksander Jabłonowski"
 	}
