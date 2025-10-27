@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_idea_PRL_armia_czerwona
+		texturefile = gfx/interface/ideas/idea_generic_communist_army.dds
+	}
+	spriteType = {
+		name = GFX_idea_PRL_ateizmus
+		texturefile = gfx/interface/ideas/idea_ARG_state_atheism.dds
+	}
+}

@@ -123,4 +123,12 @@ spriteTypes = {
         name = GFX_focus_moneyunchained
         texturefile =  gfx/interface/goals/moneyunchained.dds
     }
+    spriteType = {
+        name = GFX_focus_senysz
+        texturefile =  gfx/interface/goals/senysz.dds
+    }
+    spriteType = {
+        name = GFX_focus_kopa_cwila
+        texturefile =  gfx/interface/goals/kopa_cwila.dds
+    }
 }

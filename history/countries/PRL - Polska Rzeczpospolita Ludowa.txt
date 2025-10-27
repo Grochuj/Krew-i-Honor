@@ -27,7 +27,10 @@ set_politics = {
 }
 
 set_popularities = {
-	communism = 100
+	communism = 70
+	socjalizm = 5
+	democratic = 17
+	homo = 8
 }
 
 add_ideas = {

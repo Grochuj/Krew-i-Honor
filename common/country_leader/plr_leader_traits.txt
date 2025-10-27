@@ -1,0 +1,8 @@
+leader_traits = {
+	PRL_matula = {
+		random = no
+
+		stability_factor = 0.05
+		monthly_population = 0.15
+	}
+}

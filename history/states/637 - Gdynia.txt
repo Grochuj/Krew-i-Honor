@@ -17,6 +17,7 @@ state={
 	history={
 		victory_points = { 11363 30 }
 		victory_points = { 11357 3 }
+		victory_points = { 11366 3 }
 
 		owner = PRL
 		buildings = {
@@ -28,6 +29,9 @@ state={
 			dockyard = 1
 			11363 = {
 				naval_base = 8
+			}
+			11348 = {
+				naval_base = 2
 			}
 		}
 		add_core_of = PRL
