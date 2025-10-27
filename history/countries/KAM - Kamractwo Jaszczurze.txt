@@ -33,11 +33,44 @@ set_technology = {
 	aa_lmg = 1
 	early_ship_hull_light = 1
 	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
 	basic_battery = 1
 	basic_light_battery = 1
 	basic_torpedo = 1
+	improved_ship_torpedo_launcher = 1
 	fire_control_methods_1 = 1
 	mtg_transport = 1
+}
+
+create_equipment_variant = {
+	name = "KZL-25"
+	type = small_plane_airframe_0
+	modules = {
+		fixed_main_weapon_slot = light_mg_4x
+		fixed_auxiliary_weapon_slot_1 = light_mg_4x
+		engine_type_slot = engine_1_1x
+		special_type_slot_1 = empty
+	}
+}
+create_equipment_variant = {
+	name = "KZL-25/B"
+	type = small_plane_cas_airframe_0
+	modules = {
+		fixed_main_weapon_slot = bomb_locks
+		fixed_auxiliary_weapon_slot_1 = light_mg_2x
+		engine_type_slot = engine_1_1x
+		special_type_slot_1 = empty
+	}
+}
+create_equipment_variant = {
+	name = "Klasa Jaszczur"
+	type = ship_hull_submarine_2
+	name_group = KAM_SUB_1
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_2
+		fixed_ship_engine_slot = sub_ship_engine_2
+		rear_1_custom_slot = ship_torpedo_sub_2
+	}
 }
 
 set_politics = {
@@ -57,4 +90,44 @@ add_ideas = {
 	extensive_conscription
 	partial_economic_mobilisation
 	limited_exports
+}
+
+add_equipment_production = {
+	equipment = {
+		type = infantry_equipment_1
+		creator = "KAM"
+	}
+	requested_factories = 5
+	progress = 0
+	efficiency = 35
+}
+add_equipment_production = {
+	equipment = {
+		type = small_plane_airframe_0
+		creator = "KAM"
+		version_name = "KZL-25"
+	}
+	requested_factories = 2
+	progress = 0.75
+	efficiency = 25
+}
+add_equipment_production = {
+	equipment = {
+		type = small_plane_cas_airframe_0
+		creator = "KAM"
+		version_name = "KZL-25/B"
+	}
+	requested_factories = 1
+	progress = 0.5
+	efficiency = 10
+}
+add_equipment_production = {
+	equipment = {
+		type = ship_hull_submarine_2
+		creator = "KAM"
+		version_name = "Klasa Jaszczur"
+	}
+	requested_factories = 3
+	progress = 0.66
+	efficiency = 100
 }
