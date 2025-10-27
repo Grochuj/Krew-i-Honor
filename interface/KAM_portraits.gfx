@@ -23,4 +23,16 @@ spriteTypes = {
 		name = GFX_portrait_KAM_poreba_general_l
 		textureFile = gfx/generals/KAM/poreba_l.png
 	}
+	spriteType = {
+		name = GFX_portrait_KAM_sadecki_general_l
+		textureFile = gfx/generals/KAM/sadecki_l.png
+	}
+	spriteType = {
+		name = GFX_portrait_KAM_sadecki_general_s
+		textureFile = gfx/generals/KAM/sadecki_s.png
+	}
+	spriteType = {
+		name = GFX_portrait_KAM_sadecki_advisor
+		textureFile = gfx/advisors/KAM/sadecki.png
+	}
 }

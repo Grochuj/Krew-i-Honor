@@ -271,7 +271,7 @@ focus_tree = {
         id = KAM_armia_1
         icon = GFX_focus_generic_army_doctrines_2
         cost = 5
-        x = 30
+        x = 15
         y = 0
         completion_reward = {
             add_doctrine_cost_reduction = {
@@ -616,6 +616,149 @@ focus_tree = {
         }
     }
 
+#LOTNICTWO
+
+    focus = {
+        id = KAM_focus_powietrze_1
+        icon = GFX_goal_unknown
+        cost = 5
+        x = 34
+        y = 0
+
+        completion_reward = {
+            air_experience = 35
+        }
+
+        ai_will_do = {
+            base = 5
+
+            modifier = {
+                has_war = yes
+                enemy_has_equal_or_better_radar_tech_trigger = yes
+                factor = 5
+            }
+        }
+    }
+    focus = {
+        id = KAM_focus_rozwoj_baz_lotniczych
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = KAM_focus_powietrze_1
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = KAM_focus_powietrze_1
+        }
+
+        completion_reward = {
+            112 = {
+                add_building_construction = {
+                    type = air_base
+                    level = 3
+                }
+            }
+            68 = {
+                add_building_construction = {
+                    type = air_base
+                    level = 2
+                }
+            }
+            70 = {
+                add_building_construction = {
+                    type = air_base
+                    level = 2
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 5
+
+            modifier = {
+                has_war = yes
+                enemy_has_equal_or_better_radar_tech_trigger = yes
+                factor = 5
+            }
+        }
+    }
+    focus = {
+        id = KAM_focus_rozwoj_mysliwcow
+        icon = GFX_goal_generic_air_fighter2
+        cost = 10
+        relative_position_id = KAM_focus_rozwoj_baz_lotniczych
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = KAM_focus_rozwoj_baz_lotniczych
+        }
+
+        available = {
+            has_tech = basic_small_airframe
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1.5
+                uses = 1
+                category = light_air
+                ahead_reduction = 2
+            }
+            
+        }
+
+        ai_will_do = {
+            base = 5
+
+            modifier = {
+                has_war = yes
+                enemy_has_equal_or_better_radar_tech_trigger = yes
+                factor = 5
+            }
+        }
+    }
+    focus = {
+        id = KAM_focus_nowy_model_mysliwca
+        icon = GFX_goal_generic_air_fighter
+        cost = 5
+        relative_position_id = KAM_focus_rozwoj_mysliwcow
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = KAM_focus_rozwoj_mysliwcow
+        }
+
+        available = {
+            has_tech = improved_small_airframe
+        }
+
+        completion_reward = {
+            create_equipment_variant = {
+                name = "KZL-28"
+                type = small_plane_airframe_2
+                modules = {
+                    fixed_main_weapon_slot = heavy_mg_4x
+                    fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+                    engine_type_slot = engine_4_1x
+                    special_type_slot_1 = self_sealing_fuel_tanks_small
+                    special_type_slot_2 = fuel_tanks_small
+                }
+                allow_without_tech = yes
+            }
+        }
+
+        ai_will_do = {
+            base = 5
+
+            modifier = {
+                has_war = yes
+                enemy_has_equal_or_better_radar_tech_trigger = yes
+                factor = 5
+            }
+        }
+    }
 
 #POLITYCZNE - JAKUBIAK#
 
@@ -623,7 +766,7 @@ focus_tree = {
         id = KAM_focus_delegacja
         icon = GFX_focus_generic_diplomatic_treaty
         cost = 5
-        x = 40
+        x = 25
         y = 0
         completion_reward = {
             country_event = kam_event.1
@@ -1223,8 +1366,8 @@ focus_tree = {
         id = KAM_focus_sytuacja_zewnetrzna
         icon = GFX_focus_hol_the_foundations_of_defense
         cost = 5
-        x = 17
-        y = 0
+        x = 15
+        y = 7
         completion_reward = {
             add_political_power = 50
         }
@@ -1342,7 +1485,7 @@ focus_tree = {
         icon = GFX_goal_generic_defence
         cost = 10
         relative_position_id = KAM_focus_narod_najwazniejszy
-        x = -3
+        x = -2
         y = 1
 
         ai_will_do = {
@@ -1363,7 +1506,7 @@ focus_tree = {
         cost = 7
         relative_position_id = KAM_focus_narodowy_plan_obrony
         x = 0
-        y = 1
+        y = 2
 
         ai_will_do = {
             base = 2
@@ -1418,8 +1561,8 @@ focus_tree = {
         icon = GFX_goal_generic_fortify_city
         cost = 7
         relative_position_id = KAM_focus_twierdza_klodzko
-        x = -2
-        y = 0
+        x = -1
+        y = -1
 
         ai_will_do = {
             base = 2
@@ -1469,8 +1612,8 @@ focus_tree = {
         icon = GFX_goal_generic_fortify_city
         cost = 7
         relative_position_id = KAM_focus_twierdza_klodzko
-        x = 2
-        y = 0
+        x = 1
+        y = -1
 
         ai_will_do = {
             base = 2
@@ -1510,7 +1653,7 @@ focus_tree = {
         icon = GFX_idea_isolation
         cost = 10
         relative_position_id = KAM_focus_narod_najwazniejszy
-        x = 3
+        x = 2
         y = 1
 
         ai_will_do = {
