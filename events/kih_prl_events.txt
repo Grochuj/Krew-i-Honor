@@ -2,7 +2,7 @@ add_namespace = prl_event
 
 country_event = {
 	id = prl_event.1
-	title = paj_event.1.t
+	title = prl_event.1.t
 	desc = prl_event.1.d
 	picture = GFX_report_event_generic_read_write
 
@@ -21,8 +21,10 @@ country_event = {
 		ai_chance = {
 			base = 1
 		}
-		name = paj_event.1.a
+		name = prl_event.1.a
 
-		
+		set_country_flag = PRL_flag_dostepnyjaruzel
+
+		custom_effect_tooltip = prl_event.1.a.tt
 	}
 }
