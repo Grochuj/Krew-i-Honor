@@ -96,6 +96,25 @@ focus_tree = {
             }
         }
     }
+    #Polityka_senyszyn=========================================================================================
+    focus = {
+        id = PRL_nowa_twarz_lewicy
+        icon = GFX_focus_ARG_women_in_industry
+        relative_position_id = PRL_tajemnica_kopy_cwila
+        prerequisite = {
+            focus = PRL_tajemnica_kopy_cwila
+        }
+        cost = 5
+        x = 3
+        y = 1
+        completion_reward = { 
+            set_party_name = { 
+                ideology = communism
+                long_name = PRL_nfps_LONG
+                name = PRL_nfps
+            }
+        }
+    }
     #przemysł=========================================================================================
     focus = {
         id = PRL_plan_piecio_letni

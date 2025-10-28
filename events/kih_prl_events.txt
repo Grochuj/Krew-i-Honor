@@ -23,8 +23,6 @@ country_event = {
 		}
 		name = paj_event.1.a
 
-		recruit_character = {
-			country
-		}
+		
 	}
 }
