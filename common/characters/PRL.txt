@@ -35,18 +35,30 @@ characters = {
 				large = GFX_portrait_PRL_jaruzelski_gen
 			}
 		}
-		general = {
+		corps_commander = {
 			skill = 2
 			attack_skill = 3
 			defense_skill = 1
-			plan_skill = 1
+			planning_skill = 1
 			logistics_skill = 2
-			trait = general_brygady
+
+			traits = {
+				
+			}
+
+			visible = {
+				has_country_flag = PRL_flag_dostepnyjaruzel
+			}
 		}
 		advisor = {
 			slot = army_chief
+
 			traits = {
 				army_chief_offensive_2
+			}
+
+			visible = {
+				has_country_flag = PRL_flag_dostepnyjaruzel
 			}
 		}
 	}
@@ -60,13 +72,15 @@ characters = {
 				large = GFX_portrait_PRL_kiszczak_gen
 			}
 		}
-		general = {
+		corps_commander = {
 			skill = 3
 			attack_skill = 1
 			defense_skill = 2
-			plan_skill = 3
+			planning_skill = 3
 			logistics_skill = 2
-			trait = general_brygady
+			traits = {
+				
+			}
 		}
 		advisor = {
 			slot = political_advisor
