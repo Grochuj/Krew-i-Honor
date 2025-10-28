@@ -759,6 +759,129 @@ focus_tree = {
             }
         }
     }
+    focus = {
+        id = KAM_focus_rozwoj_bombowcow
+        icon = GFX_goal_generic_air_bomber
+        cost = 5
+        relative_position_id = KAM_focus_rozwoj_baz_lotniczych
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = KAM_focus_rozwoj_baz_lotniczych
+        }
+
+        available = {
+            has_tech = iw_large_airframe
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 2
+                uses = 2
+                category = heavy_air
+            }
+        }
+
+        ai_will_do = {
+            base = 5
+
+            modifier = {
+                has_war = yes
+                enemy_has_equal_or_better_radar_tech_trigger = yes
+                factor = 5
+            }
+        }
+    }
+    focus = {
+        id = KAM_focus_nowy_model_bombowca
+        icon = GFX_goal_generic_air_bomber
+        cost = 5
+        relative_position_id = KAM_focus_rozwoj_bombowcow
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = KAM_focus_rozwoj_bombowcow
+        }
+
+        available = {
+            has_tech = basic_large_airframe
+        }
+
+        completion_reward = {
+            create_equipment_variant = {
+                name = "L-27"
+                type = large_plane_airframe_1
+                modules = {
+                    fixed_main_weapon_slot = large_bomb_bay
+                    fixed_auxiliary_weapon_slot_1 = large_bomb_bay
+                    engine_type_slot = engine_3_6x
+                    special_type_slot_1 = self_sealing_fuel_tanks_large
+                    special_type_slot_2 = fuel_tanks_large
+                    special_type_slot_3 = hmg_defense_turret_2x
+                }
+                allow_without_tech = yes
+            }
+        }
+
+        ai_will_do = {
+            base = 5
+
+            modifier = {
+                has_war = yes
+                enemy_has_equal_or_better_radar_tech_trigger = yes
+                factor = 5
+            }
+        }
+    }
+    focus = {
+        id = KAM_focus_nowoczesny_samolot
+        icon = GFX_goal_generic_air_production
+        cost = 10
+        relative_position_id = KAM_focus_nowy_model_bombowca
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = KAM_focus_nowy_model_bombowca
+        }
+        prerequisite = {
+            focus = KAM_focus_nowy_model_mysliwca
+        }
+
+        completion_reward = {
+            add_breakthrough_points = {
+                specialization = specialization_air
+                value = 3
+            }
+            if = {
+                limit = {
+                    has_built = {
+                        type = air_facility
+                        value > 0
+                    }
+                }
+
+                112 = {
+                    add_building_construction = {
+                        type = air_facility
+                        level = 1
+                    }
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 5
+
+            modifier = {
+                has_war = yes
+                enemy_has_equal_or_better_radar_tech_trigger = yes
+                factor = 5
+            }
+        }
+    }
 
 #POLITYCZNE - JAKUBIAK#
 
