@@ -851,23 +851,54 @@ focus_tree = {
         }
 
         completion_reward = {
-            add_breakthrough_points = {
-                specialization = specialization_air
-                value = 3
-            }
             if = {
                 limit = {
-                    has_built = {
-                        type = air_facility
-                        value > 0
+                    has_dlc = Gotterdammerung
+                }
+
+                add_breakthrough_points = {
+                specialization = specialization_air
+                value = 3
+                }
+                if = {
+                    limit = {
+                        has_built = {
+                            type = air_facility
+                            value > 0
+                        }
+                    }
+
+                    112 = {
+                        if = {
+                            limit = {
+                                air_facility = 0
+                                land_facility = 0
+                            }
+                        
+                            add_building_construction = {
+                                type = air_facility
+                                level = 1
+                                instant_build = yes
+                                province = 2109
+                            }
+                        }
+                    }
+                }
+            }
+
+            if = {
+                limit = {
+                    NOT = {
+                        has_dlc = Gotterdammerung
                     }
                 }
 
-                112 = {
-                    add_building_construction = {
-                        type = air_facility
-                        level = 1
-                    }
+                air_experience = 25
+                add_tech_bonus = {
+                    bonus = 1
+                    uses = 1
+                    category = light_air
+                    ahead_reduction = 1
                 }
             }
         }
@@ -879,6 +910,38 @@ focus_tree = {
                 has_war = yes
                 enemy_has_equal_or_better_radar_tech_trigger = yes
                 factor = 5
+            }
+        }
+    }
+    focus = {
+        id = KAM_focus_fundusz_badan_lotniczych
+        icon = GFX_focus_research
+        cost = 5
+        relative_position_id = KAM_focus_rozwoj_baz_lotniczych
+        x = -3
+        y = 1
+
+        prerequisite = {
+            focus = KAM_focus_rozwoj_baz_lotniczych
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = "Fundusz Badań Lotniczych"
+                bonus = 0.5
+                uses = 3
+                category = cat_air_engine
+                category = cat_air_guns
+                category = air_equipment
+            }
+        }
+
+        ai_will_do = {
+            base = 5
+
+            modifier = {
+                date > 2027.01.01
+                factor = 3
             }
         }
     }
