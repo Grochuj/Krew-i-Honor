@@ -113,6 +113,7 @@ focus_tree = {
                 long_name = PRL_nfps_LONG
                 name = PRL_nfps
             }
+            add_stability = 0.05
         }
     }
     #przemysł=========================================================================================
@@ -316,6 +317,61 @@ focus_tree = {
             idea = PRL_mieszkanka
             years = 2
           }
+        }
+    }
+    #Wojsko=========================================================================================
+    focus = {
+        id = PRL_stan_armii
+        icon = GFX_focus_generic_communist_industry
+        cost = 5
+        x = 24
+        y = 0
+        completion_reward = { 
+           636 = {
+                add_building_construction = {
+                    type = military_factory
+                    level = 1
+                }
+                add_extra_state_shared_building_slots = 1
+            }
+            add_war_support = 0.05
+        }
+    }
+    focus = {
+        id = PRL_modernizacja_wojska
+        icon = GFX_focus_CONGO_copper_cartridges
+        relative_position_id = PRL_stan_armii
+        prerequisite = {
+            focus = PRL_stan_armii
+        }
+        cost = 10
+        x = -1
+        y = 1
+        completion_reward = { 
+          add_tech_bonus = {
+            category = infantry_weapons
+            bonus = 1
+            uses = 1
+          }
+          add_tech_bonus = {
+            category = support_weapons
+            bonus = 1
+            uses = 1
+          }
+        }
+    }
+    focus = {
+        id = PRL_modernizacja_wojska
+        icon = GFX_focus_CONGO_copper_cartridges
+        relative_position_id = PRL_stan_armii
+        prerequisite = {
+            focus = PRL_stan_armii
+        }
+        cost = 10
+        x = 1
+        y = 1
+        completion_reward = { 
+            add_ideas = PRL_bojowki
         }
     }
 }
