@@ -7,6 +7,15 @@ ideas = {
 				mobilization_speed = 0.2
 			}
 		}
+		PRL_armia_czerwona2 = {
+			modifier = {
+				army_org_factor = -0.1
+				conscription = 0.07
+				mobilization_speed = 0.3
+				training_time_factor = -0.1
+				land_doctrine_cost_factor = -0.1
+			}
+		}
 		PRL_ateizmus = {
 			modifier = {
 				research_speed_factor = 0.1
@@ -32,6 +41,18 @@ ideas = {
 				industrial_capacity_factory = 0.1
 				production_speed_industrial_complex_factor = 0.05
 				monthly_population = 0.1
+			}
+		}
+		PRL_bojowki = {
+			modifier = {
+				conscription_factor = 0.1
+				army_attack_factor = 0.05
+			}
+		}
+		PRL_badania_wojskowe = {
+			modifier = {
+				research_speed_factor = 0.1
+				special_project_speed_factor = 0.1
 			}
 		}
 	}

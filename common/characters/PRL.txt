@@ -81,11 +81,17 @@ characters = {
 			traits = {
 				
 			}
+			visible = {
+				has_country_flag = PRL_flag_dostepnykiszczak
+			}
 		}
 		advisor = {
 			slot = political_advisor
 			traits = {
 				army_infantry_2
+			}
+			visible = {
+				has_country_flag = PRL_flag_dostepnykiszczak
 			}
 		}
 	}
@@ -101,6 +107,9 @@ characters = {
 			idea_token = PRL_urban
 			traits = {
 				socialist_writer
+			}
+			visible = {
+				has_country_flag = PRL_flag_dostepnyurban
 			}
 		}
 	}

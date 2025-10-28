@@ -4,6 +4,10 @@ spriteTypes = {
 		texturefile = gfx/interface/ideas/idea_generic_communist_army.dds
 	}
 	spriteType = {
+		name = GFX_idea_PRL_armia_czerwona2
+		texturefile = gfx/interface/ideas/idea_generic_communist_army.dds
+	}
+	spriteType = {
 		name = GFX_idea_PRL_ateizmus
 		texturefile = gfx/interface/ideas/idea_ARG_state_atheism.dds
 	}
@@ -18,5 +22,13 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_idea_PRL_mieszkanka
 		texturefile = gfx/interface/ideas/idea_SWE_folkhemmet.dds
+	}
+	spriteType = {
+		name = GFX_idea_PRL_bojowki
+		texturefile = gfx/interface/ideas/spr_international_brigades.dds
+	}
+	spriteType = {
+		name = GFX_idea_PRL_badania_wojskowe
+		texturefile = gfx/interface/ideas/idea_jap_supremacy_of_will.dds
 	}
 }
