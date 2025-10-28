@@ -113,6 +113,7 @@ focus_tree = {
                 long_name = PRL_nfps_LONG
                 name = PRL_nfps
             }
+            add_stability = 0.05
         }
     }
     #przemysł=========================================================================================
@@ -316,6 +317,96 @@ focus_tree = {
             idea = PRL_mieszkanka
             years = 2
           }
+        }
+    }
+    #Wojsko=========================================================================================
+    focus = {
+        id = PRL_stan_armii
+        icon = GFX_focus_generic_communist_industry
+        cost = 5
+        x = 25
+        y = 0
+        completion_reward = { 
+           636 = {
+                add_building_construction = {
+                    type = military_factory
+                    level = 1
+                }
+                add_extra_state_shared_building_slots = 1
+            }
+            add_war_support = 0.05
+        }
+    }
+    focus = {
+        id = PRL_modernizacja_wojska
+        icon = GFX_focus_CONGO_copper_cartridges
+        relative_position_id = PRL_stan_armii
+        prerequisite = {
+            focus = PRL_stan_armii
+        }
+        cost = 10
+        x = -2
+        y = 1
+        completion_reward = { 
+          add_tech_bonus = {
+            category = infantry_weapons
+            bonus = 1
+            uses = 1
+          }
+          add_tech_bonus = {
+            category = support_tech
+            bonus = 1
+            uses = 1
+          }
+        }
+    }
+    focus = {
+        id = PRL_czerwone_bojowki
+        icon = GFX_focus_GER_the_peoples_victory
+        relative_position_id = PRL_stan_armii
+        prerequisite = {
+            focus = PRL_stan_armii
+        }
+        cost = 10
+        x = 2
+        y = 1
+        completion_reward = { 
+            add_ideas = PRL_bojowki
+        }
+    }
+    focus = {
+        id = PRL_reforma_armii
+        icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+        relative_position_id = PRL_modernizacja_wojska
+        prerequisite = {
+            focus = PRL_modernizacja_wojska
+        }
+        cost = 10
+        x = 0
+        y = 1
+        completion_reward = { 
+            swap_ideas = {
+                remove_idea = PRL_armia_czerwona
+                add_idea = PRL_armia_czerwona2
+            }
+        }
+    }
+    focus = {
+        id = PRL_wydatki_na_badania_wojskowe
+        icon = GFX_focus_generic_university_3
+        relative_position_id = PRL_reforma_armii
+        prerequisite = {
+            focus = PRL_reforma_armii
+        }
+        prerequisite = {
+            focus = PRL_rozbudowa_fabryk_amunicji_na_ursynowie
+        }
+        cost = 10
+        x = -1
+        y = 1
+        completion_reward = { 
+            add_research_slot = 1
+            add_ideas = PRL_badania_wojskowe
         }
     }
 }

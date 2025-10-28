@@ -17,10 +17,10 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_portrait_PRL_jaruzelski_gen"
-		textureFile = "gfx/generals/PRL/jaruzelski_gen.dds"
+		textureFile = "gfx/generals/PRL/Jaruzelski_gen.dds"
 	}
 	spriteType = {
 		name = "GFX_portrait_PRL_kiszczak_gen"
-		textureFile = "gfx/generals/PRL/kiszczak_gen.dds"
+		textureFile = "gfx/generals/PRL/kszczak_gen.dds"
 	}
 }
