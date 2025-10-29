@@ -945,6 +945,31 @@ focus_tree = {
             }
         }
     }
+    focus = {
+        id = KAM_focus_wojskowa_akademia_lotnicza
+        icon = GFX_goal_generic_air_doctrine
+        cost = 5
+        relative_position_id = KAM_focus_fundusz_badan_lotniczych
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = KAM_focus_fundusz_badan_lotniczych
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = "Wojskowa Akademia Lotnicza"
+                bonus = 0.5
+                uses = 2
+                category = air_doctrine
+            }
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
 
 #POLITYCZNE - JAKUBIAK#
 
