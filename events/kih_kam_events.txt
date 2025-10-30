@@ -137,8 +137,10 @@ news_event = {
 		text = kam_nius.1.d.a
 		trigger = {
 			OR = {
-				tag = KAM
-				this = {
+				ROOT = {
+					tag = KAM
+				}
+				ROOT = {
 					has_opinion = {
 						target = KAM
 						value > 0
@@ -152,9 +154,11 @@ news_event = {
 		trigger = {
 			AND = {
 				NOT = {
-					tag = KAM
+					ROOT = {
+						tag = KAM
+					}
 				}
-				this = {
+				ROOT = {
 					has_opinion = {
 						target = KAM
 						value <= 0
@@ -163,7 +167,7 @@ news_event = {
 			}
 		}
 	}
-	picture = GFX_event_news_wojna_jaszczura
+	picture = GFX_news_event_wojna_jaszczura
 
 	is_triggered_only = yes
 	major = yes
@@ -174,17 +178,12 @@ news_event = {
 		}
 
 		trigger = {
-			OR = {
-				tag = KAM
-				AND = {
-					NOT = {
-						tag = KAM
-					}
-					this = {
-						has_opinion = {
-							target = KAM
-							value > 0
-						}
+			ROOT = {
+				OR = {
+					tag = KAM
+					has_opinion = {
+						target = KAM
+						value > 0
 					}
 				}
 			}
@@ -198,12 +197,14 @@ news_event = {
 		}
 
 		trigger = {
-			NOT = {
-				tag = KAM
-			}
-			has_opinion = {
-				target = KAM
-				value <= 0
+			ROOT = {
+				NOT = {
+					tag = KAM
+				}
+				has_opinion = {
+					target = KAM
+					value <= 0
+				}
 			}
 		}
 
