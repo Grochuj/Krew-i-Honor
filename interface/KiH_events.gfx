@@ -4,3 +4,9 @@ spriteTypes = {
 		textureFile = gfx/event_pictures/koronacja.dds
 	}
 }
+spriteTypes = {
+	spriteType = {
+		name = GFX_event_news_wojna_jaszczura
+		textureFile = gfx/event_pictures/wojna_jaszczura.dds
+	}
+}

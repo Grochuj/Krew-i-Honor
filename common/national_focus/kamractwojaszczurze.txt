@@ -945,6 +945,31 @@ focus_tree = {
             }
         }
     }
+    focus = {
+        id = KAM_focus_doktryny_lotnicze
+        icon = GFX_goal_generic_air_doctrine
+        cost = 5
+        relative_position_id = KAM_focus_rozwoj_baz_lotniczych
+        x = 3
+        y = 1
+
+        prerequisite = {
+            focus = KAM_focus_rozwoj_baz_lotniczych
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = "Innowacyjne Doktryny Lotnicze"
+                bonus = 0.25
+                uses = 3
+                category = air_doctrine
+            }
+        }
+
+        ai_will_do = {
+            base = 3
+        }
+    }
 
 #POLITYCZNE - JAKUBIAK#
 
@@ -1250,6 +1275,10 @@ focus_tree = {
                     target = RZP
                     type = annex_everything
                 }
+            }
+
+            hidden_effect = {
+                news_event = kam_nius.1
             }
         }
     }
