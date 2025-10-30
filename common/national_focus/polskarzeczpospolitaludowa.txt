@@ -116,6 +116,38 @@ focus_tree = {
             add_stability = 0.05
         }
     }
+    focus = {
+        id = PRL_rownosc_spoleczna
+        icon = GFX_goal_generic_neutrality_focus
+        relative_position_id = PRL_nowa_twarz_lewicy
+        prerequisite = {
+            focus = PRL_nowa_twarz_lewicy
+        }
+        cost = 5
+        x = 1
+        y = 1
+        completion_reward = { 
+            add_political_power = 75
+            set_rule = {
+                can_generate_female_unit_leaders = yes
+                can_generate_female_aces = yes
+            }
+        }
+    }
+    focus = {
+        id = PRL_delegalizacja_prawicy
+        icon = GFX_goal_generic_neutrality_focus
+        relative_position_id = PRL_nowa_twarz_lewicy
+        prerequisite = {
+            focus = PRL_nowa_twarz_lewicy
+        }
+        cost = 5
+        x = -1
+        y = 1
+        completion_reward = { 
+            
+        }
+    }
     #przemysł=========================================================================================
     focus = {
         id = PRL_plan_piecio_letni
@@ -324,12 +356,13 @@ focus_tree = {
         id = PRL_stan_armii
         icon = GFX_focus_generic_communist_industry
         cost = 5
-        x = 25
+        relative_position_id = PRL_plan_piecio_letni
+        x = 7
         y = 0
         completion_reward = { 
            636 = {
                 add_building_construction = {
-                    type = military_factory
+                    type = arms_factory
                     level = 1
                 }
                 add_extra_state_shared_building_slots = 1
@@ -367,7 +400,7 @@ focus_tree = {
         prerequisite = {
             focus = PRL_stan_armii
         }
-        cost = 10
+        cost = 5
         x = 2
         y = 1
         completion_reward = { 
@@ -407,6 +440,55 @@ focus_tree = {
         completion_reward = { 
             add_research_slot = 1
             add_ideas = PRL_badania_wojskowe
+        }
+    }
+    focus = {
+        id = PRL_zmiany_w_doktrynie
+        icon = GFX_goal_generic_army_doctrines
+        relative_position_id = PRL_czerwone_bojowki
+        prerequisite = {
+            focus = PRL_czerwone_bojowki
+        }
+        prerequisite = {
+            focus = PRL_modernizacja_wojska
+        }
+        cost = 10
+        x = -2
+        y = 1
+        completion_reward = { 
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.75
+                category = land_doctrine
+                uses = 2
+            }
+        }
+    }
+    focus = {
+        id = PRL_fabryki_ciezarowek
+        icon = GFX_focus_generic_truck
+        relative_position_id = PRL_zmiany_w_doktrynie
+        prerequisite = {
+            focus = PRL_zmiany_w_doktrynie
+        }
+        prerequisite = {
+            focus = PRL_reforma_armii
+        }
+        cost = 10
+        x = -1
+        y = 1
+        completion_reward = { 
+            634 = {
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                }
+                add_extra_state_shared_building_slots = 1
+            }
+            add_tech_bonus = {
+                category = motorized_equipment
+                bonus = 1
+                uses = 1
+            }
         }
     }
 }
