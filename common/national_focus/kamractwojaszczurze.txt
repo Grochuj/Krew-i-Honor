@@ -1696,6 +1696,26 @@ focus_tree = {
         }
     }
     focus = {
+        id = KAM_focus_nauka_kamratow
+        icon = GFX_focus_generic_university_1
+        cost = 10
+        relative_position_id = KAM_focus_narod_najwazniejszy
+        x = 0
+        y = 1
+
+        ai_will_do = {
+            base = 15
+        }
+
+        prerequisite = {
+            focus = KAM_focus_narod_najwazniejszy
+        }
+
+        completion_reward = {
+            add_research_slot = 1
+        }
+    }
+    focus = {
         id = KAM_focus_narodowy_plan_obrony
         icon = GFX_goal_generic_defence
         cost = 10
