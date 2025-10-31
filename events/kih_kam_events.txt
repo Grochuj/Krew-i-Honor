@@ -137,14 +137,10 @@ news_event = {
 		text = kam_nius.1.d.a
 		trigger = {
 			OR = {
-				ROOT = {
-					tag = KAM
-				}
-				ROOT = {
-					has_opinion = {
-						target = KAM
-						value > 0
-					}
+				tag = KAM
+				has_opinion = {
+					target = KAM
+					value > 0
 				}
 			}
 		}
@@ -154,15 +150,11 @@ news_event = {
 		trigger = {
 			AND = {
 				NOT = {
-					ROOT = {
-						tag = KAM
-					}
+					tag = KAM
 				}
-				ROOT = {
-					has_opinion = {
-						target = KAM
-						value <= 0
-					}
+				has_opinion = {
+					target = KAM
+					value < 0
 				}
 			}
 		}
@@ -176,38 +168,32 @@ news_event = {
 		ai_chance = {
 			base = 1
 		}
-
+		name = kam_nius.1.a
 		trigger = {
-			ROOT = {
-				OR = {
-					tag = KAM
-					has_opinion = {
-						target = KAM
-						value > 0
-					}
+			OR = {
+				tag = KAM
+				has_opinion = {
+					target = KAM
+					value > 0
 				}
 			}
 		}
-
-		name = kam_nius.1.a
 	}
 	option = {
 		ai_chance = {
 			base = 1
 		}
-
+		name = kam_nius.1.b
 		trigger = {
-			ROOT = {
+			AND = {
 				NOT = {
 					tag = KAM
 				}
 				has_opinion = {
 					target = KAM
-					value <= 0
+					value < 0
 				}
 			}
 		}
-
-		name = kam_nius.1.b
 	}
 }
