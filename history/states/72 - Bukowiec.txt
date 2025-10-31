@@ -2,9 +2,9 @@
 state={
 	id=72
 	name="STATE_72"
-	manpower = 53326
+	manpower = 53
 	
-	state_category = city
+	state_category = wasteland
 	resources={
 		aluminium=0
 		chromium=0
@@ -15,18 +15,12 @@ state={
 	}
 
 	history={
-		victory_points = { 1318 9}
-		victory_points = { 1333 1}
-		victory_points = { 1337 10}
-		
 		owner = NRP
 		buildings = {
 			infrastructure = 2
 			
-			arms_factory = 1
-			industrial_complex = 1
-			
-			
+			arms_factory = 0
+			industrial_complex = 0
 		}
 		add_core_of = NRP
 	}

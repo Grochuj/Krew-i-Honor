@@ -1,10 +1,10 @@
 
 state={
-	id=130
-	name="STATE_130"
-	manpower = 25932
+	id=701
+	name="STATE_701"
+	manpower = 6
 	
-	state_category = town
+	state_category = small_island
 	resources={
 		aluminium=0
 		chromium=0
@@ -15,23 +15,23 @@ state={
 	}
 
 	history={
-		victory_points = { 2436 2}
-		victory_points = { 2438 6}
-		
 		owner = NRP
 		buildings = {
 			infrastructure = 1
 			
-			arms_factory = 1
+			arms_factory = 0
 			industrial_complex = 0
 			
+			11704 = {
+				naval_base = 1
+			}
 			
 		}
 		add_core_of = NRP
 	}
 
 	provinces={
-		2435 2436 2437 2438 2439 2440 2441 2442 2443 2444 
+		11704 
 	}
 	local_supplies=0.0 
 }

@@ -11,7 +11,7 @@ state={
 		oil=0
 		rubber=0
 		steel=13
-		tungsten=15
+		tungsten=5
 	}
 
 	history={

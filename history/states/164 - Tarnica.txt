@@ -1,25 +1,20 @@
 
 state={
-	id=202
-	name="STATE_202"
-	manpower = 20857
+	id=164
+	name="STATE_164"
+	manpower = 47
 	
-	state_category = rural
+	state_category = wasteland
 	resources={
 		aluminium=0
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
+		steel=3
 		tungsten=0
 	}
 
 	history={
-		victory_points = { 3544 1}
-		victory_points = { 3545 1}
-		victory_points = { 3546 2}
-		victory_points = { 3547 1}
-		
 		owner = NRP
 		buildings = {
 			infrastructure = 1
@@ -33,7 +28,7 @@ state={
 	}
 
 	provinces={
-		3538 3539 3540 3541 3542 3543 3544 3545 3546 3547 
+		2924 2925 2926 2927 2928 2929 2930 2931 2932 2933 2934 2935 2936 2937 2938 2939 2940 2941 2942 
 	}
 	local_supplies=0.0 
 }

@@ -1,0 +1,32 @@
+
+state={
+	id=194
+	name="STATE_194"
+	manpower = 29
+	
+	state_category = wasteland
+	resources={
+		aluminium=0
+		chromium=0
+		oil=0
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		owner = NRP
+		buildings = {
+			infrastructure = 1
+			
+			arms_factory = 0
+			industrial_complex = 0
+		}
+		add_core_of = NRP
+	}
+
+	provinces={
+		3407 3408 3409 3410 3411 3412 3413 3414 3415 3416 3417 3418 
+	}
+	local_supplies=0.0 
+}

@@ -1,10 +1,10 @@
 
 state={
-	id=194
-	name="STATE_194"
-	manpower = 29620
+	id=130
+	name="STATE_130"
+	manpower = 25
 	
-	state_category = large_town
+	state_category = wasteland
 	resources={
 		aluminium=0
 		chromium=0
@@ -15,24 +15,18 @@ state={
 	}
 
 	history={
-		victory_points = { 3410 2}
-		victory_points = { 3417 5}
-		victory_points = { 3418 3}
-		
 		owner = NRP
 		buildings = {
 			infrastructure = 1
 			
-			arms_factory = 1
+			arms_factory = 0
 			industrial_complex = 0
-			
-			
 		}
 		add_core_of = NRP
 	}
 
 	provinces={
-		3407 3408 3409 3410 3411 3412 3413 3414 3415 3416 3417 3418 
+		2435 2436 2437 2438 2439 2440 2441 2442 2443 2444 
 	}
 	local_supplies=0.0 
 }

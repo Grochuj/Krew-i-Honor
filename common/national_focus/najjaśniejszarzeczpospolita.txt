@@ -1028,15 +1028,39 @@ focus_tree = {
         }
     }
     focus = {
-        id = NRP_focus_swiete_miasto
+        id = NRP_focus_rozwoj_pozostalych_terytoriow
         icon = GFX_focus_largebuilding
-        cost = 10
+        cost = 5
         relative_position_id = NRP_focus_rozwoj_wiekszych
         x = 0
         y = 1
 
         prerequisite = {
             focus = NRP_focus_rozwoj_wiekszych
+        }
+
+        available = {
+            num_of_controlled_factories > 150
+        }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            base = 20
+        }
+    }
+    focus = {
+        id = NRP_focus_swiete_miasto
+        icon = GFX_focus_largebuilding
+        cost = 10
+        relative_position_id = NRP_focus_rozwoj_pozostalych_terytoriow
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_pozostalych_terytoriow
         }
 
         available = {
