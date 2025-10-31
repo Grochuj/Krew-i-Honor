@@ -22,7 +22,6 @@ state={
 		owner = PRL
 		buildings = {
 			infrastructure = 3
-			air_base = 3
 			arms_factory = 1
 			industrial_complex = 0
 			synthetic_refinery = 1

@@ -135,8 +135,8 @@ focus_tree = {
         }
     }
     focus = {
-        id = PRL_delegalizacja_prawicy
-        icon = GFX_goal_generic_neutrality_focus
+        id = PRL_likwidacja_senatu
+        icon = GFX_focus_brakpracyparlamentarzystow
         relative_position_id = PRL_nowa_twarz_lewicy
         prerequisite = {
             focus = PRL_nowa_twarz_lewicy
@@ -145,7 +145,38 @@ focus_tree = {
         x = -1
         y = 1
         completion_reward = { 
-            
+            add_timed_idea = {
+                idea = PRL_likwidacjasenatu
+                years = 1
+            }
+        }
+    }
+    focus = {
+        id = PRL_afirmacja_gender
+        icon = GFX_focus_lpgrtveuroagd++-+
+        relative_position_id = PRL_likwidacja_senatu
+        prerequisite = {
+            focus = PRL_likwidacja_senatu
+            focus = PRL_rownosc_spoleczna
+        }
+        cost = 5
+        x = 1
+        y = 1
+        completion_reward = { 
+           add_political_power = 50
+           every_other_country = {
+                limit = {
+                    has_government = homo
+                }
+                add_opinion_modifier = {
+                    target = root
+                    modifier = op_modifier_tolerancja_dzender
+                }
+                reverse_add_opinion_modifier = {
+                    target = root
+                    modifier = op_modifier_tolerancja_dzender
+                }
+            }
         }
     }
     #przemysł=========================================================================================

@@ -55,5 +55,11 @@ ideas = {
 				special_project_speed_factor = 0.1
 			}
 		}
+		PRL_likwidacjasenatu = {
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
 	}
 }
