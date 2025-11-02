@@ -890,10 +890,10 @@ focus_tree = {
         }
     }
     focus = {
-        id = NRP_focus_rozwoj_mniejszych
+        id = NRP_focus_rozwoj_pozostalych_terytoriow
         icon = GFX_focus_largebuilding
+        cost = 10
         relative_position_id = NRP_focus_rozwoj_stolicy
-        cost = 20
         x = 0
         y = 5
 
@@ -904,6 +904,70 @@ focus_tree = {
         prerequisite = {
             focus = NRP_focus_rozwoj_swietego_wybrzeza
             focus = NRP_focus_rozwoj_krosna
+        }
+
+        completion_reward = {
+            unlock_decision_category_tooltip = zasiedlanie_cat
+        }
+
+        ai_will_do = {
+            base = 20
+        }
+    }
+    
+    focus = {
+        id = NRP_focus_rozwoj_wiekszych
+        icon = GFX_focus_largebuilding
+        cost = 20
+        relative_position_id = NRP_focus_rozwoj_pozostalych_terytoriow
+        x = -2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_pozostalych_terytoriow
+        }
+
+        completion_reward = {
+            every_owned_state = {
+                limit = {
+                    OR = {
+                        has_state_category = town
+                        has_state_category = large_town
+                        has_state_category = city
+                        has_state_category = large_city
+                        has_state_category = metropolis
+                        has_state_category = megalopolis
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_manpower = 35000
+            }
+            every_owned_state = {
+                limit = {
+                    OR = {
+                        has_state_category = large_town
+                        has_state_category = city
+                        has_state_category = large_city
+                    }
+                }
+                increase_state_category = yes
+            }
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_mniejszych
+        icon = GFX_focus_largebuilding
+        relative_position_id = NRP_focus_rozwoj_wiekszych
+        cost = 15
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_wiekszych
         }
 
         completion_reward = {
@@ -985,82 +1049,15 @@ focus_tree = {
         }
     }
     focus = {
-        id = NRP_focus_rozwoj_wiekszych
+        id = NRP_focus_swiete_miasto
         icon = GFX_focus_largebuilding
-        cost = 20
+        cost = 10
         relative_position_id = NRP_focus_rozwoj_mniejszych
-        x = -2
+        x = 0
         y = 1
 
         prerequisite = {
             focus = NRP_focus_rozwoj_mniejszych
-        }
-
-        completion_reward = {
-            every_owned_state = {
-                limit = {
-                    OR = {
-                        has_state_category = town
-                        has_state_category = large_town
-                        has_state_category = city
-                        has_state_category = large_city
-                        has_state_category = metropolis
-                        has_state_category = megalopolis
-                    }
-                }
-                add_extra_state_shared_building_slots = 2
-                add_manpower = 35000
-            }
-            every_owned_state = {
-                limit = {
-                    OR = {
-                        has_state_category = large_town
-                        has_state_category = city
-                        has_state_category = large_city
-                    }
-                }
-                increase_state_category = yes
-            }
-        }
-
-        ai_will_do = {
-            base = 15
-        }
-    }
-    focus = {
-        id = NRP_focus_rozwoj_pozostalych_terytoriow
-        icon = GFX_focus_largebuilding
-        cost = 5
-        relative_position_id = NRP_focus_rozwoj_wiekszych
-        x = 0
-        y = 1
-
-        prerequisite = {
-            focus = NRP_focus_rozwoj_wiekszych
-        }
-
-        available = {
-            num_of_controlled_factories > 150
-        }
-
-        completion_reward = {
-            
-        }
-
-        ai_will_do = {
-            base = 20
-        }
-    }
-    focus = {
-        id = NRP_focus_swiete_miasto
-        icon = GFX_focus_largebuilding
-        cost = 10
-        relative_position_id = NRP_focus_rozwoj_pozostalych_terytoriow
-        x = 0
-        y = 1
-
-        prerequisite = {
-            focus = NRP_focus_rozwoj_pozostalych_terytoriow
         }
 
         available = {
@@ -1082,12 +1079,12 @@ focus_tree = {
         id = NRP_focus_zwiekszenie_wydobycia
         icon = GFX_focus_generic_steel
         cost = 10
-        relative_position_id = NRP_focus_rozwoj_mniejszych
+        relative_position_id = NRP_focus_rozwoj_pozostalych_terytoriow
         x = 2
         y = 1
 
         prerequisite = {
-            focus = NRP_focus_rozwoj_mniejszych
+            focus = NRP_focus_rozwoj_pozostalych_terytoriow
         }
 
         completion_reward = {
