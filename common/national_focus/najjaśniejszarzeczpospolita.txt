@@ -1727,6 +1727,47 @@ focus_tree = {
             }
         }
     }
+    focus = {
+        id = NRP_focus_wsparcie_gornictwa
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_odrzucenie_ladu
+        x = 5
+        y = 1
+        
+        prerequisite = {
+            focus = NRP_focus_odrzucenie_ladu
+        }
+
+        completion_reward = {
+            133 = {
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                }
+            }
+            add_resource = {
+                type = tungsten
+                amount = 8
+                state = 133
+            }
+            174 = {
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                }
+            }
+            add_resource = {
+                type = steel
+                amount = 8
+                state = 174
+            }
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
 
 #############################################################################################################
 #   SŁUŻBA ZDROWIA   #
@@ -1807,7 +1848,7 @@ focus_tree = {
         id = NRP_focus_plan_na_jutro
         icon = GFX_focus_hol_the_foundations_of_defense
         cost = 5
-        x = 46
+        x = 50
         y = 0
 
         completion_reward = {
