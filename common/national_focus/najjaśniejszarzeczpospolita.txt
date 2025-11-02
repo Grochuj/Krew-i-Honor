@@ -1339,7 +1339,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = NRP_focus_ochrona_przed_monopolami
+        id = NRP_focus_koniec_z_terroryzmem
         icon = GFX_goal_unknown
         cost = 5
         relative_position_id = NRP_focus_rodzinne_gospodarstwa_rolne
