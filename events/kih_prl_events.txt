@@ -23,9 +23,7 @@ country_event = {
 		}
 		name = prl_event.1.a
 
-		set_country_flag = PRL_flag_dostepnyjaruzel
-		set_country_flag = PRL_flag_dostepnykiszczak
-		set_country_flag = PRL_flag_dostepnyurban
+		set_country_flag = PRL_flag_dostepnigeneralowie
 
 		custom_effect_tooltip = prl_event.1.a.tt
 	}

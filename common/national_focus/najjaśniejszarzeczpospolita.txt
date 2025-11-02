@@ -890,10 +890,10 @@ focus_tree = {
         }
     }
     focus = {
-        id = NRP_focus_rozwoj_mniejszych
+        id = NRP_focus_rozwoj_pozostalych_terytoriow
         icon = GFX_focus_largebuilding
+        cost = 10
         relative_position_id = NRP_focus_rozwoj_stolicy
-        cost = 20
         x = 0
         y = 5
 
@@ -904,6 +904,70 @@ focus_tree = {
         prerequisite = {
             focus = NRP_focus_rozwoj_swietego_wybrzeza
             focus = NRP_focus_rozwoj_krosna
+        }
+
+        completion_reward = {
+            unlock_decision_category_tooltip = zasiedlanie_cat
+        }
+
+        ai_will_do = {
+            base = 20
+        }
+    }
+    
+    focus = {
+        id = NRP_focus_rozwoj_wiekszych
+        icon = GFX_focus_largebuilding
+        cost = 20
+        relative_position_id = NRP_focus_rozwoj_pozostalych_terytoriow
+        x = -2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_pozostalych_terytoriow
+        }
+
+        completion_reward = {
+            every_owned_state = {
+                limit = {
+                    OR = {
+                        has_state_category = town
+                        has_state_category = large_town
+                        has_state_category = city
+                        has_state_category = large_city
+                        has_state_category = metropolis
+                        has_state_category = megalopolis
+                    }
+                }
+                add_extra_state_shared_building_slots = 2
+                add_manpower = 35000
+            }
+            every_owned_state = {
+                limit = {
+                    OR = {
+                        has_state_category = large_town
+                        has_state_category = city
+                        has_state_category = large_city
+                    }
+                }
+                increase_state_category = yes
+            }
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_mniejszych
+        icon = GFX_focus_largebuilding
+        relative_position_id = NRP_focus_rozwoj_wiekszych
+        cost = 15
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_wiekszych
         }
 
         completion_reward = {
@@ -985,82 +1049,15 @@ focus_tree = {
         }
     }
     focus = {
-        id = NRP_focus_rozwoj_wiekszych
+        id = NRP_focus_swiete_miasto
         icon = GFX_focus_largebuilding
-        cost = 20
+        cost = 10
         relative_position_id = NRP_focus_rozwoj_mniejszych
-        x = -2
+        x = 0
         y = 1
 
         prerequisite = {
             focus = NRP_focus_rozwoj_mniejszych
-        }
-
-        completion_reward = {
-            every_owned_state = {
-                limit = {
-                    OR = {
-                        has_state_category = town
-                        has_state_category = large_town
-                        has_state_category = city
-                        has_state_category = large_city
-                        has_state_category = metropolis
-                        has_state_category = megalopolis
-                    }
-                }
-                add_extra_state_shared_building_slots = 2
-                add_manpower = 35000
-            }
-            every_owned_state = {
-                limit = {
-                    OR = {
-                        has_state_category = large_town
-                        has_state_category = city
-                        has_state_category = large_city
-                    }
-                }
-                increase_state_category = yes
-            }
-        }
-
-        ai_will_do = {
-            base = 15
-        }
-    }
-    focus = {
-        id = NRP_focus_rozwoj_pozostalych_terytoriow
-        icon = GFX_focus_largebuilding
-        cost = 5
-        relative_position_id = NRP_focus_rozwoj_wiekszych
-        x = 0
-        y = 1
-
-        prerequisite = {
-            focus = NRP_focus_rozwoj_wiekszych
-        }
-
-        available = {
-            num_of_controlled_factories > 150
-        }
-
-        completion_reward = {
-            
-        }
-
-        ai_will_do = {
-            base = 20
-        }
-    }
-    focus = {
-        id = NRP_focus_swiete_miasto
-        icon = GFX_focus_largebuilding
-        cost = 10
-        relative_position_id = NRP_focus_rozwoj_pozostalych_terytoriow
-        x = 0
-        y = 1
-
-        prerequisite = {
-            focus = NRP_focus_rozwoj_pozostalych_terytoriow
         }
 
         available = {
@@ -1082,12 +1079,12 @@ focus_tree = {
         id = NRP_focus_zwiekszenie_wydobycia
         icon = GFX_focus_generic_steel
         cost = 10
-        relative_position_id = NRP_focus_rozwoj_mniejszych
+        relative_position_id = NRP_focus_rozwoj_pozostalych_terytoriow
         x = 2
         y = 1
 
         prerequisite = {
-            focus = NRP_focus_rozwoj_mniejszych
+            focus = NRP_focus_rozwoj_pozostalych_terytoriow
         }
 
         completion_reward = {
@@ -1252,7 +1249,7 @@ focus_tree = {
         id = NRP_focus_odrzucenie_ladu
         icon = GFX_focus_crossedtreaty
         cost = 10
-        x = 20
+        x = 26
         y = 0
 
         completion_reward = {
@@ -1261,6 +1258,108 @@ focus_tree = {
 
         ai_will_do = {
             base = 15
+        }
+    }
+    focus = {
+        id = NRP_focus_rodzinne_gospodarstwa_rolne
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_odrzucenie_ladu
+        x = -12
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_odrzucenie_ladu
+        }
+
+        completion_reward = {
+            add_dynamic_modifier = {
+                modifier = NRP_rgr_mod
+            }
+            set_variable = {
+                NRP_rgr_pop = 0.15
+            }
+        }
+
+        ai_will_do = {
+            base = 12
+        }
+    }
+    focus = {
+        id = NRP_focus_rekompensaty_dla_rolnikow
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_rodzinne_gospodarstwa_rolne
+        x = 2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rodzinne_gospodarstwa_rolne
+        }
+
+        completion_reward = {
+            set_variable = {
+                NRP_rgr_consumergoods = 0.15
+            }
+            set_variable = {
+                NRP_rgr_pop = 0.35
+            }
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
+    focus = {
+        id = NRP_focus_ochrona_przed_monopolami
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_rodzinne_gospodarstwa_rolne
+        x = -2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rodzinne_gospodarstwa_rolne
+        }
+
+        available = {
+            NOT = {
+                has_government = kapitalizm
+            }
+        }
+
+        completion_reward = {
+            set_variable = {
+                NRP_rgr_stab = 0.05
+            }
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
+    focus = {
+        id = NRP_focus_ochrona_przed_monopolami
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_rodzinne_gospodarstwa_rolne
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rodzinne_gospodarstwa_rolne
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+        }
+
+        ai_will_do = {
+            base = 1
+            modifier = {
+                has_stability < 0.4
+                add = 24
+            }
         }
     }
     focus = {
@@ -1438,6 +1537,59 @@ focus_tree = {
         }
     }
     focus = {
+        id = NRP_focus_podatek_od_wynagrodzen
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_obnizenie_opodatkowania
+        x = 0
+        y = 1
+        
+        prerequisite = {
+            focus = NRP_focus_obnizenie_opodatkowania
+        }
+        mutually_exclusive = {
+            focus = NRP_focus_poglowne
+        }
+
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = NRP_idea_niskiepodatki
+                add_idea = NRP_idea_podatekodwynagrodzen
+            }
+        }
+
+        ai_will_do = {
+            base = 7
+        }
+    }
+    focus = {
+        id = NRP_focus_poglowne
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_obnizenie_opodatkowania
+        x = -2
+        y = 1
+        
+        prerequisite = {
+            focus = NRP_focus_obnizenie_opodatkowania
+        }
+        mutually_exclusive = {
+            focus = NRP_focus_podatek_od_wynagrodzen
+        }
+
+        available = {
+            has_government = kapitalizm
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_poglowne
+        }
+
+        ai_will_do = {
+            base = 25
+        }
+    }
+    focus = {
         id = NRP_focus_likwidacja_cit
         icon = GFX_goal_unknown
         cost = 5
@@ -1462,7 +1614,7 @@ focus_tree = {
         }
 
         ai_will_do = {
-            base = 10
+            base = 3
         }
     }
     focus = {
@@ -1482,7 +1634,7 @@ focus_tree = {
         }
 
         ai_will_do = {
-            base = 10
+            base = 2
         }
     }
     focus = {
@@ -1502,7 +1654,77 @@ focus_tree = {
         }
 
         ai_will_do = {
-            base = 5
+            base = 2
+        }
+    }
+    focus = {
+        id = NRP_focus_wzmocnienie_gotowki
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_odrzucenie_ladu
+        x = 2
+        y = 1
+        
+        prerequisite = {
+            focus = NRP_focus_odrzucenie_ladu
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_silnyzloty
+        }
+
+        ai_will_do = {
+            base = 20
+        }
+    }
+    focus = {
+        id = NRP_focus_koniec_zadluzania
+        icon = GFX_goal_unknown
+        cost = 15
+        relative_position_id = NRP_focus_wzmocnienie_gotowki
+        x = 0
+        y = 1
+        
+        prerequisite = {
+            focus = NRP_focus_wzmocnienie_gotowki
+        }
+
+        cancelable = no
+
+        completion_reward = {
+            add_stability = 0.1
+        }
+
+        ai_will_do = {
+            base = 1
+            modifier = {
+                has_stability < 0.4
+                add = 14
+            }
+        }
+    }
+    focus = {
+        id = NRP_focus_zakaz_deficytu
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_koniec_zadluzania
+        x = 0
+        y = 1
+        
+        prerequisite = {
+            focus = NRP_focus_koniec_zadluzania
+        }
+
+        completion_reward = {
+            add_stability = 0.025
+        }
+
+        ai_will_do = {
+            base = 1
+            modifier = {
+                has_stability < 0.4
+                add = 9
+            }
         }
     }
 

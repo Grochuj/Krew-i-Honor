@@ -10,3 +10,13 @@ wojna_niepodleglosciowa_cat = {
 	priority = 20
 	visible_when_empty = no
 }
+zasiedlanie_cat = {
+	allowed = {
+		tag = NRP
+	}
+	visible = {
+		has_completed_focus = NRP_focus_rozwoj_pozostalych_terytoriow
+	}
+	priority = 20
+	visible_when_empty = no
+}

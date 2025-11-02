@@ -79,4 +79,16 @@ spriteTypes = {
 		name = GFX_idea_NRP_idea_niskiepodatki
 		texturefile = gfx/interface/ideas/kasadlaludzi.dds
 	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_podatekodwynagrodzen
+		texturefile = gfx/interface/ideas/kasadlaludzi.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_poglowne
+		texturefile = gfx/interface/ideas/poglowne.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_silnyzloty
+		texturefile = gfx/interface/ideas/pieniadze.dds
+	}
 }

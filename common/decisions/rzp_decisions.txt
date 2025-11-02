@@ -53,6 +53,3 @@ wojna_niepodleglosciowa_cat = {
 		}
 	}
 }
-integracja_ziem_cat ={
-	1
-}

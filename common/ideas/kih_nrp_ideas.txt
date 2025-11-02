@@ -156,4 +156,31 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		NRP_idea_podatekodwynagrodzen = {
+			modifier = {
+				consumer_goods_expected_value = 0.175
+				industrial_capacity_factory = 0.075
+				political_power_gain = 0.25
+				stability_factor = 0.1
+			}
+		}
+	}
+	country = {
+		NRP_idea_poglowne = {
+			modifier = {
+				consumer_goods_expected_value = 0.15
+				industrial_capacity_factory = 0.1
+				monthly_population = 0.15
+				kapitalizm_drift = 0.1
+			}
+		}
+	}
+	country = {
+		NRP_idea_silnyzloty = {
+			modifier = {
+				resource_trade_cost_bonus_per_factory = 2
+			}
+		}
+	}
 }
