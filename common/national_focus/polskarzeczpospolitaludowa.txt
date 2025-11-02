@@ -179,16 +179,32 @@ focus_tree = {
     }
     focus = {
         id = PRL_aborcja_na_zadanie_i_zydowskie_zlobki
-        icon = GFX_focus_brakpracyparlamentarzystow
+        icon = GFX_focus_LAT_suspend_constitution_of_latvia
+        relative_position_id = PRL_afirmacja_gender
+        prerequisite = {
+            focus = PRL_afirmacja_gender
+        }
+        cost = 10
+        x = -1
+        y = 1
+        completion_reward = { 
+            add_ideas = PRL_aborcja
+        }
+    }
+    focus = {
+        id = PRL_przekierowanie_srodkow_obronnych_na_zrowie
+        icon = GFX_focus_generic_field_hostpital
         relative_position_id = PRL_afirmacja_gender
         prerequisite = {
             focus = PRL_afirmacja_gender
         }
         cost = 5
-        x = -1
+        x = 1
         y = 1
         completion_reward = { 
-            add_ideas = PRL_aborcja
+            add_dynamic_modifier = {
+                modifier = PRL_przekierowanie
+            }
         }
     }
     #przemysł=========================================================================================

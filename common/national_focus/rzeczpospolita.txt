@@ -650,6 +650,13 @@ focus = {
         add_state_claim = 173
         add_state_claim = 79
         add_state_claim = 230
+        add_state_claim = 192
+        add_state_claim = 68
+        add_state_claim = 70
+        add_state_claim = 206
+        add_state_claim = 183
+        add_state_claim = 234
+        add_state_claim = 129
     }
 }
 focus = {
@@ -676,22 +683,28 @@ focus = {
     prerequisite = {
         focus = RZP_wezmyconasze
     }
-    cost = 5
+    cost = 10
     x = 0
     y = 1
     completion_reward = { 
-        440 = {
-                add_building_construction = {
-                    type = supply_node
-                    level = 1
-                    province = 1269
-                }
-                add_building_construction = {
-                    type = infrastructure
-                    level = 1
-                }
+        128 = {
+            add_building_construction = {
+                type = supply_node
+                level = 1
+                province = 2414
             }
-    }
+        }
+        180 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 2
+            }
+        }
+        build_railway = {
+           path = { 2410 2339 2407 2404 2414 }
+           level = 2
+        }
+    }   
 }
 focus = {
     id = RZP_wawelwsarmackichrekach
@@ -777,6 +790,7 @@ focus = {
     y = 1
     completion_reward = { 
        add_ideas = RZP_wielkarzp
+       unlock_decision_category_tooltip = integracja1_cat
     }
 }
 #podchujaszczyzm====================================================================================================================
@@ -1045,6 +1059,13 @@ focus = {
                 elections_allowed = yes
                 last_election = "2025.6.10"
                 election_frequency = 60
+            }
+            set_capital = {
+                state = 203
+            }
+            add_victory_points = {
+                province = 3563
+                value = 15
             }
         }
     }

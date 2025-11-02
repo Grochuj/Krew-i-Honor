@@ -13,7 +13,7 @@ RZP_api = {
 	weekly_manpower = RZP_wm
 }
 RZP_pdr = {
-	icon = GFX_idea_gre_metaxism
+	icon = GFX_idea_chi_wargaming_division
 	enable = {
 		always = yes
 	}

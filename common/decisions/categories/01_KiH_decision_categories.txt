@@ -20,3 +20,13 @@ zasiedlanie_cat = {
 	priority = 20
 	visible_when_empty = no
 }
+integracja1_cat = {
+	allowed = {
+		tag = RZP
+	}
+	visible = {
+		has_completed_focus = RZP_naszarepublika
+	}
+	priority = 20
+	visible_when_empty = no
+}

@@ -71,4 +71,8 @@ spriteTypes = {
 		name = GFX_idea_RZP_piwo_z_chmielu
 		texturefile = gfx/interface/ideas/idea_generic_stockpile_fuel.dds
 	}
+	spriteType = {
+		name = GFX_idea_RZP_wielkarzp
+		texturefile = gfx/interface/ideas/idea_ARG_argentine_metropole.dds
+	}
 }

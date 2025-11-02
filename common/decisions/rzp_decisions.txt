@@ -52,4 +52,253 @@ wojna_niepodleglosciowa_cat = {
 			}
 		}
 	}
+	
+}
+integracja1_cat = {
+	integracja_krakowa = {
+		icon = GFX_decision_infiltrate_state
+		cost = 100
+		priority = 1
+
+		available = {
+			68 = {
+				owner = {
+					tag = RZP
+				}
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 68
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		days_remove = 50
+
+		remove_effect = {
+			68 = {
+				add_core_of = RZP
+			}
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = {
+			has_political_power > 200
+			add = 32
+			}
+		}
+	}
+	integracja_wzgorznb = {
+		icon = GFX_decision_infiltrate_state
+		cost = 100
+		priority = 1
+
+		available = {
+			192 = {
+				owner = {
+					tag = RZP
+				}
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 192
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		days_remove = 50
+
+		remove_effect = {
+			192 = {
+				add_core_of = RZP
+			}
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = {
+			has_political_power > 200
+			add = 32
+			}
+		}
+	}
+	integracja_klodzka = {
+		icon = GFX_decision_infiltrate_state
+		cost = 100
+		priority = 1
+
+		available = {
+			70 = {
+				owner = {
+					tag = RZP
+				}
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 70
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		days_remove = 50
+
+		remove_effect = {
+			70 = {
+				add_core_of = RZP
+			}
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = {
+			has_political_power > 200
+			add = 32
+			}
+		}
+	}
+	integracja_oswiecimia = {
+		icon = GFX_decision_infiltrate_state
+		cost = 100
+		priority = 1
+
+		available = {
+			79 = {
+				owner = {
+					tag = RZP
+				}
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 79
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		days_remove = 50
+
+		remove_effect = {
+			79 = {
+				add_core_of = RZP
+			}
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = {
+			has_political_power > 200
+			add = 32
+			}
+		}
+	}
+	integracja_monowic = {
+		icon = GFX_decision_infiltrate_state
+		cost = 100
+		priority = 1
+
+		available = {
+			230 = {
+				owner = {
+					tag = RZP
+				}
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 230
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		days_remove = 50
+
+		remove_effect = {
+			230 = {
+				add_core_of = RZP
+			}
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = {
+			has_political_power > 200
+			add = 32
+			}
+		}
+	}
+	integracja_brzezinki = {
+		icon = GFX_decision_infiltrate_state
+		cost = 100
+		priority = 1
+
+		available = {
+			173 = {
+				owner = {
+					tag = RZP
+				}
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 173
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		days_remove = 50
+
+		remove_effect = {
+			173 = {
+				add_core_of = RZP
+			}
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = {
+			has_political_power > 200
+			add = 32
+			}
+		}
+	}
 }

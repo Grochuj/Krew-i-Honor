@@ -1,0 +1,15 @@
+PRL_przekierowanie = {
+	icon = GFX_idea_SOV_third_five_year_plan_civilian
+	remove_trigger = {
+		has_war = yes
+	}
+	enable = {
+		always = yes
+	}
+	modifier = {
+		monthly_population = 0.1
+		production_speed_industrial_complex_factor = 0.15
+		production_speed_arms_factory_factor = -0.10
+		conversion_cost_mil_to_civ_factor = 0.2
+	}
+}
