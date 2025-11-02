@@ -1,0 +1,12 @@
+NRP_rgr_mod = {
+	icon = GFX_modifier_NRP_rgr
+
+	enable = {
+		always = yes
+	}
+
+	supply_consumption_factor = -0.1
+	monthly_population = NRP_rgr_pop
+	consumer_goods_factor = NRP_rgr_consumergoods
+	stability_factor = NRP_rgr_stab
+}
