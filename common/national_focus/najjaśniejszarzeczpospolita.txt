@@ -187,7 +187,7 @@ focus_tree = {
         available = {
             AND = {
                 num_of_controlled_factories > 65
-                controls_state = 366
+                controls_state = 726
             }
         }
 
@@ -197,11 +197,11 @@ focus_tree = {
 
         completion_reward = {
             add_research_slot = 1
-            366 = {
+            726 = {
                 add_manpower = 100000
             }
             add_victory_points = {
-                province = 745
+                province = 11729
                 value = 10
             }
         }
@@ -1339,7 +1339,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = NRP_focus_ochrona_przed_monopolami
+        id = NRP_focus_koniec_z_terroryzmem
         icon = GFX_goal_unknown
         cost = 5
         relative_position_id = NRP_focus_rodzinne_gospodarstwa_rolne
@@ -1766,6 +1766,93 @@ focus_tree = {
 
         ai_will_do = {
             base = 15
+        }
+    }
+    focus = {
+        id = NRP_focus_budowa_elektrowni
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_wsparcie_gornictwa
+        x = -1
+        y = 1
+        
+        prerequisite = {
+            focus = NRP_focus_wsparcie_gornictwa
+        }
+
+        completion_reward = {
+            unlock_decision_category_tooltip = budowaelektrowni_cat
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
+    focus = {
+        id = NRP_focus_elektrownie_wodne
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_wsparcie_gornictwa
+        x = 0
+        y = 2
+        
+        prerequisite = {
+            focus = NRP_focus_wsparcie_gornictwa
+        }
+
+        completion_reward = {
+            241 = {
+                add_building_construction = {
+                    type = dam
+                    level = 1
+                    province = 4162
+                }
+            }
+            178 = {
+                add_building_construction = {
+                    type = dam
+                    level = 1
+                    province = 3155
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_regionow_gorniczych
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_wsparcie_gornictwa
+        x = 1
+        y = 1
+        
+        prerequisite = {
+            focus = NRP_focus_wsparcie_gornictwa
+        }
+
+        completion_reward = {
+            add_resource = {
+                type = steel
+                amount = 12
+                state = 133
+            }
+            add_resource = {
+                type = tungsten
+                amount = 18
+                state = 133
+            }
+            add_resource = {
+                type = steel
+                amount = 18
+                state = 202
+            }
+        }
+
+        ai_will_do = {
+            base = 10
         }
     }
 

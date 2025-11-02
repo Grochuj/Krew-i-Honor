@@ -1292,3 +1292,180 @@ zasiedlanie_cat = {
 		}
 	}
 }
+budowaelektrowni_cat = {
+	budowa_oswiecim = {
+		icon = GFX_decision_CHL_araucania_establish_a_hispaniolan_kingdom
+		cost = 0
+		priority = 1
+
+		available = {
+			ROOT = {
+				num_of_available_civilian_factories > 15
+			}
+			79 = {
+				owner = {
+					tag = NRP
+				}
+			}
+			has_completed_focus = NRP_focus_rozwoj_obozy
+			NOT = {
+				has_decision = budowa_wyspa_maryji
+				has_decision = budowa_ostroda
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 79
+			}
+			highlight_color_while_active = 1
+			highlight_color_before_active = 0
+		}
+
+		days_remove = 180
+
+		modifier = {
+			civilian_factory_use = 15
+		}
+
+		remove_effect = {
+			79 = {
+				add_manpower = 35000
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 5
+				increase_state_category = yes
+			}
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+	}
+	budowa_wyspa_maryji = {
+		icon = GFX_decision_CHL_araucania_establish_a_hispaniolan_kingdom
+		cost = 0
+		priority = 1
+
+		available = {
+			ROOT = {
+				num_of_available_civilian_factories > 15
+			}
+			667 = {
+				owner = {
+					tag = NRP
+				}
+			}
+			NOT = {
+				has_decision = budowa_oswiecim
+				has_decision = budowa_ostroda
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 667
+			}
+			highlight_color_while_active = 1
+			highlight_color_before_active = 0
+		}
+
+		days_remove = 180
+
+		modifier = {
+			civilian_factory_use = 15
+		}
+
+		remove_effect = {
+			667 = {
+				add_manpower = 35000
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 5
+				increase_state_category = yes
+			}
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+	}
+	budowa_ostroda = {
+		icon = GFX_decision_CHL_araucania_establish_a_hispaniolan_kingdom
+		cost = 0
+		priority = 1
+
+		available = {
+			ROOT = {
+				num_of_available_civilian_factories > 15
+			}
+			225 = {
+				owner = {
+					tag = NRP
+				}
+			}
+			NOT = {
+				has_decision = budowa_oswiecim
+				has_decision = budowa_wyspa_maryji
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 225
+			}
+			highlight_color_while_active = 1
+			highlight_color_before_active = 0
+		}
+
+		days_remove = 180
+
+		modifier = {
+			civilian_factory_use = 15
+		}
+
+		remove_effect = {
+			225 = {
+				add_manpower = 35000
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 5
+				increase_state_category = yes
+			}
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+	}
+}
