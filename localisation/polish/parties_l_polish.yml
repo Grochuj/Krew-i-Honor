@@ -147,8 +147,11 @@
  FLS_communism_party_long: "Lewica Razem"
  FLS_communism_party: "Razem"
 
- PRL_communism_party_long: "Polska Zjednoczona Partia Robotnicza"
- PRL_communism_party: "PZPR"
+ PRL_communism_party_long: "Sojusz Lewicy Demokratycznej"
+ PRL_communism_party: "SLD(N)"
+
+ PRL_peerel_long: "Polska Zjednoczona Partia Robotnicza"
+ PRL_peerel: "PZPR"
 
  PRL_nfps_LONG: "Nowa Fala Prodfesor Senyszyn"
  PRL_nfps: "NFPS"

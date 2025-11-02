@@ -960,7 +960,7 @@ spriteTypes = {
         legacy_lazy_load = no
     }
     spriteType = {
-        name = GFX_focus_lpgrtveuroagd++-+ # Change the name, note to keep _shine in the end
+        name = GFX_focus_lpg # Change the name, note to keep _shine in the end
         texturefile = gfx/interface/goals/kocham_lpg.dds # Change to the focus icon
         effectFile = gfx/FX/buttonstate.lua
         animation = {
