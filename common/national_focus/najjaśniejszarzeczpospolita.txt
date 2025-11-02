@@ -1935,7 +1935,7 @@ focus_tree = {
         id = NRP_focus_plan_na_jutro
         icon = GFX_focus_hol_the_foundations_of_defense
         cost = 5
-        x = 50
+        x = 48
         y = 0
 
         completion_reward = {
@@ -2520,6 +2520,30 @@ focus_tree = {
 
         ai_will_do = {
             base = 10
+        }
+    }
+    
+#############################################################################################################
+#   ARMIA   #
+#############################################################################################################
+
+    focus = {
+        id = NRP_focus_szacunek_dla_zolnierzy
+        icon = GFX_goal_unknown
+        cost = 5
+        x = 64
+        y = 0
+
+        completion_reward = {
+            add_war_support = 0.05
+        }
+
+        ai_will_do = {
+            base = 3
+            modifier = {
+                date > 2028.1.1
+                add = 22
+            }
         }
     }
 }
