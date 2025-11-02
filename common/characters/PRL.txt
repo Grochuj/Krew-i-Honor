@@ -33,6 +33,7 @@ characters = {
 			}
 			army = {
 				large = GFX_portrait_PRL_jaruzelski_gen
+				small = GFX_portrait_PRL_jaruzelski_advisor
 			}
 		}
 		corps_commander = {
@@ -47,7 +48,7 @@ characters = {
 			}
 
 			visible = {
-				has_country_flag = PRL_flag_dostepnyjaruzel
+				has_country_flag = PRL_flag_dostepnigeneralowie
 			}
 		}
 		advisor = {
@@ -58,7 +59,7 @@ characters = {
 			}
 
 			visible = {
-				has_country_flag = PRL_flag_dostepnyjaruzel
+				has_country_flag = PRL_flag_dostepnigeneralowie
 			}
 		}
 	}
@@ -70,6 +71,7 @@ characters = {
 			}
 			army = {
 				large = GFX_portrait_PRL_kiszczak_gen
+				small = GFX_portrait_PRL_kiszczak_advisor
 			}
 		}
 		corps_commander = {
@@ -82,7 +84,7 @@ characters = {
 				
 			}
 			visible = {
-				has_country_flag = PRL_flag_dostepnykiszczak
+				has_country_flag = PRL_flag_dostepnigeneralowie
 			}
 		}
 		advisor = {
@@ -91,7 +93,7 @@ characters = {
 				army_infantry_2
 			}
 			visible = {
-				has_country_flag = PRL_flag_dostepnykiszczak
+				has_country_flag = PRL_flag_dostepnigeneralowie
 			}
 		}
 	}
@@ -109,7 +111,7 @@ characters = {
 				socialist_writer
 			}
 			visible = {
-				has_country_flag = PRL_flag_dostepnyurban
+				has_country_flag = PRL_flag_dostepnigeneralowie
 			}
 		}
 	}
