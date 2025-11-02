@@ -91,9 +91,7 @@ focus_tree = {
             has_tech = excavation1
         }
         completion_reward = { 
-            national_event = {
-                id = prl_event.1
-            }
+            country_event = prl_event.1
         }
     }
     #Polityka_senyszyn=========================================================================================
@@ -177,6 +175,20 @@ focus_tree = {
                     modifier = op_modifier_tolerancja_dzender
                 }
             }
+        }
+    }
+    focus = {
+        id = PRL_aborcja_na_zadanie_i_zydowskie_zlobki
+        icon = GFX_focus_brakpracyparlamentarzystow
+        relative_position_id = PRL_afirmacja_gender
+        prerequisite = {
+            focus = PRL_afirmacja_gender
+        }
+        cost = 5
+        x = -1
+        y = 1
+        completion_reward = { 
+            add_ideas = PRL_aborcja
         }
     }
     #przemysł=========================================================================================
