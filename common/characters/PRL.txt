@@ -30,11 +30,15 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_PRL_jaruzelski_advisor
+				large = GFX_portrait_PRL_Jaruzelski_gen
 			}
 			army = {
-				large = GFX_portrait_PRL_jaruzelski_gen
+				large = GFX_portrait_PRL_Jaruzelski_gen
 				small = GFX_portrait_PRL_jaruzelski_advisor
 			}
+		}
+		country_leader = {
+			ideology = leninism
 		}
 		corps_commander = {
 			skill = 2
@@ -88,7 +92,7 @@ characters = {
 			}
 		}
 		advisor = {
-			slot = political_advisor
+			slot = high_command
 			traits = {
 				army_infantry_2
 			}
@@ -96,6 +100,7 @@ characters = {
 				has_country_flag = PRL_flag_dostepnigeneralowie
 			}
 		}
+		
 	}
 	PRL_urban = {
 		name = PRL_urban

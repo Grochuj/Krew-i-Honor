@@ -43,9 +43,9 @@ units = {
 		start_experience_factor = 0.4
 	}
 	division = {
-		name = "3. Oddział Prewencyjny"
+		name = "2. Oddział Prewencyjny"
 		location = 11374
 		division_template = "Oddział Prewencyjny"
-		start_experience_factor = 0.4
+		start_experience_factor = 0.3
 	}
 }

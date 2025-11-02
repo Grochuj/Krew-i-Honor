@@ -132,7 +132,7 @@ spriteTypes = {
         texturefile =  gfx/interface/goals/kopa_cwila.dds
     }
     spriteType = {
-        name = GFX_focus_lpgrtveuroagd++-+
+        name = GFX_focus_lpg
         texturefile =  gfx/interface/goals/kocham_lpg.dds
     }
 }

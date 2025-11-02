@@ -14,7 +14,7 @@ focus_tree = {
         id = PRL_nasze_miejsce_na_swiecie
         icon = GFX_focus_GER_legacy_of_the_spartacus_league
         cost = 5
-        x = 10
+        x = 19
         y = 0
         completion_reward = { 
             add_political_power = 50
@@ -207,12 +207,120 @@ focus_tree = {
             }
         }
     }
+    #Polityka_Jaruzelski=========================================================================================
+    focus = {
+        id = PRL_powrot_do_korzeni
+        icon = GFX_focus_generic_military_mission
+        relative_position_id = PRL_tajemnica_kopy_cwila
+        prerequisite = {
+            focus = PRL_tajemnica_kopy_cwila
+        }
+        mutually_exclusive = {
+            focus = PRL_nowa_twarz_lewicy
+        }
+        cost = 5
+        x = -3
+        y = 1
+        completion_reward = { 
+            set_party_name = { 
+                ideology = communism
+                long_name = PRL_peerel_long
+                name = PRL_peerel
+            }
+            add_country_leader_role = {
+                character = PRL_jaruzelski
+                promote_leader = yes
+                country_leader = {
+                    ideology = leninism
+                }
+            }
+        
+            add_war_support = 0.05
+        }
+    }
+    focus = {
+        id = PRL_odnowa_bezpieki
+        icon = GFX_focus_generic_secret_service_agency
+        relative_position_id = PRL_powrot_do_korzeni
+        prerequisite = {
+            focus = PRL_powrot_do_korzeni
+        }
+        cost = 5
+        x = 1
+        y = 1
+        completion_reward = { 
+          create_intelligence_agency = {
+            name = "Służba Bezpieczeństwa"
+          }
+          add_ideas = PRL_sb
+        }
+    }
+    focus = {
+        id = PRL_zomo
+        icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
+        relative_position_id = PRL_powrot_do_korzeni
+        prerequisite = {
+            focus = PRL_powrot_do_korzeni
+        }
+        prerequisite = {
+            focus = PRL_fabryki_ciezarowek
+        }
+        cost = 5
+        x = -1
+        y = 1
+        completion_reward = {
+            division_template = {
+                name = "Zmotoryzowany Odwód Milicji Obywatelskiej"
+	            regiments = {
+		           motorized = {
+			           x = 0
+			           y = 0
+	            	}
+	            	motorized = {
+        	    		x = 0
+        	    		y = 1
+        	    	}
+        	    	motorized = {
+        	    		x = 0
+		           	y = 1
+		            }  
+        		    motorized = {
+		            	x = 1
+        		    	y = 1
+		            }
+	            }
+	            support = {
+	    	        military_police = {
+	    	        	x = 0
+	    	        	y = 0
+	    	        }
+	            }
+            }
+        }
+    }
+    focus = {
+        id = PRL_wprowadzenie_stanu_wojennego
+        icon = GFX_focus_generic_attack_poland
+        relative_position_id = PRL_odnowa_bezpieki
+        prerequisite = {
+            focus = PRL_odnowa_bezpieki
+        }
+        prerequisite = {
+            focus = PRL_zomo
+        }
+        cost = 15
+        x = -1
+        y = 1
+        completion_reward = { 
+          add_ideas = PRL_wojenny
+        }
+    }
     #przemysł=========================================================================================
     focus = {
         id = PRL_plan_piecio_letni
         icon = GFX_focus_generic_communist_industry
         cost = 5
-        x = 18
+        x = 7
         y = 0
         completion_reward = { 
             add_timed_idea = {
@@ -532,7 +640,7 @@ focus_tree = {
         prerequisite = {
             focus = PRL_reforma_armii
         }
-        cost = 10
+        cost = 5
         x = -1
         y = 1
         completion_reward = { 
