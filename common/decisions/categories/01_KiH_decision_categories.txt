@@ -30,3 +30,15 @@ integracja1_cat = {
 	priority = 20
 	visible_when_empty = no
 }
+budowaelektrowni_cat = {
+	allowed = {
+		tag = NRP
+	}
+	visible = {
+		NRP = {
+			has_completed_focus = NRP_focus_budowa_elektrowni
+		}
+	}
+	priority = 21
+	visible_when_empty = no
+}
