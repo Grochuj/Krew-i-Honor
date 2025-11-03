@@ -1885,6 +1885,11 @@ focus_tree = {
                 level = 10
             }
             add_ideas = NRP_idea_czesciowoprywatna
+            add_unit_bonus = {
+                field_hospital = {
+                    casualty_trickleback = 0.15
+                }
+            }
         }
 
         ai_will_do = {
@@ -2901,6 +2906,128 @@ focus_tree = {
 
         ai_will_do = {
             base = 25
+        }
+    }
+    focus = {
+        id = NRP_focus_odpolitycznienie_policji
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_szacunek_dla_zolnierzy
+        x = 8
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_szacunek_dla_zolnierzy
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_nowajakoscpolicji
+            add_political_power = -100
+        }
+
+        ai_will_do = {
+            base = 3
+        }
+    }
+    focus = {
+        id = NRP_focus_profesjonalizacja_policji
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_odpolitycznienie_policji
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_odpolitycznienie_policji
+        }
+
+        completion_reward = {
+            add_unit_bonus = {
+                military_police = {
+                    suppression_factor = 0.25
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 3
+        }
+    }
+    focus = {
+        id = NRP_focus_zachety_do_sluzby
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_profesjonalizacja_policji
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_profesjonalizacja_policji
+        }
+
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = NRP_idea_nowajakoscpolicji
+                add_idea = NRP_idea_nowajakoscpolicji2
+            }
+        }
+
+        ai_will_do = {
+            base = 3
+        }
+    }
+    focus = {
+        id = NRP_focus_panstwowa_agencja_wywiadu
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_odpolitycznienie_policji
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_odpolitycznienie_policji
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_panstwowaagencjawywiadu
+            if = {
+                limit = {
+                    root = {
+                        has_intelligence_agency = no
+                    }
+                }
+                create_intelligence_agency = {
+                    name = "Państwowa Agencja Wywiadu"
+                    icon = GFX_intelligence_agency_logo_usa
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 3
+        }
+    }
+    focus = {
+        id = NRP_focus_sluzby_kontrwywiadowcze
+        icon = GFX_goal_unknown
+        cost = 3
+        relative_position_id = NRP_focus_panstwowa_agencja_wywiadu
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_panstwowa_agencja_wywiadu
+        }
+
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = NRP_idea_panstwowaagencjawywiadu
+                add_idea = NRP_idea_awabw
+            }
+        }
+
+        ai_will_do = {
+            base = 1
         }
     }
 }
