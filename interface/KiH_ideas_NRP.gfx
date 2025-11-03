@@ -91,4 +91,8 @@ spriteTypes = {
 		name = GFX_idea_NRP_idea_silnyzloty
 		texturefile = gfx/interface/ideas/pieniadze.dds
 	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_rozbudowainfrastruktury
+		texturefile = gfx/interface/ideas/infrastruktura.dds
+	}
 }

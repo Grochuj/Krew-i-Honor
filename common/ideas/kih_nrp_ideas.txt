@@ -143,7 +143,7 @@ ideas = {
 	country = {
 		NRP_idea_dobrowolnyzus = {
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.15
 				industrial_capacity_factory = 0.05
 			}
 		}
@@ -169,7 +169,7 @@ ideas = {
 	country = {
 		NRP_idea_poglowne = {
 			modifier = {
-				consumer_goods_expected_value = 0.15
+				consumer_goods_expected_value = 0.175
 				industrial_capacity_factory = 0.1
 				monthly_population = 0.15
 				kapitalizm_drift = 0.1
@@ -180,6 +180,18 @@ ideas = {
 		NRP_idea_silnyzloty = {
 			modifier = {
 				resource_trade_cost_bonus_per_factory = 2
+			}
+		}
+	}
+	country = {
+		NRP_idea_rozbudowainfrastruktury = {
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				production_speed_supply_node_factor = 0.25
+				production_speed_rail_way_factor = 0.15
+				production_speed_bunker_factor = 0.15
+				production_speed_air_base_factor = 0.15
+				production_speed_radar_station_factor = 0.15
 			}
 		}
 	}

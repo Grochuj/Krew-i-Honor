@@ -42,3 +42,15 @@ budowaelektrowni_cat = {
 	priority = 21
 	visible_when_empty = no
 }
+korpusyochronypogranicza_cat = {
+	allowed = {
+		tag = NRP
+	}
+	visible = {
+		NRP = {
+			has_completed_focus = NRP_focus_program_szkoleniowy
+		}
+	}
+	priority = 19
+	visible_when_empty = no
+}

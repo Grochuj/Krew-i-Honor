@@ -1,0 +1,43 @@
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 2941
+		division_template = "Dywizja Ochrony Pogranicza"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 2937
+		division_template = "Korpus Ochrony Pogranicza"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 2938
+		division_template = "Korpus Ochrony Pogranicza"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+		}
+		location = 2936
+		division_template = "Korpus Ochrony Pogranicza"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+}

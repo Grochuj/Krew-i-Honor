@@ -748,41 +748,6 @@ focus_tree = {
         }
 
         completion_reward = {
-            356 = {
-                set_state_category = town
-                add_extra_state_shared_building_slots = 1
-                add_manpower = 35000
-                add_victory_points = {
-                    province = 9414
-                    value = 15
-                }
-                add_victory_points = {
-                    province = 2071
-                    value = 3
-                }
-            }
-        }
-
-        ai_will_do = {
-            base = 25
-        }
-    }
-    focus = {
-        id = NRP_focus_rozwoj_rowniny
-        icon = GFX_focus_smallbuilding
-        relative_position_id = NRP_focus_rozwoj_niziny_piastowej
-        cost = 5
-        x = 1
-        y = 1
-
-        prerequisite = {
-            focus = NRP_focus_rozwoj_niziny_piastowej
-        }
-        prerequisite = {
-            focus = NRP_focus_rozwoj_krolewskiego_pustkowia
-        }
-
-        completion_reward = {
             233 = {
                 set_state_category = town
                 add_extra_state_shared_building_slots = 1
@@ -2544,6 +2509,398 @@ focus_tree = {
                 date > 2028.1.1
                 add = 22
             }
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_wot
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_szacunek_dla_zolnierzy
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_szacunek_dla_zolnierzy
+        }
+
+        completion_reward = {
+            army_experience = 25
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
+    focus = {
+        id = NRP_focus_rozbudowa_infrastruktury_krytycznej
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_rozwoj_wot
+        x = 4
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_wot
+        }
+
+        completion_reward = {
+            add_timed_idea = {
+                idea = NRP_idea_rozbudowainfrastruktury
+                years = 1
+            }
+        }
+
+        ai_will_do = {
+            base = 8
+        }
+    }
+    focus = {
+        id = NRP_focus_program_budowy_lotnisk
+        icon = GFX_goal_unknown
+        cost = 2
+        relative_position_id = NRP_focus_rozbudowa_infrastruktury_krytycznej
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozbudowa_infrastruktury_krytycznej
+        }
+
+        completion_reward = {
+            add_political_power = 15
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
+    focus = {
+        id = NRP_focus_koleje_panstwowe
+        icon = GFX_goal_unknown
+        cost = 2
+        relative_position_id = NRP_focus_rozbudowa_infrastruktury_krytycznej
+        x = -2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozbudowa_infrastruktury_krytycznej
+        }
+
+        completion_reward = {
+            add_political_power = 15
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
+    focus = {
+        id = NRP_focus_nowoczesne_tabory
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_koleje_panstwowe
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_koleje_panstwowe
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = "Nowoczesne Tabory Kolejowe"
+                bonus = 1
+                uses = 1
+                category = train_tech
+            }
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
+    focus = {
+        id = NRP_focus_rownowazenie_rozwoju
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_koleje_panstwowe
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_koleje_panstwowe
+        }
+
+        completion_reward = {
+            every_owned_state = {
+                if = {
+                    limit = {
+                        infrastructure < 2
+                    }
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 1
+                    }
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 2
+        }
+    }
+    focus = {
+        id = NRP_focus_koleje_na_poludniu_kraju
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_rownowazenie_rozwoju
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rownowazenie_rozwoju
+        }
+
+        completion_reward = {
+            build_railway = {
+                path = { 1702 1691 1712 1715 1704 3271 3283 3272 3281 1326 1333 1322 1335 1321 1315 2757 2751 2755 2753 2758 2942 2926 2925 2478 2484 }
+                level = 3
+            }
+            build_railway = {
+                path = { 2387 2391 2385 2388 2392 1318 1323 1544 2750 2756 2755 2748 2927 2941 2928 3382 3384 3375 3385 }
+                level = 2
+            }
+            191 = {
+                add_building_construction = {
+                    type = supply_node
+                    level = 1
+                    province = 3385
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 2
+        }
+    }
+    focus = {
+        id = NRP_focus_koleje_polnocne
+        icon = GFX_goal_unknown
+        cost = 8
+        relative_position_id = NRP_focus_rownowazenie_rozwoju
+        x = 2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rownowazenie_rozwoju
+        }
+
+        completion_reward = {
+            build_railway = {
+                path = { 1723 1726 1719 4089 4096 3418 3410 3416 2256 2258 2265 }
+                level = 1
+            }
+            build_railway = {
+                path = { 3354 3357 2356 2355 1793 1794 3821 3826 2484 }
+                level = 1
+            }
+            build_railway = {
+                path = { 2265 2257 2173 2171 2170 2176 2174 3497 3503 3507 }
+                level = 1
+            }
+            build_railway = {
+                path = { 2374 2628 2635 2626 3422 }
+                level = 3
+            }
+            build_railway = {
+                path = { 3935 3928 3932 2778 2779 2777 1731 1728 4045 4044 4043 4049 3151 3145 }
+                level = 2
+            }
+            build_railway = {
+                path = { 1723 1724 2443 2896 2886 2888 2377 2384 2363 2381 1477 1469 }
+                level = 1
+            }
+            build_railway = {
+                path = { 2371 1473 1469 1489 1487 3084 3087 }
+                level = 1
+            }
+            152 = {
+                add_building_construction = {
+                    type = supply_node
+                    level = 1
+                    province = 4044
+                }
+            }
+            78 = {
+                add_building_construction = {
+                    type = supply_node
+                    level = 1
+                    province = 1472
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 2
+        }
+    }
+    focus = {
+        id = NRP_focus_ogolnokrajowa_siec_lotnicza
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_program_budowy_lotnisk
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_program_budowy_lotnisk
+        }
+
+        completion_reward = {
+            96 = {
+                add_building_construction = {
+                    type = air_base
+                    level = 2
+                }
+            }
+            126 = {
+                add_building_construction = {
+                    type = air_base
+                    level = 4
+                }
+            }
+            178 = {
+                add_building_construction = {
+                    type = air_base
+                    level = 4
+                }
+            }
+            79 = {
+                add_building_construction = {
+                    type = air_base
+                    level = 3
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 2
+        }
+    }
+    focus = {
+        id = NRP_focus_lotniska_rezerwowe
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_ogolnokrajowa_siec_lotnicza
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_ogolnokrajowa_siec_lotnicza
+        }
+
+        completion_reward = {
+            662 = {
+                add_building_construction = {
+                    type = air_base
+                    level = 2
+                }
+            }
+            133 = {
+                add_building_construction = {
+                    type = air_base
+                    level = 4
+                }
+            }
+            189 = {
+                add_building_construction = {
+                    type = air_base
+                    level = 4
+                }
+            }
+            191 = {
+                add_building_construction = {
+                    type = air_base
+                    level = 3
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 1
+        }
+    }
+    focus = {
+        id = NRP_focus_program_szkoleniowy
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_rozwoj_wot
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_wot
+        }
+
+        completion_reward = {
+            unlock_decision_category_tooltip = korpusyochronypogranicza_cat
+            division_template = {
+                name = "Dywizja Ochrony Pogranicza"
+                division_names_group = NRP_INF_01
+                regiments = {
+                    infantry = { x = 0 y = 0 }
+                    infantry = { x = 0 y = 1 }
+                    infantry = { x = 0 y = 2 }
+                    infantry = { x = 1 y = 0 }
+                    infantry = { x = 1 y = 1 }
+                    infantry = { x = 1 y = 2 }
+                    mot_artillery_brigade = { x = 2 y = 0 }
+                    mot_artillery_brigade = { x = 2 y = 1 }
+                    mot_artillery_brigade = { x = 2 y = 2 }
+                    infantry = { x = 3 y = 0 }
+                    infantry = { x = 3 y = 1 }
+                    infantry = { x = 3 y = 2 }
+                }
+                support = {
+                    engineer = {
+                        x = 0
+                        y = 0
+                    }
+                    recon = {
+                        x = 0
+                        y = 1
+                    }
+                    artillery = {
+                        x = 0
+                        y = 2
+                    }
+                }
+            }
+            division_template = {
+                name = "Korpus Ochrony Pogranicza"
+                division_names_group = NRP_INF_02
+                regiments = {
+                    infantry = { x = 0 y = 0 }
+                    infantry = { x = 0 y = 1 }
+                    infantry = { x = 1 y = 0 }
+                    infantry = { x = 1 y = 1 }
+                    infantry = { x = 1 y = 2 }
+                }
+                support = {
+                    engineer = {
+                        x = 0
+                        y = 0
+                    }
+                    recon = {
+                        x = 0
+                        y = 1
+                    }
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 25
         }
     }
 }
