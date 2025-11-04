@@ -25,20 +25,43 @@ characters = {
 			}
 		}
 	}
+	PRL_Gierek={
+		name=PRL_Gierek
+		portraits={
+			civilian = {
+				large = GFX_portrait_PRL_gierek
+			}
+		}
+		country_leader = {
+			ideology = marxism
+
+			traits = {
+				great_architect
+				communist_orator
+			}
+			visible = {
+				has_country_flag = PRL_flag_dostepnigeneralowie
+			}
+		}
+	}
 	PRL_jaruzelski = {
 		name = PRL_jaruzelski
 		portraits = {
 			civilian = {
 				small = GFX_portrait_PRL_jaruzelski_advisor
-				large = GFX_portrait_PRL_Jaruzelski_gen
+				large = GFX_portrait_PRL_jaruzelski_gen
 			}
 			army = {
-				large = GFX_portrait_PRL_Jaruzelski_gen
+				large = GFX_portrait_PRL_jaruzelski_gen
 				small = GFX_portrait_PRL_jaruzelski_advisor
 			}
 		}
 		country_leader = {
 			ideology = leninism
+
+			traits = {
+				KAM_dyktator_general
+			}
 		}
 		corps_commander = {
 			skill = 2

@@ -460,11 +460,11 @@ focus_tree = {
         will_lead_to_war_with = RPL
 
         completion_reward = {
-            237 = {
+            104 = {
                 create_unit = { division = "name = \"Pierwsza Brygada partzancka\" division_template = \"Oddział Partyzantów\" start_experience_factor = 1" owner = ROOT }
                 create_unit = { division = "name = \"Druga Brygada partzancka\" division_template = \"Oddział Partyzantów\" start_experience_factor = 1" owner = ROOT }
             }
-            281 = {
+            114 = {
                 create_unit = { division = "name = \"Trzecia Brygada partzancka\" division_template = \"Oddział Partyzantów\" start_experience_factor = 1" owner = ROOT }
                 create_unit = { division = "name = \"Czwarta Brygada partzancka\" division_template = \"Oddział Partyzantów\" start_experience_factor = 1" owner = ROOT }
             }

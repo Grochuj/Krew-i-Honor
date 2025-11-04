@@ -82,5 +82,20 @@ ideas = {
 				operation_risk = -0.1
 			}
 		}
+		PRL_sb2 = {
+			modifier = {
+				operative_slot = 1
+				operation_risk = -0.1
+				decryption_factor = 0.1
+				civilian_intel_to_others = -10
+			}
+		}
+		PRL_niskie_poparcie = {
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.3
+				master_ideology_drift = 0.5
+			}
+		}
 	}
 }
