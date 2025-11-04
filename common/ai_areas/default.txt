@@ -1,6 +1,6 @@
 areas = {
 	# Generated continents
-		keria = {
+	keria = {
 		continents = {
 			keria
 		}

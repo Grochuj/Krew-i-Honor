@@ -3,6 +3,7 @@ zasiedlanie_cat = {
 		icon = GFX_decision_infiltrate_state
 		cost = 75
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			81 = {
@@ -71,6 +72,7 @@ zasiedlanie_cat = {
 		icon = GFX_decision_infiltrate_state
 		cost = 75
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			89 = {
@@ -139,6 +141,7 @@ zasiedlanie_cat = {
 		icon = GFX_decision_infiltrate_state
 		cost = 75
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			152 = {
@@ -207,6 +210,7 @@ zasiedlanie_cat = {
 		icon = GFX_decision_infiltrate_state
 		cost = 75
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			160 = {
@@ -275,6 +279,7 @@ zasiedlanie_cat = {
 		icon = GFX_decision_infiltrate_state
 		cost = 75
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			125 = {
@@ -343,6 +348,7 @@ zasiedlanie_cat = {
 		icon = GFX_decision_infiltrate_state
 		cost = 75
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			92 = {
@@ -411,6 +417,7 @@ zasiedlanie_cat = {
 		icon = GFX_decision_infiltrate_state
 		cost = 75
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			218 = {
@@ -479,6 +486,7 @@ zasiedlanie_cat = {
 		icon = GFX_decision_infiltrate_state
 		cost = 75
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			164 = {
@@ -547,6 +555,7 @@ zasiedlanie_cat = {
 		icon = GFX_decision_infiltrate_state
 		cost = 75
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			191 = {
@@ -615,6 +624,7 @@ zasiedlanie_cat = {
 		icon = GFX_decision_infiltrate_state
 		cost = 75
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			72 = {
@@ -683,6 +693,7 @@ zasiedlanie_cat = {
 		icon = GFX_decision_infiltrate_state
 		cost = 75
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			150 = {
@@ -751,6 +762,7 @@ zasiedlanie_cat = {
 		icon = GFX_decision_infiltrate_state
 		cost = 75
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			184 = {
@@ -819,6 +831,7 @@ zasiedlanie_cat = {
 		icon = GFX_decision_infiltrate_state
 		cost = 75
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			175 = {
@@ -887,6 +900,7 @@ zasiedlanie_cat = {
 		icon = GFX_decision_infiltrate_state
 		cost = 75
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			162 = {
@@ -955,6 +969,7 @@ zasiedlanie_cat = {
 		icon = GFX_decision_infiltrate_state
 		cost = 75
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			127 = {
@@ -1023,6 +1038,7 @@ zasiedlanie_cat = {
 		icon = GFX_decision_infiltrate_state
 		cost = 75
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			157 = {
@@ -1091,6 +1107,7 @@ zasiedlanie_cat = {
 		icon = GFX_decision_infiltrate_state
 		cost = 75
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			194 = {
@@ -1159,6 +1176,7 @@ zasiedlanie_cat = {
 		icon = GFX_decision_infiltrate_state
 		cost = 75
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			237 = {
@@ -1227,6 +1245,7 @@ zasiedlanie_cat = {
 		icon = GFX_decision_infiltrate_state
 		cost = 75
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			662 = {
@@ -1297,6 +1316,7 @@ budowaelektrowni_cat = {
 		icon = GFX_decision_CHL_araucania_establish_a_hispaniolan_kingdom
 		cost = 0
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			ROOT = {
@@ -1356,6 +1376,7 @@ budowaelektrowni_cat = {
 		icon = GFX_decision_CHL_araucania_establish_a_hispaniolan_kingdom
 		cost = 0
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			ROOT = {
@@ -1414,6 +1435,7 @@ budowaelektrowni_cat = {
 		icon = GFX_decision_CHL_araucania_establish_a_hispaniolan_kingdom
 		cost = 0
 		priority = 1
+		fire_only_once = yes
 
 		available = {
 			ROOT = {
@@ -1466,6 +1488,233 @@ budowaelektrowni_cat = {
 
 		ai_will_do = {
 			base = 5
+		}
+	}
+}
+korpusyochronypogranicza_cat = {
+	kop_przemysl = {
+		icon = GFX_decision_CHL_carabineros
+		cost = 25
+		priority = 4
+		fire_only_once = yes
+
+		available = {
+			ROOT = {
+				controls_state = 178
+			}
+			has_equipment = {
+				infantry_equipment > 2499
+			}
+			has_manpower > 20000
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 178
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 1
+		}
+
+		days_remove = 90
+
+		complete_effect = {
+			add_manpower = -20000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2500
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = tt_kop
+			hidden_effect = {
+				load_oob = NRP_decyzja1
+			}
+		}
+	}
+	kop_monowice = {
+		icon = GFX_decision_CHL_carabineros
+		cost = 25
+		priority = 0
+		fire_only_once = yes
+
+		available = {
+			ROOT = {
+				controls_state = 230
+			}
+			has_equipment = {
+				infantry_equipment > 2499
+			}
+			has_manpower > 20000
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 230
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 1
+		}
+
+		days_remove = 90
+
+		complete_effect = {
+			add_manpower = -20000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2500
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = tt_kop
+			hidden_effect = {
+				load_oob = NRP_decyzja2
+			}
+		}
+	}
+	kop_zator = {
+		icon = GFX_decision_CHL_carabineros
+		cost = 25
+		priority = 1
+		fire_only_once = yes
+
+		available = {
+			ROOT = {
+				controls_state = 87
+			}
+			has_equipment = {
+				infantry_equipment > 2499
+			}
+			has_manpower > 20000
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 87
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 1
+		}
+
+		days_remove = 90
+
+		complete_effect = {
+			add_manpower = -20000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2500
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = tt_kop
+			hidden_effect = {
+				load_oob = NRP_decyzja3
+			}
+		}
+	}
+	kop_ostroda = {
+		icon = GFX_decision_CHL_carabineros
+		cost = 25
+		priority = 3
+		fire_only_once = yes
+
+		available = {
+			ROOT = {
+				controls_state = 225
+			}
+			has_equipment = {
+				infantry_equipment > 2499
+			}
+			has_manpower > 20000
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 225
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 1
+		}
+
+		days_remove = 90
+
+		complete_effect = {
+			add_manpower = -20000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2500
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = tt_kop
+			hidden_effect = {
+				load_oob = NRP_decyzja4
+			}
+		}
+	}
+	kop_tarnica = {
+		icon = GFX_decision_CHL_carabineros
+		cost = 25
+		priority = 2
+		fire_only_once = yes
+
+		available = {
+			ROOT = {
+				controls_state = 164
+			}
+			has_equipment = {
+				infantry_equipment > 2499
+			}
+			has_manpower > 20000
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 164
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 1
+		}
+
+		days_remove = 90
+
+		complete_effect = {
+			add_manpower = -20000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2500
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = tt_kop
+			hidden_effect = {
+				load_oob = NRP_decyzja5
+			}
 		}
 	}
 }

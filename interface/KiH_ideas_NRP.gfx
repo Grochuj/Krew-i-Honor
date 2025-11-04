@@ -91,4 +91,28 @@ spriteTypes = {
 		name = GFX_idea_NRP_idea_silnyzloty
 		texturefile = gfx/interface/ideas/pieniadze.dds
 	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_rozbudowainfrastruktury
+		texturefile = gfx/interface/ideas/infrastruktura.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_nowajakoscpolicji
+		texturefile = gfx/interface/ideas/tearhatdiamond.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_nowajakoscpolicji2
+		texturefile = gfx/interface/ideas/tearhatdiamond.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_panstwowaagencjawywiadu
+		texturefile = gfx/interface/ideas/szpieg.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_awabw
+		texturefile = gfx/interface/ideas/szpieg.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_odpolitycznionewojsko
+		texturefile = gfx/interface/ideas/armypp.dds
+	}
 }

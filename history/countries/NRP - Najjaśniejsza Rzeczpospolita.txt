@@ -2,8 +2,12 @@ capital = 96
 
 oob = "NRP_2025"
 
-set_convoys = 0
+set_convoys = 30
 set_research_slots = 2
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 5000
+}
 
 recruit_character = NRP_braun_leader
 recruit_character = NRP_korwin

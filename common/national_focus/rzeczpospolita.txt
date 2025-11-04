@@ -984,24 +984,7 @@ focus = {
         icon = GFX_goal_generic_dangerous_deal
         cost = 5
         relative_position_id = RZP_rzadyjakubiaka
-        x = 1
-        y = 1
-        prerequisite = {
-            focus = RZP_rzadyjakubiaka
-        }
-        completion_reward = { 
-            add_opinion_modifier = {
-            target = RPL
-            modifier = huge_increase
-           }
-        }
-    }
-    focus = {
-        id = RZP_wierny_wladca
-        icon = GFX_goal_generic_dangerous_deal
-        cost = 5
-        relative_position_id = RZP_rzadyjakubiaka
-        x = -1
+        x = 0
         y = 1
         prerequisite = {
             focus = RZP_rzadyjakubiaka
