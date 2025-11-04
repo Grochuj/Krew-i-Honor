@@ -207,10 +207,10 @@ focus_tree = {
             }
         }
     }
-    #Polityka_Jaruzelski=========================================================================================
+    #PZPR========================================================================================================
     focus = {
         id = PRL_powrot_do_korzeni
-        icon = GFX_focus_generic_military_mission
+        icon = GFX_focus_generic_soviet_politics
         relative_position_id = PRL_tajemnica_kopy_cwila
         prerequisite = {
             focus = PRL_tajemnica_kopy_cwila
@@ -227,27 +227,19 @@ focus_tree = {
                 long_name = PRL_peerel_long
                 name = PRL_peerel
             }
-            add_country_leader_role = {
-                character = PRL_jaruzelski
-                promote_leader = yes
-                country_leader = {
-                    ideology = leninism
-                }
-            }
-        
-            add_war_support = 0.05
+            add_ideas = PRL_niskie_poparcie
         }
     }
     focus = {
         id = PRL_odnowa_bezpieki
         icon = GFX_focus_generic_secret_service_agency
-        relative_position_id = PRL_powrot_do_korzeni
-        prerequisite = {
-            focus = PRL_powrot_do_korzeni
+        relative_position_id = PRL_pucz_armijny
+        available = {
+            has_completed_focus = PRL_powrot_do_korzeni
         }
-        cost = 5
-        x = 1
-        y = 1
+        cost = 10
+        x = 4
+        y = 0
         completion_reward = { 
           create_intelligence_agency = {
             name = "Służba Bezpieczeństwa"
@@ -256,61 +248,132 @@ focus_tree = {
         }
     }
     focus = {
-        id = PRL_zomo
-        icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
+        id = PRL_akcja_hiacynt
+        icon = GFX_focus_ARG_balancing_act
+        relative_position_id = PRL_odnowa_bezpieki
+        prerequisite = {
+            focus = PRL_odnowa_bezpieki
+        }
+        cost = 5
+        x = 0
+        y = 1
+        completion_reward = { 
+          every_other_country = {
+                limit = {
+                    has_government = homo
+                }
+                add_opinion_modifier = {
+                    target = root
+                    modifier = op_modifier_antypedalstwo
+                }
+                reverse_add_opinion_modifier = {
+                    target = root
+                    modifier = op_modifier_antypedalstwo
+                }
+            }
+            swap_ideas = {
+                remove_idea = PRL_sb
+                add_idea = PRL_sb2
+            }
+            
+        }
+    }
+    #Pomożecie?==================================================================================================
+    focus = {
+        id = PRL_kolejna_dekada_gierkwoska
+        icon = GFX_focus_gierek
         relative_position_id = PRL_powrot_do_korzeni
         prerequisite = {
             focus = PRL_powrot_do_korzeni
         }
+        cost = 5
+        x = 2
+        y = 1
+        completion_reward = { 
+            promote_character = PRL_Gierek
+        }
+    }
+    #Polityka_Jaruzelski=========================================================================================
+    focus = {
+        id = PRL_pucz_armijny
+        icon = GFX_focus_generic_military_mission
+        relative_position_id = PRL_powrot_do_korzeni
         prerequisite = {
-            focus = PRL_fabryki_ciezarowek
+            focus = PRL_powrot_do_korzeni
+        }
+        cost = 5
+        x = -5
+        y = 1
+        completion_reward = { 
+            promote_character = PRL_jaruzelski
+        
+            add_war_support = 0.05
+        }
+    }
+    focus = {
+        id = PRL_zomo
+        icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
+        relative_position_id = PRL_pucz_armijny
+        prerequisite = {
+            focus = PRL_pucz_armijny
+        }
+        cost = 5
+        x = 1
+        y = 1
+        completion_reward = {
+            634 = {
+                create_unit = { division = "name = \"Pierwszy Oddział ZOMO\" division_template = \"Zmotoryzowany Odwód Milicji Obywatelskiej\" start_experience_factor = 1" owner = ROOT }
+            }
+            637 = {
+                create_unit = { division = "name = \"Drugi Oddział ZOMO\" division_template = \"Zmotoryzowany Odwód Milicji Obywatelskiej\" start_experience_factor = 1" owner = ROOT }
+            }
+        }
+    }
+    focus = {
+        id = PRL_pacyfikacje
+        icon = GFX_focus_spr_crush_the_revolution
+        relative_position_id = PRL_pucz_armijny
+        prerequisite = {
+            focus = PRL_zomo
+        }
+        prerequisite = {
+            focus = PRL_odnowa_bezpieki
+        }
+        cost = 10
+        x = 2
+        y = 2
+        completion_reward = {
+           add_stability = -0.05
+           remove_ideas = PRL_niskie_poparcie
+        }
+    }
+    focus = {
+        id = PRL_konsolidacja
+        icon = GFX_goal_generic_national_unity
+        relative_position_id = PRL_pucz_armijny
+        prerequisite = {
+            focus = PRL_pucz_armijny
         }
         cost = 5
         x = -1
         y = 1
         completion_reward = {
-            division_template = {
-                name = "Zmotoryzowany Odwód Milicji Obywatelskiej"
-	            regiments = {
-		           motorized = {
-			           x = 0
-			           y = 0
-	            	}
-	            	motorized = {
-        	    		x = 0
-        	    		y = 1
-        	    	}
-        	    	motorized = {
-        	    		x = 0
-		           	y = 1
-		            }  
-        		    motorized = {
-		            	x = 1
-        		    	y = 1
-		            }
-	            }
-	            support = {
-	    	        military_police = {
-	    	        	x = 0
-	    	        	y = 0
-	    	        }
-	            }
-            }
+          add_political_power = 75
         }
     }
     focus = {
         id = PRL_wprowadzenie_stanu_wojennego
         icon = GFX_focus_generic_attack_poland
-        relative_position_id = PRL_odnowa_bezpieki
+        relative_position_id = PRL_zomo
         prerequisite = {
-            focus = PRL_odnowa_bezpieki
+            focus = PRL_pacyfikacje
         }
         prerequisite = {
-            focus = PRL_zomo
+            focus = PRL_konsolidacja
         }
         cost = 15
         x = -1
-        y = 1
+        y = 2
         completion_reward = { 
           add_ideas = PRL_wojenny
         }
@@ -521,7 +584,7 @@ focus_tree = {
     #Wojsko=========================================================================================
     focus = {
         id = PRL_stan_armii
-        icon = GFX_focus_generic_communist_industry
+        icon = GFX_focus_NORDIC_com_army
         cost = 5
         relative_position_id = PRL_plan_piecio_letni
         x = 7

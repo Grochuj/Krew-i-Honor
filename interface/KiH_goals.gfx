@@ -135,4 +135,8 @@ spriteTypes = {
         name = GFX_focus_lpg
         texturefile =  gfx/interface/goals/kocham_lpg.dds
     }
+    spriteType = {
+        name = GFX_focus_gierek
+        texturefile =  gfx/interface/goals/pomozecie.dds
+    }
 }

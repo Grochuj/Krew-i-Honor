@@ -39,4 +39,16 @@ spriteTypes = {
 		name = GFX_idea_PRL_aborcja
 		texturefile = gfx/interface/ideas/idea_AUS_women_in_academia.dds
 	}
+	spriteType = {
+		name = GFX_idea_PRL_sb
+		texturefile = gfx/interface/ideas/POL_Ideology_Drift_Defence.dds
+	}
+	spriteType = {
+		name = GFX_idea_PRL_sb2
+		texturefile = gfx/interface/ideas/POL_Ideology_Drift_Defence.dds
+	}
+	spriteType = {
+		name = GFX_idea_PRL_wojenny
+		texturefile = gfx/interface/ideas/FRA_scw_intervention_republicans_focus.dds
+	}
 }
