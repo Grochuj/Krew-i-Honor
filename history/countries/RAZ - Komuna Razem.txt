@@ -1,11 +1,9 @@
-capital = 47
+capital = 22
 
-oob = "FLS_2025"
+oob = "RAZ_0"
 
-set_convoys = 300
+set_convoys = 0
 set_research_slots = 2
-
-recruit_character = FLS_biejat_leader
 
 set_technology = {
 	infantry_weapons = 1
@@ -19,18 +17,17 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = communism
 	last_election = "2025.05.16"
 	election_frequency = 96
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
-	homo = 35
-	communism = 8
-	democratic = 57
+	homo = 5
+	communism = 95
 }
 
 add_ideas = {
-	generalna_ideja
+	
 }

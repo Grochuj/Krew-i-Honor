@@ -156,6 +156,12 @@
  PRL_nfps_LONG: "Nowa Fala Prodfesor Senyszyn"
  PRL_nfps: "NFPS"
 
+ RAZ_communism_party_long: "Lewica Razem"
+ RAZ_communism_party: "Razem"
+
+ LGB_homo_party_long: "Wiosna"
+ LGB_homo_party: "Wiosna"
+
 
 ##############################################################
 #MAIN GAME#

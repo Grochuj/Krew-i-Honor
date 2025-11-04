@@ -15,6 +15,8 @@ DIP = "countries/Federacja Dobrobytu i Pokoju.txt"
 FLS = "countries/Federacja Ludowo-Socjalistyczna.txt"
 PRL = "countries/Polska Rzeczpospolita Ludowa.txt"
 WOH = "countries/Republika Bezpartyjna.txt"
+RAZ = "countries/Komuna Razem.txt"
+LGB = "countries/Zwiazek Partnerski.txt"
 
 dynamic_tags = yes
 

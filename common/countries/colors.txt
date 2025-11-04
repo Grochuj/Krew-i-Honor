@@ -52,3 +52,13 @@ FLS = {
 	color = rgb { 80 19 19 }
 	color_ui = rgb { 80 19 19 }
 }
+
+RAZ = {
+	color = rgb { 102 0 160 }
+	color_ui = rgb { 102 0 160 }
+}
+
+LGB = {
+	color = rgb { 252 34 224 }
+	color_ui = rgb { 252 34 224 }
+}
