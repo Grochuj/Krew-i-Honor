@@ -672,6 +672,9 @@ ideologies = {
 			narodowyagraryzm = {
 
 			}
+			ekologizm = {
+
+			}
 		}
 
 		dynamic_faction_names = {
