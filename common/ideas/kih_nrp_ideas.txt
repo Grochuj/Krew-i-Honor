@@ -226,4 +226,12 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		NRP_idea_odpolitycznionewojsko = {
+			modifier = {
+				army_org_factor = 0.05
+				max_planning_factor = 0.05
+			}
+		}
+	}
 }
