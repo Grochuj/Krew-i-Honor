@@ -1,0 +1,146 @@
+add_namespace = fls_event
+
+country_event = {
+	id = fls_event.1
+	title = fls_event.1.t
+	desc = fls_event.1.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		ai_chance = {
+			base = 25
+		}
+		name = fls_event.1.a
+		
+		country_event = {
+			id = fls_event.2
+			hours = 6
+		}
+
+		RAZ = {
+			country_event = {
+				id = raz_event.1
+				hours = 6
+			}
+		}
+		LGB = {
+			country_event = {
+				id = lgb_event.1
+				hours = 6
+			}
+		}
+	}
+	option = {
+		ai_chance = {
+			base = 15
+		}
+		name = fls_event.1.b
+
+		RAZ = {
+			change_tag_from = FLS
+		}
+		
+		country_event = {
+			id = fls_event.2
+			hours = 6
+		}
+
+		RAZ = {
+			country_event = {
+				id = raz_event.1
+				hours = 6
+			}
+		}
+		LGB = {
+			country_event = {
+				id = lgb_event.1
+				hours = 6
+			}
+		}
+	}
+	option = {
+		ai_chance = {
+			base = 10
+		}
+		name = fls_event.1.c
+
+		LGB = {
+			change_tag_from = FLS
+		}
+		
+		country_event = {
+			id = fls_event.2
+			hours = 6
+		}
+
+		RAZ = {
+			country_event = {
+				id = raz_event.1
+				hours = 6
+			}
+		}
+		LGB = {
+			country_event = {
+				id = lgb_event.1
+				hours = 6
+			}
+		}
+	}
+}
+country_event = {
+	id = fls_event.2
+	title = fls_event.2.t
+	desc = fls_event.2.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		ai_chance = {
+			base = 25
+		}
+		name = fls_event.2.a
+		
+		country_event = {
+			id = fls_event.3
+			hours = 3
+		}
+	}
+}
+country_event = {
+	id = fls_event.3
+	title = fls_event.3.t
+	desc = fls_event.3.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+
+	option = {
+		ai_chance = {
+			base = 25
+		}
+		name = fls_event.3.a
+		
+		declare_war_on = {
+			target = RAZ
+			type = civil_war
+		}
+		declare_war_on = {
+			target = LGB
+			type = civil_war
+		}
+
+		hidden_effect = {
+			news_event = {
+				id = news_event.2
+				days = 3
+			}
+		}
+	}
+}
