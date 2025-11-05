@@ -137,6 +137,8 @@ country_event = {
 		}
 
 		hidden_effect = {
+			set_global_flag = Super_Event_aktywny
+			set_global_flag = SEflag_FLS_wojnadomowa
 			news_event = {
 				id = news_event.2
 				days = 3

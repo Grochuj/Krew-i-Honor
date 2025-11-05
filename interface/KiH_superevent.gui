@@ -1,0 +1,40 @@
+guiTypes = {
+	containerWindowType = {
+		name = "Okno_Supereventu"
+		size = {
+			width = 800
+			height = 500
+		}
+		position = {
+			x = 0
+			y = 0
+		}
+		orientation = CENTER
+		origo = center
+		moveable = yes
+		background = {
+			name = "Background"
+			spriteType = "GFX_tlo_superevent"
+		}
+
+		iconType = {
+			name = "FLS_wojnadomowa_super_image"
+			spriteType = "GFX_SE_FLS_wojnadomowa"
+			position = {
+				x = 0
+				y = 0
+			}
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "Super_Event_Close"
+			position = {
+				x = 765
+				y = 0
+			}
+			quadTextureSprite = GFX_closebutton
+			clicksound = click_scroll
+		}
+	}
+}

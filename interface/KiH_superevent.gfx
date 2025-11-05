@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_tlo_superevent"
+		textureFile = "gfx/superevents/tlo.dds"
+	}
+	spriteType = {
+		name = "GFX_SE_FLS_wojnadomowa"
+		textureFile = "gfx/superevents/FLS_wojnadomowa.dds"
+	}
+}
