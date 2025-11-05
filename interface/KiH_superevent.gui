@@ -2,8 +2,8 @@ guiTypes = {
 	containerWindowType = {
 		name = "Okno_Supereventu"
 		size = {
-			width = 800
-			height = 500
+			width = 1000
+			height = 600
 		}
 		position = {
 			x = 0
@@ -30,7 +30,7 @@ guiTypes = {
 		buttonType = {
 			name = "Super_Event_Close"
 			position = {
-				x = 765
+				x = 965
 				y = 0
 			}
 			quadTextureSprite = GFX_closebutton
