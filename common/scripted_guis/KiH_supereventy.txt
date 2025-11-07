@@ -1,0 +1,25 @@
+scripted_gui = {
+	super_okno = {
+		context_type = player_context
+		window_name = "Okno_Supereventu"
+		visible = {
+			has_country_flag = Super_Event_aktywny
+		}
+
+		triggers = {
+			FLS_wojnadomowa_super_image_visible = {
+				has_country_flag = SEflag_FLS_wojnadomowa
+			}
+		}
+		
+		effects = {
+			Super_Event_Close_click = {
+				ROOT = {
+					clr_country_flag = Super_Event_aktywny
+
+					clr_country_flag = SEflag_FLS_wojnadomowa
+				}
+			}
+		}
+	}
+}

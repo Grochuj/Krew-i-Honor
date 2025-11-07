@@ -2,6 +2,7 @@ category = {
 	name = "eventy"
 	soundeffects = {
 		NRP_event_koronacja
+		FLS_event_wojnadomowa
 	}
 	compressor = {
 		enabled = yes
@@ -27,4 +28,19 @@ soundeffect = {
 sound = {
 	name = "NRP_sound_piesn_koronacyjna"
 	file = "events/koronacja_piesn.wav"
+}
+
+soundeffect = {
+	name = "FLS_event_wojnadomowa"
+	sounds = {
+		sound = FLS_sound_miedzynarodowka
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1
+}
+
+sound = {
+	name = "FLS_sound_miedzynarodowka"
+	file = "events/miedzynarodowka.wav"
 }
