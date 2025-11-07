@@ -2501,7 +2501,7 @@ focus_tree = {
         id = NRP_focus_szacunek_dla_zolnierzy
         icon = GFX_goal_unknown
         cost = 5
-        x = 68
+        x = 73
         y = 0
 
         completion_reward = {
@@ -3033,7 +3033,7 @@ focus_tree = {
     focus = {
         id = NRP_focus_odpolitycznianie_wojska
         icon = GFX_goal_unknown
-        cost = 3
+        cost = 5
         relative_position_id = NRP_focus_szacunek_dla_zolnierzy
         x = -8
         y = 1
@@ -3047,7 +3047,423 @@ focus_tree = {
         }
 
         ai_will_do = {
+            base = 3
+        }
+    }
+    focus = {
+        id = NRP_focus_nowy_program_przezbrojenia
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_odpolitycznianie_wojska
+        x = -6
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_odpolitycznianie_wojska
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = "Nowy Program Przezbrojeniowy"
+                bonus = 1
+                uses = 2
+                category = cat_light_armor
+                category = cat_medium_armor
+                category = cat_heavy_armor
+            }
+        }
+
+        ai_will_do = {
+            base = 3
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_polskich_karabinkow
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_nowy_program_przezbrojenia
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_nowy_program_przezbrojenia
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = "Projekty Polskich Karabinków"
+                bonus = 0.75
+                uses = 2
+                category = infantry_weapons
+            }
+        }
+
+        ai_will_do = {
+            base = 3
+        }
+    }
+    focus = {
+        id = NRP_focus_wspolpraca_z_uczelniami
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_nowy_program_przezbrojenia
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_nowy_program_przezbrojenia
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_wspolpracazuczelniami
+        }
+
+        ai_will_do = {
+            base = 3
+        }
+    }
+    focus = {
+        id = NRP_focus_nowoczesne_wyposazenie
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_rozwoj_polskich_karabinkow
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_polskich_karabinkow
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = "Unowocześnianie Wyposażenia"
+                bonus = 0.5
+                uses = 3
+                category = support_tech
+            }
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
+    focus = {
+        id = NRP_focus_nowe_jednostki_obronne
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_odpolitycznianie_wojska
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_odpolitycznianie_wojska
+        }
+
+        completion_reward = {
+            96 = {
+                create_unit = {
+                    division = "Dywizja Piechoty"
+                    owner = ROOT
+                    count = 3
+                    divisional_commander_xp = 750
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
+    focus = {
+        id = NRP_focus_uproszczenie_struktur
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_nowe_jednostki_obronne
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_nowe_jednostki_obronne
+        }
+        prerequisite = {
+            focus = NRP_focus_nowy_program_przezbrojenia
+        }
+
+        completion_reward = {
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.25
+                name = "Uproszczone Struktury"
+                category = land_doctrine
+                uses = 2
+            }
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
+    focus = {
+        id = NRP_focus_powszechna_sluzba
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_uproszczenie_struktur
+        x = -2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_uproszczenie_struktur
+        }
+
+        completion_reward = {
+            if = {
+                limit = {
+                    OR = {
+                        has_idea = disarmed_nation
+                        has_idea = volunteer_only
+                        has_idea = limited_conscription
+                        has_idea = extensive_conscription
+                    }
+                }
+                improve_mobilisation_law = yes
+            }
+            add_stability = -0.1
+        }
+
+        ai_will_do = {
+            base = 5
+            modifier = {
+                has_stability < 0.4
+                factor = 0
+            }
+        }
+    }
+    focus = {
+        id = NRP_focus_kula_w_leb
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_powszechna_sluzba
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_powszechna_sluzba
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_kulawleb
+        }
+
+        ai_will_do = {
+            base = 8
+        }
+    }
+    focus = {
+        id = NRP_focus_szkolenie_rezerw
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_powszechna_sluzba
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_powszechna_sluzba
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_przygotowanerezerwy
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
+    focus = {
+        id = NRP_focus_odtworzenie_okregow_wojskowych
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_uproszczenie_struktur
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_uproszczenie_struktur
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_zorganizowanaarmia1
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
+    focus = {
+        id = NRP_focus_rozbudowa_struktur_taktycznych
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_odtworzenie_okregow_wojskowych
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_odtworzenie_okregow_wojskowych
+        }
+
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = NRP_idea_zorganizowanaarmia1
+                add_idea = NRP_idea_zorganizowanaarmia2
+            }
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
+    focus = {
+        id = NRP_focus_odbudowa_obrony_cywilnej
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_odpolitycznianie_wojska
+        x = 4
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_odpolitycznianie_wojska
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_obronacywilna
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
+    focus = {
+        id = NRP_focus_dostep_do_broni
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_odbudowa_obrony_cywilnej
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_odbudowa_obrony_cywilnej
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_powszechnydostepdobroni
+        }
+
+        ai_will_do = {
+            base = 2
+        }
+    }
+    focus = {
+        id = NRP_focus_szkolenia_strzeleckie_w_szkolach
+        icon = GFX_goal_unknown
+        cost = 2
+        relative_position_id = NRP_focus_dostep_do_broni
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_dostep_do_broni
+        }
+
+        completion_reward = {
+            add_manpower = 30000
+        }
+
+        ai_will_do = {
             base = 1
+            modifier = {
+                has_manpower < 50000
+                add = 24
+            }
+        }
+    }
+    focus = {
+        id = NRP_focus_rozbudowa_wojsk_specjalnych
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_odbudowa_obrony_cywilnej
+        x = -1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_odbudowa_obrony_cywilnej
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = "Szkolenie Wojsk Specjalnych"
+                bonus = 0.5
+                uses = 2
+                category = mountaineers_tech
+            }
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
+    focus = {
+        id = NRP_focus_wojna_nowej_generacji
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_rozbudowa_wojsk_specjalnych
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozbudowa_wojsk_specjalnych
+        }
+
+        completion_reward = {
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.25
+                name = "Szkolenia Wojskowe Nowej Generacji"
+                category = special_forces_doctrine
+                uses = 3
+            }
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
+    focus = {
+        id = NRP_focus_wojna_nowej_generacji
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_odpolitycznianie_wojska
+        x = 0
+        y = 5
+
+        prerequisite = {
+            focus = NRP_focus_szkolenie_rezerw
+        }
+        prerequisite = {
+            focus = NRP_focus_rozbudowa_struktur_taktycznych
+        }
+
+        available = {
+            has_army_manpower = {
+                size > 225000
+            }
+            has_completed_focus = NRP_focus_program_szkoleniowy
+            has_completed_focus = NRP_focus_nowoczesne_wyposazenie
+            has_completed_focus = NRP_focus_wojna_nowej_generacji
+        }
+
+        completion_reward = {
+            add_ideas = NRP_idea_nowewojskopolskie
+        }
+
+        ai_will_do = {
+            base = 15
         }
     }
 }
