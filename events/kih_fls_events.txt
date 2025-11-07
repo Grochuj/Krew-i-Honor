@@ -137,8 +137,14 @@ country_event = {
 		}
 
 		hidden_effect = {
-			set_global_flag = Super_Event_aktywny
-			set_global_flag = SEflag_FLS_wojnadomowa
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = Super_Event_aktywny
+				set_country_flag = SEflag_FLS_wojnadomowa
+				scoped_sound_effect = FLS_event_wojnadomowa
+			}
 			news_event = {
 				id = news_event.2
 				days = 3
