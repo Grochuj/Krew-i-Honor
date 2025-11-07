@@ -89,6 +89,12 @@
  UPO_demokracjawalczaca_party: "PO"
  UPO_democratic_party_long: "Komitet Obrony Demokracji"
  UPO_democratic_party: "KOD"
+ UPO_centryzm_party: ".N"
+ UPO_centryzm_party_long: ".Nowoczesna"
+ UPO_agraryzm_party: "Zieloni"
+ UPO_agraryzm_party_long: "Partia Zieloni"
+ UPO_socjalizm_party: "iPL"
+ UPO_socjalizm_party_long: "Inicjatywa Polska"
 
  KAM_autorytaryzm_party_long: "Kamraci Rodacy"
  KAM_autorytaryzm_party: "KR"

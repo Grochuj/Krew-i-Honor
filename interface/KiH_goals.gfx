@@ -139,4 +139,12 @@ spriteTypes = {
         name = GFX_focus_gierek
         texturefile =  gfx/interface/goals/pomozecie.dds
     }
+    spriteType = {
+        name = GFX_focus_szatan
+        texturefile =  gfx/interface/goals/szatan.dds
+    }
+     spriteType = {
+        name = GFX_focus_anty_lewica
+        texturefile =  gfx/interface/goals/czarzasci.dds
+    }
 }

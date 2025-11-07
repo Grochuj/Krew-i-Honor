@@ -24,6 +24,30 @@ spriteTypes = {
 
 spriteTypes = {
 
+	spriteType = {
+		name = "GFX_portrait_UPO_lubnauer"
+		textureFile = "gfx/leaders/UPO/lubnauer.tga"
+	}
+}
+
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_UPO_suchora"
+		textureFile = "gfx/leaders/UPO/suchora.tga"
+	}
+}
+
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_UPO_nowacka"
+		textureFile = "gfx/leaders/UPO/nowacka.tga"
+	}
+}
+
+spriteTypes = {
+
 	spriteType ={
 		name = "GFX_portrait_SOD_character"
 		textureFile = "gfx/leaders/SOD/Braciaff.tga"
@@ -139,6 +163,14 @@ spriteTypes = {
 	spriteType ={
 		name = "GFX_portrait_PRL_senyszyn"
 		textureFile = "gfx/leaders/PRL/senyszyn.tga"
+	}
+}
+
+spriteTypes = {
+
+	spriteType ={
+		name = "GFX_portrait_PRL_diabel"
+		textureFile = "gfx/leaders/PRL/diabel.tga"
 	}
 }
 

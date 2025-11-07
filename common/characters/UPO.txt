@@ -10,4 +10,52 @@ characters = {
 			ideology = demowal
 		}
 	}
+	UPO_nowacka = {
+		name = UPO_nowacka
+		portraits = {
+			civilian = {
+				large = GFX_portrait_UPO_nowacka
+			}
+		}
+		
+		country_leader = {
+			ideology = soc
+			
+			traits = {
+				socialist_politician
+			}
+		}
+	}
+	UPO_suchora = {
+		name = UPO_suchora
+		portraits = {
+			civilian = {
+				large = GFX_portrait_UPO_suchora
+			}
+		}
+		
+		country_leader = {
+			ideology = ekologizm
+			
+			traits = {
+				
+			}
+		}
+	}
+	UPO_lubnauer = {
+		name = UPO_lubnauer
+		portraits = {
+			civilian = {
+				large = GFX_portrait_UPO_lubnauer
+			}
+		}
+		
+		country_leader = {
+			ideology = cent
+			
+			traits = {
+				
+			}
+		}
+	}
 }
