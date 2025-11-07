@@ -5,4 +5,10 @@ leader_traits = {
 		stability_factor = 0.05
 		monthly_population = 0.15
 	}
+	PRL_imperator = {
+		random = no
+
+		annex_cost_factor = -0.15
+		compliance_growth = 0.1
+	}
 }

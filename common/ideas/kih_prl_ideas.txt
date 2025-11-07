@@ -97,5 +97,12 @@ ideas = {
 				master_ideology_drift = 0.5
 			}
 		}
+		PRL_PO = {
+			targeted_modifier = {
+				tag = UPO
+				faction_trade_opinion_factor = 0.2
+				army_attack_factor = -0.1
+			}
+		}
 	}
 }

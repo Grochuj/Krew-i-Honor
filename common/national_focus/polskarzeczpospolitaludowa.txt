@@ -14,7 +14,7 @@ focus_tree = {
         id = PRL_nasze_miejsce_na_swiecie
         icon = GFX_focus_GER_legacy_of_the_spartacus_league
         cost = 5
-        x = 19
+        x = 22
         y = 0
         completion_reward = { 
             add_political_power = 50
@@ -103,7 +103,7 @@ focus_tree = {
             focus = PRL_tajemnica_kopy_cwila
         }
         cost = 5
-        x = 3
+        x = 6
         y = 1
         completion_reward = { 
             set_party_name = { 
@@ -207,6 +207,88 @@ focus_tree = {
             }
         }
     }
+    focus = {
+        id = PRL_imperator
+        icon = GFX_focus_szatan
+        relative_position_id = PRL_przekierowanie_srodkow_obronnych_na_zrowie
+        prerequisite = {
+            focus = PRL_przekierowanie_srodkow_obronnych_na_zrowie
+        }
+        prerequisite = {
+            focus = PRL_aborcja_na_zadanie_i_zydowskie_zlobki
+        }
+        cost = 10
+        x = -1
+        y = 1
+        completion_reward = { 
+            PRL_senyszyn_leader = {
+                set_portraits = {
+                    civilian = {
+                        large = GFX_portrait_PRL_diabel
+                    }
+                }
+            }
+            add_country_leader_trait = PRL_imperator
+        }
+    }
+    focus = {
+        id = PRL_zniszczenie_czarzastych
+        icon = GFX_focus_anty_lewica
+        relative_position_id = PRL_imperator
+        prerequisite = {
+            focus = PRL_imperator
+        }
+        cost = 5
+        x = -1
+        y = 1
+        will_lead_to_war_with = FLS
+        completion_reward = { 
+            create_wargoal = {
+                target = FLS
+                type = annex_everything
+            }
+        }
+    }
+    #Frakcje==============================================
+    focus = {
+        id = PRL_poparcie_ko
+        icon = GFX_focus_GER_german_hegemony_in_the_middle_east_demcoratic
+        relative_position_id = PRL_nowa_twarz_lewicy
+        mutually_exclusive = {
+            focus = PRL_uklad_warszawski
+        }
+        prerequisite = {
+            focus = PRL_nowa_twarz_lewicy
+        }
+        cost = 5
+        x = -3
+        y = 1
+        completion_reward = { 
+            add_opinion_modifier = {
+            target = UPO
+            modifier = huge_increase
+            }
+            add_ideas = PRL_PO
+        }
+    }
+    focus = {
+        id = PRL_uklad_warszawski
+        icon = GFX_focus_generic_polish_deal
+        relative_position_id = PRL_nowa_twarz_lewicy
+        mutually_exclusive = {
+            focus = PRL_poparcie_ko
+        }
+        prerequisite = {
+            focus = PRL_nowa_twarz_lewicy
+            focus = PRL_powrot_do_korzeni
+        }
+        cost = 5
+        x = -5
+        y = 1
+        completion_reward = { 
+           create_faction = "Układ Warszawski"
+        }
+    }
     #PZPR========================================================================================================
     focus = {
         id = PRL_powrot_do_korzeni
@@ -219,7 +301,7 @@ focus_tree = {
             focus = PRL_nowa_twarz_lewicy
         }
         cost = 5
-        x = -3
+        x = -6
         y = 1
         completion_reward = { 
             set_party_name = { 

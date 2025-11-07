@@ -167,6 +167,14 @@ spriteTypes = {
 }
 
 spriteTypes = {
+
+	spriteType ={
+		name = "GFX_portrait_PRL_diabel"
+		textureFile = "gfx/leaders/PRL/diabel.tga"
+	}
+}
+
+spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_WOH_woch_leader"
 		textureFile = "gfx/leaders/WOH/Woch.tga"
