@@ -1,11 +1,18 @@
-capital = 346
+capital = 386
 
-oob = "INP_2025"
+oob = "NOW_2025"
 
 set_convoys = 30
 set_research_slots = 2
 
-recruit_character = INP_nowacka
+recruit_character = NOW_lubnauer
+
+UPO = {
+	set_autonomy = {
+		target = NOW
+		autonomy_state = autonomy_collaboration_government
+	}
+}
 
 set_technology = {
 	infantry_weapons = 1
@@ -13,17 +20,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = socjalizm
+	ruling_party = centryzm
 	last_election = "2025.05.16"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 1
-	socjalizm = 70
-	centryzm = 19
-	demokracjawalczaca = 10
+	democratic = 16
+	centryzm = 63
+	demokracjawalczaca = 21
 }
 
 add_ideas = {
