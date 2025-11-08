@@ -261,7 +261,7 @@ focus_tree = {
             focus = PRL_nowa_twarz_lewicy
         }
         cost = 5
-        x = -3
+        x = -4
         y = 1
         completion_reward = { 
             add_opinion_modifier = {
@@ -283,7 +283,7 @@ focus_tree = {
             focus = PRL_powrot_do_korzeni
         }
         cost = 5
-        x = -5
+        x = -6
         y = 1
         completion_reward = { 
            create_faction = "Układ Warszawski"
@@ -369,7 +369,7 @@ focus_tree = {
             focus = PRL_powrot_do_korzeni
         }
         cost = 5
-        x = 2
+        x = 3
         y = 1
         completion_reward = { 
             promote_character = PRL_Gierek
