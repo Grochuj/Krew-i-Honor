@@ -1,0 +1,18 @@
+character = {
+	INP_nowacka = {
+		name = INP_nowacka
+		portraits = {
+			civilian = {
+				large = GFX_portrait_INP_nowacka
+			}
+		}
+		
+		country_leader = {
+			ideology = soc
+			
+			traits = {
+				socialist_politician
+			}
+		}
+	}
+}

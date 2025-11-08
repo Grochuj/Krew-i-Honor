@@ -25,14 +25,6 @@ spriteTypes = {
 spriteTypes = {
 
 	spriteType = {
-		name = "GFX_portrait_UPO_lubnauer"
-		textureFile = "gfx/leaders/UPO/lubnauer.tga"
-	}
-}
-
-spriteTypes = {
-
-	spriteType = {
 		name = "GFX_portrait_UPO_suchora"
 		textureFile = "gfx/leaders/UPO/suchora.tga"
 	}
@@ -41,8 +33,16 @@ spriteTypes = {
 spriteTypes = {
 
 	spriteType = {
-		name = "GFX_portrait_UPO_nowacka"
-		textureFile = "gfx/leaders/UPO/nowacka.tga"
+		name = "GFX_portrait_NOW_lubnauer"
+		textureFile = "gfx/leaders/NOW/lubnauer.tga"
+	}
+}
+
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_INP_nowacka"
+		textureFile = "gfx/leaders/INP/nowacka.tga"
 	}
 }
 

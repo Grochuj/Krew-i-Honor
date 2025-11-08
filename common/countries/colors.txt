@@ -62,3 +62,13 @@ LGB = {
 	color = rgb { 252 34 224 }
 	color_ui = rgb { 252 34 224 }
 }
+
+INP = {
+	color = rgb { 255 79 169 }
+	color_ui = rgb { 255 79 169 }
+}
+
+NOW = {
+	color = rgb { 40 83 255 }
+	color_ui = rgb { 40 83 255 }
+}

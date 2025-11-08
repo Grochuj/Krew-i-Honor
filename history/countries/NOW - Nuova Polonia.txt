@@ -1,0 +1,30 @@
+capital = 386
+
+oob = "NOW_2025"
+
+set_convoys = 30
+set_research_slots = 2
+
+recruit_character = NOW_lubnauer
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+}
+
+set_politics = {
+	ruling_party = centryzm
+	last_election = "2025.05.16"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 16
+	centryzm = 63
+	demokracjawalczaca = 21
+}
+
+add_ideas = {
+	generalna_ideja
+}

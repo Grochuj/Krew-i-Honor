@@ -2,32 +2,24 @@
 state={
 	id=627
 	name="STATE_627"
-	manpower = 16762
+	manpower = 1062
 	
-	state_category = rural
+	state_category = wasteland
 	resources={
 		aluminium=0
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
-		tungsten=0
+		steel=9
+		tungsten=5
 	}
 
 	history={
-		victory_points = { 11118 1}
-		victory_points = { 11121 3}
+	
 		
 		owner = LIB
 		buildings = {
 			infrastructure = 1
-			
-			arms_factory = 0
-			industrial_complex = 1
-			
-			11121 = {
-				naval_base = 1
-			}
 			
 		}
 		add_core_of = LIB

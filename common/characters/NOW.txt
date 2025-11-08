@@ -1,0 +1,18 @@
+character = {
+	NOW_lubnauer = {
+		name = NOW_lubnauer
+		portraits = {
+			civilian = {
+				large = GFX_portrait_NOW_lubnauer
+			}
+		}
+		
+		country_leader = {
+			ideology = cent
+			
+			traits = {
+				
+			}
+		}
+	}
+}
