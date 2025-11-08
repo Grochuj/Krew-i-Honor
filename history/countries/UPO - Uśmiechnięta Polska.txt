@@ -37,4 +37,5 @@ set_popularities = {
 
 add_ideas = {
 	generalna_ideja
+	UPO_idea_tuskpremier
 }
