@@ -36,6 +36,13 @@ focus_tree = {
                 transfer_state = 17
                 transfer_state = 722
             }
+
+            hidden_effect = {
+                every_owned_state = {
+                    add_core_of = RAZ
+                    add_core_of = LGB
+                }
+            }
         }
 
         ai_will_do = {

@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		UPO_idea_tuskpremier = {
+			modifier = {
+				autonomy_gain_ll_to_subject = -0.3
+				stability_factor = 0.05
+			}
+
+			cancel = {
+				
+			}
+		}
+	}
+}
