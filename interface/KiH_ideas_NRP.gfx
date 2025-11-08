@@ -147,4 +147,16 @@ spriteTypes = {
 		name = GFX_idea_NRP_idea_nowewojskopolskie
 		texturefile = gfx/interface/ideas/nowewojsko.dds
 	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_niewydolnaarmia
+		texturefile = gfx/interface/ideas/niewydolnaarmia.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_slabezaludnienie
+		texturefile = gfx/interface/ideas/questioncitizen.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_szurskieotoczenie
+		texturefile = gfx/interface/ideas/foliowaczapka.dds
+	}
 }

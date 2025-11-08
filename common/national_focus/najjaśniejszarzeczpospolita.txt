@@ -873,6 +873,7 @@ focus_tree = {
 
         completion_reward = {
             unlock_decision_category_tooltip = zasiedlanie_cat
+            remove_ideas = NRP_idea_slabezaludnienie
         }
 
         ai_will_do = {
@@ -2640,7 +2641,7 @@ focus_tree = {
             every_owned_state = {
                 if = {
                     limit = {
-                        infrastructure < 2
+                        infrastructure < 3
                     }
                     add_building_construction = {
                         type = infrastructure
@@ -3435,7 +3436,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = NRP_focus_wojna_nowej_generacji
+        id = NRP_focus_nowe_wojsko_polskie
         icon = GFX_goal_unknown
         cost = 10
         relative_position_id = NRP_focus_odpolitycznianie_wojska
@@ -3459,7 +3460,10 @@ focus_tree = {
         }
 
         completion_reward = {
-            add_ideas = NRP_idea_nowewojskopolskie
+            swap_ideas = {
+                remove_idea = NRP_idea_niewydolnaarmia
+                add_idea = NRP_idea_nowewojskopolskie
+            }
         }
 
         ai_will_do = {

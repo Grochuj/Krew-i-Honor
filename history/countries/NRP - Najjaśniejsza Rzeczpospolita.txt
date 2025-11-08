@@ -45,4 +45,7 @@ add_ideas = {
 	low_economic_mobilisation
 
 	generalna_ideja
+	NRP_idea_niewydolnaarmia
+	NRP_idea_slabezaludnienie
+	NRP_idea_szurskieotoczenie
 }

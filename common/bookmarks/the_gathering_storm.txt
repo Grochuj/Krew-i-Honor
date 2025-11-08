@@ -51,10 +51,12 @@ bookmarks = {
 			history = "NRP_BOOKMARK_DESC"
 			ideology = monarchia
 			ideas = {
-				generalna_ideja
+				NRP_idea_niewydolnaarmia
+				NRP_idea_slabezaludnienie
+				NRP_idea_szurskieotoczenie
 			}
 			focuses = {
-
+				NRP_focus_koronacja
 			}
 		}
 		"PAJ"={
