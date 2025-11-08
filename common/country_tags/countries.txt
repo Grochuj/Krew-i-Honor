@@ -17,6 +17,8 @@ PRL = "countries/Polska Rzeczpospolita Ludowa.txt"
 WOH = "countries/Republika Bezpartyjna.txt"
 RAZ = "countries/Komuna Razem.txt"
 LGB = "countries/Zwiazek Partnerski.txt"
+INP = "countries/Socjaldemokratyczna Polska.txt"
+NOW = "countries/Nouva Polonia.txt"
 
 dynamic_tags = yes
 

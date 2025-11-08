@@ -1,0 +1,31 @@
+capital = 346
+
+oob = "INP_2025"
+
+set_convoys = 30
+set_research_slots = 2
+
+recruit_character = INP_nowacka
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+}
+
+set_politics = {
+	ruling_party = socjalizm
+	last_election = "2025.05.16"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 1
+	socjalizm = 70
+	centryzm = 19
+	demokracjawalczaca = 10
+}
+
+add_ideas = {
+	generalna_ideja
+}
