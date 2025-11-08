@@ -16,7 +16,7 @@ state={
 
 	history={
 	
-		owner = UPO
+		owner = INP
 		buildings = {
 			infrastructure = 2
 			
@@ -25,7 +25,8 @@ state={
 			
 			
 		}
-		add_core_of = UPO
+		add_core_of = INP
+		add_claim_by = UPO
 	}
 
 	provinces={

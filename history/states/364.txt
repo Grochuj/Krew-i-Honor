@@ -18,7 +18,7 @@ state={
 		victory_points = { 6722 1}
 		victory_points = { 6724 4}
 		
-		owner = UPO
+		owner = NOW
 		buildings = {
 			infrastructure = 1
 			
@@ -30,7 +30,8 @@ state={
 			}
 			
 		}
-		add_core_of = UPO
+		add_core_of = NOW
+		add_claim_by = UPO
 	}
 
 	provinces={
