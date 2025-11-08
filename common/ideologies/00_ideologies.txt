@@ -866,7 +866,7 @@ ideologies = {
 			airforce_intel_to_others = 5.0
 			embargo_cost_factor = 1
 			lend_lease_tension = 0.25
-			stability_factor = 5
+			stability_factor = 0.005
 			consumer_goods_factor = 0.025
 		}
 	
