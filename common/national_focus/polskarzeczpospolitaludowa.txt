@@ -151,7 +151,7 @@ focus_tree = {
     }
     focus = {
         id = PRL_afirmacja_gender
-        icon = GFX_focus_lpgrtveuroagd++-+
+        icon = GFX_focus_lpg
         relative_position_id = PRL_likwidacja_senatu
         prerequisite = {
             focus = PRL_likwidacja_senatu

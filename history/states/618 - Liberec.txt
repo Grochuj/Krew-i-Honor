@@ -2,9 +2,9 @@
 state={
 	id=618
 	name="STATE_618"
-	manpower = 10267
+	manpower = 108267
 	
-	state_category = rural
+	state_category = large_town
 	resources={
 		aluminium=0
 		chromium=0
@@ -15,17 +15,17 @@ state={
 	}
 
 	history={
-		victory_points = { 10982 3}
+		victory_points = { 10982 20}
 		
 		owner = LIB
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 2
 			dockyard = 1
 			10984 = {
-				naval_base = 1
+				naval_base = 3
 			}
 			
 		}
