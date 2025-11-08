@@ -115,4 +115,36 @@ spriteTypes = {
 		name = GFX_idea_NRP_idea_odpolitycznionewojsko
 		texturefile = gfx/interface/ideas/armypp.dds
 	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_wspolpracazuczelniami
+		texturefile = gfx/interface/ideas/wspolpracazuczelniami.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_kulawleb
+		texturefile = gfx/interface/ideas/kulawleb.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_przygotowanerezerwy
+		texturefile = gfx/interface/ideas/soldiers.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_zorganizowanaarmia1
+		texturefile = gfx/interface/ideas/armyplans.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_zorganizowanaarmia2
+		texturefile = gfx/interface/ideas/armyplans.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_obronacywilna
+		texturefile = gfx/interface/ideas/shield.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_powszechnydostepdobroni
+		texturefile = gfx/interface/ideas/guns.dds
+	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_nowewojskopolskie
+		texturefile = gfx/interface/ideas/nowewojsko.dds
+	}
 }
