@@ -1,4 +1,4 @@
-character = {
+characters = {
 	INP_nowacka = {
 		name = INP_nowacka
 		portraits = {
@@ -11,7 +11,7 @@ character = {
 			ideology = soc
 			
 			traits = {
-				socialist_politician
+				
 			}
 		}
 	}
