@@ -1,4 +1,4 @@
-character = {
+characters = {
 	NOW_lubnauer = {
 		name = NOW_lubnauer
 		portraits = {
