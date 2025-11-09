@@ -39,6 +39,7 @@ country_event = {
 	}
 
 	fire_only_once = yes
+	is_triggered_only = yes
 	
 	option = {
 		ai_chance = {
