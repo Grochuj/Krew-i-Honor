@@ -51,4 +51,12 @@ spriteTypes = {
 		name = GFX_idea_PRL_wojenny
 		texturefile = gfx/interface/ideas/FRA_scw_intervention_republicans_focus.dds
 	}
+	spriteType = {
+		name = GFX_idea_PRL_przygotowanie
+		texturefile = gfx/interface/ideas/generic_goods_red_bonus.dds
+	}
+	spriteType = {
+		name = GFX_idea_PRL_solidarnosc
+		texturefile = gfx/interface/ideas/solidarnosc.dds
+	}
 }

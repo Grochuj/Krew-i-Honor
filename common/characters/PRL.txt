@@ -39,9 +39,6 @@ characters = {
 				great_architect
 				communist_orator
 			}
-			visible = {
-				has_country_flag = PRL_flag_dostepnigeneralowie
-			}
 		}
 	}
 	PRL_jaruzelski = {

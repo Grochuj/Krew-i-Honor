@@ -70,11 +70,28 @@ focus_tree = {
             focus = PRL_dwa_kroki_w_przod
         }
         cost = 10
-        x = -1
+        x = -2
         y = 1
         completion_reward = { 
             add_ideas = PRL_ateizmus
             add_research_slot = 1
+        }
+    }
+    focus = {
+        id = PRL_akcje_antyopozycyjne
+        icon = GFX_focus_RAJ_headhunt_army_personell
+        relative_position_id = PRL_matka
+        prerequisite = {
+            focus = PRL_matka
+        }
+        prerequisite = {
+            focus = PRL_dwa_kroki_w_przod
+        }
+        cost = 10
+        x = 0
+        y = 1
+        completion_reward = { 
+            remove_ideas = PRL_solidarnosc
         }
     }
     focus = {
@@ -84,8 +101,11 @@ focus_tree = {
         prerequisite = {
             focus = PRL_ateizm
         }
+        prerequisite = {
+            focus = PRL_akcje_antyopozycyjne
+        }
         cost = 10
-        x = 0
+        x = 1
         y = 1
         available = {
             has_tech = excavation1
@@ -238,13 +258,69 @@ focus_tree = {
         prerequisite = {
             focus = PRL_imperator
         }
-        cost = 5
+        cost = 10
         x = -1
         y = 1
         will_lead_to_war_with = FLS
+        available = {
+            has_army_manpower = {
+                size = 60000
+            }
+        }
         completion_reward = { 
             create_wargoal = {
                 target = FLS
+                type = annex_everything
+            }
+        }
+    }
+    focus = {
+        id = PRL_problem_dipu
+        icon = GFX_focus_generic_diplomatic_treaty
+        relative_position_id = PRL_imperator
+        prerequisite = {
+            focus = PRL_imperator
+        }
+        cost = 5
+        x = 1
+        y = 2
+        will_lead_to_war_with = DIP
+        completion_reward = { 
+            country_event = prl_event.2
+        }
+    }
+    focus = {
+        id = PRL_wspolpraca
+        icon = GFX_goal_anschluss
+        relative_position_id = PRL_problem_dipu
+        prerequisite = {
+            focus = PRL_problem_dipu
+        }
+        cost = 1
+        x = 1
+        y = 1
+        
+        completion_reward = { 
+            add_political_power = 50
+            DIP = {
+                country_event = dip_event.1
+            }
+        }
+    }
+    focus = {
+        id = PRL_koniec_zamordysty
+        icon = GFX_focus_SWE_bofors_fly_swatter
+        relative_position_id = PRL_problem_dipu
+        prerequisite = {
+            focus = PRL_problem_dipu
+        }
+        cost = 1
+        x = -1
+        y = 1
+        
+        completion_reward = { 
+            create_wargoal = {
+                target = DIP
                 type = annex_everything
             }
         }
@@ -465,7 +541,7 @@ focus_tree = {
         id = PRL_plan_piecio_letni
         icon = GFX_focus_generic_communist_industry
         cost = 5
-        x = 7
+        x = 6
         y = 0
         completion_reward = { 
             add_timed_idea = {
@@ -801,6 +877,23 @@ focus_tree = {
                 bonus = 1
                 uses = 1
             }
+        }
+    }
+    focus = {
+        id = PRL_przygotowania
+        icon = GFX_goal_generic_consumer_goods
+        relative_position_id = PRL_zmiany_w_doktrynie
+        prerequisite = {
+            focus = PRL_zmiany_w_doktrynie
+        }
+        prerequisite = {
+            focus = PRL_czerwone_bojowki
+        }
+        cost = 10
+        x = 2
+        y = 1
+        completion_reward = { 
+            add_ideas = PRL_przygotowanie
         }
     }
 }

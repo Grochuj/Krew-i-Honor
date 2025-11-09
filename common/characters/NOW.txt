@@ -4,14 +4,43 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_portrait_NOW_lubnauer
+				small = GFX_portrait_NOW_lubnauer_m
 			}
 		}
-		
+		advisor = {
+			slot = political_advisor
+			traits = { 
+				popular_figurehead2
+			}
+		}
+	}
+	NOW_szlapson = {
+		name = NOW_szlapson
+		portraits = {
+			civilian = {
+				small = GFX_portrait_NOW_szlapson_m
+				large = GFX_portrait_NOW_szlapson
+			}
+		}
 		country_leader = {
 			ideology = cent
 			
 			traits = {
-				
+				silent_workhorse
+			}
+		}
+	}
+	NOW_nalesnik = {
+		name = NOW_nalesnik
+		portraits = {
+			civilian = {
+				small =  GFX_portrait_NOW_nalesnik
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			traits = {
+				captain_of_industry
 			}
 		}
 	}

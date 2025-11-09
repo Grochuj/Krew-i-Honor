@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType ={
+		name = GFX_portrait_NOW_lubnauer_m
+		textureFile = gfx/advisors/NOW/lubnauer_m.dds
+	}
+	spriteType ={
+		name = GFX_portrait_NOW_szlapson_m
+		textureFile = gfx/advisors/NOW/szlapson_m.dds
+	}
+	spriteType ={
+		name = GFX_portrait_NOW_nalesnik
+		textureFile = gfx/advisors/NOW/nalesnik_m.dds
+	}
+}

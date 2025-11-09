@@ -17,7 +17,7 @@ state={
 	history={
 		victory_points = { 11736 1}
 		
-		owner = UPO
+		owner = NOW
 		buildings = {
 			infrastructure = 1
 			
@@ -29,7 +29,8 @@ state={
 			}
 			
 		}
-		add_core_of = UPO
+		add_core_of = NOW
+		add_claim_by = UPO
 	}
 
 	provinces={

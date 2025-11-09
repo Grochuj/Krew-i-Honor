@@ -6,11 +6,6 @@ country_event = {
 	desc = paj_event.1.d
 	picture = GFX_report_event_generic_read_write
 
-	trigger = {
-		tag = PAJ
-		has_completed_focus = PAJ_Zrobic_jeden_krok_do_przodu
-	}
-
 	mean_time_to_happen = {
 		days = 1
 	}
