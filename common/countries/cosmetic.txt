@@ -1,0 +1,8 @@
+senyszyn = {
+	color = rgb { 170 0 20 }
+	color_ui = rgb { 170 0 20 }
+}
+sarmata = {
+	color = rgb { 12 12 182 }
+	color_ui = rgb { 12 12 182 }
+}

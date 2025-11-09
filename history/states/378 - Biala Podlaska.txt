@@ -1,8 +1,8 @@
 
 state={
-	id=346
-	name="STATE_346"
-	manpower = 27186
+	id=378
+	name="STATE_378"
+	manpower = 53506
 	
 	state_category = large_town
 	resources={
@@ -10,25 +10,20 @@ state={
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
+		steel=6
 		tungsten=0
 	}
 
 	history={
-		victory_points = { 6410 1}
-		victory_points = { 6411 6}
-		victory_points = { 6415 3}
+		victory_points = { 6986 15}
 		
 		owner = INP
 		buildings = {
 			infrastructure = 2
 			
-			arms_factory = 1
+			arms_factory = 2
 			industrial_complex = 0
 			
-			6409 = {
-				naval_base = 1
-			}
 			
 		}
 		add_core_of = INP
@@ -36,7 +31,7 @@ state={
 	}
 
 	provinces={
-		6409 6410 6411 6412 6413 6414 6415 6416 6417 6418 
+		6982 6983 6984 6985 6986 6987 6988 6989 6990 6991 6992 6993 6994 
 	}
 	local_supplies=0.0 
 }
