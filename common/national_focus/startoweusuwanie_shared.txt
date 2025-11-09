@@ -12,6 +12,16 @@ shared_focus = {
 		y = 0
 	}
 
+	allow_branch = {
+		OR = {
+			has_idea = generalna_ideja
+			has_idea = generalna_ideja_1
+			has_idea = generalna_ideja_2
+			has_idea = generalna_ideja_3
+			has_idea = generalna_ideja_4
+		}
+	}
+
 	ai_will_do = {
 		base = 50
 		modifier = {
