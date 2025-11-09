@@ -12,7 +12,7 @@ zasiedlanie_cat = {
 				}
 			}
 			ROOT = {
-				num_of_available_civilian_factories > 5
+				num_of_civilian_factories_available_for_projects > 5
 			}
 		}
 
@@ -81,7 +81,7 @@ zasiedlanie_cat = {
 				}
 			}
 			ROOT = {
-				num_of_available_civilian_factories > 5
+				num_of_civilian_factories_available_for_projects > 5
 			}
 		}
 
@@ -150,7 +150,7 @@ zasiedlanie_cat = {
 				}
 			}
 			ROOT = {
-				num_of_available_civilian_factories > 5
+				num_of_civilian_factories_available_for_projects > 5
 			}
 		}
 
@@ -219,7 +219,7 @@ zasiedlanie_cat = {
 				}
 			}
 			ROOT = {
-				num_of_available_civilian_factories > 5
+				num_of_civilian_factories_available_for_projects > 5
 			}
 		}
 
@@ -288,7 +288,7 @@ zasiedlanie_cat = {
 				}
 			}
 			ROOT = {
-				num_of_available_civilian_factories > 5
+				num_of_civilian_factories_available_for_projects > 5
 			}
 		}
 
@@ -357,7 +357,7 @@ zasiedlanie_cat = {
 				}
 			}
 			ROOT = {
-				num_of_available_civilian_factories > 5
+				num_of_civilian_factories_available_for_projects > 5
 			}
 		}
 
@@ -426,7 +426,7 @@ zasiedlanie_cat = {
 				}
 			}
 			ROOT = {
-				num_of_available_civilian_factories > 5
+				num_of_civilian_factories_available_for_projects > 5
 			}
 		}
 
@@ -495,7 +495,7 @@ zasiedlanie_cat = {
 				}
 			}
 			ROOT = {
-				num_of_available_civilian_factories > 5
+				num_of_civilian_factories_available_for_projects > 5
 			}
 		}
 
@@ -564,7 +564,7 @@ zasiedlanie_cat = {
 				}
 			}
 			ROOT = {
-				num_of_available_civilian_factories > 5
+				num_of_civilian_factories_available_for_projects > 5
 			}
 		}
 
@@ -633,7 +633,7 @@ zasiedlanie_cat = {
 				}
 			}
 			ROOT = {
-				num_of_available_civilian_factories > 5
+				num_of_civilian_factories_available_for_projects > 5
 			}
 		}
 
@@ -702,7 +702,7 @@ zasiedlanie_cat = {
 				}
 			}
 			ROOT = {
-				num_of_available_civilian_factories > 5
+				num_of_civilian_factories_available_for_projects > 5
 			}
 		}
 
@@ -771,7 +771,7 @@ zasiedlanie_cat = {
 				}
 			}
 			ROOT = {
-				num_of_available_civilian_factories > 5
+				num_of_civilian_factories_available_for_projects > 5
 			}
 		}
 
@@ -840,7 +840,7 @@ zasiedlanie_cat = {
 				}
 			}
 			ROOT = {
-				num_of_available_civilian_factories > 5
+				num_of_civilian_factories_available_for_projects > 5
 			}
 		}
 
@@ -909,7 +909,7 @@ zasiedlanie_cat = {
 				}
 			}
 			ROOT = {
-				num_of_available_civilian_factories > 5
+				num_of_civilian_factories_available_for_projects > 5
 			}
 		}
 
@@ -978,7 +978,7 @@ zasiedlanie_cat = {
 				}
 			}
 			ROOT = {
-				num_of_available_civilian_factories > 5
+				num_of_civilian_factories_available_for_projects > 5
 			}
 		}
 
@@ -1047,7 +1047,7 @@ zasiedlanie_cat = {
 				}
 			}
 			ROOT = {
-				num_of_available_civilian_factories > 5
+				num_of_civilian_factories_available_for_projects > 5
 			}
 		}
 
@@ -1116,7 +1116,7 @@ zasiedlanie_cat = {
 				}
 			}
 			ROOT = {
-				num_of_available_civilian_factories > 5
+				num_of_civilian_factories_available_for_projects > 5
 			}
 		}
 
@@ -1185,7 +1185,7 @@ zasiedlanie_cat = {
 				}
 			}
 			ROOT = {
-				num_of_available_civilian_factories > 5
+				num_of_civilian_factories_available_for_projects > 5
 			}
 		}
 
@@ -1254,7 +1254,7 @@ zasiedlanie_cat = {
 				}
 			}
 			ROOT = {
-				num_of_available_civilian_factories > 5
+				num_of_civilian_factories > 5
 			}
 		}
 
@@ -1320,7 +1320,7 @@ budowaelektrowni_cat = {
 
 		available = {
 			ROOT = {
-				num_of_available_civilian_factories > 15
+				num_of_civilian_factories > 30
 			}
 			79 = {
 				owner = {
@@ -1380,7 +1380,7 @@ budowaelektrowni_cat = {
 
 		available = {
 			ROOT = {
-				num_of_available_civilian_factories > 15
+				num_of_civilian_factories > 30
 			}
 			667 = {
 				owner = {
@@ -1439,7 +1439,7 @@ budowaelektrowni_cat = {
 
 		available = {
 			ROOT = {
-				num_of_available_civilian_factories > 15
+				num_of_civilian_factories > 30
 			}
 			225 = {
 				owner = {
