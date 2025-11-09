@@ -104,5 +104,19 @@ ideas = {
 				army_attack_factor = -0.1
 			}
 		}
+		PRL_solidarnosc = {
+			modifier = {
+				stability_factor = -0.01
+				communism_drift = -0.05
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				political_power_gain = -0.5
+			}
+		}
+		PRL_przygotowanie = {
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
 	}
 }

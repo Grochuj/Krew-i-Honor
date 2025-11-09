@@ -41,6 +41,14 @@ spriteTypes = {
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_portrait_NOW_szlapson"
+		textureFile = "gfx/leaders/NOW/szlapson.tga"
+	}
+}
+
+spriteTypes = {
+
+	spriteType = {
 		name = "GFX_portrait_INP_nowacka"
 		textureFile = "gfx/leaders/INP/nowacka.tga"
 	}
