@@ -259,7 +259,7 @@ focus_tree = {
             focus = PRL_imperator
         }
         cost = 10
-        x = -1
+        x = -2
         y = 1
         will_lead_to_war_with = FLS
         available = {
@@ -272,6 +272,27 @@ focus_tree = {
                 target = FLS
                 type = annex_everything
             }
+        }
+    }
+    focus = {
+        id = PRL_imperium
+        icon = GFX_focus_anty_lewica
+        relative_position_id = PRL_zniszczenie_czarzastych
+        prerequisite = {
+            focus = PRL_zniszczenie_czarzastych
+        }
+        cost = 10
+        x = -1
+        y = 1
+        available = {
+            all_owned_state = {
+                controller = {
+                    tag = PRL
+                }
+            }
+        }
+        completion_reward = { 
+            set_cosmetic_tag = senyszyn
         }
     }
     focus = {

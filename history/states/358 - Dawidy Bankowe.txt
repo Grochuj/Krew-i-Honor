@@ -2,18 +2,18 @@
 state={
 	id=358
 	name="STATE_358"
-	manpower = 48806
+	manpower = 10630
 	
-	state_category = city
+	state_category = pastoral
 	
 	history={
-	
+		victory_points = { 6622 3 }
 		owner = SOD
 		buildings = {
 			infrastructure = 2
 			
 			arms_factory = 0
-			industrial_complex = 1
+			industrial_complex = 0
 			dockyard = 1
 			6622 = {
 				naval_base = 1

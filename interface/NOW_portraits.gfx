@@ -9,6 +9,6 @@ spriteTypes = {
 	}
 	spriteType ={
 		name = GFX_portrait_NOW_nalesnik
-		textureFile = gfx/advisors/NOW/nalesnik_m.dds
+		textureFile = gfx/advisors/NOW/nalesnik.dds
 	}
 }

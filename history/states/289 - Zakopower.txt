@@ -2,18 +2,26 @@
 state={
 	id=289
 	name="STATE_289"
-	manpower = 52902
+	manpower = 34724
 	
-	state_category = city
+	state_category = town
+
+	resources = {
+		steel = 10
+		tungsten = 3
+	}
 
 	history={
 		
+		victory_points = { 5217 15 }
+		victory_points = { 5208 3 }
+
 		owner = SOD
 		buildings = {
 			infrastructure = 2
 			
-			arms_factory = 0
-			industrial_complex = 2
+			arms_factory = 1
+			industrial_complex = 0
 			
 			5209 = {
 				naval_base = 1

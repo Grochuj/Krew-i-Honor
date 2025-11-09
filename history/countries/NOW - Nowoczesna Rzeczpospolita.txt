@@ -1,4 +1,4 @@
-capital = 386
+capital = 332
 
 oob = "NOW_2025"
 
@@ -6,6 +6,8 @@ set_convoys = 30
 set_research_slots = 2
 
 recruit_character = NOW_lubnauer
+recruit_character = NOW_szlapson
+recruit_character = NOW_nalesnik
 
 UPO = {
 	set_autonomy = {
