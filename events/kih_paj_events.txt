@@ -4,13 +4,10 @@ country_event = {
 	id = paj_event.1
 	title = paj_event.1.t
 	desc = paj_event.1.d
-	picture = GFX_report_event_generic_read_write
-
-	mean_time_to_happen = {
-		days = 1
-	}
+	picture = GFX_report_event_generic_read_write	
 
 	fire_only_once = yes
+	is_triggered_only = yes
 	
 	option = {
 		ai_chance = {
