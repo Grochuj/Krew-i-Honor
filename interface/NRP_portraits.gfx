@@ -43,4 +43,16 @@ spriteTypes = {
 		name = "GFX_portrait_fritz_advisor"
 		textureFile = "gfx/advisors/NRP/fritz_advisor.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_piton_advisor"
+		textureFile = "gfx/advisors/NRP/piton_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_piton_general_l"
+		textureFile = "gfx/generals/NRP/piton_general_l.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_piton_general_s"
+		textureFile = "gfx/generals/NRP/piton_general_s.dds"
+	}
 }

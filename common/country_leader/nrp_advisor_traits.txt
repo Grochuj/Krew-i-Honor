@@ -30,4 +30,18 @@ leader_traits = {
 		air_doctrine_cost_factor = -0.15
 		air_agility_factor = 0.1
 	}
+	goralski_architekt = {
+		random = no
+
+		production_speed_buildings_factor = 0.075
+		stability_factor = -0.03
+	}
+	goralski_przywodca = {
+		random = no
+
+		mountaineers_special_forces_contribution_factor = -0.1
+		modifier_army_sub_unit_mountaineers_attack_factor = 0.05
+		modifier_army_sub_unit_mountaineers_defence_factor = 0.1
+		trait_mountaineer_xp_gain_factor = 0.15
+	}
 }

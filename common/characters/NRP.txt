@@ -18,7 +18,7 @@ characters = {
 				brilliant_strategist
 			}
 			skill = 5
-			attack_skill = 4
+			attack_skill = 3
 			defense_skill = 2
 			planning_skill = 5
 			logistics_skill = 1
@@ -65,7 +65,7 @@ characters = {
 			skill = 4
 			attack_skill = 3
 			defense_skill = 2
-			planning_skill = 4
+			planning_skill = 2
 			logistics_skill = 4
 		}
 		advisor = {
@@ -156,6 +156,52 @@ characters = {
 			}
 			ai_will_do = {
 				base = 2
+			}
+		}
+	}
+	NRP_piton = {
+		name = NRP_piton
+		portraits = {
+			civilian = {
+				small = GFX_portrait_piton_advisor
+			}
+			army = {
+				large = GFX_portrait_piton_general_l
+				small = GFX_portrait_piton_general_s
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+
+			traits = {
+				trait_mountaineer
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = token_piton_advisor
+			cost = 150
+			traits = {
+				goralski_architekt
+			}
+			ai_will_do = {
+				base = 1
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = token_piton_highcommand
+			cost = 200
+			ledger = army
+			traits = {
+				goralski_przywodca
+			}
+			ai_will_do = {
+				base = 1
 			}
 		}
 	}
