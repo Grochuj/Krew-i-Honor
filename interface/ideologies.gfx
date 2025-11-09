@@ -21,3 +21,31 @@ spriteTypes = {
         texturefile = gfx/interface/ideologies/demokracjawalczaca.dds
 	}
 }
+
+spriteTypes = {
+    spriteType = {
+        name = GFX_ideology_nacjonalizm_group
+        texturefile = gfx/interface/ideologies/nacjonalizm.dds
+	}
+}
+
+spriteTypes = {
+    spriteType = {
+        name = GFX_ideology_centryzm_group
+        texturefile = gfx/interface/ideologies/centryzm.dds
+	}
+}
+
+spriteTypes = {
+    spriteType = {
+        name = GFX_ideology_narodowysocjalizm_group
+        texturefile = gfx/interface/ideologies/narodowysocjalizm.dds
+	}
+}
+
+spriteTypes = {
+    spriteType = {
+        name = GFX_ideology_federalizm_group
+        texturefile = gfx/interface/ideologies/federalizm.dds
+	}
+}
