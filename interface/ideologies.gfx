@@ -49,3 +49,24 @@ spriteTypes = {
         texturefile = gfx/interface/ideologies/federalizm.dds
 	}
 }
+
+spriteTypes = {
+    spriteType = {
+        name = GFX_ideology_kapitalizm_group
+        texturefile = gfx/interface/ideologies/kapitalizm.dds
+	}
+}
+
+spriteTypes = {
+    spriteType = {
+        name = GFX_ideology_socjalizm_group
+        texturefile = gfx/interface/ideologies/socjalizm.dds
+	}
+}
+
+spriteTypes = {
+    spriteType = {
+        name = GFX_ideology_kaczyzm_group
+        texturefile = gfx/interface/ideologies/kaczyzm.dds
+	}
+}

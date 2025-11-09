@@ -15,17 +15,16 @@
 
 default = {
 	male = {
-		names = { "John" "Bob" "Lucas" "Marcus" "Alexander" "Alex" "Peter" "Jonas" "Jim" "Johannes"}
-		surnames = { }
+		names = { "Jan" "Robert" "Paweł" "Łukasz" "Marek" "Aleksander" "Arek" "Piotr" "Janusz" "Olgiert" "Błażej"}
+		surnames = { "Kowalski" "Nowak" "Pawłowski" "Jabłoński" "Michalski" "Rotenschwanz" "Majewski" "Król" "Chodakowski" "Janczak" "Brzozowski" "Chudziński" "Gombrowicz" }
 		callsigns = { }
 	}
 	female = {
 		names = { "Juliette" "Anna" }
-		surnames = { }
-		callsigns = { "Queen Of The Sky" "The Red Princess" }
+		surnames = { "Kowalska" "Nowak" "Pawłowska" "Jabłońska" "Michalska" "Rotenschwanz" "Majewska" "Król" "Chodakowska" "Janczak" "Brzozowska" "Chudzińska" "Gombrowicz" }
+		callsigns = { "Królowa Niebios" "Czerwona Księżna" }
 	}
-	surnames = { "Smith" "Jones" "Taylor" "Brown" "Williams" "Wilson" "Evans" "Walker" "White" "Roberts" }
-	callsigns = { "Easy Kill" "The Lightning" "The Devil" "Grasshopper" "Handsome" "Moose" "Mouse" "Pebbles" "Sunshine" Demon}
+	callsigns = { "Sokole Oko" "Błyskawica" "Diabeł" "Świerszcz" "Piękniś" "Żubr" "Mysz" "Perun" "Słoneczko" "Demon"}
 
 
 	#Operations - treat these as keys, not strings.
