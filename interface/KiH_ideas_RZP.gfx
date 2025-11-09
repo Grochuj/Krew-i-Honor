@@ -68,11 +68,31 @@ spriteTypes = {
 		texturefile = gfx/interface/ideas/idea_jap_supremacy_of_technology.dds
 	}
 	spriteType = {
-		name = GFX_idea_RZP_piwo_z_chmielu
+		name = GFX_idea_RZP_paliwo_z_chmielu
 		texturefile = gfx/interface/ideas/idea_generic_stockpile_fuel.dds
 	}
 	spriteType = {
 		name = GFX_idea_RZP_wielkarzp
 		texturefile = gfx/interface/ideas/idea_ARG_argentine_metropole.dds
+	}
+	spriteType = {
+		name = GFX_idea_RZP_gorzala
+		texturefile = gfx/interface/ideas/idea_SOV_atomic_bomb_project.dds
+	}
+	spriteType = {
+		name = GFX_idea_RZP_gorzala
+		texturefile = gfx/interface/ideas/idea_SOV_atomic_bomb_project.dds
+	}
+	spriteType = {
+		name = GFX_idea_RZP_smakwolnosci
+		texturefile = gfx/interface/ideas/idea_BEL_legacy_of_the_great_war.dds
+	}
+	spriteType = {
+		name = GFX_idea_RZP_idea_frontwolnosci
+		texturefile = gfx/interface/ideas/idea_hol_liberation.dds
+	}
+	spriteType = {
+		name = GFX_idea_RZP_idea_iredenta
+		texturefile = gfx/interface/ideas/idea_RAJ_a_tiger_unchained.dds
 	}
 }
