@@ -1,4 +1,0 @@
-senyszyn = {
-	color = rgb { 170 0 20 }
-	color_ui = rgb { 170 0 20 }
-}
