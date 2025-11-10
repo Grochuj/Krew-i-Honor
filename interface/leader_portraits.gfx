@@ -65,6 +65,22 @@ spriteTypes = {
 spriteTypes = {
 
 	spriteType ={
+		name = "GFX_portrait_SOD_zenek"
+		textureFile = "gfx/leaders/SOD/zenek.tga"
+	}
+}
+
+spriteTypes = {
+
+	spriteType ={
+		name = "GFX_portrait_SOD_czadoman"
+		textureFile = "gfx/leaders/SOD/czadoman.tga"
+	}
+}
+
+spriteTypes = {
+
+	spriteType ={
 		name = "GFX_portrait_KAM_character"
 		textureFile = "gfx/leaders/KAM/Jaszczur.tga"
 	}

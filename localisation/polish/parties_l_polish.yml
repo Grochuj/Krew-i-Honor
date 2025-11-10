@@ -103,6 +103,10 @@
 
  PAJ_narodowysocjalizm_party_long: "Honor"
  PAJ_narodowysocjalizm_party: "Honor"
+ PAJ_communism_party_long: "Sztorm 68"
+ PAJ_communism_party: "S-68"
+ PAJ_fascism_party_long: "Konkwista 88"
+ PAJ_fascism_party: "K-88"
 
  IPL_imperializm_party_long: "Ruch 777"
  IPL_imperializm_party: "Ruch 777"
@@ -145,8 +149,10 @@
  RZP_autorytaryzm_party_long: "Kukiz'15"
  RZP_autorytaryzm_party: "K'15"
 
- BEZ_autorytaryzm_party_long: "Ruch Dobrobytu i Pokoju"
- BEZ_autorytaryzm_party: "RDiP"
+ DIP_autorytaryzm_party_long: "Ruch Dobrobytu i Pokoju"
+ DIP_autorytaryzm_party: "RDiP"
+ DIP_agraryzm_party_long: "Samoobrona Rzeczpospolitej Polskiej"
+ DIP_agraryzm_party: "Samoobrona"
 
  FLS_democratic_party_long: "Nowa Lewica"
  FLS_democratic_party: "NL"
@@ -157,10 +163,8 @@
 
  PRL_communism_party_long: "Sojusz Lewicy Demokratycznej"
  PRL_communism_party: "SLD(N)"
-
  PRL_peerel_long: "Polska Zjednoczona Partia Robotnicza"
  PRL_peerel: "PZPR"
-
  PRL_nfps_LONG: "Nowa Fala Prodfesor Senyszyn"
  PRL_nfps: "NFPS"
 

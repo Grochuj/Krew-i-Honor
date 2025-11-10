@@ -1,13 +1,93 @@
 characters = {
-	SOD_Bracia_Figo_Fagot = {
-		name = SOD_Bracia_Figo_Fagot
+	SOD_bff = {
+		name = SOD_bff
 		portraits = {
 			civilian = {
 				large = GFX_portrait_SOD_character
+				small = GFX_portrait_SOD_bff_advisor
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOD_bff_advisor
+			traits = {
+				
+			}
+		}
+	}
+	SOD_zenek = {
+		name = SOD_zenek
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOD_zenek
+				small = GFX_portrait_SOD_zenek_advisor
 			}
 		}
 		country_leader = {
 			ideology = discototalitaryzm
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOD_zenek_advisor
+			traits = {
+				
+			}
+			visible = {
+				NOT = {
+					has_government = discototalitaryzm
+				}
+			}
+			available = {
+				NOT = {
+					has_government = discototalitaryzm
+				}
+			}
+		}
+	}
+	SOD_czadoman = {
+		name = SOD_czadoman
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOD_czadoman
+				small = GFX_portrait_SOD_czadoman_advisor
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOD_czadoman_advisor
+			traits = {
+				
+			}
+		}
+	}
+	SOD_marcin_miller = {
+		name = marcin_miller
+		portraits = {
+			civilian = {
+				small = GFX_portrait_SOD_marcin_miller_advisor
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOD_marcin_miller_advisor
+			traits = {
+				
+			}
+		}
+	}
+	SOD_golec = {
+		name = SOD_golec
+		portraits = {
+			civilian = {
+				small = GFX_portrait_SOD_golec_advisor
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOD_golec_advisor
+			traits = {
+				
+			}
 		}
 	}
 }

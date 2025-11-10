@@ -4,7 +4,11 @@ oob = "SOD_2025"
 set_convoys = 20
 set_research_slots = 2
 
-recruit_character = SOD_Bracia_Figo_Fagot
+recruit_character = SOD_bff
+recruit_character = SOD_marcin_miller
+recruit_character = SOD_czadoman
+recruit_character = SOD_zenek
+recruit_character = SOD_golec
 
 set_technology = {
 	infantry_weapons = 1

@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_portrait_SOD_bff_advisor
+		textureFile = gfx/advisors/SOD/bff_advisor.tga
+	}
+	spriteType = {
+		name = GFX_portrait_SOD_marcin_miller_advisor
+		textureFile = gfx/advisors/SOD/marcin_miller_advisor.tga
+	}
+	spriteType = {
+		name = GFX_portrait_SOD_czadoman_advisor
+		textureFile = gfx/advisors/SOD/czadoman_advisor.tga
+	}
+	spriteType = {
+		name = GFX_portrait_SOD_zenek_advisor
+		textureFile = gfx/advisors/SOD/zenek_advisor.tga
+	}
+	spriteType = {
+		name = GFX_portrait_SOD_golec_advisor
+		textureFile = gfx/advisors/SOD/golec_advisor.tga
+	}
+}
