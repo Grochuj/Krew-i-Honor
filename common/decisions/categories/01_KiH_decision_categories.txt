@@ -54,3 +54,15 @@ korpusyochronypogranicza_cat = {
 	priority = 19
 	visible_when_empty = no
 }
+zakupy_cat = {
+	allowed = {
+		tag = RZP
+	}
+	visible = {
+		RZP = {
+			has_completed_focus = RZP_zakup_ladu
+		}
+	}
+	priority = 19
+	visible_when_empty = no
+}

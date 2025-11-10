@@ -302,3 +302,44 @@ integracja1_cat = {
 		}
 	}
 }
+zakupy_cat = {
+	k_1 = {
+		icon = GFX_decision_infiltrate_state
+		cost = 100
+		priority = 5
+
+		available = {
+			425 = {
+				owner = {
+					tag = RPL
+				}
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 425
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		days_remove = 3
+
+		remove_effect = {
+			
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = {
+			has_political_power > 100
+			add = 32
+			}
+		}
+	}
+}

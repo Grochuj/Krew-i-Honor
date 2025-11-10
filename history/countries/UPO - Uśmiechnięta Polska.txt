@@ -39,3 +39,6 @@ add_ideas = {
 	generalna_ideja
 	UPO_idea_tuskpremier
 }
+
+create_faction = Koalicja_Obywatelska
+add_to_faction = NOW
