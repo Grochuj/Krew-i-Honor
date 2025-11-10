@@ -179,6 +179,7 @@ characters = {
 
 			traits = {
 				trait_mountaineer
+				winter_specialist
 			}
 		}
 		advisor = {
