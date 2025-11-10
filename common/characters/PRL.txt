@@ -25,6 +25,21 @@ characters = {
 			}
 		}
 	}
+	PRL_rywin = {
+		name = PRL_rywin
+		portraits = {
+			civilian = {
+				small = GFX_portrait_PRL_rywin_advisor
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PRL_rywin
+			traits = {
+				GER_film_director
+			}
+		}
+	}
 	PRL_Gierek={
 		name=PRL_Gierek
 		portraits={

@@ -108,7 +108,7 @@ focus_tree = {
         x = 1
         y = 1
         available = {
-            has_tech = excavation1
+            has_tech = construction1
         }
         completion_reward = { 
             country_event = prl_event.1

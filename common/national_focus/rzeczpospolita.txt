@@ -981,11 +981,11 @@ focus = {
         }
     }
     focus = {
-        id = RZP_wierny_wladca
+        id = RZP_wierny_subiekt
         icon = GFX_goal_generic_dangerous_deal
         cost = 5
         relative_position_id = RZP_rzadyjakubiaka
-        x = 0
+        x = 1
         y = 1
         prerequisite = {
             focus = RZP_rzadyjakubiaka
@@ -1228,7 +1228,22 @@ focus = {
             focus = RZP_rzadkukiza
         }
         completion_reward = { 
-            
+            add_political_power = 50
+        }
+    }
+    focus = {
+        id = RZP_zakup_ladu
+        icon = GFX_focus_generic_national_security
+        cost = 10
+        relative_position_id = RZP_taktycznewydatki
+        x = 0
+        y = 2
+      
+        prerequisite = {
+            focus = RZP_taktycznewydatki
+        }
+        completion_reward = { 
+            unlock_decision_category_tooltip = zakupy_cat
         }
     }
     #militaria==============================================
