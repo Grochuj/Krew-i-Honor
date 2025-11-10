@@ -3464,4 +3464,50 @@ focus_tree = {
             base = 15
         }
     }
+
+#############################################################################################################
+#   LOTNICTWO I FLOTA   #
+#############################################################################################################
+
+    focus = {
+        id = NRP_focus_inne_rodzaje_wojsk
+        icon = GFX_goal_unknown
+        cost = 5
+        x = 88
+        y = 0
+
+        completion_reward = {
+            air_experience = 25
+            navy_experience = 35
+        }
+
+        ai_will_do = {
+            base = 1
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_sil_powietrznych
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_inne_rodzaje_wojsk
+        x = -3
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_inne_rodzaje_wojsk
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = "Rozwój Sił Powietrznych"
+                bonus = 0.5
+                uses = 3
+                category = air_equipment
+            }
+        }
+
+        ai_will_do = {
+            base = 2
+        }
+    }
 }

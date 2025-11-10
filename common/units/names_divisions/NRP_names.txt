@@ -23,3 +23,10 @@ NRP_INF_02 = { # DIVISIONS_NAME_GROUP, set in your units folder
 	division_types = { "infantry" } # Sets what types of units can use this name list, replace mountaineers with whatever type of unit you are using
 	fallback_name = "%d. Korpus Ochrony Pogranicza" # This will be used if you run out of numbered divisions. Always use either %d for decimal numbers or %s for Roman numerals but you can change the rest
 }
+NRP_INF_03 = { # DIVISIONS_NAME_GROUP, set in your units folder
+	name = "Dywizje Piechoty" # The name you want for your name list, can either be a string or in quotes.
+	for_countries = { NRP } # Sets what countries can use this name list, change NEP to your countries tag
+	can_use = { always = yes } # A country scope trigger that can lock or unlock a division name group given certain triggers
+	division_types = { "infantry" } # Sets what types of units can use this name list, replace mountaineers with whatever type of unit you are using
+	fallback_name = "%d. Dywizja Piechoty" # This will be used if you run out of numbered divisions. Always use either %d for decimal numbers or %s for Roman numerals but you can change the rest
+}
