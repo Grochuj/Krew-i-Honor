@@ -15,4 +15,22 @@ characters = {
 			}
 		}
 	}
+	INP_jonski = {
+		name = INP_jonski
+		portraits = {
+			civilian = {
+				small = GFX_portrait_INP_jonski
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = token_jonski
+			traits = {
+				economist
+			}
+			ai_will_do = {
+				base = 2
+			}
+		}
+	}
 }

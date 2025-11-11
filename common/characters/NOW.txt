@@ -38,7 +38,7 @@ characters = {
 			}
 		}
 		advisor = {
-			slot = political_advisor
+			slot = political_advisor 
 			traits = {
 				captain_of_industry
 			}
