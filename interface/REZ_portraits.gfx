@@ -7,4 +7,28 @@ spriteTypes = {
 		name = GFX_portrait_REZ_schnepf
 		textureFile = gfx/leaders/REZ/schnepf.png
 	}
+	spriteType = {
+		name = GFX_portrait_REZ_rajmund_m
+		textureFile = gfx/generals/REZ/rajmund_m.tga
+	}
+	spriteType = {
+		name = GFX_portrait_REZ_rajmund_l
+		textureFile = gfx/generals/REZ/rajmund_l.tga
+	}
+	spriteType = {
+		name = GFX_portrait_REZ_debski
+		textureFile = gfx/advisors/REZ/debski.tga
+	}
+	spriteType = {
+		name = GFX_portrait_REZ_pinkwart
+		textureFile = gfx/advisors/REZ/pinkwart.tga
+	}
+	spriteType = {
+		name = GFX_portrait_REZ_mazurek
+		textureFile = gfx/advisors/REZ/mazurek.tga
+	}
+	spriteType = {
+		name = GFX_portrait_REZ_kammel
+		textureFile = gfx/advisors/REZ/kammel.tga
+	}
 }

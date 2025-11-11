@@ -143,8 +143,16 @@ spriteTypes = {
         name = GFX_focus_szatan
         texturefile =  gfx/interface/goals/szatan.dds
     }
-     spriteType = {
+    spriteType = {
         name = GFX_focus_anty_lewica
         texturefile =  gfx/interface/goals/czarzasci.dds
+    }
+    spriteType = {
+        name = GFX_focus_anty_razem
+        texturefile =  gfx/interface/goals/anty_razem.dds
+    }
+    spriteType = {
+        name = GFX_focus_anty_wiosna
+        texturefile =  gfx/interface/goals/anty_wiosna.dds
     }
 }
