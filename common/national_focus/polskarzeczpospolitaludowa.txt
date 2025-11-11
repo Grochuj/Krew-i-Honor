@@ -582,6 +582,20 @@ focus_tree = {
             promote_character = PRL_Gierek
         }
     }
+    focus = {
+        id = PRL_zadluzanie_v2
+        icon = GFX_focus_generic_currency_reforms
+        relative_position_id = PRL_kolejna_dekada_gierkwoska
+        prerequisite = {
+            focus = PRL_kolejna_dekada_gierkwoska
+        }
+        cost = 10
+        x = 0
+        y = 1
+        completion_reward = { 
+            unlock_decision_category_tooltip = gierek_cat
+        }
+    }
     #Polityka_Jaruzelski=========================================================================================
     focus = {
         id = PRL_pucz_armijny
@@ -667,7 +681,12 @@ focus_tree = {
         x = -1
         y = 2
         completion_reward = { 
-          add_ideas = PRL_wojenny
+            add_ideas = PRL_wojenny
+            upgrade_economy_law = yes
+            hidden_effect = {
+                set_country_flag = SEflag_PRL_stanwojenny
+                set_country_flag = Super_Event_aktywny
+            }
         }
     }
     focus = {

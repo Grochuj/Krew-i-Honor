@@ -66,3 +66,15 @@ zakupy_cat = {
 	priority = 19
 	visible_when_empty = no
 }
+gierek_cat = {
+	allowed = {
+		tag = PRL
+	}
+	visible = {
+		PRL = {
+			has_completed_focus = PRL_zadluzanie_v2
+		}
+	}
+	priority = 19
+	visible_when_empty = no
+}

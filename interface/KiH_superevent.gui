@@ -35,6 +35,15 @@ guiTypes = {
 			}
 			alwaystransparent = yes
 		}
+		iconType = {
+			name = "PRL_stanwojenny_super_image"
+			spriteType = "GFX_SE_PRL_stanwojenny"
+			position = {
+				x = 0
+				y = 0
+			}
+			alwaystransparent = yes
+		}
 
 		buttonType = {
 			name = "Super_Event_Close"

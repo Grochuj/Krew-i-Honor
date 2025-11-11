@@ -13,6 +13,9 @@ scripted_gui = {
 			NRP_koronacja_super_image_visible = {
 				has_country_flag = SEflag_NRP_koronacja
 			}
+			PRL_stanwojenny_super_image_visible = {
+				has_country_flag = SEflag_PRL_stanwojenny
+			}
 		}
 		
 		effects = {
@@ -22,6 +25,7 @@ scripted_gui = {
 
 					clr_country_flag = SEflag_FLS_wojnadomowa
 					clr_country_flag = SEflag_NRP_koronacja
+					clr_country_flag = SEflag_PRL_stanwojenny
 				}
 			}
 		}

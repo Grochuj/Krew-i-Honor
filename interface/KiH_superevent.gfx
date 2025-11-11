@@ -11,4 +11,8 @@ spriteTypes = {
 		name = "GFX_SE_NRP_koronacja"
 		textureFile = "gfx/superevents/NRP_koronacja.dds"
 	}
+	spriteType = {
+		name = "GFX_SE_PRL_stanwojenny"
+		textureFile = "gfx/superevents/PRL_stanwojenny.dds"
+	}
 }
