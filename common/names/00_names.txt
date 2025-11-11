@@ -16,7 +16,7 @@
 default = {
 	male = {
 		names = { "Emil" "Krzysztof" "Zbigniew" "Ryszard" "Ignacy" "Roman" "Józef" "Rafał" "Donald" "Jakub" "Kamil" "Karol" "Alan" "Szymon" "Ireneusz" "Mateusz" "Oskar" "Michał" "Jan" "Robert" "Paweł" "Łukasz" "Marek" "Aleksander" "Arek" "Piotr" "Janusz" "Olgiert" "Błażej"}
-		surnames = { "Kowalski" "Nowak" "Pawłowski" "Jabłoński" "Michalski" "Rotenschwanz" "Majewski" "Król" "Chodakowski" "Janczak" "Brzozowski" "Chudziński" "Gombrowicz" }
+		surnames = { "Markowski" "Tarlewicz" "Tkacz" "Niemanowski" "Niemczyk" "Niedzielski" "Dąbrowski" "Dworczyk" "Bachleda" "Babiak" "Wiśniewski" "Kowalski" "Nowak" "Pawłowski" "Jabłoński" "Michalski" "Rotenschwanz" "Majewski" "Król" "Chodakowski" "Janczak" "Brzozowski" "Chudziński" "Gombrowicz" }
 		callsigns = { }
 	}
 	female = {
