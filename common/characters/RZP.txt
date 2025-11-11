@@ -183,4 +183,41 @@ characters = {
 			}
 		}
 	}
+	#PPPP
+	RZP_bubel={
+		name = RZP_bubel
+		portraits = {
+			civilian = {
+				large = GFX_portrait_RZP_bubel
+				small = GFX_portrait_RZP_bubel_advisor
+			}
+			army = {
+				large = GFX_portrait_RZP_bubel
+				small = GFX_portrait_RZP_bubel_advisor
+			}
+		}
+		country_leader = {
+			ideology = soc
+			traits = {
+				
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = RZP_bubel_advisor
+			traits = {
+				prince_of_terror
+			}
+		}
+		corps_commander = {
+			traits = {
+				media_personality
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
 }

@@ -249,10 +249,11 @@ focus_tree = {
                 }
             }
             add_country_leader_trait = PRL_imperator
+            mark_focus_tree_layout_dirty = yes
         }
     }
     focus = {
-        id = PRL_zniszczenie_czarzastych
+        id = PRL_FLS
         icon = GFX_focus_anty_lewica
         relative_position_id = PRL_imperator
         prerequisite = {
@@ -261,6 +262,14 @@ focus_tree = {
         cost = 10
         x = -2
         y = 1
+        allow_branch = {
+            NOT = {
+                has_war_with = RAZ
+            }
+            NOT = {
+                has_war_with = LGB
+            }
+        }
         will_lead_to_war_with = FLS
         available = {
             has_army_manpower = {
@@ -275,14 +284,81 @@ focus_tree = {
         }
     }
     focus = {
-        id = PRL_imperium
-        icon = GFX_focus_anty_lewica
-        relative_position_id = PRL_zniszczenie_czarzastych
+        id = PRL_RAZ
+        icon = GFX_focus_anty_razem
+        relative_position_id = PRL_imperator
         prerequisite = {
-            focus = PRL_zniszczenie_czarzastych
+            focus = PRL_imperator
+        }
+        cost = 10
+        x = -3
+        y = 1
+        will_lead_to_war_with = RAZ
+        available = {
+            has_army_manpower = {
+                size = 60000
+            }
+        }
+        allow_branch = {
+            FLS = {
+                exists = no
+            }
+            LGB = {
+                exists = no
+            }
+        }
+        completion_reward = { 
+            create_wargoal = {
+                target = RAZ
+                type = annex_everything
+            }
+        }
+    }
+    focus = {
+        id = PRL_LGB
+        icon = GFX_focus_anty_wiosna
+        relative_position_id = PRL_imperator
+        prerequisite = {
+            focus = PRL_imperator
         }
         cost = 10
         x = -1
+        y = 1
+        allow_branch = {
+            FLS = {
+                exists = no
+            }
+            RAZ = {
+                exists = no
+            }
+        }
+        will_lead_to_war_with = LGB
+        available = {
+            has_army_manpower = {
+                size = 60000
+            }
+        }
+        completion_reward = { 
+            create_wargoal = {
+                target = LGB
+                type = annex_everything
+            }
+        }
+    }
+    focus = {
+        id = PRL_imperium
+        icon = GFX_focus_ETH_callout_to_the_world
+        relative_position_id = PRL_koniec_zamordysty
+        prerequisite = {
+            focus = PRL_FLS
+            focus = PRL_LGB
+            focus = PRL_RAZ
+        }
+        prerequisite = {
+            focus = PRL_koniec_zamordysty
+        }
+        cost = 15
+        x = -2
         y = 1
         available = {
             all_owned_state = {
@@ -290,9 +366,13 @@ focus_tree = {
                     tag = PRL
                 }
             }
+            num_of_factories = 40
         }
         completion_reward = { 
             set_cosmetic_tag = senyszyn
+            every_core_state = {
+                
+            }
         }
     }
     focus = {
@@ -325,6 +405,30 @@ focus_tree = {
             add_political_power = 50
             DIP = {
                 country_event = dip_event.1
+            }
+        }
+    }
+    focus = {
+        id = PRL_wspolna_inustrializacja
+        icon = GFX_focus_GER_wirtschaftswunder
+        relative_position_id = PRL_wspolpraca
+        prerequisite = {
+            focus = PRL_wspolpraca
+        }
+        cost = 10
+        x = 0
+        y = 1
+        
+        completion_reward = { 
+            add_offsite_building = {
+                type = industrial_complex
+                level = 4
+            }
+            DIP = {
+                add_offsite_building = {
+                    type = industrial_complex
+                    level = 2
+                }
             }
         }
     }
@@ -366,6 +470,9 @@ focus_tree = {
             modifier = huge_increase
             }
             add_ideas = PRL_PO
+            UPO = {
+                add_to_faction = PRL
+            }
         }
     }
     focus = {
@@ -384,6 +491,9 @@ focus_tree = {
         y = 1
         completion_reward = { 
            create_faction = "Układ Warszawski"
+           set_rule = {
+            can_create_factions = yes
+           }
         }
     }
     #PZPR========================================================================================================

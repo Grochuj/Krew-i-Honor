@@ -10,6 +10,96 @@ characters = {
 			ideology = cent
 		}
 	}
+	REZ_mazurek = {
+		name = REZ_mazurek
+		portraits = {
+			civilian = {
+				small = GFX_portrait_REZ_mazurek
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = token_mazurek_advisor
+			traits = {
+				prince_of_terror
+			}
+			ai_will_do = {
+				base = 2
+			}
+		}
+	}
+	REZ_kammel = {
+		name = REZ_kammel
+		portraits = {
+			civilian = {
+				small = GFX_portrait_REZ_kammel
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = REZ_kammel
+			traits = {
+				compassionate_gentleman
+			}
+			ai_will_do = {
+				base = 2
+			}
+		}
+	}
+	REZ_pinkwart = {
+		name = REZ_pinkwart
+		portraits = {
+			civilian = {
+				small = GFX_portrait_REZ_pinkwart
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = REZ_pinkwart
+			traits = {
+				silver_tongue
+			}
+			ai_will_do = {
+				base = 2
+			}
+		}
+	}
+	REZ_debski = {
+		name = REZ_debski
+		portraits = {
+			civilian = {
+				small = GFX_portrait_REZ_debski
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = REZ_debski
+			traits = {
+				military_theorist
+			}
+			ai_will_do = {
+				base = 2
+			}
+		}
+	}
+	REZ_rajmund={
+		portraits = {
+			army = {
+				large = GFX_portrait_REZ_rajmund_l
+				small = GFX_portrait_REZ_rajmund_m
+			}
+		}
+		field_marshal = {
+			traits = {
+				media_personality
+			}
+			skill = 5
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
 	REZ_Jacek_Kurski={
 		portraits = {
 			civilian = {

@@ -9,6 +9,11 @@ set_war_support = 0.65
 recruit_character = REZ_Krzysztof_Stanowski
 recruit_character = REZ_Jacek_Kurski
 recruit_character = REZ_Schnepf
+recruit_character = REZ_rajmund
+recruit_character = REZ_pinkwart
+recruit_character = REZ_mazurek
+recruit_character = REZ_debski
+recruit_character = REZ_kammel
 
 # Starting tech
 set_technology = {

@@ -40,4 +40,8 @@ spriteTypes = {
 		name = "GFX_portrait_RZP_kukiz_advisor"
 		textureFile = "gfx/advisors/RZP/kukiz_advisor.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_RZP_bubel_advisor"
+		textureFile = "gfx/advisors/RZP/bubel_advisor.dds"
+	}
 }
