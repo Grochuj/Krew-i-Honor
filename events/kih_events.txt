@@ -62,7 +62,7 @@ news_event = {
 	id = news_event.2
 	title = news_event.2.t
 	desc = news_event.2.d
-	picture = GFX_news_event_001
+	picture = GFX_event_news_wojna_domowa_lewarow
 
 	is_triggered_only = yes
 	major = yes

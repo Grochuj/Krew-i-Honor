@@ -7,4 +7,8 @@ spriteTypes = {
 		name = "GFX_news_event_wojna_jaszczura"
 		texturefile = "gfx/event_pictures/wojna_jaszczura.dds"
 	}
+	spriteType = {
+		name = GFX_event_news_wojna_domowa_lewarow
+		texturefile = gfx/event_pictures/wojnadomowa.dds
+	}
 }

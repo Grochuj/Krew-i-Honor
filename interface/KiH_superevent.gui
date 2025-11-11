@@ -26,6 +26,15 @@ guiTypes = {
 			}
 			alwaystransparent = yes
 		}
+		iconType = {
+			name = "NRP_koronacja_super_image"
+			spriteType = "GFX_SE_NRP_koronacja"
+			position = {
+				x = 0
+				y = 0
+			}
+			alwaystransparent = yes
+		}
 
 		buttonType = {
 			name = "Super_Event_Close"
