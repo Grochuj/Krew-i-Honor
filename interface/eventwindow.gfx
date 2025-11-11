@@ -216,5 +216,9 @@ spriteTypes = {
 		noOfFrames = 3
 	}
 
+	spriteType = {
+		name = "GFX_news_event_001"
+		texturefile = "gfx/event_pictures/report_event_001.dds"
+	}
 
 }
