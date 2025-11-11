@@ -2913,6 +2913,31 @@ focus_tree = {
         }
     }
     focus = {
+        id = NRP_focus_rozwoj_doktryn_ladowych
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_program_szkoleniowy
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_program_szkoleniowy
+        }
+
+        completion_reward = {
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.5
+                uses = 2
+                name = "Rozwój Doktryn Lądowych"
+                category = land_doctrine
+            }
+        }
+
+        ai_will_do = {
+            base = 8
+        }
+    }
+    focus = {
         id = NRP_focus_odpolitycznienie_policji
         icon = GFX_goal_unknown
         cost = 5
@@ -3512,6 +3537,147 @@ focus_tree = {
                 bonus = 0.5
                 uses = 3
                 category = air_equipment
+            }
+        }
+
+        ai_will_do = {
+            base = 2
+        }
+    }
+    focus = {
+        id = NRP_focus_budowa_baz_lotniczych
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_rozwoj_sil_powietrznych
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_sil_powietrznych
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = air_base
+                    level = 2
+                }
+            }
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = air_base
+                    level = 2
+                }
+            }
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = air_base
+                    level = 2
+                }
+            }
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = air_base
+                    level = 1
+                }
+            }
+            random_owned_controlled_state = {
+                add_building_construction = {
+                    type = air_base
+                    level = 1
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 1
+        }
+    }
+    focus = {
+        id = NRP_focus_nowe_modele_mysliwcow
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_rozwoj_sil_powietrznych
+        x = 2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_sil_powietrznych
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = "Nowe Modele Myśliwców"
+                bonus = 1
+                uses = 1
+                category = light_air
+            }
+        }
+
+        ai_will_do = {
+            base = 1
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_doktryny_powietrznej
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_budowa_baz_lotniczych
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_budowa_baz_lotniczych
+        }
+        prerequisite = {
+            focus = NRP_focus_nowe_modele_mysliwcow
+        }
+
+        completion_reward = {
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.25
+                uses = 3
+                name = "Rozwój Doktryn Powietrznych"
+                category = air_doctrine
+            }
+        }
+
+        ai_will_do = {
+            base = 1
+        }
+    }
+    focus = {
+        id = NRP_focus_budowa_stoczni
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_inne_rodzaje_wojsk
+        x = 3
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_inne_rodzaje_wojsk
+        }
+
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = {
+                    is_coastal = yes
+                }
+                add_building_construction = {
+                    type = dockyard
+                    level = 2
+                }
+                add_extra_state_shared_building_slots = 2
+            }
+            random_owned_controlled_state = {
+                limit = {
+                    is_coastal = yes
+                }
+                add_building_construction = {
+                    type = dockyard
+                    level = 2
+                }
+                add_extra_state_shared_building_slots = 2
             }
         }
 
