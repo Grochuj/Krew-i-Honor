@@ -1,0 +1,8 @@
+leader_traits = {
+	wosp = {
+		random = no
+		stability_factor = 0.1
+		consumer_goods_factor = -0.05
+		monthly_population = 0.05
+	}
+}

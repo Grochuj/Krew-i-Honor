@@ -26,4 +26,20 @@ characters = {
 			}
 		}
 	}
+	UPO_owsiak = {
+		name = UPO_owsiak
+		portraits = {
+			civilian = {
+				small = GFX_portrait_UPO_owsiak_advisor
+			}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = UPO_owsiak
+			traits = {
+				wosp
+			}
+		}
+	}
 }

@@ -6,7 +6,7 @@ set_convoys = 30
 set_research_slots = 2
 
 recruit_character = INP_nowacka
-
+recruit_character = INP_jonski
 UPO = {
 	set_autonomy = {
 		target = INP

@@ -28,7 +28,7 @@ spriteTypes = {
 		textureFile = "gfx/generals/PRL/Gierek.png"
 	}
 	spriteType = {
-		name = "GFX_portrait_PRL_rywin_advisor"
-		textureFile = "gfx/advosors/PRL/rywin_advisor.dds"
+		name = GFX_portrait_PRL_rywin_advisor
+		textureFile = gfx/advosors/PRL/rywin_advisor.dds
 	}
 }

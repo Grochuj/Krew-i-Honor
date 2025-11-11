@@ -52,7 +52,7 @@ focus_tree = {
         prerequisite = {
             focus = PRL_nasze_miejsce_na_swiecie
         }
-        cost = 5
+        cost = 10
         x = 1
         y = 1
         completion_reward = { 
@@ -606,7 +606,7 @@ focus_tree = {
         prerequisite = {
             focus = PRL_pucz_armijny
         }
-        cost = 5
+        cost = 10
         x = 1
         y = 1
         completion_reward = {
@@ -616,6 +616,9 @@ focus_tree = {
             637 = {
                 create_unit = { division = "name = \"Drugi Oddział ZOMO\" division_template = \"Zmotoryzowany Odwód Milicji Obywatelskiej\" start_experience_factor = 1" owner = ROOT }
             }
+            set_technology = {
+            tech_military_police2 = yes
+          }
         }
     }
     focus = {
@@ -665,6 +668,180 @@ focus_tree = {
         y = 2
         completion_reward = { 
           add_ideas = PRL_wojenny
+        }
+    }
+    focus = {
+        id = PRL_plan_polodnie
+        icon = GFX_focus_SWE_refuge_for_revolutionaries
+        relative_position_id = PRL_wprowadzenie_stanu_wojennego
+        prerequisite = {
+            focus = PRL_wprowadzenie_stanu_wojennego
+        }
+        cost = 10
+        x = 1
+        y = 1
+        available = {
+            num_of_factories = 30
+        }
+        will_lead_to_war_with = DIP
+        completion_reward = { 
+          create_wargoal = {
+            target = DIP
+            type = annex_everything
+          }
+          90 = {
+            add_claim_by = PRL
+          }
+          200 = {
+            add_claim_by = PRL
+          }
+          124 = {
+            add_claim_by = PRL
+          }
+          94 = {
+            add_claim_by = PRL
+          }
+          74 = {
+            add_claim_by = PRL
+          }
+          172 = {
+            add_claim_by = PRL
+          }
+        }
+    }
+    focus = {
+        id = PRL_integracja_ziem_polodniowych
+        icon = GFX_focus_NOR_empower_sivorg
+        relative_position_id = PRL_plan_polodnie
+        prerequisite = {
+            focus = PRL_plan_polodnie
+        }
+        available = {
+            PRL = {
+                owns_state = 90
+                owns_state = 200
+                owns_state = 124
+                owns_state = 94
+                owns_state = 74
+                owns_state = 172
+            }
+        }
+        cost = 10
+        x = 0
+        y = 1
+        completion_reward = { 
+          90 = {
+            add_core_of = PRL
+          }
+          200 = {
+            add_core_of = PRL
+          }
+          124 = {
+            add_core_of = PRL
+          }
+          94 = {
+            add_core_of = PRL
+          }
+          74 = {
+            add_core_of = PRL
+          }
+          172 = {
+            add_core_of = PRL
+          }
+        }
+    }
+    focus = {
+        id = PRL_plan_zachod
+        icon = GFX_focus_POL_plan_west
+        relative_position_id = PRL_wprowadzenie_stanu_wojennego
+        prerequisite = {
+            focus = PRL_wprowadzenie_stanu_wojennego
+        }
+        cost = 10
+        x = -1
+        y = 1
+        available = {
+            num_of_factories = 70
+        }
+        will_lead_to_war_with = PAJ
+        completion_reward = { 
+          create_wargoal = {
+            target = PAJ
+            type = annex_everything
+          }
+          680 = {
+            add_claim_by = PRL
+          }
+          712 = {
+            add_claim_by = PRL
+          }
+          640 = {
+            add_claim_by = PRL
+          }
+          641 = {
+            add_claim_by = PRL
+          }
+          727 = {
+            add_claim_by = PRL
+          }
+          324 = {
+            add_claim_by = PRL
+          }
+          410 = {
+            add_claim_by = PRL
+          }
+          356 = {
+            add_claim_by = PRL
+          }
+        }
+    }
+    focus = {
+        id = PRL_integracja_ziem_zachodnich
+        icon = GFX_focus_ITA_corpo_volontari_della_liberta
+        relative_position_id = PRL_plan_zachod
+        prerequisite = {
+            focus = PRL_plan_zachod
+        }
+        available = {
+            PRL = {
+                owns_state = 680
+                owns_state = 640
+                owns_state = 641
+                owns_state = 727
+                owns_state = 324
+                owns_state = 712
+                owns_state = 410
+                owns_state = 356
+            }
+        }
+        cost = 10
+        x = 0
+        y = 1
+        completion_reward = { 
+            680 = {
+                add_core_of = PRL
+            }
+            640 = {
+                add_core_of = PRL
+            }
+            641 = {
+                add_core_of = PRL
+            }
+            727 = {
+                add_core_of = PRL
+            }
+            324 = {
+                add_core_of = PRL
+            }
+            712 = {
+                add_core_of = PRL
+            }
+            410 = {
+                add_core_of = PRL
+            }
+            356 = {
+                add_core_of = PRL
+            }
         }
     }
     #przemysł=========================================================================================

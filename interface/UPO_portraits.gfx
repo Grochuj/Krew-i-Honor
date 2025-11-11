@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_portrait_UPO_owsiak_advisor
+		textureFile = gfx/advisors/UPO/owsiak_advisor.tga
+	}
+}
