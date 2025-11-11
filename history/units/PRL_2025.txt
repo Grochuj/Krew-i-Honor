@@ -1,28 +1,28 @@
 division_template = {
 	name = "Oddział Prewencyjny"
-	is_locked = yes
+	division_names_group = PRL_INF
 	regiments = {
-		irregular_infantry = {
+		infantry = {
 			x = 0
 			y = 0
 		}
-		irregular_infantry = {
+		infantry = {
 			x = 0
 			y = 1
 		}
-		irregular_infantry = {
+		infantry = {
 			x = 0
 			y = 2
 		}
-		irregular_infantry = {
+		infantry = {
 			x = 1
 			y = 0
 		}
-		irregular_infantry = {
+		infantry = {
 			x = 1
 			y = 1
 		}
-		irregular_infantry = {
+		infantry = {
 			x = 1
 			y = 2
 		}
@@ -31,6 +31,7 @@ division_template = {
 
 division_template = {
     name = "Zmotoryzowany Odwód Milicji Obywatelskiej"
+	division_names_group = PRL_MOT
     regiments = {
 		motorized = {
 		   x = 0
@@ -62,17 +63,23 @@ units = {
 		name = "1. Oddział Prewencyjny"
 		location = 11334
 		division_template = "Oddział Prewencyjny"
-		start_experience_factor = 0.4
+		start_experience_factor = 0.3
 	}
 	division = {
 		name = "2. Oddział Prewencyjny"
 		location = 11380
 		division_template = "Oddział Prewencyjny"
-		start_experience_factor = 0.4
+		start_experience_factor = 0.3
 	}
 	division = {
-		name = "2. Oddział Prewencyjny"
+		name = "3. Oddział Prewencyjny"
 		location = 11374
+		division_template = "Oddział Prewencyjny"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4. Oddział Prewencyjny"
+		location = 11686
 		division_template = "Oddział Prewencyjny"
 		start_experience_factor = 0.3
 	}

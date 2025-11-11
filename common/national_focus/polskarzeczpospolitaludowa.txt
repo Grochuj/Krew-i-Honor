@@ -681,7 +681,7 @@ focus_tree = {
         x = 1
         y = 1
         available = {
-            num_of_factories = 30
+            num_of_factories = 25
         }
         will_lead_to_war_with = DIP
         completion_reward = { 
@@ -761,7 +761,7 @@ focus_tree = {
         x = -1
         y = 1
         available = {
-            num_of_factories = 70
+            num_of_factories = 50
         }
         will_lead_to_war_with = PAJ
         completion_reward = { 

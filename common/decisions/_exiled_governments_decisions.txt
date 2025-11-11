@@ -124,17 +124,7 @@ governments_in_exile = {
 		}
 
 		days_remove = 120
-		remove_effect = {
-			IF = {
-				limit = {
-					tag = ETH
-				}
-				country_event = {
-					id = BBA_ethiopia_exile_events.53
-					hours = 1
-				}
-			}
-		}
+		
 		ai_will_do = {
 			base = 0.1
 			modifier = {
@@ -282,7 +272,6 @@ governments_in_exile = {
 
 		target_trigger = {
 			FROM = { is_exiled_in = ROOT }
-			FROM = { NOT = { original_tag = POL } }
 		}
 
 		targeted_modifier = {
@@ -353,14 +342,6 @@ governments_in_exile = {
 		#	targeted_legitimacy_daily = -1
 		#	democratic_drift = 0.05
 		#}
-		complete_effect = {
-			FROM = {
-				add_timed_idea = {
-					idea = ETH_purge_ideology_boost_idea
-					days = 30
-				}
-			}			
-		}
 
 		remove_effect = {
 			add_political_power = 50

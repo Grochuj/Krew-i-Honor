@@ -68,14 +68,6 @@ political_actions = {
 		priority = 10
 		available = {
 			has_stability < 1.0
-			if = {
-				limit = {
-					tag = SPR
-				}
-				NOT = {
-					has_idea = SPR_political_violence
-				}
-			}
 		}
 
 		visible = {
@@ -172,10 +164,6 @@ economy_decisions = {
 			modifier = {
 				add = 1
 				has_stability > 0.74
-				NOT = {
-					original_tag = SWE
-					has_idea = SWE_hungershield
-				}
 			}
 		}
 
@@ -669,7 +657,7 @@ war_measures = {
 
 		visible = {
 			is_major = yes
-			date > 1940.1.1
+			date > 2025.6.1
 			IF = {
 				limit = {
 					has_dlc = "Trial of Allegiance"

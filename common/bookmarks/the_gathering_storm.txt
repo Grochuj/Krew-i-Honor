@@ -175,10 +175,14 @@ bookmarks = {
 			history = "PRL_BOOKMARK_DESC"
 			ideology = discopolo
 			ideas = {
-				generalna_ideja
+				PRL_wojenny
+				PRL_solidarnosc
+				PRL_ateizmus
 			}
 			focuses = {
-			
+				PRL_imperium
+				PRL_tajemnica_kopy_cwila
+				PRL_rozwoj_katowic
 			}
 		}
 		"LIB"={
