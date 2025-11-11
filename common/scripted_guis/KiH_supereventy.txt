@@ -10,6 +10,9 @@ scripted_gui = {
 			FLS_wojnadomowa_super_image_visible = {
 				has_country_flag = SEflag_FLS_wojnadomowa
 			}
+			NRP_koronacja_super_image_visible = {
+				has_country_flag = SEflag_NRP_koronacja
+			}
 		}
 		
 		effects = {
@@ -18,6 +21,7 @@ scripted_gui = {
 					clr_country_flag = Super_Event_aktywny
 
 					clr_country_flag = SEflag_FLS_wojnadomowa
+					clr_country_flag = SEflag_NRP_koronacja
 				}
 			}
 		}

@@ -7,4 +7,8 @@ spriteTypes = {
 		name = "GFX_SE_FLS_wojnadomowa"
 		textureFile = "gfx/superevents/FLS_wojnadomowa.dds"
 	}
+	spriteType = {
+		name = "GFX_SE_NRP_koronacja"
+		textureFile = "gfx/superevents/NRP_koronacja.dds"
+	}
 }
