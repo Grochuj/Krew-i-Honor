@@ -206,4 +206,24 @@ characters = {
 			}
 		}
 	}
+	NRP_zoltek = {
+		name = NRP_zoltek
+		portraits = {
+			civilian = {
+				small = GFX_portrait_NRP_zoltek_advisor
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = token_zoltek_advisor
+			cost = 125
+			traits = {
+
+			}
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
 }

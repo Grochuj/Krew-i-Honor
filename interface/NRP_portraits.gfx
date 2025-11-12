@@ -55,4 +55,8 @@ spriteTypes = {
 		name = "GFX_portrait_piton_general_s"
 		textureFile = "gfx/generals/NRP/piton_general_s.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_NRP_zoltek_advisor"
+		textureFile = "gfx/advisors/NRP/zoltek.dds"
+	}
 }

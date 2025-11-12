@@ -29,5 +29,5 @@ set_popularities = {
 }
 
 add_ideas = {
-	
+	idea_ue
 }

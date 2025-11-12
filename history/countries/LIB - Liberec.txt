@@ -32,4 +32,5 @@ set_popularities = {
 add_ideas = {
 	generalna_ideja
 	limited_conscription
+	idea_ue
 }

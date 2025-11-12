@@ -43,6 +43,7 @@ set_popularities = {
 
 add_ideas = {
 	generalna_ideja
+	idea_ue
 	PRL_armia_czerwona
 	PRL_solidarnosc
 }

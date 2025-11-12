@@ -74,4 +74,15 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		idea_ue = {
+			modifier = {
+				consumer_goods_expected_value = 0.05
+				war_support_factor = -0.05
+				stability_factor = 0.05
+				production_factory_max_efficiency_factor = -0.025
+				political_power_gain = 0.1
+			}
+		}
+	}
 }

@@ -43,6 +43,7 @@ set_popularities = {
 
 add_ideas = {
 	generalna_ideja
+	idea_ue
 	RZP_idea_znacjonalizowanebrowary
 	RZP_alkocholizm_w_wojsku
 }
