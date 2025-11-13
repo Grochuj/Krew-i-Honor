@@ -1325,6 +1325,12 @@ focus_tree = {
             focus = NRP_focus_rodzinne_gospodarstwa_rolne
         }
 
+        available = {
+            NOT = {
+                has_idea = idea_ue
+            }
+        }
+
         completion_reward = {
             add_stability = 0.05
         }
@@ -1703,6 +1709,12 @@ focus_tree = {
         relative_position_id = NRP_focus_odrzucenie_ladu
         x = 5
         y = 1
+
+        available = {
+            NOT = {
+                has_idea = idea_ue
+            }
+        }
         
         prerequisite = {
             focus = NRP_focus_odrzucenie_ladu
@@ -3138,6 +3150,10 @@ focus_tree = {
         relative_position_id = NRP_focus_nowy_program_przezbrojenia
         x = -1
         y = 1
+
+        available = {
+            has_completed_focus = NRP_focus_polscy_inzynierowie
+        }
 
         prerequisite = {
             focus = NRP_focus_nowy_program_przezbrojenia
