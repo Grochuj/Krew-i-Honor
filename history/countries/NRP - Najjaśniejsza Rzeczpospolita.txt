@@ -125,6 +125,7 @@ add_ideas = {
 	NRP_idea_niewydolnaarmia
 	NRP_idea_slabezaludnienie
 	NRP_idea_szurskieotoczenie
+	NRP_idea_frontgasnicowy
 }
 
 add_equipment_production = {

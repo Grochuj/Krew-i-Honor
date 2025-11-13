@@ -11,4 +11,8 @@ spriteTypes = {
 		name = GFX_event_news_wojna_domowa_lewarow
 		texturefile = gfx/event_pictures/wojnadomowa.dds
 	}
+	spriteType = {
+		name = GFX_event_news_polexit
+		texturefile = gfx/event_pictures/polexit.dds
+	}
 }

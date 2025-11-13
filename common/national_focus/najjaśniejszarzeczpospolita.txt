@@ -3737,6 +3737,34 @@ focus_tree = {
             base = 10
         }
     }
+    focus = {
+        id = NRP_focus_polexit
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_kmb
+        x = 0
+        y = 2
+        
+        prerequisite = {
+            focus = NRP_focus_dominacja_brauna
+            focus = NRP_focus_trojwladza
+        }
+
+        completion_reward = {
+            remove_ideas = idea_ue
+            if = {
+                limit = {
+                    has_completed_focus = NRP_focus_trojwladza
+                }
+                recruit_character = NRP_zoltek
+            }
+            news_event = news_event.3
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
 
 ### ŚCIEŻKA BRAUNA/SKALIKA ###
 

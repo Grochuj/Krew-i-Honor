@@ -219,7 +219,7 @@ characters = {
 			idea_token = token_zoltek_advisor
 			cost = 125
 			traits = {
-
+				eurosceptyk
 			}
 			ai_will_do = {
 				base = 1

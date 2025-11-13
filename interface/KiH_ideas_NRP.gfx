@@ -159,4 +159,8 @@ spriteTypes = {
 		name = GFX_idea_NRP_idea_szurskieotoczenie
 		texturefile = gfx/interface/ideas/foliowaczapka.dds
 	}
+	spriteType = {
+		name = GFX_idea_NRP_idea_frontgasnicowy
+		texturefile = gfx/interface/ideas/gasnica.dds
+	}
 }
