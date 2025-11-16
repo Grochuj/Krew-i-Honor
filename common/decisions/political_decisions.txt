@@ -1845,238 +1845,494 @@ political_actions = {
 			factor = 0
 		}
     }
-    
-	ban_fascist_party = {
 
-		icon = generic_civil_support
+	anti_discopolo_raids = {
+
+    	icon = generic_civil_support
+
+    	allowed = {
+    	}
+
+    	visible = {
+    		always = yes
+		}
 
 		available = {
-			fascism < 0.2
-		}
-
-		visible = {
-			NOT = { has_government = fascism }
-			fascism > 0
-		}
-
-		remove_trigger = {
-			hidden_trigger = {
-				OR = {
-					has_government = fascism
-				}
-			}
-		}
+            discopolo > 0.1
+        }
 	
 		modifier = {
-			fascism_drift = -0.05
+			discopolo_drift = -0.05
+			stability_weekly = 0.007
 		}
 	
-		days_remove = -1
-		cost = 100
-		
-		complete_effect = {
-			hidden_effect = {
-				set_temp_variable = {
-					var = ban_ideology_var
-					value = party_popularity@fascism
-				}
-				multiply_temp_variable = {
-					var = ban_ideology_var
-					value = -1
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = ban_ideology_var
-				}
-				multiply_temp_variable = {
-					var = ban_ideology_var
-					value = 0.66
-				}
-				set_country_flag = banned_fascism_flag
-			}
-			remove_fascist_spirits_effect = yes
-			custom_effect_tooltip = ban_fascist_party_tt
-			add_stability = ban_ideology_var
-		}
+		days_remove = 120
+		cost = 50
 
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
 		ai_will_do = {
 			factor = 0
 		}
-	}
+    }
 
-	ban_democratic_party = {
+	anti_demokracjawalczaca_raids = {
 
-		icon = generic_civil_support
+    	icon = generic_civil_support
 
-		available = {
-			democratic < 0.2
-		}
+    	allowed = {
+    	}
 
-		visible = {
-			NOT = { has_government = democratic }
-			democratic > 0
-		}
-
-		remove_trigger = {
-			hidden_trigger = {
-				OR = {
-					has_government = democratic
-				}
-			}
-		}
-	
-		modifier = {
-			democratic_drift = -0.05
-		}
-	
-		days_remove = -1
-		cost = 100
-		
-		complete_effect = {
-			hidden_effect = {
-				set_temp_variable = {
-					var = ban_ideology_var
-					value = party_popularity@democratic
-				}
-				multiply_temp_variable = {
-					var = ban_ideology_var
-					value = -1
-				}
-				add_popularity = {
-					ideology = democratic
-					popularity = ban_ideology_var
-				}
-				multiply_temp_variable = {
-					var = ban_ideology_var
-					value = 0.66
-				}
-				set_country_flag = banned_democratic_flag				
-			}
-			remove_democratic_spirits_effect = yes 
-			custom_effect_tooltip = ban_democratic_party_tt
-			add_stability = ban_ideology_var
-		}
-
-		ai_will_do = {
-			base = 0
-		}
-	}
-	
-	ban_communist_party = {
-
-		icon = generic_civil_support
-
-		available = {
-			communism < 0.2
-		}
-
-		visible = {
-			NOT = { has_government = communism }
-			communism > 0
-		}
-
-		remove_trigger = {
-			hidden_trigger = {
-				OR = {
-					has_government = communism
-				}
-			}
-		}
-	
-		modifier = {
-			communism_drift = -0.05
-		}
-	
-		days_remove = -1
-		cost = 100
-		
-		complete_effect = {
-			hidden_effect = {
-				set_temp_variable = {
-					var = ban_ideology_var
-					value = party_popularity@communism
-				}
-				multiply_temp_variable = {
-					var = ban_ideology_var
-					value = -1
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = ban_ideology_var
-				}
-				multiply_temp_variable = {
-					var = ban_ideology_var
-					value = 0.66
-				}
-				set_country_flag = banned_communism_flag
-			}
-			remove_communist_spirits_effect = yes
-			custom_effect_tooltip = ban_communist_party_tt
-			add_stability = ban_ideology_var
-		}
-		
-		ai_will_do = {
-			base = 0
-		}
-	}
-
-	ban_neutrality_party = {
-
-		icon = generic_civil_support
-
-		allowed = {	
-		}
-
-		visible = {
-			OR = { # has_focus_tree is not allwoed in the allowed trigger
-				has_focus_tree = austro_hungarian_releasable_focus
-				has_focus_tree = generic_focus
-			}
-			NOT = { has_government = neutrality }
-			neutrality > 0
+    	visible = {
+    		always = yes
 		}
 
 		available = {
-			neutrality < 0.2
-			
-		}
-
-		remove_trigger = {
-		}
+            demokracjawalczaca > 0.1
+        }
 	
 		modifier = {
-			neutrality_drift = -0.05
+			demokracjawalczaca_drift = -0.05
+			stability_weekly = 0.007
 		}
 	
-		days_remove = -1
-		cost = 100
-		
+		days_remove = 120
+		cost = 50
+
 		complete_effect = {
-			hidden_effect = {
-				set_temp_variable = {
-					var = ban_ideology_var
-					value = party_popularity@neutrality
-				}
-				multiply_temp_variable = {
-					var = ban_ideology_var
-					value = -1
-				}
-				add_popularity = {
-					ideology = neutrality
-					popularity = ban_ideology_var
-				}
-				multiply_temp_variable = {
-					var = ban_ideology_var
-					value = 0.66
-				}
-				set_country_flag = banned_neutrality_flag
-			}
-			custom_effect_tooltip = ban_neutrality_party_tt
-			add_stability = ban_ideology_var
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 0
 		}
-	}
+    }
+
+	anti_federalizm_raids = {
+
+    	icon = generic_civil_support
+
+    	allowed = {
+    	}
+
+    	visible = {
+    		always = yes
+		}
+
+		available = {
+            federalizm > 0.1
+        }
+	
+		modifier = {
+			federalizm_drift = -0.05
+			stability_weekly = 0.007
+		}
+	
+		days_remove = 120
+		cost = 50
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+	anti_imperializm_raids = {
+
+    	icon = generic_civil_support
+
+    	allowed = {
+    	}
+
+    	visible = {
+    		always = yes
+		}
+
+		available = {
+            imperializm > 0.1
+        }
+	
+		modifier = {
+			imperializm_drift = -0.05
+			stability_weekly = 0.007
+		}
+	
+		days_remove = 120
+		cost = 50
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+	anti_narodowysocjalizm_raids = {
+
+    	icon = generic_civil_support
+
+    	allowed = {
+    	}
+
+    	visible = {
+    		always = yes
+		}
+
+		available = {
+            narodowysocjalizm > 0.1
+        }
+	
+		modifier = {
+			narodowysocjalizm_drift = -0.05
+			stability_weekly = 0.007
+		}
+	
+		days_remove = 120
+		cost = 50
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+	anti_autorytaryzm_raids = {
+
+    	icon = generic_civil_support
+
+    	allowed = {
+    	}
+
+    	visible = {
+    		always = yes
+		}
+
+		available = {
+            autorytaryzm > 0.1
+        }
+	
+		modifier = {
+			autorytaryzm_drift = -0.05
+			stability_weekly = 0.007
+		}
+	
+		days_remove = 120
+		cost = 50
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+	anti_kaczyzm_raids = {
+
+    	icon = generic_civil_support
+
+    	allowed = {
+    	}
+
+    	visible = {
+    		always = yes
+		}
+
+		available = {
+            kaczyzm > 0.1
+        }
+	
+		modifier = {
+			kaczyzm_drift = -0.05
+			stability_weekly = 0.007
+		}
+	
+		days_remove = 120
+		cost = 50
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+	anti_nacjonalizm_raids = {
+
+    	icon = generic_civil_support
+
+    	allowed = {
+    	}
+
+    	visible = {
+    		always = yes
+		}
+
+		available = {
+            nacjonalizm > 0.1
+        }
+	
+		modifier = {
+			nacjonalizm_drift = -0.05
+			stability_weekly = 0.007
+		}
+	
+		days_remove = 120
+		cost = 50
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+	anti_centryzm_raids = {
+
+    	icon = generic_civil_support
+
+    	allowed = {
+    	}
+
+    	visible = {
+    		always = yes
+		}
+
+		available = {
+            centryzm > 0.1
+        }
+	
+		modifier = {
+			centryzm_drift = -0.05
+			stability_weekly = 0.007
+		}
+	
+		days_remove = 120
+		cost = 50
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+	anti_agraryzm_raids = {
+
+    	icon = generic_civil_support
+
+    	allowed = {
+    	}
+
+    	visible = {
+    		always = yes
+		}
+
+		available = {
+            agraryzm > 0.1
+        }
+	
+		modifier = {
+			agraryzm_drift = -0.05
+			stability_weekly = 0.007
+		}
+	
+		days_remove = 120
+		cost = 50
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+	anti_monarchia_raids = {
+
+    	icon = generic_civil_support
+
+    	allowed = {
+    	}
+
+    	visible = {
+    		always = yes
+		}
+
+		available = {
+            monarchia > 0.1
+        }
+	
+		modifier = {
+			monarchia_drift = -0.05
+			stability_weekly = 0.007
+		}
+	
+		days_remove = 120
+		cost = 50
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+	anti_kapitalizm_raids = {
+
+    	icon = generic_civil_support
+
+    	allowed = {
+    	}
+
+    	visible = {
+    		always = yes
+		}
+
+		available = {
+            kapitalizm > 0.1
+        }
+	
+		modifier = {
+			kapitalizm_drift = -0.05
+			stability_weekly = 0.007
+		}
+	
+		days_remove = 120
+		cost = 50
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+	anti_homo_raids = {
+
+    	icon = generic_civil_support
+
+    	allowed = {
+    	}
+
+    	visible = {
+    		always = yes
+		}
+
+		available = {
+            homo > 0.1
+        }
+	
+		modifier = {
+			homo_drift = -0.05
+			stability_weekly = 0.007
+		}
+	
+		days_remove = 120
+		cost = 50
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+	anti_socjalizm_raids = {
+
+    	icon = generic_civil_support
+
+    	allowed = {
+    	}
+
+    	visible = {
+    		always = yes
+		}
+
+		available = {
+            socjalizm > 0.1
+        }
+	
+		modifier = {
+			socjalizm_drift = -0.05
+			stability_weekly = 0.007
+		}
+	
+		days_remove = 120
+		cost = 50
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+    }
 }
