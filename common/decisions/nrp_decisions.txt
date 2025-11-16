@@ -1254,7 +1254,7 @@ zasiedlanie_cat = {
 				}
 			}
 			ROOT = {
-				num_of_civilian_factories > 5
+				num_of_civilian_factories_available_for_projects > 5
 			}
 		}
 
@@ -1320,7 +1320,7 @@ budowaelektrowni_cat = {
 
 		available = {
 			ROOT = {
-				num_of_civilian_factories > 30
+				num_of_civilian_factories_available_for_projects > 15
 			}
 			79 = {
 				owner = {
@@ -1380,7 +1380,7 @@ budowaelektrowni_cat = {
 
 		available = {
 			ROOT = {
-				num_of_civilian_factories > 30
+				num_of_civilian_factories_available_for_projects > 15
 			}
 			667 = {
 				owner = {
@@ -1439,7 +1439,7 @@ budowaelektrowni_cat = {
 
 		available = {
 			ROOT = {
-				num_of_civilian_factories > 30
+				num_of_civilian_factories_available_for_projects > 15
 			}
 			225 = {
 				owner = {

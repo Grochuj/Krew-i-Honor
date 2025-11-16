@@ -2227,7 +2227,16 @@ political_actions = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			base = 0
+			modifier = {
+				tag = NRP
+				has_completed_focus = NRP_focus_trojwladza
+				add = 15
+			}
+			modifier = {
+				has_stability < 0.2
+				factor = 0
+			}
 		}
     }
 
