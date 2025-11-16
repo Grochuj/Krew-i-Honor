@@ -11,22 +11,22 @@ country_event = {
 
 	option = {
 		ai_chance = {
-			base = 30
+			base = 1
 		}
 		name = nrp_event.1.a
-		NRP = {
-			transfer_state = 441
-			transfer_state = 331
-			transfer_state = 353
-		}
-	}
-	option = {
-		ai_chance = {
-			base = 10
-		}
-		name = nrp_event.1.b
-		NRP = {
-			add_stability = 0.1
+		
+		random_list = {
+			poparciemonarchii100 = {
+				NRP_braun_leader = {
+					set_character_flag = NRP_flag_braun_niezwalnialny
+					set_can_be_fired_in_advisor_role = {
+						value = no
+					}
+				}
+			}
+			20 = {
+				
+			}
 		}
 	}
 }
