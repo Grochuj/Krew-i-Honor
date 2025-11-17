@@ -101,6 +101,36 @@ political_actions = {
 			}
 		}
 	}
+
+	zwolnienie_brauna_decyzja = {
+
+		icon = GFX_decision_hol_draw_up_staff_plans	
+		priority = 100
+
+		visible = {
+			tag = NRP
+			NRP_braun_leader = {
+				has_character_flag = NRP_flag_braun_niezwalnialny
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 200
+
+		complete_effect = {
+			NRP_braun_leader = {
+				clr_character_flag = NRP_flag_braun_niezwalnialny
+				set_can_be_fired_in_advisor_role = {
+					value = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+	}
 }
 
 economy_decisions = {

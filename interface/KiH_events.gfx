@@ -15,4 +15,16 @@ spriteTypes = {
 		name = GFX_event_news_polexit
 		texturefile = gfx/event_pictures/polexit.dds
 	}
+	spriteType = {
+		name = GFX_report_event_braun_w_cien
+		texturefile = gfx/event_pictures/report_event_braun_w_cien.dds
+	}
+	spriteType = {
+		name = GFX_event_news_NRP_kapitalisci
+		texturefile = gfx/event_pictures/kapitalisci.dds
+	}
+	spriteType = {
+		name = GFX_event_news_NRP_upr_przy_wladzy
+		texturefile = gfx/event_pictures/michalkiewicz_rzadzi.dds
+	}
 }

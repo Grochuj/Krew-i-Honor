@@ -3988,6 +3988,7 @@ focus_tree = {
                 }
                 add_ideas = token_braun_advisor
             }
+            news_event = nrp_news_event.1
         }
 
         ai_will_do = {
@@ -4071,6 +4072,7 @@ focus_tree = {
                 }
                 add_ideas = token_braun_advisor
             }
+            news_event = nrp_news_event.2
         }
 
         ai_will_do = {
