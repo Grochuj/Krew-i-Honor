@@ -57,6 +57,9 @@ characters = {
 		}
 		country_leader = {
 			ideology = kap
+			traits = {
+				NRP_ojciec_polskiej_prawicy
+			}
 		}
 		corps_commander = {
 			traits = {
