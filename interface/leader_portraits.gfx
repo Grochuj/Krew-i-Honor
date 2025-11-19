@@ -114,7 +114,7 @@ spriteTypes = {
 
 	spriteType ={
 		name = "GFX_portrait_CEP_tygrys_leader"
-		textureFile = "gfx/leaders/CEP/tygrys_leader.tga"
+		textureFile = "gfx/leaders/CEP/tygrysek.tga"
 	}
 }
 

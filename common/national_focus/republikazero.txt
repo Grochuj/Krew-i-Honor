@@ -9,4 +9,16 @@ focus_tree = {
         }
     }
     shared_focus = np_removing_focus_1
+
+    focus = {
+        id = REZ_kanal_w_nowym_swiecie
+        icon = GFX_focus_zero
+        cost = 10
+        x = 32
+        y = 0
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+
 }

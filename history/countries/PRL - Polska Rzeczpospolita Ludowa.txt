@@ -1,6 +1,5 @@
 capital = 637	
 
-oob = "PRL_2025"
 
 set_research_slots = 2
 set_stability = 0.60
@@ -48,3 +47,5 @@ add_ideas = {
 	PRL_armia_czerwona
 	PRL_solidarnosc
 }
+
+oob = "PRL_2025"

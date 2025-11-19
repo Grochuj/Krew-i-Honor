@@ -120,4 +120,5 @@ set_popularities = {
 
 add_ideas = {
 	generalna_ideja
+	REZ_korpo
 }

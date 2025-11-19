@@ -155,4 +155,8 @@ spriteTypes = {
         name = GFX_focus_anty_wiosna
         texturefile =  gfx/interface/goals/anty_wiosna.dds
     }
+    spriteType = {
+        name = GFX_focus_zero
+        texturefile = gfx/interface/goals/zero.dds
+    }
 }
