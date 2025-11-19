@@ -24,7 +24,7 @@ gierek_cat = {
 
 		remove_effect = {
 			RPL = {
-				country_event = rpl_event.2
+				country_event = gierek_event.3
 			}
 		}
 
