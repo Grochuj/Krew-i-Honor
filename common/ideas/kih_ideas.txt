@@ -68,9 +68,25 @@ ideas = {
 		}
 	}
 	country = {
-		gierson = {
+		gierson_B = {
 			modifier = {
 				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.1
+			}
+		}
+	}
+	country = {
+		gierson_M = {
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+	}
+	country = {
+		gierson_S = {
+			modifier = {
+				consumer_goods_factor = -0.5
 			}
 		}
 	}

@@ -118,9 +118,19 @@ ideas = {
 				consumer_goods_factor = -0.15
 			}
 		}
-		PRL_dlug_RPL = {
+		PRL_duzy_dlug = {
 			modifier = {
-				consumer_goods_factor = 0.5
+				consumer_goods_factor = 0.1
+			}
+		}
+		PRL_sredni_dlug = {
+			modifier = {
+				consumer_goods_factor = 0.075
+			}
+		}
+		PRL_maly_dlug = {
+			modifier = {
+				consumer_goods_factor = 0.05
 			}
 		}
 	}
