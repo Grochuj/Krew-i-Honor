@@ -1325,6 +1325,12 @@ focus_tree = {
             focus = NRP_focus_rodzinne_gospodarstwa_rolne
         }
 
+        available = {
+            NOT = {
+                has_idea = idea_ue
+            }
+        }
+
         completion_reward = {
             add_stability = 0.05
         }
@@ -1703,6 +1709,12 @@ focus_tree = {
         relative_position_id = NRP_focus_odrzucenie_ladu
         x = 5
         y = 1
+
+        available = {
+            NOT = {
+                has_idea = idea_ue
+            }
+        }
         
         prerequisite = {
             focus = NRP_focus_odrzucenie_ladu
@@ -3139,6 +3151,10 @@ focus_tree = {
         x = -1
         y = 1
 
+        available = {
+            has_completed_focus = NRP_focus_polscy_inzynierowie
+        }
+
         prerequisite = {
             focus = NRP_focus_nowy_program_przezbrojenia
         }
@@ -3737,6 +3753,34 @@ focus_tree = {
             base = 10
         }
     }
+    focus = {
+        id = NRP_focus_polexit
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_kmb
+        x = 0
+        y = 2
+        
+        prerequisite = {
+            focus = NRP_focus_dominacja_brauna
+            focus = NRP_focus_trojwladza
+        }
+
+        completion_reward = {
+            remove_ideas = idea_ue
+            if = {
+                limit = {
+                    has_completed_focus = NRP_focus_trojwladza
+                }
+                recruit_character = NRP_zoltek
+            }
+            news_event = news_event.3
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
 
 ### ŚCIEŻKA BRAUNA/SKALIKA ###
 
@@ -3801,6 +3845,238 @@ focus_tree = {
 
         ai_will_do = {
             base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_rozmycie_ruchu_gasnicowego
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_trojwladza
+        x = 0
+        y = 2
+        
+        prerequisite = {
+            focus = NRP_focus_trojwladza
+        }
+
+        completion_reward = {
+            remove_ideas = NRP_idea_frontgasnicowy
+            add_stability = -0.05
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_odsuniecie_brauna_w_cien
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_rozmycie_ruchu_gasnicowego
+        x = 0
+        y = 2
+        
+        prerequisite = {
+            focus = NRP_focus_droga_ku_kapitalizmowi
+            focus = NRP_focus_stara_gwardia
+        }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = NRP_focus_tt_odsuniecie_brauna_w_cien_available
+                check_variable = {
+                    var = party_popularity_100@monarchia
+                    value = 60
+                    compare = less_than
+                }
+            }
+        }
+
+        completion_reward = {
+            set_variable = {
+                var = poparciemonarchii100
+                value = party_popularity@monarchia
+            }
+            multiply_variable = {
+                var = poparciemonarchii100
+                value = 100
+            }
+            country_event = {
+                id = nrp_event.1
+                days = 1
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+
+# KORWIN #
+
+    focus = {
+        id = NRP_focus_droga_ku_kapitalizmowi
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_rozmycie_ruchu_gasnicowego
+        x = -2
+        y = 1
+        
+        prerequisite = {
+            focus = NRP_focus_rozmycie_ruchu_gasnicowego
+        }
+
+        mutually_exclusive = {
+            focus = NRP_focus_stara_gwardia
+        }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_uswiadamianie_spoleczenstwa
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_droga_ku_kapitalizmowi
+        x = 0
+        y = 1
+        
+        prerequisite = {
+            focus = NRP_focus_droga_ku_kapitalizmowi
+        }
+
+        completion_reward = {
+            add_popularity = {
+                ideology = kapitalizm
+                popularity = 0.1
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_kapitalistyczny_rzad
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_uswiadamianie_spoleczenstwa
+        x = 0
+        y = 1
+        
+        prerequisite = {
+            focus = NRP_focus_uswiadamianie_spoleczenstwa
+        }
+        prerequisite = {
+            focus = NRP_focus_odsuniecie_brauna_w_cien
+        }
+
+        completion_reward = {
+            set_politics = {
+                ruling_party = kapitalizm
+            }
+            if = {
+                limit = {
+                    NRP_braun_leader = {
+                        has_character_flag = NRP_flag_braun_niezwalnialny
+                    }
+                }
+                add_ideas = token_braun_advisor
+            }
+            news_event = nrp_news_event.1
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
+
+# UPR #
+
+    focus = {
+        id = NRP_focus_stara_gwardia
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_rozmycie_ruchu_gasnicowego
+        x = 2
+        y = 1
+        
+        prerequisite = {
+            focus = NRP_focus_rozmycie_ruchu_gasnicowego
+        }
+
+        mutually_exclusive = {
+            focus = NRP_focus_droga_ku_kapitalizmowi
+        }
+
+        completion_reward = {
+            
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_rozbudzenie_sentymentow
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_stara_gwardia
+        x = 0
+        y = 1
+        
+        prerequisite = {
+            focus = NRP_focus_stara_gwardia
+        }
+
+        completion_reward = {
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.1
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+    focus = {
+        id = NRP_focus_wladza_dla_upr
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_rozbudzenie_sentymentow
+        x = 0
+        y = 1
+        
+        prerequisite = {
+            focus = NRP_focus_rozbudzenie_sentymentow
+        }
+        prerequisite = {
+            focus = NRP_focus_odsuniecie_brauna_w_cien
+        }
+
+        completion_reward = {
+            set_politics = {
+                ruling_party = democratic
+            }
+            if = {
+                limit = {
+                    NRP_braun_leader = {
+                        has_character_flag = NRP_flag_braun_niezwalnialny
+                    }
+                }
+                add_ideas = token_braun_advisor
+            }
+            news_event = nrp_news_event.2
+        }
+
+        ai_will_do = {
+            base = 15
         }
     }
 }

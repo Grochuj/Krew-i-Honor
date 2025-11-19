@@ -74,3 +74,19 @@ news_event = {
 		name = news_event.2.a
 	}
 }
+news_event = {
+	id = news_event.3
+	title = news_event.3.t
+	desc = news_event.3.d
+	picture = GFX_event_news_polexit
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		ai_chance = {
+			base = 1
+		}
+		name = news_event.3.a
+	}
+}

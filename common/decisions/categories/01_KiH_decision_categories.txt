@@ -78,3 +78,21 @@ gierek_cat = {
 	priority = 19
 	visible_when_empty = no
 }
+inwestycjeunii_cat = {
+	allowed = {
+		root = {
+			OR = {
+				has_idea = idea_ue
+			}
+		}
+	}
+	visible = {
+		root = {
+			OR = {
+				has_idea = idea_ue
+			}
+		}
+	}
+	priority = 1
+	visible_when_empty = no
+}

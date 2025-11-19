@@ -327,4 +327,12 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		NRP_idea_frontgasnicowy = {
+			modifier = {
+				mobilization_speed = 0.15
+				war_support_factor = 0.05
+			}
+		}
+	}
 }

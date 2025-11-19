@@ -671,9 +671,9 @@ focus = {
     x = 3
     y = 2
     completion_reward = { 
-        NRP = {
-            state_event = nrp_event.1
-        }
+        add_state_claim = 79
+        add_state_claim = 173
+        add_state_claim = 230
     }
 }
 focus = {

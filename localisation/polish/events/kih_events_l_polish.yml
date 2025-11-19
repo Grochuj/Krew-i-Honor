@@ -8,3 +8,6 @@
  news_event.2.t:0 "Wojna Domowa w Federacji"
  news_event.2.d:0 "Napięta sytuacja wewnątrz lewicowej koalicji wreszcie doszła do punktu krytycznego. Spór, ze szczytów władzy, przeniósł się do sfery zwykłych obywateli, pośród których rozpoczęła się ordynarna wojna. Kraj obecnie podzielony jest na trzy części, a sytuacja nie wskazuje jasno na to kto ma największe szanse na wygraną."
  news_event.2.a:0 "To wielka porażka dla ideałów braterstwa."
+ news_event.3.t:0 "Pol-Exit"
+ news_event.3.d:0 "[ROOT.GetLeader] ogłasza, że [ROOT.GetName] oficjalnie opuszcza eurokołchoz. Mimo tego, że Unia znajduje się daleko, to jej macki nadal sięgają tego świata. Lider działki numer jeden na kuli ziemskiej podjął tę decyzję, aby chronić rodaków przed szkodami jakie wyrządza im ta eurokomunistyczna organizacja. Lud [ROOT.GetAdjective] przyjął tą informację z radością, a na ulice wyszli szczęśliwi obywatele. Według wielu przed państwem stoi świetlana przyszłość."
+ news_event.3.a:0 "Ciekawy rozwój wypadków."
