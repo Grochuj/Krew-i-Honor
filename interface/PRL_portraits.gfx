@@ -29,6 +29,10 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = GFX_portrait_PRL_rywin_advisor
-		textureFile = gfx/advosors/PRL/rywin_advisor.dds
+		textureFile = gfx/advisors/PRL/rywin_advisor.dds
+	}
+	spriteType = {
+		name = GFX_portrait_PRL_cimoszewicz_advisor
+		textureFile = gfx/advisors/PRL/cimoszewicz.dds
 	}
 }

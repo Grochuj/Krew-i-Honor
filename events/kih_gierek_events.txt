@@ -1,4 +1,5 @@
 add_namespace = mod_event
+add_namespace = country_event
 
 country_event = {
 	id = gierek_event.1

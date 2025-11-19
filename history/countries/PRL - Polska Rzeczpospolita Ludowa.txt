@@ -13,6 +13,7 @@ recruit_character = PRL_jaruzelski
 recruit_character = PRL_kiszczak
 recruit_character = PRL_urban
 recruit_character = PRL_rywin
+recruit_character = PRL_cimoszewicz
 
 set_technology = {
 	infantry_weapons = 1

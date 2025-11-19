@@ -14,6 +14,10 @@ recruit_character = REZ_pinkwart
 recruit_character = REZ_mazurek
 recruit_character = REZ_debski
 recruit_character = REZ_kammel
+recruit_character = REZ_bojke
+recruit_character = REZ_stepan
+recruit_character = REZ_rokita
+recruit_character = REZ_rozek
 
 # Starting tech
 set_technology = {

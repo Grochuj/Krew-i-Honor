@@ -40,6 +40,21 @@ characters = {
 			}
 		}
 	}
+	PRL_cimoszewicz = {
+		name = PRL_cimoszewicz
+		portraits = {
+			civilian = {
+				small = GFX_portrait_PRL_cimoszewicz_advisor
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PRL_cimoszewicz
+			traits = {
+				COG_trade_unionist
+			}
+		}
+	}
 	PRL_Gierek={
 		name=PRL_Gierek
 		portraits={

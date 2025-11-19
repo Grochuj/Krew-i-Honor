@@ -7,9 +7,6 @@ gierek_cat = {
 
 		available = {
 			always = yes
-			ROOT = {
-				num_of_civilian_factories_available_for_projects > 3
-			}
 			NOT = {
 				has_idea = PRL_duzy_dlug
 				has_idea = PRL_sredni_dlug
@@ -45,9 +42,6 @@ gierek_cat = {
 
 		available = {
 			always = yes
-			ROOT = {
-				num_of_civilian_factories_available_for_projects > 3
-			}
 			NOT = {
 				has_idea = PRL_duzy_dlug
 				has_idea = PRL_sredni_dlug
@@ -83,9 +77,6 @@ gierek_cat = {
 
 		available = {
 			always = yes
-			ROOT = {
-				num_of_civilian_factories_available_for_projects > 3
-			}
 			NOT = {
 				has_idea = PRL_duzy_dlug
 				has_idea = PRL_sredni_dlug
@@ -121,9 +112,6 @@ gierek_cat = {
 
 		available = {
 			always = yes
-			ROOT = {
-				num_of_civilian_factories_available_for_projects > 3
-			}
 			NOT = {
 				has_idea = PRL_duzy_dlug
 				has_idea = PRL_sredni_dlug
@@ -159,9 +147,6 @@ gierek_cat = {
 
 		available = {
 			always = yes
-			ROOT = {
-				num_of_civilian_factories_available_for_projects > 3
-			}
 			NOT = {
 				has_idea = PRL_duzy_dlug
 				has_idea = PRL_sredni_dlug
@@ -197,9 +182,6 @@ gierek_cat = {
 
 		available = {
 			always = yes
-			ROOT = {
-				num_of_civilian_factories_available_for_projects > 3
-			}
 			NOT = {
 				has_idea = PRL_duzy_dlug
 				has_idea = PRL_sredni_dlug
@@ -235,9 +217,6 @@ gierek_cat = {
 
 		available = {
 			always = yes
-			ROOT = {
-				num_of_civilian_factories_available_for_projects > 3
-			}
 			NOT = {
 				has_idea = PRL_duzy_dlug
 				has_idea = PRL_sredni_dlug

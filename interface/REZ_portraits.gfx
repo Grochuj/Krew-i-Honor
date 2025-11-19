@@ -31,4 +31,20 @@ spriteTypes = {
 		name = GFX_portrait_REZ_kammel
 		textureFile = gfx/advisors/REZ/kammel.tga
 	}
+	spriteType = {
+		name = GFX_portrait_REZ_rokita
+		textureFile = gfx/advisors/REZ/rokita.tga
+	}
+	spriteType = {
+		name = GFX_portrait_REZ_bojke
+		textureFile = gfx/advisors/REZ/bojke.tga
+	}
+	spriteType = {
+		name = GFX_portrait_REZ_stepan
+		textureFile = gfx/advisors/REZ/stepan.tga
+	}
+	spriteType = {
+		name = GFX_portrait_REZ_rozek
+		textureFile = gfx/advisors/REZ/rozek.tga
+	}
 }
