@@ -34,7 +34,7 @@ country_event = {
 	id = rpl_event.2
 	title = rpl_event.2.t
 	desc = rpl_event.2.d
-	picture = GFX_report_event_ROM_mistress
+	picture = GFX_report_event_communists_in_riga
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -45,6 +45,9 @@ country_event = {
 		name = rpl_event.2.a
 		PRL = {
 			country_event = prl_event.3
+		}
+		add_timed_idea = {
+			idea = gierson
 		}
 	}
 	option = {

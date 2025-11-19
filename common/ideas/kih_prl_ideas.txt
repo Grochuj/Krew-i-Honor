@@ -118,5 +118,10 @@ ideas = {
 				consumer_goods_factor = -0.15
 			}
 		}
+		PRL_dlug_RPL = {
+			modifier = {
+				consumer_goods_factor = 0.5
+			}
+		}
 	}
 }

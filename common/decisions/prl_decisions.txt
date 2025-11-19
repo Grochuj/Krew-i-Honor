@@ -7,6 +7,9 @@ gierek_cat = {
 
 		available = {
 			always = yes
+			ROOT = {
+				num_of_civilian_factories_available_for_projects > 3
+			}
 		}
 
 		visible = {
@@ -16,11 +19,13 @@ gierek_cat = {
 		days_remove = 3
 
 		modifier = {
-			
+			civilian_factory_use = 3
 		}
 
 		remove_effect = {
-			country_event = 
+			RPL = {
+				country_event = rpl_event.2
+			}
 		}
 
 		ai_will_do = {
