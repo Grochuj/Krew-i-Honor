@@ -2,7 +2,7 @@
 state={
 	id=63
 	name="STATE_63"
-	manpower = 12636
+	manpower = 32636
 	
 	state_category = rural
 	resources={
@@ -10,13 +10,14 @@ state={
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
+		steel= 12
 		tungsten=0
+		coal = 7
 	}
 
 	history={
-		victory_points = { 1157 1}
-		victory_points = { 1161 1}
+		victory_points = { 1157 5}
+		victory_points = { 1161 3}
 		
 		owner = REZ
 		buildings = {

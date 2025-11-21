@@ -154,6 +154,42 @@ characters = {
 			}
 		}
 	}
+	REZ_wojciech_zalewski = {
+		name = REZ_wojciech_zalewski
+		portraits = {
+			civilian = {
+				small = GFX_portrait_REZ_wojciech_zalewski
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = REZ_wojciech_zalewski
+			traits = {
+				army_chief_maneuver_2
+			}
+			ai_will_do = {
+				base = 2
+			}
+		}
+	}
+	REZ_przybylo = {
+		name = REZ_przybylo
+		portraits = {
+			civilian = {
+				small = GFX_portrait_REZ_przybylo
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = REZ_przybylo
+			traits = {
+				army_chief_offensive_2
+			}
+			ai_will_do = {
+				base = 2
+			}
+		}
+	}
 	REZ_rajmund={
 		portraits = {
 			army = {

@@ -1,10 +1,10 @@
-﻿capital = 6
+﻿capital = 54
 
 oob = "REZ_2025"
 
 set_research_slots = 3
-set_stability = 0.80
-set_war_support = 0.65
+set_stability = 0.30
+set_war_support = 0.3
 
 recruit_character = REZ_Krzysztof_Stanowski
 recruit_character = REZ_Jacek_Kurski
@@ -18,6 +18,8 @@ recruit_character = REZ_bojke
 recruit_character = REZ_stepan
 recruit_character = REZ_rokita
 recruit_character = REZ_rozek
+recruit_character = REZ_wojciech_zalewski
+recruit_character = REZ_przybylo
 
 # Starting tech
 set_technology = {

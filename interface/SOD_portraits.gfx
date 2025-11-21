@@ -21,7 +21,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = GFX_portrait_SOD_suchodolski_d
-		textureFile = gfx/advisors/SOD/suchodolski_d.tga
+		textureFile = gfx/generals/SOD/suchodolski_d.tga
 	}
 	spriteType = {
 		name = GFX_portrait_SOD_suchodolski_m

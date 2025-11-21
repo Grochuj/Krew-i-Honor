@@ -47,4 +47,12 @@ spriteTypes = {
 		name = GFX_portrait_REZ_rozek
 		textureFile = gfx/advisors/REZ/rozek.tga
 	}
+	spriteType = {
+		name = GFX_portrait_REZ_wojciech_zalewski
+		textureFile = gfx/advisors/REZ/wojciech_zalewski.tga
+	}
+	spriteType = {
+		name = GFX_portrait_REZ_przybylo
+		textureFile = gfx/advisors/REZ/przybylo.tga
+	}
 }
