@@ -3,4 +3,12 @@ spriteTypes = {
 		name = GFX_idea_REZ_korpo
 		texturefile = gfx/interface/ideas/idea_GER_recovering_economy.dds
 	}
+	spriteType = {
+		name = GFX_idea_REZ_groundzero
+		texturefile = gfx/interface/ideas/idea_chi_army_corruption3.dds
+	}
+	spriteType = {
+		name = GFX_idea_REZ_niedola
+		texturefile = gfx/interface/ideas/idea_RAJ_debt_relief.dds
+	}
 }

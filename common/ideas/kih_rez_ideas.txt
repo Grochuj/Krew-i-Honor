@@ -8,5 +8,18 @@ ideas = {
 				min_export = 0.2
 			}
 		}
+		REZ_niedola ={
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.3
+				economy_cost_factor = 0.15
+			}
+		}
+		REZ_groundzero = {
+			modifier = {
+				army_attack_factor = 0.05
+				planning_speed = 0.1
+			}
+		}
 	}
 }

@@ -170,6 +170,7 @@ characters = {
 			ai_will_do = {
 				base = 2
 			}
+			cost = 100
 		}
 	}
 	REZ_przybylo = {
@@ -188,6 +189,7 @@ characters = {
 			ai_will_do = {
 				base = 2
 			}
+			cost = 100
 		}
 	}
 	REZ_rajmund={
