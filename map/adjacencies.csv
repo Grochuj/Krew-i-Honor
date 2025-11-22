@@ -30,4 +30,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3503;11741;sea;11884;-1;-1;-1;-1;;NRPwyspa5
 2342;11719;sea;11819;-1;-1;-1;-1;;DIPwyspa1
 11337;11719;sea;11899;-1;-1;-1;-1;;DIPwyspa2
+11045;1042;sea;11935;-1;-1;-1;-1;;REZ1
+10992;1082;sea;11779;-1;-1;-1;-1;;REZ2
 -1;-1;-1;-1;-1;-1;-1;-1;-1;-1
