@@ -121,7 +121,7 @@ characters = {
 			slot = political_advisor
 			idea_token = SOD_bff_advisor
 			traits = {
-				anti_communist
+				anti_unionist_pure_anarchist
 			}
 		}
 	}

@@ -22,7 +22,7 @@ country_event = {
 		PRL = {
 			add_timed_idea = {
 				idea = PRL_duzy_dlug
-				years = 0.5
+				days = 120
 			}
 			random_core_state = {
 				add_building_construction = {
@@ -57,7 +57,7 @@ country_event = {
 		PRL = {
 			add_timed_idea = {
 				idea = PRL_sredni_dlug
-				years = 0.5
+				days = 120
 			}
 			random_core_state = {
 				add_building_construction = {
@@ -92,7 +92,7 @@ country_event = {
 		PRL = {
 			add_timed_idea = {
 				idea = PRL_maly_dlug
-				years = 0.5
+				days = 120
 			}
 			random_core_state = {
 				add_building_construction = {

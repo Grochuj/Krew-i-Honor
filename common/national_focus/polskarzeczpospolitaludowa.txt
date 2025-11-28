@@ -603,7 +603,7 @@ focus_tree = {
             focus = PRL_kolejna_dekada_gierkwoska
         }
         cost = 10
-        x = -1
+        x = 1
         y = 1
         completion_reward = { 
            random_controlled_state = {
@@ -630,22 +630,102 @@ focus_tree = {
             focus = PRL_kolejna_dekada_gierkwoska
         }
         cost = 5
-        x = 1
+        x = -1
         y = 1
         completion_reward = { 
            add_ideas = PRL_help
         }
     }
     focus = {
-        id = PRL_zadluzanie_v2
-        icon = GFX_focus_generic_currency_reforms
-        
+        id = PRL_przemianowanie_katowic
+        icon = GFX_focus_PRC_bolshevik_urbanization_completed
+        relative_position_id = PRL_pomozecie
         prerequisite = {
-            focus = PRL_kolejna_dekada_gierkwoska
+            focus = PRL_pomozecie
+            focus = PRL_rozbudowa_gospodarki
         }
         cost = 10
-        x = 5
-        y = 5
+        x = 1
+        y = 1
+        completion_reward = {
+            635 = {
+                set_state_name = "Stalino"
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                }
+                add_extra_state_shared_building_slots = 2
+            }
+            set_province_name = {
+                id = 11352
+                name = PRL_stalino
+            }
+        }
+    }
+    focus = {
+        id = PRL_uzyskanie_poparcie
+        icon = GFX_focus_generic_happy_cheer
+        relative_position_id = PRL_pomozecie
+        prerequisite = {
+            focus = PRL_pomozecie
+        }
+        prerequisite = {
+            focus = PRL_odnowa_bezpieki
+        }
+        cost = 10
+        x = -1
+        y = 1
+        completion_reward = {
+            remove_ideas = PRL_niskie_poparcie
+        }
+    }
+    focus = {
+        id = PRL_gierkowka
+        icon = GFX_focus_generic_improve_roads
+        relative_position_id = PRL_przemianowanie_katowic
+        prerequisite = {
+            focus = PRL_przemianowanie_katowic
+        }
+        cost = 5
+        x = 0
+        y = 1
+        completion_reward = {
+           636 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                }
+           }
+           637 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                }
+           }
+           635 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                }
+           }
+           639 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                }
+           }
+        }
+    }
+    focus = {
+        id = PRL_zadluzanie_v2
+        icon = GFX_focus_generic_currency_reforms
+        relative_position_id = PRL_gierkowka
+        prerequisite = {
+            focus = PRL_gierkowka
+        }
+        cost = 10
+        x = 0
+        y = 2
         completion_reward = { 
             unlock_decision_category_tooltip = gierek_cat
         }
@@ -675,7 +755,7 @@ focus_tree = {
             focus = PRL_pucz_armijny
         }
         cost = 10
-        x = 1
+        x = 0
         y = 1
         completion_reward = {
             634 = {
@@ -700,7 +780,7 @@ focus_tree = {
             focus = PRL_odnowa_bezpieki
         }
         cost = 10
-        x = 2
+        x = 1
         y = 2
         completion_reward = {
            add_stability = -0.05
@@ -716,7 +796,7 @@ focus_tree = {
         }
         cost = 5
         x = -1
-        y = 1
+        y = 2
         completion_reward = {
           add_political_power = 75
         }
@@ -732,7 +812,7 @@ focus_tree = {
             focus = PRL_konsolidacja
         }
         cost = 15
-        x = -1
+        x = 0
         y = 2
         completion_reward = { 
             add_ideas = PRL_wojenny
@@ -1409,8 +1489,8 @@ focus_tree = {
             focus = PRL_badania_nad_statkami
         }
         cost = 10
-        x = -1
-        y = 2
+        x = -2
+        y = 1
         available = {
             has_tech = basic_submarine
         }

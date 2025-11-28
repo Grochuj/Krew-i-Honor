@@ -1,0 +1,63 @@
+characters = {
+	ZIE_suchora = {
+		name = ZIE_suchora
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZIE_suchora
+			}
+		}
+		
+		country_leader = {
+			ideology = ekologizm
+			
+			traits = {
+				
+			}
+		}
+	}
+	ZIE_urszula = {
+		name = ZIE_urszula
+		portraits = {
+			civilian = {
+				small = GFX_portrait_ZIE_urszula
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ZIE_urszula
+			traits = {
+				war_industrialist
+			}
+		}
+	}
+	ZIE_jachira = {
+		name = ZIE_jachira
+		portraits = {
+			civilian = {
+				small = GFX_portrait_ZIE_jachira
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ZIE_jachira
+			traits = {
+				NOR_minister_of_agriculture
+			}
+		}
+	}
+	ZIE_grodzka = {
+		name = ZIE_grodzka
+		portraits = {
+			civilian = {
+				small = GFX_portrait_ZIE_grodzka
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ZIE_grodzka
+			traits = {
+				left_trade_unionist
+			}
+		}
+	}
+}

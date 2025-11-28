@@ -89,8 +89,11 @@
  UPO_demokracjawalczaca_party: "PO"
  UPO_democratic_party_long: "Komitet Obrony Demokracji"
  UPO_democratic_party: "KOD"
- UPO_agraryzm_party: "Zieloni"
- UPO_agraryzm_party_long: "Partia Zieloni"
+
+ ZIE_demokracjawalczaca_party_long: "Partia Zieloni"
+ ZIE_demokracjawalczaca_party: "Zieloni"
+ ZIE_socjalizm_party_long: "Polska Partia Socjalistyczna"
+ ZIE_socjalizm_party: "PPS"
 
  NOW_centryzm_party: ".N"
  NOW_centryzm_party_long: ".Nowoczesna"

@@ -10,22 +10,6 @@ characters = {
 			ideology = demowal
 		}
 	}
-	UPO_suchora = {
-		name = UPO_suchora
-		portraits = {
-			civilian = {
-				large = GFX_portrait_UPO_suchora
-			}
-		}
-		
-		country_leader = {
-			ideology = ekologizm
-			
-			traits = {
-				
-			}
-		}
-	}
 	UPO_owsiak = {
 		name = UPO_owsiak
 		portraits = {

@@ -14,4 +14,19 @@ characters = {
 			}
 		}
 	}
+	DIP_kalach = {
+		name = DIP_kalach
+		portraits = {
+			civilian = {
+				small = GFX_portrait_DIP_kalach
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIP_kalach
+			traits = {
+				BRA_soviet_spy
+			}
+		}
+	}
 }
