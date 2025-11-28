@@ -10,6 +10,7 @@ recruit_character = SOD_czadoman
 recruit_character = SOD_zenek
 recruit_character = SOD_golec
 recruit_character = SOD_suchodolski
+recruit_character = SOD_konon
 
 set_technology = {
 	infantry_weapons = 1

@@ -86,7 +86,7 @@ characters = {
 			slot = political_advisor
 			idea_token = SOD_golec_advisor
 			traits = {
-				
+				captain_of_industry
 			}
 		}
 	}
@@ -107,6 +107,22 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 3
+		}
+	}
+	SOD_konon = {
+		name = SOD_konon
+		portraits = {
+			civilian = {
+				large = GFX_portrait_konon_l
+				small = GFX_portrait_SOD_konon
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOD_bff_advisor
+			traits = {
+				anti_communist
+			}
 		}
 	}
 }

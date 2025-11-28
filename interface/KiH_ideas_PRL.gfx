@@ -63,4 +63,8 @@ spriteTypes = {
 		name = GFX_idea_PRL_czerwone_niebo
 		texturefile = gfx/interface/ideas/idea_generic_air_fighter.dds
 	}
+	spriteType = {
+		name = GFX_idea_PRL_help
+		texturefile = gfx/interface/ideas/idea_ARG_rapid_militarization.dds
+	}
 }

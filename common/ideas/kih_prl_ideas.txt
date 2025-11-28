@@ -139,5 +139,11 @@ ideas = {
 				air_mission_efficiency = 0.15
 			}
 		}
+		PRL_help = {
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
 	}
 }
