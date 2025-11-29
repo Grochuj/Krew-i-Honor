@@ -138,6 +138,13 @@ country_event = {
 	option = {
 		ai_chance = {
 			base = 20
+			modifier = {
+				has_opinion = {
+					target = PRL
+					value > 50
+				}
+				add = 15 
+			}
 		}
 		name = gierek_event.5.a
 		PRL = {
@@ -150,6 +157,13 @@ country_event = {
 	option = {
 		ai_chance = {
 			base = 30
+			modifier = {
+				has_opinion = {
+					target = PRL
+					value > 30
+				}
+				add = 10 
+			}
 		}
 		name = gierek_event.5.b
 		PRL = {
@@ -162,6 +176,13 @@ country_event = {
 	option = {
 		ai_chance = {
 			base = 35
+			modifier = {
+				has_opinion = {
+					target = PRL
+					value > 10
+				}
+				add = 5 
+			}
 		}
 		name = gierek_event.5.c
 		PRL = {
@@ -174,6 +195,13 @@ country_event = {
 	option = {
 		ai_chance = {
 			base = 10
+			modifier = {
+				has_opinion = {
+					target = PRL
+					value > 20
+				}
+				add = -5 
+			}
 		}
 		name = gierek_event.5.e
 		PRL = {

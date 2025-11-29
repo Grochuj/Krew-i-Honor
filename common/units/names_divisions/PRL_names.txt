@@ -1,4 +1,4 @@
-PRL_INF_01 = { # DIVISIONS_NAME_GROUP, set in your units folder
+PRL_INF = { # DIVISIONS_NAME_GROUP, set in your units folder
 	name = "Oddział Prewencyjny" # The name you want for your name list, can either be a string or in quotes.
 	for_countries = { PRL } # Sets what countries can use this name list, change NEP to your countries tag
 	can_use = { always = yes } # A country scope trigger that can lock or unlock a division name group given certain triggers
@@ -8,5 +8,17 @@ PRL_INF_01 = { # DIVISIONS_NAME_GROUP, set in your units folder
 		7 = { "%d. Dywizja Piechoty" } # The first division.
 		10 = { "%d. Dywizja Piechoty" } # Numbers must always start from 1 and go up
 		12 = { "%d. Dywizja Piechoty" } # The numbers do not need to be sequential
+	}
+}
+PRL_MOT = { # DIVISIONS_NAME_GROUP, set in your units folder
+	name = "ZOMO" # The name you want for your name list, can either be a string or in quotes.
+	for_countries = { PRL } # Sets what countries can use this name list, change NEP to your countries tag
+	can_use = { always = yes } # A country scope trigger that can lock or unlock a division name group given certain triggers
+	division_types = { "infantry" } # Sets what types of units can use this name list, replace mountaineers with whatever type of unit you are using
+	fallback_name = "%d. Zmotoryzowany Odwód Milicji Obywatelskiej" # This will be used if you run out of numbered divisions. Always use either %d for decimal numbers or %s for Roman numerals but you can change the rest
+	ordered = {
+		7 = { "%d. Zmotoryzowany Odwód Milicji Obywatelskiej" } # The first division.
+		10 = { "%d. Zmotoryzowany Odwód Milicji Obywatelskiej" } # Numbers must always start from 1 and go up
+		12 = { "%d. Zmotoryzowany Odwód Milicji Obywatelskiej" } # The numbers do not need to be sequential
 	}
 }

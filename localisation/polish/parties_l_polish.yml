@@ -29,6 +29,11 @@
  narodowysocjalizm_desc: "Rządy nacjonalizmu i antysemityzmu"
  narsoc: "Narodowy Socjalizm"
  narsoc_desc: "Rządy nacjonalizmu i antysemityzmu"
+ narodowybolszewizm: "Narodowy Komunizm"
+ narodowybolszewizm_noun: "Narodowy Komunizm"
+ narodowybolszewizm_desc: "Rządy narodowo komunistyczne"
+ nazbol: "Narodowy Bolszewizm"
+ nazbol_desc: "Rządy narodowo-bolszewickie"
  autorytaryzm: "Autorytaryzm"
  autorytaryzm_noun: "Autorytaryzm"
  autorytaryzm_desc: "Rządy jednostki"
@@ -103,11 +108,13 @@
 
  KAM_autorytaryzm_party_long: "Kamraci Rodacy"
  KAM_autorytaryzm_party: "KR"
+ KAM_narodowybolszewizm_party_long: "Zjednoczenie Patriotyczne Grunwald"
+ KAM_narodowybolszewizm_party: "ZPG"
 
  PAJ_narodowysocjalizm_party_long: "Honor"
  PAJ_narodowysocjalizm_party: "Honor"
- PAJ_communism_party_long: "Sztorm 68"
- PAJ_communism_party: "S-68"
+ PAJ_narodowybolszewizm_party_long: "Sztorm 68"
+ PAJ_narodowybolszewizm_party: "S-68"
  PAJ_fascism_party_long: "Konkwista 88"
  PAJ_fascism_party: "K-88"
 
@@ -168,6 +175,8 @@
 
  PRL_communism_party_long: "Sojusz Lewicy Demokratycznej"
  PRL_communism_party: "SLD(N)"
+ PRL_narodowybolszewizm_party_long: "PAX"
+ PRL_narodowybolszewizm_party: "PAX"
  PRL_peerel_long: "Polska Zjednoczona Partia Robotnicza"
  PRL_peerel: "PZPR"
  PRL_nfps_LONG: "Nowa Fala Prodfesor Senyszyn"

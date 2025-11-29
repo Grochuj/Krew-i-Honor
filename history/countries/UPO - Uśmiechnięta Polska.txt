@@ -6,7 +6,6 @@ set_convoys = 1000
 set_research_slots = 4
 
 recruit_character = UPO_great_leader
-recruit_character = UPO_suchora
 recruit_character = UPO_owsiak
 
 set_technology = {
@@ -42,5 +41,8 @@ add_ideas = {
 	UPO_idea_tuskpremier
 }
 
-create_faction = Koalicja_Obywatelska
-add_to_faction = NOW
+create_faction_from_template = {
+	template = faction_template_defensive_democratic
+	name = "Koalicja Obywatelska"
+	icon = GFX_faction_logo_generic_2
+}

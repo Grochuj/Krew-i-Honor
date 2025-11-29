@@ -8,9 +8,6 @@ set_convoys = 25
 
 recruit_character = PRL_senyszyn_leader
 recruit_character = PRL_leszek_miller
-recruit_character = PRL_jaruzelski
-recruit_character = PRL_kiszczak
-recruit_character = PRL_urban
 recruit_character = PRL_rywin
 recruit_character = PRL_cimoszewicz
 
@@ -38,7 +35,7 @@ set_popularities = {
 	communism = 70
 	socjalizm = 5
 	democratic = 17
-	homo = 8
+	narodowybolszewizm = 8
 }
 
 add_ideas = {

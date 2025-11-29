@@ -37,11 +37,11 @@ focus_tree = {
         completion_reward = { 
            add_opinion_modifier = {
             target = FLS
-            modifier = medium_increase
+            modifier = small_increase
            }
            add_opinion_modifier = {
             target = DIP
-            modifier = medium_increase
+            modifier = small_increase
            }
         }
     }
@@ -717,17 +717,109 @@ focus_tree = {
         }
     }
     focus = {
-        id = PRL_zadluzanie_v2
+        id = PRL_zadluzanie_minor
         icon = GFX_focus_generic_currency_reforms
         relative_position_id = PRL_gierkowka
         prerequisite = {
             focus = PRL_gierkowka
         }
         cost = 10
-        x = 0
+        x = -1
+        y = 2
+        completion_reward = { 
+            unlock_decision_category_tooltip = gierus_cat
+        }
+    }
+    focus = {
+        id = PRL_zadluzanie_major
+        icon = GFX_focus_generic_economic_recovery
+        relative_position_id = PRL_gierkowka
+        prerequisite = {
+            focus = PRL_gierkowka
+        }
+        cost = 10
+        x = 1
         y = 2
         completion_reward = { 
             unlock_decision_category_tooltip = gierek_cat
+        }
+    }
+    focus = {
+        id = PRL_relacje_prawice
+        icon = GFX_focus_BRA_rio_protocol
+        relative_position_id = PRL_zadluzanie_major
+        prerequisite = {
+            focus = PRL_zadluzanie_major
+            focus = PRL_zadluzanie_minor
+        }
+        cost = 7
+        x = 1
+        y = 1
+        completion_reward = { 
+            add_opinion_modifier = {
+            target = KON
+            modifier = medium_increase
+           }
+           add_opinion_modifier = {
+            target = NRP
+            modifier = medium_increase
+           }
+           add_opinion_modifier = {
+            target = SZP
+            modifier = medium_increase
+           }
+        }
+    }
+    focus = {
+        id = PRL_relacje_centrum
+        icon = GFX_focus_POL_complete_april_constitution
+        relative_position_id = PRL_zadluzanie_major
+        prerequisite = {
+            focus = PRL_zadluzanie_major
+            focus = PRL_zadluzanie_minor
+        }
+        cost = 7
+        x = -1
+        y = 1
+        completion_reward = { 
+            add_opinion_modifier = {
+            target = RZP
+            modifier = medium_increase
+           }
+           add_opinion_modifier = {
+            target = CEP
+            modifier = medium_increase
+           }
+           add_opinion_modifier = {
+            target = RPL
+            modifier = medium_increase
+           }
+        }
+    }
+    focus = {
+        id = PRL_relacje_lewica
+        icon = GFX_focus_BEL_v_for_victory
+        relative_position_id = PRL_zadluzanie_major
+        prerequisite = {
+            focus = PRL_zadluzanie_major
+            focus = PRL_zadluzanie_minor
+        }
+        cost = 7
+        x = -3
+        y = 1
+        completion_reward = { 
+            add_opinion_modifier = {
+            target = UPO
+            modifier = medium_increase
+           }
+           add_opinion_modifier = {
+            target = DIP
+            modifier = medium_increase
+           }
+           add_opinion_modifier = {
+            target = INP
+            modifier = medium_increase
+           }
         }
     }
     #Polityka_Jaruzelski=========================================================================================

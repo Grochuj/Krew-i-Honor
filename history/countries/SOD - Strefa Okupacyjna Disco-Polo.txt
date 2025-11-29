@@ -1,4 +1,4 @@
-capital = 402
+capital = 353
 oob = "SOD_2025"
 
 set_convoys = 20

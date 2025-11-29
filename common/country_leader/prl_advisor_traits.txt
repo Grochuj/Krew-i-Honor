@@ -1,0 +1,9 @@
+leader_traits = {
+	paks = {
+		random = no
+
+		narodowybolszewizm_drift = 0.05
+		war_support_factor = 0.1
+		army_core_defence_factor = 0.1
+	}
+}

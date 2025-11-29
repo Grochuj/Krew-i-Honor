@@ -33,6 +33,14 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = GFX_portrait_PRL_cimoszewicz_advisor
-		textureFile = gfx/advisors/PRL/cimoszewicz.dds
+		textureFile = gfx/advisors/PRL/cimoszewicz.tga
+	}
+	spriteType = {
+		name = GFX_portrait_PRL_piasecki_l
+		textureFile = gfx/advisors/PRL/piasecki_l.tga
+	}
+	spriteType = {
+		name = GFX_portrait_PRL_piasecki_s
+		textureFile = gfx/advisors/PRL/piasecki_s.tga
 	}
 }

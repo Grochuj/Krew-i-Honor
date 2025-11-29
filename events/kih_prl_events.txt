@@ -16,7 +16,14 @@ country_event = {
 		name = prl_event.1.a
 
 		set_country_flag = PRL_flag_dostepnigeneralowie
-
+		PRL = {
+			recruit_character = PRL_jaruzelski
+			recruit_character = PRL_kiszczak
+			recruit_character = PRL_urban
+			recruit_character = PRL_Gierek
+			recruit_character = PRL_piasecki
+			promote_character = PRL_piasecki
+		}
 		custom_effect_tooltip = prl_event.1.a.tt
 	}
 }
