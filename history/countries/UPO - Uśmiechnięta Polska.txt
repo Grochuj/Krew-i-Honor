@@ -44,5 +44,5 @@ add_ideas = {
 create_faction_from_template = {
 	template = faction_template_defensive_democratic
 	name = "Koalicja Obywatelska"
-	icon = GFX_faction_logo_generic_2
+	icon = GFX_faction_logo_generic_1
 }
