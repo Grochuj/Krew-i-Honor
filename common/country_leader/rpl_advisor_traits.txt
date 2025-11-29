@@ -1,0 +1,8 @@
+leader_traits = {
+	pierwsza_dama = {
+		random = no
+
+		stability_factor = 0.1
+		compliance_gain = 0.05
+	}
+}

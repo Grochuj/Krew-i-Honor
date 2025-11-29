@@ -1,4 +1,4 @@
-capital = 365
+capital = 320
 
 oob = "UPO_2025"
 

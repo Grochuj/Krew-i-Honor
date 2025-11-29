@@ -1,4 +1,4 @@
-capital = 377
+capital = 619
 
 oob = "SZP_2025"
 

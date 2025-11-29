@@ -15,7 +15,7 @@ characters = {
 		name=CEP_tygrys_leader
 		portraits={
 			civilian = {
-				large = GFX_portrait_CEP_tygrys_leader
+				large = GFX_portrait_CEP_tygrysek
 			}
 		}
 		country_leader = {

@@ -19,6 +19,7 @@ RAZ = "countries/Komuna Razem.txt"
 LGB = "countries/Zwiazek Partnerski.txt"
 INP = "countries/Socjaldemokratyczna Polska.txt"
 NOW = "countries/Nouva Polonia.txt"
+ZIE = "countries/Zielony Przylądek.txt"
 
 dynamic_tags = yes
 

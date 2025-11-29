@@ -1,0 +1,15 @@
+leader_traits = {
+	dziennikarka1 = {
+		justify_war_goal_time = -0.15
+		political_power_factor = 0.1
+	}
+	dziennikarka2 = {
+		centryzm_drift = 0.1
+		recruitable_population_factor = 0.1
+	}
+	dziennikarka3 = {
+		trade_opinion_factor = 0.2
+		improve_relations_maintain_cost_factor = -0.1
+		local_resources_factor = 0.05
+	}
+}

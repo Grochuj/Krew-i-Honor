@@ -35,4 +35,8 @@ spriteTypes = {
 		name = GFX_portrait_KAM_sadecki_advisor
 		textureFile = gfx/advisors/KAM/sadecki.png
 	}
+	spriteType = {
+		name = GFX_portrait_KAM_kochan
+		textureFile = gfx/advisors/KAM/kochan.png
+	}
 }

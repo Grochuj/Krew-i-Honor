@@ -24,7 +24,7 @@ characters = {
 				prince_of_terror
 			}
 			ai_will_do = {
-				base = 2
+				base = 5
 			}
 		}
 	}
@@ -57,7 +57,79 @@ characters = {
 			slot = political_advisor
 			idea_token = REZ_pinkwart
 			traits = {
-				silver_tongue
+				dziennikarka1
+			}
+			ai_will_do = {
+				base = 2
+			}
+		}
+	}
+	REZ_stepan = {
+		name = REZ_stepan
+		portraits = {
+			civilian = {
+				small = GFX_portrait_REZ_stepan
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = REZ_stepan
+			traits = {
+				dziennikarka2
+			}
+			ai_will_do = {
+				base = 2
+			}
+		}
+	}
+	REZ_bojke = {
+		name = REZ_bojke
+		portraits = {
+			civilian = {
+				small = GFX_portrait_REZ_bojke
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = REZ_bojke
+			traits = {
+				dziennikarka3
+			}
+			ai_will_do = {
+				base = 2
+			}
+		}
+	}
+	REZ_rokita = {
+		name = REZ_rokita
+		portraits = {
+			civilian = {
+				small = GFX_portrait_REZ_rokita
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = REZ_rokita
+			traits = {
+				BRA_political_fox
+			}
+			ai_will_do = {
+				base = 2
+			}
+		}
+	}
+	REZ_rozek = {
+		name = REZ_rozek
+		portraits = {
+			civilian = {
+				small = GFX_portrait_REZ_rozek
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = REZ_rozek
+			traits = {
+				technocrat
 			}
 			ai_will_do = {
 				base = 2
@@ -80,6 +152,44 @@ characters = {
 			ai_will_do = {
 				base = 2
 			}
+		}
+	}
+	REZ_wojciech_zalewski = {
+		name = REZ_wojciech_zalewski
+		portraits = {
+			civilian = {
+				small = GFX_portrait_REZ_wojciech_zalewski
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = REZ_wojciech_zalewski
+			traits = {
+				army_chief_maneuver_2
+			}
+			ai_will_do = {
+				base = 2
+			}
+			cost = 100
+		}
+	}
+	REZ_przybylo = {
+		name = REZ_przybylo
+		portraits = {
+			civilian = {
+				small = GFX_portrait_REZ_przybylo
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = REZ_przybylo
+			traits = {
+				army_chief_offensive_2
+			}
+			ai_will_do = {
+				base = 2
+			}
+			cost = 100
 		}
 	}
 	REZ_rajmund={

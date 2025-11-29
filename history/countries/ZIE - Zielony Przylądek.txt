@@ -1,0 +1,41 @@
+capital = 379
+
+oob = "ZIE_2025"
+
+set_convoys = 30
+set_research_slots = 2
+
+recruit_character = ZIE_suchora
+recruit_character = ZIE_urszula
+recruit_character = ZIE_jachira
+recruit_character = ZIE_grodzka
+
+UPO = {
+	set_autonomy = {
+		target = ZIE
+		autonomy_state = autonomy_collaboration_government
+	}
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+}
+
+set_politics = {
+	ruling_party = demokracjawalczaca
+	last_election = "2025.05.16"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 16
+	socjalizm = 13
+	demokracjawalczaca = 71
+}
+
+add_ideas = {
+	generalna_ideja
+	idea_ue
+}

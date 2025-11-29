@@ -1,0 +1,29 @@
+
+state={
+    id=57
+    name="STATE_57"
+    manpower = 1777
+
+    state_category = wasteland
+    resources={
+        aluminium=0
+        chromium=4
+        oil=0
+        rubber=0
+        steel=11
+        tungsten=4
+    }
+
+    history={
+        owner = REZ
+        buildings = {
+            infrastructure = 1
+        }
+        add_core_of = REZ
+    }
+
+    provinces={
+        1010 1011 1012 1013 1014 1015 1016 1017 1018 1019 1020 
+    }
+    local_supplies=0.0 
+}

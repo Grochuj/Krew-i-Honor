@@ -1,10 +1,10 @@
 spriteTypes = {
 	spriteType = {
 		name = GFX_portrait_RPL_mati
-		textureFile = gfx/leaders/RPL/mati.png
+		textureFile = gfx/leaders/RPL/mati.tga
 	}
 	spriteType = {
 		name = GFX_portrait_RPL_ziobro
-		textureFile = gfx/leaders/RPL/ziobro.png
+		textureFile = gfx/leaders/RPL/ziobro.tga
 	}
 }

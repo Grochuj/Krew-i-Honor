@@ -7,6 +7,11 @@ gierek_cat = {
 
 		available = {
 			always = yes
+			NOT = {
+				has_idea = PRL_duzy_dlug
+				has_idea = PRL_sredni_dlug
+				has_idea = PRL_maly_dlug
+			}
 		}
 
 		visible = {
@@ -15,12 +20,220 @@ gierek_cat = {
 
 		days_remove = 3
 
-		modifier = {
-			
+		remove_effect = {
+			RPL = {
+				country_event = gierek_event.5
+			}
 		}
 
+		ai_will_do = {
+			base = 3
+			modifier = {
+				has_political_power > 125
+				add = 32
+			}
+		}
+	}
+	kredyt_od_UPO = {
+		icon = GFX_decision_RAJ_investment_civs_icon
+		cost = 75
+		priority = 1
+		fire_only_once = yes
+
+		available = {
+			always = yes
+			NOT = {
+				has_idea = PRL_duzy_dlug
+				has_idea = PRL_sredni_dlug
+				has_idea = PRL_maly_dlug
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		days_remove = 3
+
 		remove_effect = {
-			country_event = 
+			UPO = {
+				country_event = gierek_event.5
+			}
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = {
+				has_political_power > 125
+				add = 32
+			}
+		}
+	}
+	kredyt_od_KON = {
+		icon = GFX_decision_RAJ_investment_civs_icon
+		cost = 75
+		priority = 1
+		fire_only_once = yes
+
+		available = {
+			always = yes
+			NOT = {
+				has_idea = PRL_duzy_dlug
+				has_idea = PRL_sredni_dlug
+				has_idea = PRL_maly_dlug
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		days_remove = 3
+
+		remove_effect = {
+			KON = {
+				country_event = gierek_event.5
+			}
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = {
+				has_political_power > 125
+				add = 32
+			}
+		}
+	}
+	kredyt_od_NRP = {
+		icon = GFX_decision_RAJ_investment_civs_icon
+		cost = 75
+		priority = 1
+		fire_only_once = yes
+
+		available = {
+			always = yes
+			NOT = {
+				has_idea = PRL_duzy_dlug
+				has_idea = PRL_sredni_dlug
+				has_idea = PRL_maly_dlug
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		days_remove = 3
+
+		remove_effect = {
+			NRP = {
+				country_event = gierek_event.5
+			}
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = {
+				has_political_power > 125
+				add = 32
+			}
+		}
+	}
+	kredyt_od_SZP = {
+		icon = GFX_decision_RAJ_investment_civs_icon
+		cost = 75
+		priority = 1
+		fire_only_once = yes
+
+		available = {
+			always = yes
+			NOT = {
+				has_idea = PRL_duzy_dlug
+				has_idea = PRL_sredni_dlug
+				has_idea = PRL_maly_dlug
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		days_remove = 3
+
+		remove_effect = {
+			SZP = {
+				country_event = gierek_event.5
+			}
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = {
+				has_political_power > 125
+				add = 32
+			}
+		}
+	}
+	kredyt_od_CEP = {
+		icon = GFX_decision_RAJ_investment_civs_icon
+		cost = 75
+		priority = 1
+		fire_only_once = yes
+
+		available = {
+			always = yes
+			NOT = {
+				has_idea = PRL_duzy_dlug
+				has_idea = PRL_sredni_dlug
+				has_idea = PRL_maly_dlug
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		days_remove = 3
+
+		remove_effect = {
+			CEP = {
+				country_event = gierek_event.5
+			}
+		}
+
+		ai_will_do = {
+			base = 3
+			modifier = {
+				has_political_power > 125
+				add = 32
+			}
+		}
+	}
+	kredyt_od_DIP = {
+		icon = GFX_decision_RAJ_investment_civs_icon
+		cost = 75
+		priority = 1
+		fire_only_once = yes
+
+		available = {
+			always = yes
+			NOT = {
+				has_idea = PRL_duzy_dlug
+				has_idea = PRL_sredni_dlug
+				has_idea = PRL_maly_dlug
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		days_remove = 3
+
+		remove_effect = {
+			DIP = {
+				country_event = gierek_event.5
+			}
 		}
 
 		ai_will_do = {

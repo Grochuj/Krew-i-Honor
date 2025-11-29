@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_portrait_ZIE_jachira
+		textureFile = gfx/advisors/ZIE/jachira.dds
+	}
+	spriteType = {
+		name = GFX_portrait_ZIE_urszula
+		textureFile = gfx/advisors/ZIE/urszula.dds
+	}
+	spriteType = {
+		name = GFX_portrait_ZIE_grodzka
+		textureFile = gfx/advisors/ZIE/grodzka.dds
+	}
+}

@@ -69,6 +69,8 @@ recruit_character = NRP_michalkiewicz
 recruit_character = NRP_teoretyk_skalik
 recruit_character = NRP_advisor_fritz
 recruit_character = NRP_piton
+recruit_character = NRP_walus
+recruit_character = NRP_kornas
 
 set_technology = {
 	infantry_weapons = 1

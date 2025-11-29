@@ -1,0 +1,44 @@
+
+state={
+    id=59
+    name="STATE_59"
+    manpower = 58750
+
+    state_category = town
+    resources={
+        aluminium=0
+        chromium=0
+        oil=0
+        rubber=0
+        steel=0
+        tungsten=0
+    }
+
+    history={
+
+        victory_points = { 1056 5}
+        victory_points = { 1062 5}
+
+        owner = REZ
+        buildings = {
+            infrastructure = 2
+
+            arms_factory = 1
+            industrial_complex = 1
+
+            1056 = {
+                naval_base = 3
+            }
+            1070 = {
+                naval_base = 2
+            }
+
+        }
+        add_core_of = REZ
+    }
+
+    provinces={
+        1043 1044 1045 1046 1048 1050 1051 1053 1055 1056 1058 1059 1060 1062 1063 1064 1066 1068 1070 1071 1109 1115 1116 1118 1122 1123 1127 1131 1136 1137 1139 1140 1143 1146
+    }
+    local_supplies=0.0 
+}

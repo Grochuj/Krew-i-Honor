@@ -2,33 +2,33 @@
 state={
 	id=55
 	name="STATE_55"
-	manpower = 30399
+	manpower = 70399
 	
 	state_category = large_town
 	resources={
-		aluminium=0
+		aluminium=5
 		chromium=0
 		oil=0
 		rubber=0
-		steel=0
+		steel=6
 		tungsten=0
 	}
 
 	history={
 		victory_points = { 972 3}
-		victory_points = { 977 2}
-		victory_points = { 978 1}
+		victory_points = { 978 15}
 		victory_points = { 982 5}
 		
 		owner = REZ
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			
 			arms_factory = 1
 			industrial_complex = 0
+			air_base = 3
 			
 			978 = {
-				naval_base = 1
+				naval_base = 5
 			}
 			
 		}

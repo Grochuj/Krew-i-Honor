@@ -14,7 +14,7 @@ focus_tree = {
         id = PRL_nasze_miejsce_na_swiecie
         icon = GFX_focus_GER_legacy_of_the_spartacus_league
         cost = 5
-        x = 22
+        x = 25
         y = 0
         completion_reward = { 
             add_political_power = 50
@@ -370,8 +370,20 @@ focus_tree = {
         }
         completion_reward = { 
             set_cosmetic_tag = senyszyn
-            every_core_state = {
-                
+            FLS = {
+                every_core_state = {
+                    add_core_of = PRL
+                }
+            }
+            RAZ = {
+                every_core_state = {
+                    add_core_of = PRL
+                }
+            }
+            LGB = {
+                every_core_state = {
+                    add_core_of = PRL
+                }
             }
         }
     }
@@ -517,6 +529,7 @@ focus_tree = {
                 name = PRL_peerel
             }
             add_ideas = PRL_niskie_poparcie
+            remove_ideas = idea_ue
         }
     }
     focus = {
@@ -583,15 +596,136 @@ focus_tree = {
         }
     }
     focus = {
-        id = PRL_zadluzanie_v2
-        icon = GFX_focus_generic_currency_reforms
+        id = PRL_rozbudowa_gospodarki
+        icon = GFX_focus_generic_crush_capitalism
         relative_position_id = PRL_kolejna_dekada_gierkwoska
         prerequisite = {
             focus = PRL_kolejna_dekada_gierkwoska
         }
         cost = 10
+        x = 1
+        y = 1
+        completion_reward = { 
+           random_controlled_state = {
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                }
+                add_extra_state_shared_building_slots = 1
+           }
+           random_controlled_state = {
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                }
+                add_extra_state_shared_building_slots = 2
+           }
+        }
+    }
+    focus = {
+        id = PRL_pomozecie
+        icon = GFX_focus_JAP_raise_the_red_flag_high
+        relative_position_id = PRL_kolejna_dekada_gierkwoska
+        prerequisite = {
+            focus = PRL_kolejna_dekada_gierkwoska
+        }
+        cost = 5
+        x = -1
+        y = 1
+        completion_reward = { 
+           add_ideas = PRL_help
+        }
+    }
+    focus = {
+        id = PRL_przemianowanie_katowic
+        icon = GFX_focus_PRC_bolshevik_urbanization_completed
+        relative_position_id = PRL_pomozecie
+        prerequisite = {
+            focus = PRL_pomozecie
+            focus = PRL_rozbudowa_gospodarki
+        }
+        cost = 10
+        x = 1
+        y = 1
+        completion_reward = {
+            635 = {
+                set_state_name = "Stalino"
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                }
+                add_extra_state_shared_building_slots = 2
+            }
+            set_province_name = {
+                id = 11352
+                name = PRL_stalino
+            }
+        }
+    }
+    focus = {
+        id = PRL_uzyskanie_poparcie
+        icon = GFX_focus_generic_happy_cheer
+        relative_position_id = PRL_pomozecie
+        prerequisite = {
+            focus = PRL_pomozecie
+        }
+        prerequisite = {
+            focus = PRL_odnowa_bezpieki
+        }
+        cost = 10
+        x = -1
+        y = 1
+        completion_reward = {
+            remove_ideas = PRL_niskie_poparcie
+        }
+    }
+    focus = {
+        id = PRL_gierkowka
+        icon = GFX_focus_generic_improve_roads
+        relative_position_id = PRL_przemianowanie_katowic
+        prerequisite = {
+            focus = PRL_przemianowanie_katowic
+        }
+        cost = 5
         x = 0
         y = 1
+        completion_reward = {
+           636 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                }
+           }
+           637 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                }
+           }
+           635 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                }
+           }
+           639 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                }
+           }
+        }
+    }
+    focus = {
+        id = PRL_zadluzanie_v2
+        icon = GFX_focus_generic_currency_reforms
+        relative_position_id = PRL_gierkowka
+        prerequisite = {
+            focus = PRL_gierkowka
+        }
+        cost = 10
+        x = 0
+        y = 2
         completion_reward = { 
             unlock_decision_category_tooltip = gierek_cat
         }
@@ -621,7 +755,7 @@ focus_tree = {
             focus = PRL_pucz_armijny
         }
         cost = 10
-        x = 1
+        x = 0
         y = 1
         completion_reward = {
             634 = {
@@ -646,7 +780,7 @@ focus_tree = {
             focus = PRL_odnowa_bezpieki
         }
         cost = 10
-        x = 2
+        x = 1
         y = 2
         completion_reward = {
            add_stability = -0.05
@@ -662,7 +796,7 @@ focus_tree = {
         }
         cost = 5
         x = -1
-        y = 1
+        y = 2
         completion_reward = {
           add_political_power = 75
         }
@@ -678,7 +812,7 @@ focus_tree = {
             focus = PRL_konsolidacja
         }
         cost = 15
-        x = -1
+        x = 0
         y = 2
         completion_reward = { 
             add_ideas = PRL_wojenny
@@ -868,7 +1002,7 @@ focus_tree = {
         id = PRL_plan_piecio_letni
         icon = GFX_focus_generic_communist_industry
         cost = 5
-        x = 6
+        x = 7
         y = 0
         completion_reward = { 
             add_timed_idea = {
@@ -915,6 +1049,11 @@ focus_tree = {
             add_resource = {
                 type = steel
                 amount = 13
+                state = 635
+            }
+            add_resource = {
+                type = coal
+                amount = 5
                 state = 635
             }
         }
@@ -1221,6 +1360,329 @@ focus_tree = {
         y = 1
         completion_reward = { 
             add_ideas = PRL_przygotowanie
+        }
+    }
+    #Marynarka========================================================
+    focus = {
+        id = PRL_rozbudowa_stoczni
+        icon = GFX_goal_generic_construct_naval_dockyard
+        cost = 10
+        x = 38
+        y = 4
+        completion_reward = { 
+            637 = {
+                add_building_construction = {
+                    type = dockyard
+                    level = 2
+                }
+                add_extra_state_shared_building_slots = 2
+            }
+            683 = {
+                add_building_construction = {
+                    type = dockyard
+                    level = 1
+                }
+                add_extra_state_shared_building_slots = 1
+            }
+        }
+    }
+    focus = {
+        id = PRL_badania_nad_statkami
+        icon = GFX_goal_generic_navy_cruiser
+        relative_position_id = PRL_rozbudowa_stoczni
+        prerequisite = {
+            focus = PRL_rozbudowa_stoczni
+        }
+        cost = 10
+        x = 0
+        y = 1
+        completion_reward = {
+            add_tech_bonus = {
+                category = ship_modules_tech
+                bonus = 0.75
+                uses = 2
+            }
+            add_tech_bonus = {
+                category = naval_equipment
+                bonus = 0.5
+                uses = 1
+            }
+        }
+    }
+    focus = {
+        id = PRL_rozwoj_baz_morskich
+        icon = GFX_focus_GER_sentinels_of_the_pacific
+        relative_position_id = PRL_badania_nad_statkami
+        prerequisite = {
+            focus = PRL_badania_nad_statkami
+        }
+        cost = 10
+        x = 2
+        y = 1
+        completion_reward = {
+            741 = {
+                add_building_construction = {
+                    type = naval_base
+                    level = 2
+                    province = 11744
+                }
+            }
+            732 = {
+                add_building_construction = {
+                    type = naval_base
+                    level = 2
+                    province = 11735
+                }
+            }
+            637 = {
+                add_building_construction = {
+                    type = naval_base
+                    level = 2
+                    province = 11348    
+                }
+            }
+        }
+    }
+    focus = {
+        id = PRL_budowa_stoczni_na_obrzerzach
+        icon = GFX_focus_POL_develop_polish_shipbuilding
+        relative_position_id = PRL_badania_nad_statkami
+        prerequisite = {
+            focus = PRL_rozwoj_baz_morskich
+        }
+        prerequisite = {
+            focus = PRL_badania_nad_statkami
+        }
+        cost = 8
+        x = 1
+        y = 2
+        completion_reward = {
+            741 = {
+                add_building_construction = {
+                    type = dockyard
+                    level = 1
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                }
+                add_extra_state_shared_building_slots = 1
+            }
+            732 = {
+                add_building_construction = {
+                    type = dockyard
+                    level = 1
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                }
+                add_extra_state_shared_building_slots = 1
+            }
+        }
+    }
+    focus = {
+        id = PRL_prace_nad_lodziami_podwodnymi
+        icon = GFX_goal_generic_navy_submarine
+        relative_position_id = PRL_badania_nad_statkami
+        prerequisite = {
+            focus = PRL_badania_nad_statkami
+        }
+        cost = 10
+        x = -2
+        y = 1
+        available = {
+            has_tech = basic_submarine
+        }
+        completion_reward = {
+            random_controlled_state = {
+                add_building_construction = {
+                    type = dockyard
+                    level = 1
+                }
+                add_extra_state_shared_building_slots = 1
+            }
+            create_equipment_variant = {
+				name = "Łódź Podwodna"				
+				name_group = PRL_SUB
+				role_icon_index = 1
+	            type = ship_hull_submarine_2
+	            modules = {
+		            fixed_ship_armor_slot = torpedo_mounting
+		            fixed_auxiliary_weapon_slot_1 = torpedo_mounting
+		            engine_type_slot = sub_ship_engine_2
+	            }
+            }
+            add_equipment_production = {
+				equipment = {
+					type = submarine_2
+					creator = "PRL"
+					version_name = "Hiacynt"
+				}
+				name = "Hiacynt"
+				requested_factories = 1
+				progress = 0.2
+				amount = 1
+			}
+        }
+    }
+    focus = {
+        id = PRL_cwiczenia
+        icon = GFX_focus_ICE_modernizing_the_coast_guard
+        relative_position_id = PRL_prace_nad_lodziami_podwodnymi
+        prerequisite = {
+            focus = PRL_prace_nad_lodziami_podwodnymi
+        }
+        cost = 5
+        x = 0
+        y = 1
+        completion_reward = {
+           navy_experience = 35
+        }
+        mark_focus_tree_layout_dirty = yes
+    }
+    focus = {
+        id = PRL_kolonizacja_zamorska
+        icon = GFX_focus_ICE_the_viking_spirit
+        relative_position_id = PRL_prace_nad_lodziami_podwodnymi
+        prerequisite = {
+            focus = PRL_cwiczenia
+        }
+        cost = 5
+        x = 0
+        y = 1
+        allow_branch = {
+            has_navy_size = {
+                size = 35
+            }
+        }
+        will_lead_to_war_with = WOH
+        completion_reward = {
+           create_wargoal = {
+                target = WOH
+                type = annex_everything
+            }
+        }
+        mark_focus_tree_layout_dirty = yes
+    }
+    focus = {
+        id = PRL_wcielenie_wochszczyzny
+        icon = GFX_focus_prc_agrarian_socialism
+        relative_position_id = PRL_kolonizacja_zamorska
+        prerequisite = {
+            focus = PRL_kolonizacja_zamorska
+        }
+        cost = 5
+        x = 0
+        y = 1
+        allow_branch = {
+            has_completed_focus = PRL_kolonizacja_zamorska
+        }
+        completion_reward = {
+           WOH = {
+                every_core_state = {
+                add_core_of = PRL
+                }
+            }
+        }
+    }
+    #Samololo========================================================
+    focus = {
+        id = PRL_flota_powietrzna
+        icon = GFX_focus_PER_the_peoples_airforce
+        cost = 10
+        x = 35
+        y = 0
+        completion_reward = { 
+            air_experience = 25
+        }
+    }
+    focus = {
+        id = PRL_male_samoloty
+        icon = GFX_focus_generic_jet_planes
+        relative_position_id = PRL_flota_powietrzna
+        mutually_exclusive = {
+            focus = PRL_srednie_samoloty
+        }
+        prerequisite = {
+            focus = PRL_flota_powietrzna
+        }
+        cost = 5
+        x = 1
+        y = 1
+        completion_reward = { 
+            add_tech_bonus = {
+                category = light_air
+                bonus = 1
+                uses = 1
+            }
+        }
+    }
+    focus = {
+        id = PRL_srednie_samoloty
+        icon = GFX_focus_generic_long_range_aircraft
+        relative_position_id = PRL_flota_powietrzna
+        mutually_exclusive = {
+            focus = PRL_male_samoloty
+        }
+        prerequisite = {
+            focus = PRL_flota_powietrzna
+        }
+        cost = 5
+        x = -1
+        y = 1
+        completion_reward = { 
+            add_tech_bonus = {
+                category = medium_air
+                bonus = 1
+                uses = 1
+            }
+        }
+    }
+    focus = {
+        id = PRL_nowe_lotniska
+        icon = GFX_focus_SOV_women_in_aviation
+        relative_position_id = PRL_srednie_samoloty
+        prerequisite = {
+            focus = PRL_srednie_samoloty
+            focus = PRL_male_samoloty
+        }
+        cost = 5
+        x = 1
+        y = 1
+        completion_reward = { 
+            random_controlled_state = {
+                add_building_construction = {
+                    type = air_base
+                    level = 3
+                }
+                add_building_construction = {
+                    type = air_base
+                    level = 3
+                }
+                add_building_construction = {
+                    type = air_base
+                    level = 1
+                }
+                add_building_construction = {
+                    type = air_base
+                    level = 1
+                }
+            }
+        }
+    }
+    focus = {
+        id = PRL_rot
+        icon = GFX_focus_GER_strike_at_the_rising_sun
+        relative_position_id = PRL_nowe_lotniska
+        prerequisite = {
+            focus = PRL_nowe_lotniska
+        }
+        cost = 5
+        x = 0
+        y = 1
+        completion_reward = { 
+            add_ideas = PRL_czerwone_niebo
         }
     }
 }

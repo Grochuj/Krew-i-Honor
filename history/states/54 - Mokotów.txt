@@ -2,7 +2,7 @@
 state={
 	id=54
 	name="STATE_54"
-	manpower = 56491
+	manpower = 226491
 	
 	state_category = metropolis
 	resources={
@@ -15,17 +15,16 @@ state={
 	}
 
 	history={
-		victory_points = { 947 1}
-		victory_points = { 955 11}
-		victory_points = { 960 9}
-		victory_points = { 965 4}
+		victory_points = { 968 3}
+		victory_points = { 947 3}
+		victory_points = { 960 30}
 		
 		owner = REZ
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 			
-			arms_factory = 1
-			industrial_complex = 3
+			arms_factory = 2
+			industrial_complex = 2
 			
 			964 = {
 				naval_base = 1

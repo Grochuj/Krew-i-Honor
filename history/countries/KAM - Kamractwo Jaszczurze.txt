@@ -12,6 +12,7 @@ recruit_character = KAM_jaszczur_leader
 recruit_character = KAM_osadowski
 recruit_character = KAM_poreba
 recruit_character = KAM_sadecki
+recruit_character = KAM_kochan
 
 set_technology = {
 	infantry_weapons = 1

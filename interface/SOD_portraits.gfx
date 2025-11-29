@@ -19,4 +19,16 @@ spriteTypes = {
 		name = GFX_portrait_SOD_golec_advisor
 		textureFile = gfx/advisors/SOD/golec_advisor.tga
 	}
+	spriteType = {
+		name = GFX_portrait_SOD_suchodolski_d
+		textureFile = gfx/generals/SOD/suchodolski_d.tga
+	}
+	spriteType = {
+		name = GFX_portrait_SOD_suchodolski_m
+		textureFile = gfx/advisors/SOD/suchodolski_m.tga
+	}
+	spriteType = {
+		name = GFX_portrait_SOD_konon
+		textureFile = gfx/advisors/SOD/konon.tga
+	}
 }

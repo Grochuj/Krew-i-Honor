@@ -296,6 +296,8 @@ ideologies = {
 
 			demowal = {
 			}
+			ekologizm = {
+			}
 		}
 
 		dynamic_faction_names = {
@@ -456,7 +458,7 @@ ideologies = {
 			can_force_government = yes # Can change ideology in peace deal. Required
 			can_send_volunteers = yes # Can send volunteers. Required
 			can_puppet = yes # Can puppet a nation at peace deal. Required
-			can_lower_tension = yes # Lowers tension at peace deal. Not required
+			can_lower_tension = yes # Lowers tension at peace deal. Not requireddsfsf
 			can_guarantee_other_ideologies = no # Can guarantee nations with different ideologies. Not required
 		}
 
@@ -467,13 +469,13 @@ ideologies = {
 			send_volunteers_tension = 0.25 # Required tension to send volunteers (0 to 1)
 			guarantee_tension = 0.15 # Required tension to guarantee a nation (0 to 1)
 			annex_cost_factor = -0.2 # Changes the cost of entirely annexing a nation in a peace deal. 0.5 would increase annexing cost by 50% (-1 to 1)
-			justify_war_goal_when_in_major_war_time = 0.9 # Changes the cost of justifying a war while in a major war. 0.5 would decrease time by 50% (0 to 1)
+			justify_war_goal_when_in_major_war_time = -0.75 # Changes the cost of justifying a war while in a major war. 0.5 would decrease time by 50% (0 to 1)
 			drift_defence_factor = 0.1 # Natural drift defence for the ideology # 0.3 would grant 30% drift defence (-1 to 1)
 			puppet_cost_factor = -0.25 # Changes the cost of puppeting a nation in a peace deal (-1 to 1)
 		}
 
 		can_be_boosted = yes # Can you boost this ideologies popularity in another country (yes/no)
-		can_collaborate = yes # Can create collaboration governments
+		can_collaborate = yes # Can create collaboration governmentss
 
 		ai_fascist = yes
 	}
@@ -670,9 +672,6 @@ ideologies = {
 		types = {
 
 			narodowyagraryzm = {
-
-			}
-			ekologizm = {
 
 			}
 		}

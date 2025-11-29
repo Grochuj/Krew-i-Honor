@@ -1,0 +1,183 @@
+add_namespace = gierek_event
+
+country_event = {
+	id = gierek_event.1
+	title = gierek_event.1.t
+	desc = gierek_event.1.d
+	picture = GFX_report_event_generic_read_write
+
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			base = 3
+		}
+		name = gierek_event.1.a
+
+		PRL = {
+			add_timed_idea = {
+				idea = PRL_duzy_dlug
+				days = 120
+			}
+			random_core_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+	}
+	
+}
+country_event = {
+	id = gierek_event.2
+	title = gierek_event.2.t
+	desc = gierek_event.2.d
+	picture = GFX_report_event_generic_read_write
+
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			base = 3
+		}
+		name = gierek_event.1.a
+
+		PRL = {
+			add_timed_idea = {
+				idea = PRL_sredni_dlug
+				days = 120
+			}
+			random_core_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	
+}
+country_event = {
+	id = gierek_event.3
+	title = gierek_event.3.t
+	desc = gierek_event.3.d
+	picture = GFX_report_event_generic_read_write
+
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			base = 3
+		}
+		name = gierek_event.1.a
+
+		PRL = {
+			add_timed_idea = {
+				idea = PRL_maly_dlug
+				days = 120
+			}
+			random_core_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	
+}
+country_event = {
+	id = gierek_event.4
+	title = gierek_event.4.t
+	desc = gierek_event.4.d
+	picture = GFX_report_event_generic_read_write
+
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			base = 3
+		}
+		name = gierek_event.4.a
+
+		add_stability = -0.05
+	}
+}
+country_event = {
+	id = gierek_event.5
+	title = gierek_event.5.t
+	desc = gierek_event.5.d
+	picture = GFX_report_event_communists_in_riga
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = {
+			base = 20
+		}
+		name = gierek_event.5.a
+		PRL = {
+			country_event = gierek_event.1
+		}
+		add_timed_idea = {
+			idea = gierson_B
+		}
+	}
+	option = {
+		ai_chance = {
+			base = 30
+		}
+		name = gierek_event.5.b
+		PRL = {
+			country_event = gierek_event.2
+		}
+		add_timed_idea = {
+			idea = gierson_M
+		}
+	}
+	option = {
+		ai_chance = {
+			base = 35
+		}
+		name = gierek_event.5.c
+		PRL = {
+			country_event = gierek_event.3
+		}
+		add_timed_idea = {
+			idea = gierson_S
+		}
+	}
+	option = {
+		ai_chance = {
+			base = 10
+		}
+		name = gierek_event.5.e
+		PRL = {
+			country_event = gierek_event.4
+		}
+	}
+}

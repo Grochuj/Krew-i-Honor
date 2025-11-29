@@ -118,5 +118,32 @@ ideas = {
 				consumer_goods_factor = -0.15
 			}
 		}
+		PRL_duzy_dlug = {
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+		PRL_sredni_dlug = {
+			modifier = {
+				consumer_goods_factor = 0.075
+			}
+		}
+		PRL_maly_dlug = {
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		PRL_czerwone_niebo = {
+			modifier = {
+				air_accidents_factor = -0.1
+				air_mission_efficiency = 0.15
+			}
+		}
+		PRL_help = {
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
 	}
 }

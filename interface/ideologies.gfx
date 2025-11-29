@@ -70,3 +70,24 @@ spriteTypes = {
         texturefile = gfx/interface/ideologies/kaczyzm.dds
 	}
 }
+
+spriteTypes = {
+    spriteType = {
+        name = GFX_ideology_monarchia_group
+        texturefile = gfx/interface/ideologies/monarchia.dds
+	}
+}
+
+spriteTypes = {
+    spriteType = {
+        name = GFX_ideology_autorytaryzm_group
+        texturefile = gfx/interface/ideologies/autorytaryzm.dds
+	}
+}
+
+spriteTypes = {
+    spriteType = {
+        name = GFX_ideology_homo_group
+        texturefile = gfx/interface/ideologies/homo.dds
+	}
+}

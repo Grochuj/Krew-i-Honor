@@ -229,4 +229,42 @@ characters = {
 			}
 		}
 	}
+	NRP_kornas = {
+		name = NRP_kornas
+		portraits = {
+			civilian = {
+				small = GFX_portrait_NRP_kornas
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = token_kornas_advisor
+			traits = {
+				
+			}
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	NRP_walus = {
+		name = NRP_walus
+		portraits = {
+			civilian = {
+				small = GFX_portrait_NRP_walus
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = token_walus_advisor
+			traits = {
+				prince_of_terror
+			}
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
 }

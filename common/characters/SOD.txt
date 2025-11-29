@@ -61,7 +61,7 @@ characters = {
 		}
 	}
 	SOD_marcin_miller = {
-		name = marcin_miller
+		name = SOD_marcin_miller
 		portraits = {
 			civilian = {
 				small = GFX_portrait_SOD_marcin_miller_advisor
@@ -86,8 +86,46 @@ characters = {
 			slot = political_advisor
 			idea_token = SOD_golec_advisor
 			traits = {
-				
+				captain_of_industry
 			}
+		}
+	}
+	SOD_suchodolski = {
+		name = SOD_suchodolski
+		portraits = {
+			civilian = {
+				small = GFX_portrait_SOD_suchodolski_m
+			}
+			army = {
+				large = GFX_portrait_SOD_suchodolski_d
+				small = GFX_portrait_SOD_suchodolski_m
+			}
+		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	SOD_konon = {
+		name = SOD_konon
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOD_konon_l
+				small = GFX_portrait_SOD_konon
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOD_bff_advisor
+			traits = {
+				anti_unionist_pure_anarchist
+			}
+		}
+		country_leader = {
+			ideology = liberalism
 		}
 	}
 }

@@ -142,4 +142,18 @@ characters = {
 			}
 		}
 	}
+	KAM_kochan={
+		name = KAM_kochan
+		portraits = {
+			civilian = {
+				small = GFX_portrait_KAM_kochan
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			traits = {
+				scholar_of_ethiopian_and_somali_studies
+			}
+		}
+	}
 }

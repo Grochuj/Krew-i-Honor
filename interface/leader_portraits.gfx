@@ -25,8 +25,8 @@ spriteTypes = {
 spriteTypes = {
 
 	spriteType = {
-		name = "GFX_portrait_UPO_suchora"
-		textureFile = "gfx/leaders/UPO/suchora.tga"
+		name = "GFX_portrait_ZIE_suchora"
+		textureFile = "gfx/leaders/ZIE/suchora.tga"
 	}
 }
 
@@ -81,6 +81,14 @@ spriteTypes = {
 spriteTypes = {
 
 	spriteType ={
+		name = "GFX_portrait_SOD_konon_l"
+		textureFile = "gfx/leaders/SOD/konon_l.tga"
+	}
+}
+
+spriteTypes = {
+
+	spriteType ={
 		name = "GFX_portrait_KAM_character"
 		textureFile = "gfx/leaders/KAM/Jaszczur.tga"
 	}
@@ -113,8 +121,8 @@ spriteTypes = {
 spriteTypes = {
 
 	spriteType ={
-		name = "GFX_portrait_CEP_tygrys_leader"
-		textureFile = "gfx/leaders/CEP/tygrys_leader.tga"
+		name = "GFX_portrait_CEP_tygrysek"
+		textureFile = "gfx/leaders/CEP/tygrysek.tga"
 	}
 }
 
