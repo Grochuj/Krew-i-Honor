@@ -113,7 +113,7 @@ characters = {
 		name = SOD_konon
 		portraits = {
 			civilian = {
-				large = GFX_portrait_konon_l
+				large = GFX_portrait_SOD_konon_l
 				small = GFX_portrait_SOD_konon
 			}
 		}
@@ -123,6 +123,9 @@ characters = {
 			traits = {
 				anti_unionist_pure_anarchist
 			}
+		}
+		country_leader = {
+			ideology = liberalism
 		}
 	}
 }
