@@ -264,7 +264,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_wychowanie_patriotyczne
-        icon = GFX_goal_generic_propaganda
+        icon = GFX_focus_POL_nationalist_education
         cost = 7
         relative_position_id = NRP_focus_nauczanie_domowe
         x = 0
@@ -1237,7 +1237,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_rodzinne_gospodarstwa_rolne
-        icon = GFX_goal_unknown
+        icon = GFX_focus_generic_farmland
         cost = 5
         relative_position_id = NRP_focus_odrzucenie_ladu
         x = -12
@@ -1614,7 +1614,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_likwidacja_pomniejszych
-        icon = GFX_goal_unknown
+        icon = GFX_focus_generic_improve_the_administration
         cost = 5
         relative_position_id = NRP_focus_likwidacja_cit
         x = 1
@@ -1654,7 +1654,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_koniec_zadluzania
-        icon = GFX_goal_unknown
+        icon = GFX_focus_generic_reduce_unneccessary_expenditure
         cost = 15
         relative_position_id = NRP_focus_wzmocnienie_gotowki
         x = 0
@@ -1704,7 +1704,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_wsparcie_gornictwa
-        icon = GFX_goal_unknown
+        icon = GFX_focus_generic_coal_mining
         cost = 10
         relative_position_id = NRP_focus_odrzucenie_ladu
         x = 5
@@ -1751,7 +1751,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_budowa_elektrowni
-        icon = GFX_goal_unknown
+        icon = GFX_focus_generic_nuclear_development
         cost = 10
         relative_position_id = NRP_focus_wsparcie_gornictwa
         x = -1
@@ -1771,7 +1771,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_elektrownie_wodne
-        icon = GFX_goal_unknown
+        icon = GFX_focus_RAJ_water_privatization
         cost = 7
         relative_position_id = NRP_focus_wsparcie_gornictwa
         x = 0
@@ -1804,7 +1804,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_rozwoj_regionow_gorniczych
-        icon = GFX_goal_unknown
+        icon = GFX_focus_generic_resource_extraction
         cost = 10
         relative_position_id = NRP_focus_wsparcie_gornictwa
         x = 1
@@ -2554,7 +2554,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_rozbudowa_infrastruktury_krytycznej
-        icon = GFX_goal_unknown
+        icon = GFX_goal_generic_construct_infrastructure
         cost = 5
         relative_position_id = NRP_focus_rozwoj_wot
         x = 4
@@ -2597,7 +2597,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_koleje_panstwowe
-        icon = GFX_goal_unknown
+        icon = GFX_focus_railway
         cost = 2
         relative_position_id = NRP_focus_rozbudowa_infrastruktury_krytycznej
         x = -2
@@ -2617,7 +2617,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_nowoczesne_tabory
-        icon = GFX_goal_unknown
+        icon = GFX_focus_generic_railroad
         cost = 5
         relative_position_id = NRP_focus_koleje_panstwowe
         x = 1
@@ -2642,7 +2642,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_rownowazenie_rozwoju
-        icon = GFX_goal_unknown
+        icon = GFX_focus_generic_full_employment
         cost = 5
         relative_position_id = NRP_focus_koleje_panstwowe
         x = -1
@@ -2926,7 +2926,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_rozwoj_doktryn_ladowych
-        icon = GFX_goal_unknown
+        icon = GFX_goal_generic_army_doctrines
         cost = 5
         relative_position_id = NRP_focus_program_szkoleniowy
         x = 0
@@ -3019,7 +3019,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_panstwowa_agencja_wywiadu
-        icon = GFX_goal_unknown
+        icon = GFX_focus_POL_expand_polish_intelligence
         cost = 5
         relative_position_id = NRP_focus_odpolitycznienie_policji
         x = -1
@@ -3050,7 +3050,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_sluzby_kontrwywiadowcze
-        icon = GFX_goal_unknown
+        icon = GFX_focus_generic_infiltration
         cost = 3
         relative_position_id = NRP_focus_panstwowa_agencja_wywiadu
         x = 0
@@ -3093,7 +3093,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_nowy_program_przezbrojenia
-        icon = GFX_goal_unknown
+        icon = GFX_focus_generic_money_for_equipment
         cost = 5
         relative_position_id = NRP_focus_odpolitycznianie_wojska
         x = -6
@@ -3145,7 +3145,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_wspolpraca_z_uczelniami
-        icon = GFX_goal_unknown
+        icon = GFX_focus_generic_education
         cost = 5
         relative_position_id = NRP_focus_nowy_program_przezbrojenia
         x = -1
@@ -3194,7 +3194,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_nowe_jednostki_obronne
-        icon = GFX_goal_unknown
+        icon = GFX_goal_generic_defence
         cost = 5
         relative_position_id = NRP_focus_odpolitycznianie_wojska
         x = 0
@@ -3249,7 +3249,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_powszechna_sluzba
-        icon = GFX_goal_unknown
+        icon = GFX_focus_generic_limited_social_mobilization
         cost = 5
         relative_position_id = NRP_focus_uproszczenie_struktur
         x = -2
@@ -3304,7 +3304,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_szkolenie_rezerw
-        icon = GFX_goal_unknown
+        icon = GFX_focus_generic_hill_training
         cost = 5
         relative_position_id = NRP_focus_powszechna_sluzba
         x = 1
@@ -3481,7 +3481,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_nowe_wojsko_polskie
-        icon = GFX_goal_unknown
+        icon = GFX_focus_generic_full_social_mobilization
         cost = 10
         relative_position_id = NRP_focus_odpolitycznianie_wojska
         x = 0
@@ -3537,7 +3537,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_rozwoj_sil_powietrznych
-        icon = GFX_goal_unknown
+        icon = GFX_goal_generic_build_airforce
         cost = 10
         relative_position_id = NRP_focus_inne_rodzaje_wojsk
         x = -3
@@ -3611,7 +3611,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_nowe_modele_mysliwcow
-        icon = GFX_goal_unknown
+        icon = "GFX_focus_usa_escort_fighters"
         cost = 10
         relative_position_id = NRP_focus_rozwoj_sil_powietrznych
         x = 2
@@ -3636,7 +3636,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_rozwoj_doktryny_powietrznej
-        icon = GFX_goal_unknown
+        icon = GFX_goal_generic_air_doctrine
         cost = 10
         relative_position_id = NRP_focus_budowa_baz_lotniczych
         x = 1
@@ -3664,7 +3664,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_budowa_stoczni
-        icon = GFX_goal_unknown
+        icon = GFX_goal_generic_construct_naval_dockyard
         cost = 10
         relative_position_id = NRP_focus_inne_rodzaje_wojsk
         x = 3
@@ -3694,6 +3694,82 @@ focus_tree = {
                     level = 2
                 }
                 add_extra_state_shared_building_slots = 2
+            }
+        }
+
+        ai_will_do = {
+            base = 2
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_mysli_morskiej
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        cost = 10
+        relative_position_id = NRP_focus_budowa_stoczni
+        x = 0
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_budowa_stoczni
+        }
+
+        completion_reward = {
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.25
+                name = "Rozwój Myśli Morskiej"
+                uses = 4
+                category = naval_doctrine
+            }
+        }
+
+        ai_will_do = {
+            base = 2
+        }
+    }
+    focus = {
+        id = NRP_focus_rozwoj_technologii_okretow
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_budowa_stoczni
+        x = -2
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_budowa_stoczni
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = "Badania nad technologiami okrętów"
+                uses = 2
+                bonus = 0.5
+                category = ship_modules_tech
+            }
+        }
+
+        ai_will_do = {
+            base = 2
+        }
+    }
+    focus = {
+        id = NRP_focus_poszerzenie_mozliwosci_transportowych
+        icon = GFX_goal_unknown
+        cost = 5
+        relative_position_id = NRP_focus_rozwoj_technologii_okretow
+        x = 1
+        y = 1
+
+        prerequisite = {
+            focus = NRP_focus_rozwoj_technologii_okretow
+        }
+        prerequisite = {
+            focus = NRP_focus_rozwoj_mysli_morskiej
+        }
+
+        completion_reward = {
+            add_equipment_to_stockpile = {
+                type = convoy
+                amount = 250
             }
         }
 
