@@ -9,4 +9,105 @@ focus_tree = {
         }
     }
     shared_focus = np_removing_focus_1
+
+    #Polska2050
+    focus = {
+        id = CEP_25
+        icon = GFX_focus_p2050
+        mutually_exclusive = {
+            focus = CEP_psl
+        }
+        cost = 5
+        x = 12
+        y = 0
+        completion_reward = {
+            
+        }
+    }
+    #PSL
+    focus = {
+        id = CEP_psl
+        icon = GFX_focus_psl
+        mutually_exclusive = {
+            focus = CEP_20
+        }
+        cost = 5
+        x = 23
+        y = 0
+        completion_reward = {
+            add_ideas = CEP_zielona_przyszlosc
+        }
+    }
+    focus = {
+        id = CEP_wyjdzmy_przed_szereg
+        icon = GFX_focus_eng_move_to_secure_the_dominions
+        prerequisite = {
+            focus = CEP_psl
+        }
+        relative_position_id = CEP_psl
+        cost = 5
+        x = -1
+        y = 1
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+    focus = {
+        id = CEP_stronnictwo_ludu
+        icon = GFX_focus_generic_modernizing_agriculture
+        prerequisite = {
+            focus = CEP_psl
+        }
+        relative_position_id = CEP_psl
+        cost = 5
+        x = 1
+        y = 1
+        completion_reward = {
+            add_popularity = {
+                ideology = agraryzm
+                popularity = 0.075
+            }
+            add_popularity = {
+                ideology = centryzm
+                popularity = -0.025
+            }
+        }
+    }
+    focus = {
+        id = CEP_czas_pslu
+        icon = GFX_focus_PRC_rural_region_development
+        prerequisite = {
+            focus = CEP_stronnictwo_ludu
+            focus = CEP_wyjdzmy_przed_szereg
+        }
+        relative_position_id = CEP_stronnictwo_ludu
+        cost = 10
+        x = -1
+        y = 1
+        available = {
+            agraryzm > 0.45
+        }
+        completion_reward = {
+            set_politics = {
+                ruling_party = agraryzm
+                elections_allowed = yes
+                last_election = "2025.6.10"
+                election_frequency = 60
+            }
+        }
+    }
+    focus = {
+        id = CEP_samodzielnosc
+        icon = GFX_focus_POL_complete_april_constitution
+        prerequisite = {
+            focus = CEP_czas_pslu
+        }
+        relative_position_id = CEP_czas_pslu
+        cost = 5
+        x = 0
+        y = 1
+        completion_reward = {
+            
+        }
+    }
 }

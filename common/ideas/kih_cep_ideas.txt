@@ -1,0 +1,17 @@
+ideas = {
+	country = {
+		CEP_zielona_przyszlosc = {
+			modifier = {
+				agraryzm_drift = 0.1
+				local_resources_factor = 0.05
+			}
+		}
+		CEP_prym_holowni = {
+			modifier = {
+				centryzm_drift = 0.001
+				stability_factor = -0.05
+				opinion_gain_monthly_factor = 0.1
+			}
+		}
+	}
+}

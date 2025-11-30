@@ -407,7 +407,7 @@ ideologies = {
 			"FACTION_NAME_DISCOPOLO_1"
 		}
 
-		color = { 0 0 0 }
+		color = { 255 255 255 }
 
 		rules = { # Rules for the ideology.  (yes/no)
             can_create_collaboration_government = yes # Can create a collaboration government

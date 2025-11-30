@@ -501,7 +501,7 @@ focus_tree = {
         cost = 5
         x = -6
         y = 1
-        completion_reward = { s
+        completion_reward = {
            create_faction = "Układ Warszawski"
            set_rule = {
             can_create_factions = yes
@@ -857,8 +857,8 @@ focus_tree = {
                 create_unit = { division = "name = \"Drugi Oddział ZOMO\" division_template = \"Zmotoryzowany Odwód Milicji Obywatelskiej\" start_experience_factor = 1" owner = ROOT }
             }
             set_technology = {
-            tech_military_police2 = yes
-          }
+                tech_military_police2 = yes
+            }
         }
     }
     focus = {

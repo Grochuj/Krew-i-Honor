@@ -159,4 +159,12 @@ spriteTypes = {
         name = GFX_focus_zero
         texturefile = gfx/interface/goals/zero.dds
     }
+    spriteType = {
+        name = GFX_focus_p2050
+        texturefile = gfx/interface/goals/p2050.dds
+    }
+    spriteType = {
+        name = GFX_focus_psl
+        texturefile = gfx/interface/goals/psl.dds
+    }
 }

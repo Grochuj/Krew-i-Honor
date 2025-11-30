@@ -1951,7 +1951,7 @@ political_actions = {
 		}
     }
 
-	anti_imperializm_raids = {
+	anti_judaizm_raids = {
 
     	icon = generic_civil_support
 
@@ -1963,11 +1963,11 @@ political_actions = {
 		}
 
 		available = {
-            imperializm > 0.1
+            judaizm > 0.1
         }
 	
 		modifier = {
-			imperializm_drift = -0.05
+			judaizm_drift = -0.05
 			stability_weekly = 0.007
 		}
 	
