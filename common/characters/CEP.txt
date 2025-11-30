@@ -16,10 +16,25 @@ characters = {
 		portraits={
 			civilian = {
 				large = GFX_portrait_CEP_tygrysek
+				small = GFX_portrait_CEP_kosiniak_m
+			}
+			army = {
+				large = GFX_portrait_CEP_kosiniak_a
+				small = GFX_portrait_CEP_kosiniak_m
 			}
 		}
 		country_leader = {
 			ideology = narodowyagraryzm
+		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 1
+			traits = {
+				
+			}
 		}
 	}
 	CEP_petru = {
@@ -50,7 +65,7 @@ characters = {
 			slot = political_advisor
 			idea_token = CEP_pelczynska
 			traits = {
-				
+				kpo
 			}
 		}
 	}
@@ -66,7 +81,7 @@ characters = {
 			slot = political_advisor
 			idea_token = CEP_kloska
 			traits = {
-				
+				IRQ_armenian_oil_magnate
 			}
 		}
 	}
@@ -126,7 +141,7 @@ characters = {
 			slot = political_advisor
 			idea_token = CEP_cwik
 			traits = {
-				
+				pl205
 			}
 		}
 	}
@@ -141,7 +156,7 @@ characters = {
 			slot = political_advisor
 			idea_token = CEP_ras
 			traits = {
-				
+				peessl
 			}
 		}
 	}
@@ -156,9 +171,13 @@ characters = {
 			slot = political_advisor
 			idea_token = CEP_sroka
 			traits = {
-				
+				BRA_head_of_political_police
+			}
+			available = {
+				has_intelligence_agency = yes
 			}
 		}
+		
 	}
 	CEP_sawicki = {
 		name = CEP_sawicki

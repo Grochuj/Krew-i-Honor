@@ -59,4 +59,12 @@ spriteTypes = {
 		name = GFX_portrait_CEP_kaminski
 		textureFile = gfx/advisors/CEP/kaminski.dds
 	}
+	spriteType = {
+		name = GFX_portrait_CEP_kosiniak_m
+		textureFile = gfx/advisors/CEP/kosiniak_m.dds
+	}
+	spriteType = {
+		name = GFX_portrait_CEP_kosiniak_a
+		textureFile = gfx/advisors/CEP/kosiniak_a.dds
+	}
 }
