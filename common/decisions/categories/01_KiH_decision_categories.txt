@@ -72,10 +72,22 @@ gierek_cat = {
 	}
 	visible = {
 		PRL = {
-			has_completed_focus = PRL_zadluzanie_v2
+			has_completed_focus = PRL_zadluzanie_major
 		}
 	}
-	priority = 19
+	priority = 25
+	visible_when_empty = no
+}
+gierus_cat = {
+	allowed = {
+		tag = PRL
+	}
+	visible = {
+		PRL = {
+			has_completed_focus = PRL_zadluzanie_minor
+		}
+	}
+	priority = 24
 	visible_when_empty = no
 }
 inwestycjeunii_cat = {

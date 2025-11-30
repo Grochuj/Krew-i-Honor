@@ -101,19 +101,12 @@ characters = {
 				
 			}
 
-			visible = {
-				has_country_flag = PRL_flag_dostepnigeneralowie
-			}
 		}
 		advisor = {
 			slot = army_chief
 
 			traits = {
 				army_chief_offensive_2
-			}
-
-			visible = {
-				has_country_flag = PRL_flag_dostepnigeneralowie
 			}
 		}
 	}
@@ -137,17 +130,11 @@ characters = {
 			traits = {
 				
 			}
-			visible = {
-				has_country_flag = PRL_flag_dostepnigeneralowie
-			}
 		}
 		advisor = {
 			slot = high_command
 			traits = {
 				army_infantry_2
-			}
-			visible = {
-				has_country_flag = PRL_flag_dostepnigeneralowie
 			}
 		}
 		
@@ -165,8 +152,28 @@ characters = {
 			traits = {
 				socialist_writer
 			}
-			visible = {
-				has_country_flag = PRL_flag_dostepnigeneralowie
+		}
+	}
+	PRL_piasecki = {
+		name = PRL_piasecki
+		portraits = {
+			civilian = {
+				small = GFX_portrait_PRL_piasecki_s
+				large = GFX_portrait_PRL_piasecki_l
+			}
+		}
+		country_leader = {
+			ideology = nazbol
+
+			traits = {
+				
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PRL_piasecki
+			traits = {
+				paks
 			}
 		}
 	}

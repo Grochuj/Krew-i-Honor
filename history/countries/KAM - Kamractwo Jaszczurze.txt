@@ -83,8 +83,9 @@ set_politics = {
 }
 
 set_popularities = {
-	autorytaryzm = 100
-	nacjonalizm = 0
+	autorytaryzm = 83
+	nacjonalizm = 4
+	narodowybolszewizm = 13
 }
 
 add_ideas = {

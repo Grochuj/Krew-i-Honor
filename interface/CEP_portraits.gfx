@@ -1,0 +1,62 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_portrait_CEP_pelczynska_d
+		textureFile = gfx/advisors/CEP/pelczynska_d.dds
+	}
+	spriteType = {
+		name = GFX_portrait_CEP_pelczynska_m
+		textureFile = gfx/advisors/CEP/pelczynska_m.dds
+	}
+	spriteType = {
+		name = GFX_portrait_CEP_petru_d
+		textureFile = gfx/advisors/CEP/petru_d.dds
+	}
+	spriteType = {
+		name = GFX_portrait_CEP_petru_m
+		textureFile = gfx/advisors/CEP/petru_m.dds
+	}
+	spriteType = {
+		name = GFX_portrait_CEP_kloska_d
+		textureFile = gfx/advisors/CEP/kloska_d.dds
+	}
+	spriteType = {
+		name = GFX_portrait_CEP_kloska_m
+		textureFile = gfx/advisors/CEP/kloska_m.dds
+	}
+	spriteType = {
+		name = GFX_portrait_CEP_sroka
+		textureFile = gfx/advisors/CEP/sroka.dds
+	}
+	spriteType = {
+		name = GFX_portrait_CEP_sawicki
+		textureFile = gfx/advisors/CEP/sawicki.dds
+	}
+	spriteType = {
+		name = GFX_portrait_CEP_gramatyka
+		textureFile = gfx/advisors/CEP/gramatyka.dds
+	}
+	spriteType = {
+		name = GFX_portrait_CEP_ras
+		textureFile = gfx/advisors/CEP/ras.dds
+	}
+	spriteType = {
+		name = GFX_portrait_CEP_leo
+		textureFile = gfx/advisors/CEP/leo.dds
+	}
+	spriteType = {
+		name = GFX_portrait_CEP_motyka
+		textureFile = gfx/advisors/CEP/motyka.dds
+	}
+	spriteType = {
+		name = GFX_portrait_CEP_kiepura
+		textureFile = gfx/advisors/CEP/kiepura.dds
+	}
+	spriteType = {
+		name = GFX_portrait_CEP_cwik
+		textureFile = gfx/advisors/CEP/cwik.dds
+	}
+	spriteType = {
+		name = GFX_portrait_CEP_kaminski
+		textureFile = gfx/advisors/CEP/kaminski.dds
+	}
+}

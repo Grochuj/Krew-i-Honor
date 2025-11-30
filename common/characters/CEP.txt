@@ -22,4 +22,187 @@ characters = {
 			ideology = narodowyagraryzm
 		}
 	}
+	CEP_petru = {
+		name = CEP_petru
+		portraits = {
+			civilian = {
+				small = GFX_portrait_CEP_petru_m
+				large = GFX_portrait_CEP_petru_d
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CEP_petru
+			traits = {
+				economist
+			}
+		}
+	}
+	CEP_pelczynska = {
+		name = CEP_pelczynska
+		portraits = {
+			civilian = {
+				small = GFX_portrait_CEP_pelczynska_m
+				large = GFX_portrait_CEP_pelczynska_d
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CEP_pelczynska
+			traits = {
+				
+			}
+		}
+	}
+	CEP_kloska = {
+		name = CEP_kloska
+		portraits = {
+			civilian = {
+				small = GFX_portrait_CEP_kloska_m
+				large = GFX_portrait_CEP_kloska_d
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CEP_kloska
+			traits = {
+				
+			}
+		}
+	}
+	CEP_leo = {
+		name = CEP_leo
+		portraits = {
+			civilian = {
+				small = GFX_portrait_CEP_leo
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CEP_leo
+			traits = {
+				
+			}
+		}
+	}
+	CEP_gramatyka = {
+		name = CEP_gramatyka
+		portraits = {
+			civilian = {
+				small = GFX_portrait_CEP_gramatyka
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CEP_gramatyka
+			traits = {
+				silent_workhorse
+			}
+		}
+	}
+	CEP_kiepura = {
+		name = CEP_kiepura
+		portraits = {
+			civilian = {
+				small = GFX_portrait_CEP_kiepura
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CEP_kiepura
+			traits = {
+				agrarian_nationalist
+			}
+		}
+	}
+	CEP_cwik = {
+		name = CEP_cwik
+		portraits = {
+			civilian = {
+				small = GFX_portrait_CEP_cwik
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CEP_cwik
+			traits = {
+				
+			}
+		}
+	}
+	CEP_ras = {
+		name = CEP_ras
+		portraits = {
+			civilian = {
+				small = GFX_portrait_CEP_ras
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CEP_ras
+			traits = {
+				
+			}
+		}
+	}
+	CEP_sroka = {
+		name = CEP_sroka
+		portraits = {
+			civilian = {
+				small = GFX_portrait_CEP_sroka
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CEP_sroka
+			traits = {
+				
+			}
+		}
+	}
+	CEP_sawicki = {
+		name = CEP_sawicki
+		portraits = {
+			civilian = {
+				small = GFX_portrait_CEP_sawicki
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CEP_sawicki
+			traits = {
+				agrarian_revolutionist
+			}
+		}
+	}
+	CEP_motyka = {
+		name = CEP_motyka
+		portraits = {
+			civilian = {
+				small = GFX_portrait_CEP_motyka
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CEP_motyka
+			traits = {
+				
+			}
+		}
+	}
+	CEP_kaminski = {
+		name = CEP_kaminski
+		portraits = {
+			civilian = {
+				small = GFX_portrait_CEP_kaminski
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CEP_kaminski
+			traits = {
+				backroom_backstabber
+			}
+		}
+	}
 }
