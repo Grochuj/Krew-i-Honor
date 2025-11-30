@@ -1,0 +1,16 @@
+leader_traits = {
+	peessl = {
+		agraryzm_drift = 0.1
+		monthly_population = 0.1
+		local_building_slots_factor = 0.05
+	}
+	pl205 = {
+		centryzm_drift = 0.1
+		political_power_gain = 0.01
+		economy_cost_factor = -0.15
+	}
+	kpo = {
+		production_speed_industrial_complex_factor = 0.15
+		consumer_goods_factor = -0.1
+	}
+}
