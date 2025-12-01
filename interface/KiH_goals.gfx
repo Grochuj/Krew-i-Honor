@@ -159,4 +159,44 @@ spriteTypes = {
         name = GFX_focus_zero
         texturefile = gfx/interface/goals/zero.dds
     }
+    spriteType = {
+        name = GFX_focus_kulawleb
+        texturefile = gfx/interface/goals/kulawleb_focus.dds
+    }
+    spriteType = {
+        name = GFX_focus_odpolitycznianiearmii
+        texturefile = gfx/interface/goals/odpolitycznieniearmii.dds
+    }
+    spriteType = {
+        name = GFX_focus_ship
+        texturefile = gfx/interface/goals/ship.dds
+    }
+    spriteType = {
+        name = GFX_focus_fleetairforce
+        texturefile = gfx/interface/goals/fleet-airforce.dds
+    }
+    spriteType = {
+        name = GFX_focus_ship2
+        texturefile = gfx/interface/goals/ship2.dds
+    }
+    spriteType = {
+        name = GFX_focus_gotowka
+        texturefile = gfx/interface/goals/gotowka.dds
+    }
+    spriteType = {
+        name = GFX_focus_zakazdeficytu
+        texturefile = gfx/interface/goals/zakazdeficytu.dds
+    }
+    spriteType = {
+        name = GFX_focus_kasarolnikow
+        texturefile = gfx/interface/goals/kasarolnikow.dds
+    }
+    spriteType = {
+        name = GFX_focus_rifles
+        texturefile = gfx/interface/goals/rifles.dds
+    }
+    spriteType = {
+        name = GFX_focus_rifles2
+        texturefile = gfx/interface/goals/rifles2.dds
+    }
 }

@@ -1262,7 +1262,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_rekompensaty_dla_rolnikow
-        icon = GFX_goal_unknown
+        icon = GFX_focus_kasarolnikow
         cost = 5
         relative_position_id = NRP_focus_rodzinne_gospodarstwa_rolne
         x = 2
@@ -1634,7 +1634,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_wzmocnienie_gotowki
-        icon = GFX_goal_unknown
+        icon = GFX_focus_gotowka
         cost = 5
         relative_position_id = NRP_focus_odrzucenie_ladu
         x = 2
@@ -1680,7 +1680,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_zakaz_deficytu
-        icon = GFX_goal_unknown
+        icon = GFX_focus_zakazdeficytu
         cost = 5
         relative_position_id = NRP_focus_koniec_zadluzania
         x = 0
@@ -2534,7 +2534,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_rozwoj_wot
-        icon = GFX_goal_unknown
+        icon = GFX_focus_SWE_hedgehog_defense
         cost = 5
         relative_position_id = NRP_focus_szacunek_dla_zolnierzy
         x = 0
@@ -2853,7 +2853,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_program_szkoleniowy
-        icon = GFX_goal_unknown
+        icon = GFX_focus_rifles
         cost = 5
         relative_position_id = NRP_focus_rozwoj_wot
         x = 0
@@ -3073,7 +3073,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_odpolitycznianie_wojska
-        icon = GFX_goal_unknown
+        icon = GFX_focus_odpolitycznianiearmii
         cost = 5
         relative_position_id = NRP_focus_szacunek_dla_zolnierzy
         x = -8
@@ -3284,7 +3284,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_kula_w_leb
-        icon = GFX_goal_unknown
+        icon = GFX_focus_kulawleb
         cost = 5
         relative_position_id = NRP_focus_powszechna_sluzba
         x = -1
@@ -3367,7 +3367,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_odbudowa_obrony_cywilnej
-        icon = GFX_goal_unknown
+        icon = GFX_focus_generic_home_defense
         cost = 5
         relative_position_id = NRP_focus_odpolitycznianie_wojska
         x = 4
@@ -3387,7 +3387,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_dostep_do_broni
-        icon = GFX_goal_unknown
+        icon = GFX_focus_rifles2
         cost = 5
         relative_position_id = NRP_focus_odbudowa_obrony_cywilnej
         x = 1
@@ -3521,7 +3521,7 @@ focus_tree = {
 
     focus = {
         id = NRP_focus_inne_rodzaje_wojsk
-        icon = GFX_goal_unknown
+        icon = GFX_focus_fleetairforce
         cost = 5
         x = 88
         y = 0
@@ -3562,7 +3562,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_budowa_baz_lotniczych
-        icon = GFX_goal_unknown
+        icon = GFX_focus_generic_air_defense
         cost = 10
         relative_position_id = NRP_focus_rozwoj_sil_powietrznych
         x = 0
@@ -3728,7 +3728,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_rozwoj_technologii_okretow
-        icon = GFX_goal_unknown
+        icon = GFX_focus_ship
         cost = 10
         relative_position_id = NRP_focus_budowa_stoczni
         x = -2
@@ -3753,7 +3753,7 @@ focus_tree = {
     }
     focus = {
         id = NRP_focus_poszerzenie_mozliwosci_transportowych
-        icon = GFX_goal_unknown
+        icon = GFX_focus_ship2
         cost = 5
         relative_position_id = NRP_focus_rozwoj_technologii_okretow
         x = 1
