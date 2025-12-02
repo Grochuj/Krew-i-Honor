@@ -81,7 +81,7 @@ characters = {
 			slot = political_advisor
 			idea_token = CEP_kloska
 			traits = {
-				IRQ_armenian_oil_magnate
+				klimatystka
 			}
 		}
 	}
@@ -185,14 +185,26 @@ characters = {
 			civilian = {
 				small = GFX_portrait_CEP_sawicki
 			}
+			army = {
+				small = GFX_portrait_CEP_sawicki
+				large = GFX_portrait_CEP_sawicki_d
+			}
 		}
 		advisor = {
 			slot = political_advisor
 			idea_token = CEP_sawicki
 			traits = {
-				agrarian_revolutionist
+				agrarian_nationalist
 			}
 		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+		}
+
 	}
 	CEP_motyka = {
 		name = CEP_motyka

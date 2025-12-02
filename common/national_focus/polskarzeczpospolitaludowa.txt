@@ -1630,8 +1630,9 @@ focus_tree = {
         y = 1
         completion_reward = {
            navy_experience = 35
+           mark_focus_tree_layout_dirty = yes
         }
-        mark_focus_tree_layout_dirty = yes
+        
     }
     focus = {
         id = PRL_kolonizacja_zamorska
@@ -1654,8 +1655,8 @@ focus_tree = {
                 target = WOH
                 type = annex_everything
             }
+            mark_focus_tree_layout_dirty = yes
         }
-        mark_focus_tree_layout_dirty = yes
     }
     focus = {
         id = PRL_wcielenie_wochszczyzny

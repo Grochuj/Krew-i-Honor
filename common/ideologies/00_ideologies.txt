@@ -68,6 +68,154 @@ ideologies = {
 		ai_give_core_state_control_threshold = 0 # Extra threshold value added to DIPLOMATIC_ACTION_PROPOSE_SCORE for this ideology to give back core state control to other country
 	}
 
+	federalizm = {
+
+		types = {
+
+			fed = {
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+		}
+
+		color = { 0 0 80 }
+
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+
+		modifiers = {
+			generate_wargoal_tension = 0.30
+			join_faction_tension = 0.50
+			lend_lease_tension = 0.50
+			send_volunteers_tension = 0.50
+			guarantee_tension = 0.25
+			# annex_cost_factor = 0.5 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+			embargo_cost_factor = -0.5
+			embargo_threshold_factor = -0.5
+		}
+
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.20 #plus 50% trade opinion
+		}
+		ai_democratic = yes # uses the democratic AI behaviour
+		ai_ideology_wanted_units_factor = 1.50 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
+		
+		ai_give_core_state_control_threshold = 70 # Extra threshold value added to DIPLOMATIC_ACTION_PROPOSE_SCORE for this ideology to give back core state control to other country
+	}
+
+	demokracjawalczaca = {
+
+		types = {
+
+			demowal = {
+			}
+			ekologizm = {
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+		}
+
+		color = { 0 0 80 }
+
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = yes
+			can_lower_tension = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+
+		modifiers = {
+			generate_wargoal_tension = 0.1
+			join_faction_tension = 0.30
+			lend_lease_tension = 0.50
+			send_volunteers_tension = 0.50
+			guarantee_tension = 0.25
+			# annex_cost_factor = 0.5 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+			embargo_cost_factor = -0.5
+			embargo_threshold_factor = -0.5
+		}
+
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		ai_democratic = yes # uses the democratic AI behaviour
+		ai_ideology_wanted_units_factor = 1.30 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
+		
+		ai_give_core_state_control_threshold = 30 # Extra threshold value added to DIPLOMATIC_ACTION_PROPOSE_SCORE for this ideology to give back core state control to other country
+	}
+
+	judaizm = {
+		types = {
+			jew = {
+
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DISCOPOLO_1"
+		}
+
+		color = { 255 255 255 }
+
+		rules = { # Rules for the ideology.  (yes/no)
+            can_create_collaboration_government = yes # Can create a collaboration government
+			can_declare_war_on_same_ideology = yes # Declare war on same ideology. Not required
+			can_force_government = yes # Can change ideology in peace deal. Required
+			can_send_volunteers = yes # Can send volunteers. Required
+			can_puppet = yes # Can puppet a nation at peace deal. Required
+			can_lower_tension = yes # Lowers tension at peace deal. Not required
+			can_guarantee_other_ideologies = no # Can guarantee nations with different ideologies. Not required
+		}
+
+		can_host_government_in_exile = yes #Can host a government in exile
+
+		modifiers = { # More rules for the ideology. Every country [[Modifiers|modifier]] can apply.
+			lend_lease_tension = 0.5 # Required tension to start a lend-lease (0 to 1)
+			send_volunteers_tension = 0.5 # Required tension to send volunteers (0 to 1)
+			guarantee_tension = 0.15 # Required tension to guarantee a nation (0 to 1)
+			annex_cost_factor = -0.1 # Changes the cost of entirely annexing a nation in a peace deal. 0.5 would increase annexing cost by 50% (-1 to 1)
+			justify_war_goal_when_in_major_war_time = -0.5 # Changes the cost of justifying a war while in a major war. 0.5 would decrease time by 50% (0 to 1)
+			drift_defence_factor = 0.5 # Natural drift defence for the ideology # 0.3 would grant 30% drift defence (-1 to 1)
+			puppet_cost_factor = -0.25 # Changes the cost of puppeting a nation in a peace deal (-1 to 1)
+		}
+
+		can_be_boosted = yes # Can you boost this ideologies popularity in another country (yes/no)
+		can_collaborate = yes # Can create collaboration governments
+
+		ai_fascist = yes
+	}
 
 	communism = {
 
@@ -131,6 +279,88 @@ ideologies = {
 		ai_give_core_state_control_threshold = 10
 	}
 
+	narodowybolszewizm = {
+		types = {
+			nazbol = {
+
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DISCOPOLO_1"
+		}
+
+		color = { 165 20 30 }
+
+		rules = { # Rules for the ideology.  (yes/no)
+            can_create_collaboration_government = yes # Can create a collaboration government
+			can_declare_war_on_same_ideology = yes # Declare war on same ideology. Not required
+			can_force_government = yes # Can change ideology in peace deal. Required
+			can_send_volunteers = yes # Can send volunteers. Required
+			can_puppet = yes # Can puppet a nation at peace deal. Required
+			can_lower_tension = yes # Lowers tension at peace deal. Not requireddsfsf
+			can_guarantee_other_ideologies = no # Can guarantee nations with different ideologies. Not required
+		}
+
+		can_host_government_in_exile = yes #Can host a government in exile
+
+		modifiers = { # More rules for the ideology. Every country [[Modifiers|modifier]] can apply.
+			lend_lease_tension = 0.2 # Required tension to start a lend-lease (0 to 1)
+			send_volunteers_tension = 0.25 # Required tension to send volunteers (0 to 1)
+			guarantee_tension = 0.15 # Required tension to guarantee a nation (0 to 1)
+			annex_cost_factor = -0.2 # Changes the cost of entirely annexing a nation in a peace deal. 0.5 would increase annexing cost by 50% (-1 to 1)
+			justify_war_goal_when_in_major_war_time = -0.2 # Changes the cost of justifying a war while in a major war. 0.5 would decrease time by 50% (0 to 1)
+			drift_defence_factor = 0.1 # Natural drift defence for the ideology # 0.3 would grant 30% drift defence (-1 to 1)
+		}
+
+		can_be_boosted = yes # Can you boost this ideologies popularity in another country (yes/no)
+		can_collaborate = yes # Can create collaboration governmentss
+
+		ai_communist = yes
+	}
+
+	kaczyzm = {
+
+		types = {
+
+			kac = {
+
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DISCOPOLO_1"
+		}
+
+		color = { 200 0 0 }
+
+		war_impact_on_world_tension = 0.7			#evil!
+		faction_impact_on_world_tension = 0.3
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+
+		can_collaborate = yes
+
+		modifiers = {
+			justify_war_goal_when_in_major_war_time = -0.8
+			civilian_intel_to_others = 25.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 5.0
+			embargo_cost_factor = 1
+			lend_lease_tension = 0.25
+		}
+
+		ai_communist = yes
+		ai_ideology_wanted_units_factor = 1.5
+		
+		ai_give_core_state_control_threshold = 1000
+	}
+
 	fascism = {
 
 		types = {
@@ -187,6 +417,130 @@ ideologies = {
 		ai_ideology_wanted_units_factor = 1.65
 		
 		ai_give_core_state_control_threshold = 10000
+	}
+
+	narodowysocjalizm = {
+		types = {
+			narsoc = {
+
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DISCOPOLO_1"
+		}
+
+		color = { 44 37 19 }
+
+		rules = { # Rules for the ideology.  (yes/no)
+            can_create_collaboration_government = yes # Can create a collaboration government
+			can_declare_war_on_same_ideology = yes # Declare war on same ideology. Not required
+			can_force_government = yes # Can change ideology in peace deal. Required
+			can_send_volunteers = yes # Can send volunteers. Required
+			can_puppet = yes # Can puppet a nation at peace deal. Required
+			can_lower_tension = yes # Lowers tension at peace deal. Not requireddsfsf
+			can_guarantee_other_ideologies = no # Can guarantee nations with different ideologies. Not required
+		}
+
+		can_host_government_in_exile = yes #Can host a government in exile
+
+		modifiers = { # More rules for the ideology. Every country [[Modifiers|modifier]] can apply.
+			lend_lease_tension = 0.2 # Required tension to start a lend-lease (0 to 1)
+			send_volunteers_tension = 0.25 # Required tension to send volunteers (0 to 1)
+			guarantee_tension = 0.15 # Required tension to guarantee a nation (0 to 1)
+			annex_cost_factor = -0.2 # Changes the cost of entirely annexing a nation in a peace deal. 0.5 would increase annexing cost by 50% (-1 to 1)
+			justify_war_goal_when_in_major_war_time = -0.75 # Changes the cost of justifying a war while in a major war. 0.5 would decrease time by 50% (0 to 1)
+			drift_defence_factor = 0.1 # Natural drift defence for the ideology # 0.3 would grant 30% drift defence (-1 to 1)
+			puppet_cost_factor = -0.25 # Changes the cost of puppeting a nation in a peace deal (-1 to 1)
+		}
+
+		can_be_boosted = yes # Can you boost this ideologies popularity in another country (yes/no)
+		can_collaborate = yes # Can create collaboration governmentss
+
+		ai_fascist = yes
+	}
+
+	nacjonalizm = {
+
+		types = {
+
+			nac = {
+
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DISCOPOLO_1"
+		}
+
+		color = { 250 98 98 }
+
+		war_impact_on_world_tension = 0.4			#evil!
+		faction_impact_on_world_tension = 0.3
+
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+
+		can_collaborate = yes
+
+		modifiers = {
+			justify_war_goal_when_in_major_war_time = -0.9
+			civilian_intel_to_others = 5.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 3.0
+			airforce_intel_to_others = 5.0
+			embargo_cost_factor = 1
+			lend_lease_tension = 0.25
+		}
+
+		ai_fascist = yes
+		ai_ideology_wanted_units_factor = 1.35
+		
+		ai_give_core_state_control_threshold = 100
+	}
+
+	monarchia = {
+		types = {
+			absolutyzm = {
+
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DISCOPOLO_1"
+		}
+
+		color = { 107 87 109 }
+
+		rules = { # Rules for the ideology.  (yes/no)
+            can_create_collaboration_government = yes # Can create a collaboration government
+			can_declare_war_on_same_ideology = yes # Declare war on same ideology. Not required
+			can_force_government = yes # Can change ideology in peace deal. Required
+			can_send_volunteers = yes # Can send volunteers. Required
+			can_puppet = yes # Can puppet a nation at peace deal. Required
+			can_lower_tension = yes # Lowers tension at peace deal. Not required
+			can_guarantee_other_ideologies = no # Can guarantee nations with different ideologies. Not required
+		}
+
+		can_host_government_in_exile = yes #Can host a government in exile
+
+		modifiers = { # More rules for the ideology. Every country [[Modifiers|modifier]] can apply.
+			lend_lease_tension = 0.5 # Required tension to start a lend-lease (0 to 1)
+			send_volunteers_tension = 0.5 # Required tension to send volunteers (0 to 1)
+			guarantee_tension = 0.15 # Required tension to guarantee a nation (0 to 1)
+			annex_cost_factor = -0.1 # Changes the cost of entirely annexing a nation in a peace deal. 0.5 would increase annexing cost by 50% (-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0.7 # Changes the cost of justifying a war while in a major war. 0.5 would decrease time by 50% (0 to 1)
+			drift_defence_factor = 0.5 # Natural drift defence for the ideology # 0.3 would grant 30% drift defence (-1 to 1)
+			puppet_cost_factor = -0.25 # Changes the cost of puppeting a nation in a peace deal (-1 to 1)
+		}
+
+		can_be_boosted = yes # Can you boost this ideologies popularity in another country (yes/no)
+		can_collaborate = yes # Can create collaboration governments
+
+		ai_neutral = yes
 	}
 
 	neutrality = {
@@ -288,236 +642,6 @@ ideologies = {
 		ai_neutral = yes
 	}
 
-	demokracjawalczaca = {
-
-		types = {
-
-			demowal = {
-			}
-			ekologizm = {
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_DEMOCRATIC_1"
-		}
-
-		color = { 0 0 80 }
-
-		rules = {
-			can_create_collaboration_government = yes
-			can_declare_war_on_same_ideology = yes
-			can_force_government = yes
-			can_send_volunteers = no
-			can_puppet = yes
-			can_lower_tension = yes
-			can_guarantee_other_ideologies = yes
-		}
-
-		can_host_government_in_exile = yes
-
-		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
-		faction_impact_on_world_tension = 0.1
-
-		modifiers = {
-			generate_wargoal_tension = 0.1
-			join_faction_tension = 0.30
-			lend_lease_tension = 0.50
-			send_volunteers_tension = 0.50
-			guarantee_tension = 0.25
-			# annex_cost_factor = 0.5 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
-			airforce_intel_to_others = 5
-			embargo_cost_factor = -0.5
-			embargo_threshold_factor = -0.5
-		}
-
-		faction_modifiers = {
-			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
-		}
-		ai_democratic = yes # uses the democratic AI behaviour
-		ai_ideology_wanted_units_factor = 1.30 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
-		
-		ai_give_core_state_control_threshold = 30 # Extra threshold value added to DIPLOMATIC_ACTION_PROPOSE_SCORE for this ideology to give back core state control to other country
-	}
-
-	federalizm = {
-
-		types = {
-
-			fed = {
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_DEMOCRATIC_1"
-		}
-
-		color = { 0 0 80 }
-
-		rules = {
-			can_create_collaboration_government = yes
-			can_declare_war_on_same_ideology = yes
-			can_force_government = yes
-			can_send_volunteers = yes
-			can_puppet = yes
-			can_lower_tension = yes
-			can_guarantee_other_ideologies = yes
-		}
-
-		can_host_government_in_exile = yes
-
-		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
-		faction_impact_on_world_tension = 0.1
-
-		modifiers = {
-			generate_wargoal_tension = 0.30
-			join_faction_tension = 0.50
-			lend_lease_tension = 0.50
-			send_volunteers_tension = 0.50
-			guarantee_tension = 0.25
-			# annex_cost_factor = 0.5 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
-			airforce_intel_to_others = 5
-			embargo_cost_factor = -0.5
-			embargo_threshold_factor = -0.5
-		}
-
-		faction_modifiers = {
-			faction_trade_opinion_factor = 0.20 #plus 50% trade opinion
-		}
-		ai_democratic = yes # uses the democratic AI behaviour
-		ai_ideology_wanted_units_factor = 1.50 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
-		
-		ai_give_core_state_control_threshold = 70 # Extra threshold value added to DIPLOMATIC_ACTION_PROPOSE_SCORE for this ideology to give back core state control to other country
-	}
-
-	judaizm = {
-		types = {
-			jew = {
-
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_DISCOPOLO_1"
-		}
-
-		color = { 255 255 255 }
-
-		rules = { # Rules for the ideology.  (yes/no)
-            can_create_collaboration_government = yes # Can create a collaboration government
-			can_declare_war_on_same_ideology = yes # Declare war on same ideology. Not required
-			can_force_government = yes # Can change ideology in peace deal. Required
-			can_send_volunteers = yes # Can send volunteers. Required
-			can_puppet = yes # Can puppet a nation at peace deal. Required
-			can_lower_tension = yes # Lowers tension at peace deal. Not required
-			can_guarantee_other_ideologies = no # Can guarantee nations with different ideologies. Not required
-		}
-
-		can_host_government_in_exile = yes #Can host a government in exile
-
-		modifiers = { # More rules for the ideology. Every country [[Modifiers|modifier]] can apply.
-			lend_lease_tension = 0.5 # Required tension to start a lend-lease (0 to 1)
-			send_volunteers_tension = 0.5 # Required tension to send volunteers (0 to 1)
-			guarantee_tension = 0.15 # Required tension to guarantee a nation (0 to 1)
-			annex_cost_factor = -0.1 # Changes the cost of entirely annexing a nation in a peace deal. 0.5 would increase annexing cost by 50% (-1 to 1)
-			justify_war_goal_when_in_major_war_time = -0.5 # Changes the cost of justifying a war while in a major war. 0.5 would decrease time by 50% (0 to 1)
-			drift_defence_factor = 0.5 # Natural drift defence for the ideology # 0.3 would grant 30% drift defence (-1 to 1)
-			puppet_cost_factor = -0.25 # Changes the cost of puppeting a nation in a peace deal (-1 to 1)
-		}
-
-		can_be_boosted = yes # Can you boost this ideologies popularity in another country (yes/no)
-		can_collaborate = yes # Can create collaboration governments
-
-		ai_fascist = yes
-	}
-
-	narodowysocjalizm = {
-		types = {
-			narsoc = {
-
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_DISCOPOLO_1"
-		}
-
-		color = { 44 37 19 }
-
-		rules = { # Rules for the ideology.  (yes/no)
-            can_create_collaboration_government = yes # Can create a collaboration government
-			can_declare_war_on_same_ideology = yes # Declare war on same ideology. Not required
-			can_force_government = yes # Can change ideology in peace deal. Required
-			can_send_volunteers = yes # Can send volunteers. Required
-			can_puppet = yes # Can puppet a nation at peace deal. Required
-			can_lower_tension = yes # Lowers tension at peace deal. Not requireddsfsf
-			can_guarantee_other_ideologies = no # Can guarantee nations with different ideologies. Not required
-		}
-
-		can_host_government_in_exile = yes #Can host a government in exile
-
-		modifiers = { # More rules for the ideology. Every country [[Modifiers|modifier]] can apply.
-			lend_lease_tension = 0.2 # Required tension to start a lend-lease (0 to 1)
-			send_volunteers_tension = 0.25 # Required tension to send volunteers (0 to 1)
-			guarantee_tension = 0.15 # Required tension to guarantee a nation (0 to 1)
-			annex_cost_factor = -0.2 # Changes the cost of entirely annexing a nation in a peace deal. 0.5 would increase annexing cost by 50% (-1 to 1)
-			justify_war_goal_when_in_major_war_time = -0.75 # Changes the cost of justifying a war while in a major war. 0.5 would decrease time by 50% (0 to 1)
-			drift_defence_factor = 0.1 # Natural drift defence for the ideology # 0.3 would grant 30% drift defence (-1 to 1)
-			puppet_cost_factor = -0.25 # Changes the cost of puppeting a nation in a peace deal (-1 to 1)
-		}
-
-		can_be_boosted = yes # Can you boost this ideologies popularity in another country (yes/no)
-		can_collaborate = yes # Can create collaboration governmentss
-
-		ai_fascist = yes
-	}
-
-	narodowybolszewizm = {
-		types = {
-			nazbol = {
-
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_DISCOPOLO_1"
-		}
-
-		color = { 165 20 30 }
-
-		rules = { # Rules for the ideology.  (yes/no)
-            can_create_collaboration_government = yes # Can create a collaboration government
-			can_declare_war_on_same_ideology = yes # Declare war on same ideology. Not required
-			can_force_government = yes # Can change ideology in peace deal. Required
-			can_send_volunteers = yes # Can send volunteers. Required
-			can_puppet = yes # Can puppet a nation at peace deal. Required
-			can_lower_tension = yes # Lowers tension at peace deal. Not requireddsfsf
-			can_guarantee_other_ideologies = no # Can guarantee nations with different ideologies. Not required
-		}
-
-		can_host_government_in_exile = yes #Can host a government in exile
-
-		modifiers = { # More rules for the ideology. Every country [[Modifiers|modifier]] can apply.
-			lend_lease_tension = 0.2 # Required tension to start a lend-lease (0 to 1)
-			send_volunteers_tension = 0.25 # Required tension to send volunteers (0 to 1)
-			guarantee_tension = 0.15 # Required tension to guarantee a nation (0 to 1)
-			annex_cost_factor = -0.2 # Changes the cost of entirely annexing a nation in a peace deal. 0.5 would increase annexing cost by 50% (-1 to 1)
-			justify_war_goal_when_in_major_war_time = -0.2 # Changes the cost of justifying a war while in a major war. 0.5 would decrease time by 50% (0 to 1)
-			drift_defence_factor = 0.1 # Natural drift defence for the ideology # 0.3 would grant 30% drift defence (-1 to 1)
-		}
-
-		can_be_boosted = yes # Can you boost this ideologies popularity in another country (yes/no)
-		can_collaborate = yes # Can create collaboration governmentss
-
-		ai_communist = yes
-	}
-
 	autorytaryzm = {
 
 		types = {
@@ -563,90 +687,6 @@ ideologies = {
 		ai_ideology_wanted_units_factor = 2
 		
 		ai_give_core_state_control_threshold = 10000
-	}
-
-	kaczyzm = {
-
-		types = {
-
-			kac = {
-
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_DISCOPOLO_1"
-		}
-
-		color = { 200 0 0 }
-
-		war_impact_on_world_tension = 0.7			#evil!
-		faction_impact_on_world_tension = 0.3
-
-		rules = {
-			can_force_government = yes
-			can_send_volunteers = yes
-			can_puppet = yes
-		}
-
-		can_collaborate = yes
-
-		modifiers = {
-			justify_war_goal_when_in_major_war_time = -0.8
-			civilian_intel_to_others = 25.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 10.0
-			airforce_intel_to_others = 5.0
-			embargo_cost_factor = 1
-			lend_lease_tension = 0.25
-		}
-
-		ai_communist = yes
-		ai_ideology_wanted_units_factor = 1.5
-		
-		ai_give_core_state_control_threshold = 1000
-	}
-
-	nacjonalizm = {
-
-		types = {
-
-			nac = {
-
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_DISCOPOLO_1"
-		}
-
-		color = { 250 98 98 }
-
-		war_impact_on_world_tension = 0.4			#evil!
-		faction_impact_on_world_tension = 0.3
-
-		rules = {
-			can_force_government = no
-			can_send_volunteers = yes
-			can_puppet = yes
-		}
-
-		can_collaborate = yes
-
-		modifiers = {
-			justify_war_goal_when_in_major_war_time = -0.9
-			civilian_intel_to_others = 5.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 3.0
-			airforce_intel_to_others = 5.0
-			embargo_cost_factor = 1
-			lend_lease_tension = 0.25
-		}
-
-		ai_fascist = yes
-		ai_ideology_wanted_units_factor = 1.35
-		
-		ai_give_core_state_control_threshold = 100
 	}
 
 	centryzm = {
@@ -748,47 +788,6 @@ ideologies = {
 		ai_ideology_wanted_units_factor = 1.2
 		
 		ai_give_core_state_control_threshold = 10
-	}
-
-	monarchia = {
-		types = {
-			absolutyzm = {
-
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_DISCOPOLO_1"
-		}
-
-		color = { 107 87 109 }
-
-		rules = { # Rules for the ideology.  (yes/no)
-            can_create_collaboration_government = yes # Can create a collaboration government
-			can_declare_war_on_same_ideology = yes # Declare war on same ideology. Not required
-			can_force_government = yes # Can change ideology in peace deal. Required
-			can_send_volunteers = yes # Can send volunteers. Required
-			can_puppet = yes # Can puppet a nation at peace deal. Required
-			can_lower_tension = yes # Lowers tension at peace deal. Not required
-			can_guarantee_other_ideologies = no # Can guarantee nations with different ideologies. Not required
-		}
-
-		can_host_government_in_exile = yes #Can host a government in exile
-
-		modifiers = { # More rules for the ideology. Every country [[Modifiers|modifier]] can apply.
-			lend_lease_tension = 0.5 # Required tension to start a lend-lease (0 to 1)
-			send_volunteers_tension = 0.5 # Required tension to send volunteers (0 to 1)
-			guarantee_tension = 0.15 # Required tension to guarantee a nation (0 to 1)
-			annex_cost_factor = -0.1 # Changes the cost of entirely annexing a nation in a peace deal. 0.5 would increase annexing cost by 50% (-1 to 1)
-			justify_war_goal_when_in_major_war_time = 0.7 # Changes the cost of justifying a war while in a major war. 0.5 would decrease time by 50% (0 to 1)
-			drift_defence_factor = 0.5 # Natural drift defence for the ideology # 0.3 would grant 30% drift defence (-1 to 1)
-			puppet_cost_factor = -0.25 # Changes the cost of puppeting a nation in a peace deal (-1 to 1)
-		}
-
-		can_be_boosted = yes # Can you boost this ideologies popularity in another country (yes/no)
-		can_collaborate = yes # Can create collaboration governments
-
-		ai_neutral = yes
 	}
 
 	kapitalizm = {

@@ -177,4 +177,19 @@ characters = {
 			}
 		}
 	}
+	PRL_rutkowski = {
+		name = PRL_rutkowski
+		portraits = {
+			civilian = {
+				small = GFX_portrait_PRL_rutkowski
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PRL_rutkowski
+			traits = {
+				head_of_intelligence
+			}
+		}
+	}
 }

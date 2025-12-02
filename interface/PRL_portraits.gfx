@@ -37,10 +37,14 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = GFX_portrait_PRL_piasecki_l
-		textureFile = gfx/advisors/PRL/piasecki_l.tga
+		textureFile = gfx/advisors/PRL/piasecki_l.dds
 	}
 	spriteType = {
 		name = GFX_portrait_PRL_piasecki_s
-		textureFile = gfx/advisors/PRL/piasecki_s.tga
+		textureFile = gfx/advisors/PRL/piasecki_s.dds
+	}
+	spriteType = {
+		name = GFX_portrait_PRL_rutkowski
+		textureFile = gfx/advisors/PRL/rutkowski.dds
 	}
 }

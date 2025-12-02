@@ -13,4 +13,8 @@ leader_traits = {
 		production_speed_industrial_complex_factor = 0.15
 		consumer_goods_factor = -0.1
 	}
+	klimatystka = {
+		local_resources_factor = 0.1
+		#do_skończenia
+	}
 }
