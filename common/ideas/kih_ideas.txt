@@ -101,4 +101,11 @@ ideas = {
 			}
 		}
 	}
+	research_production = {
+		maryja = {
+			modifier = {
+				weekly_stability = 0.01
+			}
+		}
+	}
 }

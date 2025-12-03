@@ -110,4 +110,24 @@ focus_tree = {
             
         }
     }
+    focus = {
+        id = CEP_samodzielnosc
+        icon = GFX_focus_POL_complete_april_constitution
+        prerequisite = {
+            focus = CEP_samodzielnosc
+        }
+        relative_position_id = CEP_samodzielnosc
+        cost = 5
+        x = -1
+        y = 1
+        completion_reward = {
+            set_power_balance = {
+				id = CEP_balance_of_power
+				left_side = CEP_kosiniak_side # will keep the last set side if not specified
+				right_side = CEP_kamysz_side # will keep the last set side if not specified
+				#set_default = yes # whether or not to reset the power balance to the initial value, default = no
+				set_value = 0
+			}
+        }
+    }
 }

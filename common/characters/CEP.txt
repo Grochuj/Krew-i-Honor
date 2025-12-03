@@ -194,7 +194,7 @@ characters = {
 			slot = political_advisor
 			idea_token = CEP_sawicki
 			traits = {
-				agrarian_nationalist
+				PRC_agrarian_revolutionary 
 			}
 		}
 		corps_commander = {
