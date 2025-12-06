@@ -42,7 +42,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.03
+				conscription = 0.025
 			}
 
 			default = yes
@@ -64,7 +64,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.075
+				conscription = 0.045
 			}
 
 			ai_will_do = {
@@ -135,7 +135,7 @@ ideas = {
 			level = 4
 
 			modifier = {
-				conscription = 0.125
+				conscription = 0.85
 				#industrial_capacity_factory = -0.1
 				#production_speed_buildings_factor = -0.1
 				training_time_factor = 0.1
@@ -198,7 +198,7 @@ ideas = {
 			level = 3
 
 			modifier = {
-				conscription = 0.2
+				conscription = 0.15
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
 				production_speed_buildings_factor = -0.1
@@ -249,7 +249,7 @@ ideas = {
 			level = 2
 
 			modifier = {
-				conscription = 0.4
+				conscription = 0.35
 				industrial_capacity_factory = -0.3
 				industrial_capacity_dockyard = -0.3
 				production_speed_buildings_factor = -0.3
@@ -302,7 +302,7 @@ ideas = {
 			level = 1
 
 			modifier = {
-				conscription = 0.65
+				conscription = 0.5
 				industrial_capacity_factory = -0.4
 				industrial_capacity_dockyard = -0.4
 				production_speed_buildings_factor = -0.4
