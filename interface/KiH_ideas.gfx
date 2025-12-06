@@ -3,4 +3,8 @@ spriteTypes = {
 		name = GFX_idea_idea_ue
 		textureFile = gfx/interface/ideas/UE.dds
 	}
+	spriteType = {
+		name = GFX_idea_maryja
+		textureFile = gfx/interface/ideas/maryja.dds
+	}
 }
