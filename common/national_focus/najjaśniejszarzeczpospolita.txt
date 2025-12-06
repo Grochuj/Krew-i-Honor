@@ -1761,6 +1761,10 @@ focus_tree = {
             focus = NRP_focus_wsparcie_gornictwa
         }
 
+        available = {
+            has_tech = atomic_research
+        }
+
         completion_reward = {
             unlock_decision_category_tooltip = budowaelektrowni_cat
         }
