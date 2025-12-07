@@ -2,7 +2,7 @@ leader_traits = {
 	spokojny_towarzysz = {
 		random = no
 
-		stability_weekly = 0.001
+		stability_factor = 0.1
 		war_support_factor = -0.1
 	}
 	dyplomata_zwiadowca = {
