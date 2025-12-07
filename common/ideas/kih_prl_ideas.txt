@@ -38,7 +38,7 @@ ideas = {
 		}
 		PRL_mieszkanka = {
 			modifier = {
-				industrial_capacity_factory = 0.1
+				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.05
 				monthly_population = 0.1
 			}
@@ -137,6 +137,19 @@ ideas = {
 			modifier = {
 				air_accidents_factor = -0.1
 				air_mission_efficiency = 0.15
+			}
+		}
+		PRL_flo = {
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = -0.05 instant = yes
+				}
 			}
 		}
 		PRL_help = {

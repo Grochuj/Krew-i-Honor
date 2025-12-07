@@ -1,9 +1,9 @@
 ﻿##### POLAND NAME LISTS #####
 ### REGULAR DESTROYER NAMES###
-PRL_DD_HISTORICAL = {
+POL_DD_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_DESTROYERS
 
-	for_countries = { PRL }
+	for_countries = { POL }
 
 	type = ship
 	ship_types = { ship_hull_light destroyer }
@@ -19,10 +19,10 @@ PRL_DD_HISTORICAL = {
 }
 
 ### LIGHT CRUISER NAMES###
-PRL_CL_HISTORICAL = {
+POL_CL_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CL
 
-	for_countries = { PRL }
+	for_countries = { POL }
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
@@ -37,10 +37,10 @@ PRL_CL_HISTORICAL = {
 }
 
 ### HEAVY CRUISER NAMES###
-PRL_CA_HISTORICAL = {
+POL_CA_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CA
 
-	for_countries = { PRLL }
+	for_countries = { POL }
 
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
@@ -56,10 +56,10 @@ PRL_CA_HISTORICAL = {
 
 
 ### BATTLESHIP NAMES ###
-PRL_BB_HISTORICAL = {
+POL_BB_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_BB
 
-	for_countries = { PRL }
+	for_countries = { POL }
 
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
@@ -74,10 +74,10 @@ PRL_BB_HISTORICAL = {
 }
 
 ### BATTLECRUISER NAMES ###
-PRL_BC_HISTORICAL = {
+POL_BC_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_BC
 
-	for_countries = { PRL }
+	for_countries = { POL }
 
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
@@ -92,10 +92,10 @@ PRL_BC_HISTORICAL = {
 }
 
 ### AIRCRAFT CARRIER NAMES ###
-PRL_CV_HISTORICAL = {
+POL_CV_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CARRIERS
 
-	for_countries = { PRL }
+	for_countries = { POL }
 
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
@@ -110,10 +110,10 @@ PRL_CV_HISTORICAL = {
 }
 
 ### SUBMARINES ###
-PRL_SS_HISTORICAL = {
+POL_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES
 
-	for_countries = { PRL }
+	for_countries = { POL }
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
@@ -128,10 +128,10 @@ PRL_SS_HISTORICAL = {
 }
 
 ### KINGS ###
-PRL_THEME_KINGS = {
+POL_THEME_KINGS = {
 	name = NAME_THEME_KINGS
 
-	for_countries = { PRL }
+	for_countries = { POL }
 
 	can_use = { 
 		not = { has_government = communism }
@@ -159,10 +159,10 @@ PRL_THEME_KINGS = {
 }
 
 ### HISTORICAL FIGURES ###
-PRL_THEME_HISTORICAL_FIGURES = {
+POL_THEME_HISTORICAL_FIGURES = {
 	name = NAME_THEME_HISTORICAL_FIGURES
 
-	for_countries = { PRL }
+	for_countries = { POL }
 
 	can_use = { 
 		not = { has_government = communism }
@@ -201,10 +201,10 @@ PRL_THEME_HISTORICAL_FIGURES = {
 }
 
 ### WEATHER ###
-PRL_THEME_WEATHER = {
+POL_THEME_WEATHER = {
 	name = NAME_THEME_WEATHER
 
-	for_countries = { PRL }
+	for_countries = { POL }
 
 	type = ship
 	
@@ -229,10 +229,10 @@ PRL_THEME_WEATHER = {
 }
 
 ### RIVERS ###
-PROL_THEME_RIVERS = {
+POL_THEME_RIVERS = {
 	name = NAME_THEME_RIVERS
 
-	for_countries = { PRL }
+	for_countries = { POL }
 
 	type = ship
 	
@@ -255,10 +255,10 @@ PROL_THEME_RIVERS = {
 }
 
 ### ANIMALS ###
-PORL_THEME_ANIMALS = {
+POL_THEME_ANIMALS = {
 	name = NAME_THEME_ANIMALS
 
-	for_countries = { PRL }
+	for_countries = { POL }
 
 	type = ship
 	
@@ -293,10 +293,10 @@ PORL_THEME_ANIMALS = {
 }
 
 ### REGIONS ###
-PRL_THEME_REGIONS = {
+POL_THEME_REGIONS = {
 	name = NAME_THEME_REGIONS
 
-	for_countries = { PRL }
+	for_countries = { POL }
 
 	type = ship
 	
@@ -319,10 +319,10 @@ PRL_THEME_REGIONS = {
 }
 
 ### CITIES ###
-PRL_THEME_CITIES = {
+POL_THEME_CITIES = {
 	name = NAME_THEME_CITIES
 
-	for_countries = { PRL }
+	for_countries = { POL }
 
 	type = ship
 	
@@ -344,10 +344,10 @@ PRL_THEME_CITIES = {
 }
 
 ### BATTLES ###
-PRL_THEME_BATTLES = {
+POL_THEME_BATTLES = {
 	name = NAME_THEME_BATTLES
 
-	for_countries = { PRL }
+	for_countries = { POL }
 
 	type = ship
 	
@@ -369,10 +369,10 @@ PRL_THEME_BATTLES = {
 }
 
 ### SLAVIC_MYTHOLOGY ###
-PRL_THEME_SLAVIC_MYTHOLOGY = {
+POL_THEME_SLAVIC_MYTHOLOGY = {
 	name = NAME_THEME_SLAVIC_MYTHOLOGY
 
-	for_countries = { PRL }
+	for_countries = { POL }
 
 	type = ship
 	
@@ -443,7 +443,6 @@ PRL_THEME_SLAVIC_MYTHOLOGY = {
 		"Mrucek"
 		"Nocnica"
 		"Ognisty Koń"
-		"Perun"
 		"Paskudnik"
 		"Pieniężny Chłopczyk"
 		"Plonek"

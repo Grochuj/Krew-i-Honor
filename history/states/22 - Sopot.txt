@@ -1,0 +1,39 @@
+
+state={
+	id=22
+	name="STATE_22"
+	manpower = 63752
+	
+	state_category = large_city
+	resources={
+		aluminium=0
+		chromium=0
+		oil=6
+		rubber=0
+		steel=0
+		tungsten=0
+	}
+
+	history={
+		victory_points = { 456 35}
+		
+		owner = FLS
+		buildings = {
+			infrastructure = 3
+			
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 2
+			456 = {
+				naval_base = 6
+			}
+			
+		}
+		add_core_of = FLS
+	}
+
+	provinces={
+		456 457 
+	}
+	local_supplies=0.0 
+}

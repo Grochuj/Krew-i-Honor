@@ -857,7 +857,7 @@ focus_tree = {
                 create_unit = { division = "name = \"Drugi Oddział ZOMO\" division_template = \"Zmotoryzowany Odwód Milicji Obywatelskiej\" start_experience_factor = 1" owner = ROOT }
             }
             set_technology = {
-                tech_military_police2 = yes
+                tech_military_police2 = 1
             }
         }
     }
@@ -1596,25 +1596,25 @@ focus_tree = {
             }
             create_equipment_variant = {
 				name = "Łódź Podwodna"				
-				name_group = PRL_SUB
-				role_icon_index = 1
-	            type = ship_hull_submarine_2
-	            modules = {
-		            fixed_ship_armor_slot = torpedo_mounting
-		            fixed_auxiliary_weapon_slot_1 = torpedo_mounting
-		            engine_type_slot = sub_ship_engine_2
-	            }
-            }
+				name_group = PRL_SS_HISTORICAL
+				type = submarine_2
+				modules = {
+					fixed_ship_torpedo_slot = torpedo_mounting
+                    fixed_auxiliary_weapon_slot_1 = torpedo_mounting
+                    engine_type_slot = sub_ship_engine_2
+				}
+			}
             add_equipment_production = {
 				equipment = {
-					type = submarine_2
+					type = ship_hull_heavy_2
 					creator = "PRL"
-					version_name = "Hiacynt"
+					version_name = "Łódź Podwodna"
 				}
-				name = "Hiacynt"
+				name = "Jerzyk"
 				requested_factories = 1
-				progress = 0.2
+				progress = 0.25
 				amount = 1
+				industrial_manufacturer = mio:GER_germaniawerft_organization
 			}
         }
     }
@@ -1670,6 +1670,7 @@ focus_tree = {
         y = 1
         allow_branch = {
             has_completed_focus = PRL_kolonizacja_zamorska
+            controls_state = 643
         }
         completion_reward = {
            WOH = {
@@ -1688,6 +1689,7 @@ focus_tree = {
         y = 0
         completion_reward = { 
             air_experience = 25
+            add_ideas = PRL_flo
         }
     }
     focus = {
@@ -1740,7 +1742,7 @@ focus_tree = {
             focus = PRL_srednie_samoloty
             focus = PRL_male_samoloty
         }
-        cost = 5
+        cost = 10
         x = 1
         y = 1
         completion_reward = { 
@@ -1749,14 +1751,20 @@ focus_tree = {
                     type = air_base
                     level = 3
                 }
+            }
+            random_controlled_state = {
                 add_building_construction = {
                     type = air_base
                     level = 3
                 }
+            }
+            random_controlled_state = {
                 add_building_construction = {
                     type = air_base
                     level = 1
                 }
+            }
+            random_controlled_state = {
                 add_building_construction = {
                     type = air_base
                     level = 1
