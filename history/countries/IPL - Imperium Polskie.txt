@@ -103,7 +103,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	judaizm = 75
+	imperializm = 75
 	democratic = 25
 }
 
