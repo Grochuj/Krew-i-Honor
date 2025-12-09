@@ -1728,7 +1728,7 @@ focus_tree = {
                 }
             }
             add_resource = {
-                type = tungsten
+                type = coal
                 amount = 8
                 state = 133
             }
@@ -1739,7 +1739,7 @@ focus_tree = {
                 }
             }
             add_resource = {
-                type = steel
+                type = coal
                 amount = 8
                 state = 174
             }
@@ -3991,6 +3991,27 @@ focus_tree = {
             base = 10
         }
     }
+    focus = {
+        id = NRP_focus_wolnosci_obywatelskie
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_odsuniecie_brauna_w_cien
+        x = 0
+        y = 2
+        
+        prerequisite = {
+            focus = NRP_focus_kapitalistyczny_rzad
+            focus = NRP_focus_wladza_dla_upr
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "TODO: jakieś bonusy"
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
 
 # KORWIN #
 
@@ -4069,6 +4090,26 @@ focus_tree = {
                 add_ideas = token_braun_advisor
             }
             news_event = nrp_news_event.1
+        }
+
+        ai_will_do = {
+            base = 15
+        }
+    }
+    focus = {
+        id = NRP_focus_sprawa_aborcji
+        icon = GFX_goal_unknown
+        cost = 10
+        relative_position_id = NRP_focus_kapitalistyczny_rzad
+        x = 0
+        y = 2
+        
+        prerequisite = {
+            focus = NRP_focus_kapitalistyczny_rzad
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = "TODO: Ideja na sprzedawanie dzieci na wolnym rynku"
         }
 
         ai_will_do = {
