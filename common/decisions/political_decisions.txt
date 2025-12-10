@@ -1716,7 +1716,7 @@ political_actions = {
     	icon = generic_civil_support
 
     	visible = {
-    		always = yes
+			fascism > 0.05
 		}
 
 		available = {
@@ -1752,7 +1752,7 @@ political_actions = {
     	icon = generic_civil_support
 
     	visible = {
-    		always = yes
+    		democratic > 0.05
 		}
 
 		available = {
@@ -1784,7 +1784,7 @@ political_actions = {
     	icon = generic_civil_support
 
     	visible = {
-    		always = yes
+    		communism > 0.05
 		}
 
 		available = {
@@ -1819,7 +1819,7 @@ political_actions = {
     	}
 
     	visible = {
-    		always = yes
+    		neutrality > 0.05
 		}
 
 		available = {
@@ -1854,7 +1854,7 @@ political_actions = {
     	}
 
     	visible = {
-    		always = yes
+    		discopolo > 0.05
 		}
 
 		available = {
@@ -1889,7 +1889,7 @@ political_actions = {
     	}
 
     	visible = {
-    		always = yes
+    		demokracjawalczaca > 0.05
 		}
 
 		available = {
@@ -1924,7 +1924,7 @@ political_actions = {
     	}
 
     	visible = {
-    		always = yes
+    		federalizm > 0.05
 		}
 
 		available = {
@@ -1951,7 +1951,7 @@ political_actions = {
 		}
     }
 
-	anti_judaizm_raids = {
+	anti_imperializm_raids = {
 
     	icon = generic_civil_support
 
@@ -1959,15 +1959,15 @@ political_actions = {
     	}
 
     	visible = {
-    		always = yes
+    		imperializm > 0.05
 		}
 
 		available = {
-            judaizm > 0.1
+            imperializm > 0.1
         }
 	
 		modifier = {
-			judaizm_drift = -0.05
+			imperializm_drift = -0.05
 			stability_weekly = 0.007
 		}
 	
@@ -1994,7 +1994,7 @@ political_actions = {
     	}
 
     	visible = {
-    		always = yes
+    		narodowysocjalizm > 0.05
 		}
 
 		available = {
@@ -2029,7 +2029,7 @@ political_actions = {
     	}
 
     	visible = {
-    		always = yes
+    		autorytaryzm > 0.05
 		}
 
 		available = {
@@ -2064,7 +2064,7 @@ political_actions = {
     	}
 
     	visible = {
-    		always = yes
+    		kaczyzm > 0.05
 		}
 
 		available = {
@@ -2099,7 +2099,7 @@ political_actions = {
     	}
 
     	visible = {
-    		always = yes
+    		nacjonalizm > 0.05
 		}
 
 		available = {
@@ -2134,7 +2134,7 @@ political_actions = {
     	}
 
     	visible = {
-    		always = yes
+    		centryzm > 0.05
 		}
 
 		available = {
@@ -2169,7 +2169,7 @@ political_actions = {
     	}
 
     	visible = {
-    		always = yes
+    		agraryzm > 0.05
 		}
 
 		available = {
@@ -2204,7 +2204,7 @@ political_actions = {
     	}
 
     	visible = {
-    		always = yes
+    		monarchia > 0.05
 		}
 
 		available = {
@@ -2248,7 +2248,7 @@ political_actions = {
     	}
 
     	visible = {
-    		always = yes
+    		kapitalizm > 0.05
 		}
 
 		available = {
@@ -2283,7 +2283,7 @@ political_actions = {
     	}
 
     	visible = {
-    		always = yes
+    		homo > 0.05
 		}
 
 		available = {
@@ -2318,7 +2318,7 @@ political_actions = {
     	}
 
     	visible = {
-    		always = yes
+    		socjalizm > 0.05
 		}
 
 		available = {
@@ -2327,6 +2327,41 @@ political_actions = {
 	
 		modifier = {
 			socjalizm_drift = -0.05
+			stability_weekly = 0.007
+		}
+	
+		days_remove = 120
+		cost = 50
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+	anti_narodowy_bolszewizm_raids = {
+
+    	icon = generic_civil_support
+
+    	allowed = {
+    	}
+
+    	visible = {
+    		narodowybolszewizm > 0.05
+		}
+
+		available = {
+            narodowybolszewizm > 0.1
+        }
+	
+		modifier = {
+			narodowybolszewizm_drift = -0.05
 			stability_weekly = 0.007
 		}
 	

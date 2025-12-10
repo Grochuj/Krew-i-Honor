@@ -1,0 +1,9 @@
+NRP_MIASTA = {
+	name = "Miasta" # The name you want for your name list, can either be a string or in quotes.
+	for_countries = { NRP } # Sets what countries can use this name list, change NEP to your countries tag
+	type = ship
+	prefix = "NO " # This will be placed before the ship name, can be left empty if you don't want a prefixfallback_name = "%d. Superciężki Okręt" # This will be used if you run out of numbered divisions. Always use either %d for decimal numbers or %s for Roman numerals but you can change the rest
+	unique = {
+		"Gietrzwałd" "Częstochowa" "Jasna Góra" "Rzeszów" "Oświęcim" "Sanok" "Zator" "Olsztyn" "Krosno" "Wieliczka" "Maków" "Ostróda" "Kazimierz" "Korwiny Wielkie" "Braunowice" "Miejsce Piastowe" "Spytkowice" "Monowice" "Brzezinka" "Nazaret" "Wadowice" "Jagiellonia" "Uściąż" "Tarnica"
+	}
+}

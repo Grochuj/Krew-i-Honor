@@ -97,13 +97,13 @@ if = {
 set_convoys = 450
 
 set_politics = {
-	ruling_party = judaizm
+	ruling_party = imperializm
 	last_election = "2025.5.16"
 	election_frequency = 60
 	elections_allowed = no
 }
 set_popularities = {
-	judaizm = 75
+	imperializm = 75
 	democratic = 25
 }
 
