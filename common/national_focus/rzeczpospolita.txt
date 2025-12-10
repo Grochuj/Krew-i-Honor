@@ -719,8 +719,8 @@ focus = {
     y = 1
     completion_reward = { 
         KAM = {
-                state_event = kam_event.4
-            }
+            state_event = kam_event.4
+        }
     }
 }
 focus = {
