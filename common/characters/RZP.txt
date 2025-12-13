@@ -4,9 +4,11 @@ characters = {
 		portraits={
 			civilian = {
 				large = GFX_portrait_RZP_jakubiak
+				small = GFX_portrait_RZP_jakubiak_advisor
 			}
 			army = {
-				large = GFX_portrait_RZP_jakubiak_general_l
+				large = GFX_portrait_RZP_jakubiak_g
+				small = GFX_portrait_RZP_jakubiak_advisor
 			}
 		}
 		country_leader = {

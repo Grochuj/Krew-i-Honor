@@ -71,4 +71,8 @@ spriteTypes = {
 		name = GFX_idea_PRL_flo
 		texturefile = gfx/interface/ideas/idea_NORDIC_airforce_communist.dds
 	}
+	spriteType = {
+		name = GFX_idea_PRL_milicyja
+		texturefile = gfx/interface/ideas/idea_hol_haven_of_tolerance.dds
+	}
 }

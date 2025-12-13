@@ -862,6 +862,23 @@ focus_tree = {
         }
     }
     focus = {
+        id = PRL_milicja_obywatelska
+        icon = GFX_focus_PRC_army_command
+        relative_position_id = PRL_pucz_armijny
+        prerequisite = {
+            focus = PRL_pucz_armijny
+        }
+        prerequisite = {
+            focus = PRL_odnowa_bezpieki
+        }
+        cost = 10
+        x = 2
+        y = 1
+        completion_reward = {
+            add_ideas = PRL_milycyja
+        }
+    }
+    focus = {
         id = PRL_pacyfikacje
         icon = GFX_focus_spr_crush_the_revolution
         relative_position_id = PRL_pucz_armijny
@@ -869,7 +886,7 @@ focus_tree = {
             focus = PRL_zomo
         }
         prerequisite = {
-            focus = PRL_odnowa_bezpieki
+            focus = PRL_milicja_obywatelska
         }
         cost = 10
         x = 1
@@ -1743,7 +1760,7 @@ focus_tree = {
             focus = PRL_male_samoloty
         }
         cost = 10
-        x = 1
+        x = 0
         y = 1
         completion_reward = { 
             random_controlled_state = {
@@ -1773,14 +1790,36 @@ focus_tree = {
         }
     }
     focus = {
+        id = PRL_doktryny_lot
+        icon = GFX_goal_generic_army_doctrines
+        relative_position_id = PRL_srednie_samoloty
+        prerequisite = {
+            focus = PRL_srednie_samoloty
+            focus = PRL_male_samoloty
+        }
+        cost = 10
+        x = 2
+        y = 1
+        completion_reward = { 
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.75
+                category = air_doctrine
+                uses = 2
+            }
+        }
+    }
+    focus = {
         id = PRL_rot
         icon = GFX_focus_GER_strike_at_the_rising_sun
         relative_position_id = PRL_nowe_lotniska
         prerequisite = {
             focus = PRL_nowe_lotniska
         }
+        prerequisite = {
+            focus = PRL_doktryny_lot
+        }
         cost = 5
-        x = 0
+        x = 1
         y = 1
         completion_reward = { 
             add_ideas = PRL_czerwone_niebo

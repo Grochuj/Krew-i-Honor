@@ -26,7 +26,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ZIE_urszula
 			traits = {
-				IRQ_armenian_oil_magnate
+				klimatystka
 			}
 		}
 	}

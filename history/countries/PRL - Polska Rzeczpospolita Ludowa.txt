@@ -23,6 +23,7 @@ set_technology = {
 	motorised_infantry = 1
 	tech_trucks = 1
 	tech_support = 1
+	militia_tech = 1
 }
 
 set_politics = {
@@ -53,17 +54,8 @@ add_equipment_production = {
 		type = infantry_equipment_1
 		creator = PRL
 	}
-	requested_factories = 5
+	requested_factories = 2
 	progress = 0
-	efficiency = 15
-}
-add_equipment_production = {
-	equipment = {
-		type = artillery_equipment_1
-		creator = PRL
-	}
-	requested_factories = 1
-	progress = 0.5
 	efficiency = 15
 }
 add_equipment_production = {

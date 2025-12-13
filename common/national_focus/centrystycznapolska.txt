@@ -111,7 +111,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = CEP_samodzielnosc
+        id = CEP_rozdwojenie
         icon = GFX_focus_POL_complete_april_constitution
         prerequisite = {
             focus = CEP_samodzielnosc

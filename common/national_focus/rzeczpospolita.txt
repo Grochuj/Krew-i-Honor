@@ -792,6 +792,26 @@ focus = {
        add_ideas = RZP_wielkarzp
        set_cosmetic_tag = sarmata
        unlock_decision_category_tooltip = integracja1_cat
+       RZP_jakubiak = {
+            set_portraits = {
+                civilian = {
+                    large = GFX_portrait_RZP_sarmata
+                }
+                army = {
+                    large = GFX_portrait_RZP_sarmata
+                }
+            }
+        }
+        RZP_bubel = {
+            set_portraits = {
+                civilian = {
+                    large = GFX_portrait_RZP_longinus
+                }
+                army = {
+                    large = GFX_portrait_RZP_longinus
+                }
+            }
+        }
     }
 }
 #podchujaszczyzm====================================================================================================================
