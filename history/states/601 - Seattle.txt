@@ -2,9 +2,9 @@
 state={
 	id=601
 	name="STATE_601"
-	manpower = 13586
+	manpower = 73586
 	
-	state_category = pastoral
+	state_category = large_town
 	resources={
 		aluminium=0
 		chromium=0
@@ -15,19 +15,17 @@ state={
 	}
 
 	history={
-		victory_points = { 10618 1}
-		victory_points = { 10620 1}
-		victory_points = { 10626 1}
+		victory_points = { 10621 15}
 		
 		owner = SZP
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			
 			arms_factory = 0
-			industrial_complex = 0
+			industrial_complex = 1
 			
 			10621 = {
-				naval_base = 1
+				naval_base = 4
 			}
 			
 		}

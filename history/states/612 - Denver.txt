@@ -2,7 +2,7 @@
 state={
 	id=612
 	name="STATE_612"
-	manpower = 44840
+	manpower = 94840
 	
 	state_category = city
 	resources={
@@ -15,16 +15,12 @@ state={
 	}
 
 	history={
-		victory_points = { 10881 13}
-		victory_points = { 10893 1}
-		victory_points = { 10894 1}
-		victory_points = { 10903 1}
+		victory_points = { 10881 15}
 		
 		owner = SZP
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			
-			arms_factory = 1
 			industrial_complex = 1
 			
 			10893 = {

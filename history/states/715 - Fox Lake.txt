@@ -2,7 +2,7 @@
 state={
 	id=715
 	name="STATE_715"
-	manpower = 206
+	manpower = 4406
 	
 	state_category = small_island
 	resources={
@@ -15,11 +15,11 @@ state={
 	}
 
 	history={
-		victory_points = { 11718 1}
+		victory_points = { 17181 3}
 		
 		owner = SZP
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			
 			arms_factory = 0
 			industrial_complex = 0

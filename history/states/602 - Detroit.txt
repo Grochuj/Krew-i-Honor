@@ -2,9 +2,9 @@
 state={
 	id=602
 	name="STATE_602"
-	manpower = 82460
+	manpower = 382460
 	
-	state_category = megalopolis
+	state_category = large_city
 	resources={
 		aluminium=0
 		chromium=0
@@ -15,19 +15,16 @@ state={
 	}
 
 	history={
-		victory_points = { 10642 2}
-		victory_points = { 10644 3}
-		victory_points = { 10651 16}
-		victory_points = { 10661 16}
+		victory_points = { 10659 3}
+		victory_points = { 10661 20}
 		
 		owner = SZP
 		buildings = {
 			infrastructure = 3
 			
-			arms_factory = 1
 			industrial_complex = 3
 			dockyard = 1
-			10651 = {
+			10661 = {
 				naval_base = 1
 			}
 			
