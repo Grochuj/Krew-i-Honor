@@ -37,8 +37,8 @@ set_politics = {
 
 set_popularities = {
 	centryzm = 76
-	agraryzm = 21
-	democratic = 3
+	agraryzm = 2
+	democratic = 4
 }
 
 add_ideas = {
