@@ -15,6 +15,9 @@ leader_traits = {
 	}
 	klimatystka = {
 		local_resources_factor = 0.1
-		#do_skończenia
+		factory_energy_consumption = -0.15
+	}
+	energetyk = {
+		factory_energy_consumption = -0.15
 	}
 }

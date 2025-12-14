@@ -13,7 +13,7 @@ recruit_character = ZIE_grodzka
 UPO = {
 	set_autonomy = {
 		target = ZIE
-		autonomy_state = autonomy_collaboration_government
+		autonomy_state = autonomy_integrated_puppet
 	}
 }
 

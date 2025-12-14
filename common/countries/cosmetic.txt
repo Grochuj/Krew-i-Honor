@@ -6,3 +6,7 @@ sarmata = {
 	color = rgb { 12 12 182 }
 	color_ui = rgb { 12 12 182 }
 }
+pesel = {
+	color = rgb { 21 165 47 }
+	color_ui = rgb { 21 165 47 }
+}

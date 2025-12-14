@@ -14,21 +14,9 @@ CEP_balance_of_power = {
 			min = -0.3
 			max = -0
 			modifier = {
-				production_speed_infrastructure_factor = 0.05
-				production_speed_rail_way_factor = 0.05
+				local_building_slots_factor = 0.05
 				production_speed_industrial_complex_factor = 0.05
-				#political_power_gain = 0.05
-				research_speed_factor = 0.025
-				monthly_population = 0.05
-				economy_cost_factor = -0.05
-				trade_laws_cost_factor = -0.05
-
-				mobilization_laws_cost_factor = 0.05
-				production_speed_arms_factory_factor = -0.025
-				training_time_factor = 0.025
-				production_factory_max_efficiency_factor = -0.025
-				production_factory_efficiency_gain_factor = -0.025
-				production_factory_start_efficiency_factor = -0.025
+				political_power_gain = 0.1
 			}
 			on_activate = {
 			
@@ -43,21 +31,10 @@ CEP_balance_of_power = {
 			min = -0.6
 			max = -0.3
 			modifier = {
-				production_speed_infrastructure_factor = 0.1
-				production_speed_rail_way_factor = 0.1
-				production_speed_industrial_complex_factor = 0.1
-				#political_power_gain = 0.05
-				research_speed_factor = 0.05
-				monthly_population = 0.1
 				economy_cost_factor = -0.1
-				trade_laws_cost_factor = -0.1
-
-				mobilization_laws_cost_factor = 0.1
-				production_speed_arms_factory_factor = -0.05
-				training_time_factor = 0.05
-				production_factory_max_efficiency_factor = -0.05
-				production_factory_efficiency_gain_factor = -0.05
-				production_factory_start_efficiency_factor = -0.05
+				local_building_slots_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				political_power_gain = 0.15
 			}
 			on_activate = {
 				
@@ -72,21 +49,12 @@ CEP_balance_of_power = {
 			min = -0.9
 			max = -0.6
 			modifier = {
-				production_speed_infrastructure_factor = 0.15
-				production_speed_rail_way_factor = 0.15
+				economy_cost_factor = -0.1
+				local_building_slots_factor = 0.15
 				production_speed_industrial_complex_factor = 0.15
-				#political_power_gain = 0.1
-				research_speed_factor = 0.075
-				monthly_population = 0.15
-				economy_cost_factor = -0.15
-				trade_laws_cost_factor = -0.15
-
-				mobilization_laws_cost_factor = 0.15
-				production_speed_arms_factory_factor = -0.1
-				training_time_factor = 0.1
-				production_factory_max_efficiency_factor = -0.15
-				production_factory_efficiency_gain_factor = -0.1
-				production_factory_start_efficiency_factor = -0.05
+				political_power_gain = 0.3
+				production_speed_buildings_factor = 0.1
+				stability_factor = 0.05
 			}
 			on_activate = {
 			
@@ -101,21 +69,13 @@ CEP_balance_of_power = {
 			min = -1
 			max = -0.9
 			modifier = {
-				production_speed_infrastructure_factor = 0.2
-				production_speed_rail_way_factor = 0.2
+				economy_cost_factor = -0.15
+				local_building_slots_factor = 0.2
 				production_speed_industrial_complex_factor = 0.2
-				#political_power_gain = 0.15
-				research_speed_factor = 0.1
-				monthly_population = 0.2
-				economy_cost_factor = -0.2
-				trade_laws_cost_factor = -0.2
+				political_power_gain = 0.5
+				production_speed_buildings_factor = 0.15
+				stability_factor = 0.1
 
-				mobilization_laws_cost_factor = 0.2
-				production_speed_arms_factory_factor = -0.15
-				training_time_factor = 0.15
-				production_factory_max_efficiency_factor = -0.2
-				production_factory_efficiency_gain_factor = -0.15
-				production_factory_start_efficiency_factor = -0.05
 			}
 			on_activate = {
 				set_power_balance_gfx = {
@@ -127,7 +87,7 @@ CEP_balance_of_power = {
 			on_deactivate = {
 				set_power_balance_gfx = {
 					id = DEN_balance_of_power
-					side = DEN_welfare_side
+					side = CEP_kosiniak_side
 					gfx = GFX_bop_DEN_welfare_side
 				}
 			}
@@ -145,20 +105,10 @@ CEP_balance_of_power = {
 			min = 0
 			max = 0.3
 			modifier = {
-				production_speed_arms_factory_factor = 0.05
-				training_time_factor = -0.05
-				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
 				production_factory_start_efficiency_factor = 0.05
-				mobilization_speed = 0.05
-				mobilization_laws_cost_factor = -0.05
-
-				economy_cost_factor = 0.05
-				trade_laws_cost_factor = 0.05
-				production_speed_infrastructure_factor = -0.05
-				production_speed_rail_way_factor = -0.05
-				production_speed_industrial_complex_factor = -0.05
-				}
+				training_time_army_factor = -0.05
+				army_attack_factor = 0.05
+			}
 			on_activate = {
 			
 			}
@@ -172,20 +122,11 @@ CEP_balance_of_power = {
 			min = 0.3
 			max = 0.6
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
-				training_time_factor = -0.1
-				production_factory_max_efficiency_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.1
 				production_factory_start_efficiency_factor = 0.1
-				mobilization_speed = 0.1
-				mobilization_laws_cost_factor = -0.1
-
-				economy_cost_factor = 0.1
-				trade_laws_cost_factor = 0.1
-				production_speed_infrastructure_factor = -0.1
-				production_speed_rail_way_factor = -0.1
-				production_speed_industrial_complex_factor = -0.1
-				}
+				training_time_army_factor = -0.1
+				army_attack_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
+			}
 			on_activate = {
 				
 			}
@@ -199,20 +140,13 @@ CEP_balance_of_power = {
 			min = 0.6
 			max = 0.9
 			modifier = {
-				production_speed_arms_factory_factor = 0.15
-				training_time_factor = -0.15
-				production_factory_max_efficiency_factor = 0.15
-				production_factory_efficiency_gain_factor = 0.15
-				production_factory_start_efficiency_factor = 0.15
-				mobilization_speed = 0.15
-				mobilization_laws_cost_factor = -0.15
-
-				economy_cost_factor = 0.15
-				trade_laws_cost_factor = 0.15
-				production_speed_infrastructure_factor = -0.15
-				production_speed_rail_way_factor = -0.15
-				production_speed_industrial_complex_factor = -0.15
-				}
+				production_factory_start_efficiency_factor = 0.2
+				training_time_army_factor = -0.1
+				army_attack_factor = 0.15
+				production_speed_arms_factory_factor = 0.1
+				war_support_factor = 0.05
+				agraryzm_drift = 0.05
+			}
 			on_activate = {
 				
 			}
@@ -226,20 +160,13 @@ CEP_balance_of_power = {
 			min = 0.9
 			max = 1
 			modifier = {
-				production_speed_arms_factory_factor = 0.2
-				training_time_factor = -0.2
-				production_factory_max_efficiency_factor = 0.2
-				production_factory_efficiency_gain_factor = 0.2
-				production_factory_start_efficiency_factor = 0.2
-				mobilization_speed = 0.2
-				mobilization_laws_cost_factor = -0.2
-
-				economy_cost_factor = 0.2
-				trade_laws_cost_factor = 0.2
-				production_speed_infrastructure_factor = -0.2
-				production_speed_rail_way_factor = -0.2
-				production_speed_industrial_complex_factor = -0.2
-				}
+				production_factory_start_efficiency_factor = 0.25
+				training_time_army_factor = -0.15
+				army_attack_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				war_support_factor = 0.1
+				agraryzm_drift = 0.1
+			}
 			on_activate = {
 				set_power_balance_gfx = {
 					id = DEN_balance_of_power
@@ -250,7 +177,7 @@ CEP_balance_of_power = {
 			on_deactivate = {
 				set_power_balance_gfx = {
 					id = DEN_balance_of_power
-					side = DEN_warfare_side
+					side = CEP_kamysz_side
 					gfx = GFX_bop_DEN_warfare_side
 				}
 			}

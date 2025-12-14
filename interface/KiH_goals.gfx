@@ -207,4 +207,8 @@ spriteTypes = {
         name = GFX_focus_rifles2
         texturefile = gfx/interface/goals/rifles2.dds
     }
+    spriteType = {
+        name = GFX_focus_kosiniak
+        texturefile = gfx/interface/goals/kosiniak.dds
+    }
 }

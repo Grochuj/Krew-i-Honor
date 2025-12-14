@@ -12,7 +12,7 @@ recruit_character = NOW_nalesnik
 UPO = {
 	set_autonomy = {
 		target = NOW
-		autonomy_state = autonomy_collaboration_government
+		autonomy_state = autonomy_integrated_puppet
 	}
 }
 

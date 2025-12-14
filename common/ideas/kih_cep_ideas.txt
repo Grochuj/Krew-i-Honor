@@ -8,7 +8,7 @@ ideas = {
 		}
 		CEP_prym_holowni = {
 			modifier = {
-				centryzm_drift = 0.001
+				centryzm_drift = 0.01
 				stability_factor = -0.05
 				opinion_gain_monthly_factor = 0.1
 			}

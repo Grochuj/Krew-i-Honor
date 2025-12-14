@@ -29,7 +29,7 @@ focus_tree = {
         id = CEP_psl
         icon = GFX_focus_psl
         mutually_exclusive = {
-            focus = CEP_20
+            focus = CEP_25
         }
         cost = 5
         x = 23
@@ -74,20 +74,37 @@ focus_tree = {
         }
     }
     focus = {
-        id = CEP_czas_pslu
-        icon = GFX_focus_PRC_rural_region_development
+        id = CEP_odtracenie_holowni
+        icon = GFX_focus_generic_support_the_left_right
         prerequisite = {
             focus = CEP_stronnictwo_ludu
+        }
+        prerequisite = {
             focus = CEP_wyjdzmy_przed_szereg
         }
         relative_position_id = CEP_stronnictwo_ludu
-        cost = 10
+        cost = 5
         x = -1
+        y = 1
+        completion_reward = {
+            remove_ideas = CEP_prym_holowni
+        }
+    }
+    focus = {
+        id = CEP_czas_pslu
+        icon = GFX_focus_PRC_rural_region_development
+        prerequisite = {
+            focus = CEP_odtracenie_holowni
+        }
+        relative_position_id = CEP_odtracenie_holowni
+        cost = 10
+        x = 0
         y = 1
         available = {
             agraryzm > 0.45
         }
         completion_reward = {
+            set_cosmetic_tag = pesel
             set_politics = {
                 ruling_party = agraryzm
                 elections_allowed = yes
@@ -107,12 +124,12 @@ focus_tree = {
         x = 0
         y = 1
         completion_reward = {
-            
+            add_stability = 0.05
         }
     }
     focus = {
         id = CEP_rozdwojenie
-        icon = GFX_focus_POL_complete_april_constitution
+        icon = GFX_focus_kosiniak
         prerequisite = {
             focus = CEP_samodzielnosc
         }
@@ -123,9 +140,8 @@ focus_tree = {
         completion_reward = {
             set_power_balance = {
 				id = CEP_balance_of_power
-				left_side = CEP_kosiniak_side # will keep the last set side if not specified
-				right_side = CEP_kamysz_side # will keep the last set side if not specified
-				#set_default = yes # whether or not to reset the power balance to the initial value, default = no
+				left_side = CEP_kosiniak_side
+				right_side = CEP_kamysz_side
 				set_value = 0
 			}
         }

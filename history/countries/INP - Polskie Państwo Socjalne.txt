@@ -10,7 +10,7 @@ recruit_character = INP_jonski
 UPO = {
 	set_autonomy = {
 		target = INP
-		autonomy_state = autonomy_collaboration_government
+		autonomy_state = autonomy_integrated_puppet
 	}
 }
 
